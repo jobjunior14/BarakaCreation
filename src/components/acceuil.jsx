@@ -5,7 +5,17 @@ import Accueildesigngr2 from '../assets/Accueil/Accueildesigngr2.jpg';
 import accueil_accompagnons from '../assets/Accueil/accueil_accompagnons.jpg';
 import Mamour_phone from '../assets/Accueil/Mamour_phone.jpg';
 import Mamour_ordi from '../assets/Accueil/Mamour_ordi.jpg';
-import design_entrons_en_contact from '../assets/Accueil/design_entrons_en_contact.png'
+import design_entrons_en_contact from '../assets/Accueil/design_entrons_en_contact.png';
+import Logo1 from '../assets/Accueil/Logo1.png';
+import Logo2 from '../assets/Accueil/Logo2.png';
+import Logo3 from '../assets/Accueil/Logo3.png';
+import Logo4 from '../assets/Accueil/Logo4.png';
+import Logo5 from '../assets/Accueil/Logo5.png';
+import Logo6 from '../assets/Accueil/Logo6.png';
+import Logo7 from '../assets/Accueil/Logo7.png';
+import Logo8 from '../assets/Accueil/Logo8.png';
+import Logo9 from '../assets/Accueil/Logo9.png';
+import Logo10 from '../assets/Accueil/Logo10.png';
 export default function Acceuil () {
     return (
 
@@ -96,7 +106,7 @@ export default function Acceuil () {
                 </div>
 
             </div>
-
+            {/* 4 part "entron en contact" */}
             <div className='w-full flex flex-col gap-2 text-center justify-center items-center relative bg-gray-50 p-5'>
 
                  <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
@@ -109,6 +119,23 @@ export default function Acceuil () {
                 </div>
             </div>
             
+            <div className='w-full bg-myBlue flex flex-col justify-center items-center pt-8 pb-5 gap-10 pl-4'>
+
+                <h1 className='md:text-2xl text-xl text-blue-200'>Ils nous ont fait <b>confiance</b></h1>
+
+                <div className='grid lg:grid-cols-5 md:grid-cols-4 grid-cols-3 gap-y-7 lg:gap-x-20 md:gap-x-14 gap-x-5'>
+                    <div> <img src={Logo1} alt='logo' className='sm:h-9 h-7' /></div>
+                    <div> <img src={Logo2} alt='logo' className='sm:h-9 h-7' /></div>
+                    <div> <img src={Logo3} alt='logo' className='sm:h-9 h-7' /></div>
+                    <div> <img src={Logo4} alt='logo' className='sm:h-9 h-7' /></div>
+                    <div> <img src={Logo5} alt='logo' className='sm:h-12 h-10' /></div>
+                    <div> <img src={Logo6} alt='logo' className='sm:h-6 h-4' /></div>
+                    <div> <img src={Logo7} alt='logo' className='sm:h-9 h-7' /></div>
+                    <div> <img src={Logo8} alt='logo' className='sm:h-9 h-7' /></div>
+                    <div className='md:col-start-2 md:col-end-3 lg:col-start-4 lg:col-end-5'> <img src={Logo9} alt='logo' className='sm:h-9 h-6 ' /></div>
+                    <div className=' col-start-2 md:col-start-auto'> <img src={Logo10} alt='logo' className='sm:h-9 h-7' /></div>
+                </div>
+            </div>
         </div>
     )
 }
