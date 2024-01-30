@@ -16,7 +16,23 @@ import Logo7 from '../assets/Accueil/Logo7.png';
 import Logo8 from '../assets/Accueil/Logo8.png';
 import Logo9 from '../assets/Accueil/Logo9.png';
 import Logo10 from '../assets/Accueil/Logo10.png';
+import { useState, useEffect } from 'react';
+
 export default function Acceuil () {
+
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+
+        const i = setInterval(() => setIndex(prev => prev === 10 ? 0 : prev + 1), 1500);
+        
+
+        return () => {
+            clearInterval(i);
+        }
+
+    }, [index]);
+
     return (
 
         <div className="flex w-full gap-0 flex-col justify-center items-center first-letter bg-contain bg-no-repeat bg-fixed " >
@@ -114,7 +130,7 @@ export default function Acceuil () {
                 </div>
 
                 <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>
-                    <button className='py-1 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</button>
+                    <button className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</button>
                     <button className=' py-1 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander&nbsp;un&nbsp;devis </button>
                 </div>
             </div>
@@ -124,18 +140,19 @@ export default function Acceuil () {
 
                 <h1 className='md:text-2xl text-xl text-blue-200'>Ils nous ont fait <b>confiance</b></h1>
 
-                <div className='grid lg:grid-cols-5 md:grid-cols-4 grid-cols-3 gap-y-7 lg:gap-x-20 md:gap-x-14 gap-x-5'>
-                    <div> <img src={Logo1} alt='logo' className='sm:h-9 h-7' /></div>
-                    <div> <img src={Logo2} alt='logo' className='sm:h-9 h-7' /></div>
-                    <div> <img src={Logo3} alt='logo' className='sm:h-9 h-7' /></div>
-                    <div> <img src={Logo4} alt='logo' className='sm:h-9 h-7' /></div>
-                    <div> <img src={Logo5} alt='logo' className='sm:h-12 h-10' /></div>
-                    <div> <img src={Logo6} alt='logo' className='sm:h-6 h-4' /></div>
-                    <div> <img src={Logo7} alt='logo' className='sm:h-9 h-7' /></div>
-                    <div> <img src={Logo8} alt='logo' className='sm:h-9 h-7' /></div>
-                    <div className='md:col-start-2 md:col-end-3 lg:col-start-4 lg:col-end-5'> <img src={Logo9} alt='logo' className='sm:h-9 h-6 ' /></div>
-                    <div className=' col-start-2 md:col-start-auto'> <img src={Logo10} alt='logo' className='sm:h-9 h-7' /></div>
+                <div className=' flex  w-[60%] gap-x-5 realtive overflow-hidden '>
+                    <div className={`bg-red-700 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-gray-100 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-gray-700 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-blue-300 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-black min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-teal-500 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-black min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-black min-w-20 h-20 -translate-x-[${index * 10000}%] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-black min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                    <div className={`bg-red-800 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
                 </div>
+                <p>{index}</p>
             </div>
 
         </div>

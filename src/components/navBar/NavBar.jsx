@@ -2,11 +2,16 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import aBarakaCreationLogoBleu from '../../assets/Icones/aBarakaCreationLogoBleu.png';
 import bcconversation2_1 from '../../assets/Icones/bcconversation2_1.png';
-
 export default function NavBar ()
 {
 
     const [toggleBtn, setToggleBtn] = useState(false);
+    
+    // window.onscroll = () => {
+        
+    //     console.log(document.documentElement.scrollTop);
+    //     if ( document.documentElement.scrollTop > 1600) document.documentElement.scrollTop = 0;
+    // }
 
     function toggle () {
         if (window.innerWidth <= 1024)  setToggleBtn(prev => prev === true ? false : true );
@@ -22,7 +27,7 @@ export default function NavBar ()
                     to = {`/`}> <img className='h-6' src = {aBarakaCreationLogoBleu} alt='BarakaCreation Logo' /></NavLink>
             </div>
             
-            <div className={`lg:flex text-left lg:pl-9  lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[40px] pt-5 pb-[100%] top-[40px] -left-0 ${ toggleBtn ? 'absolute' : 'hidden'} w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 `}>
+            <div className={`lg:flex text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[40px] pt-5 pb-[100%] top-[40px] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 `}>
                 
                 <div className='block lg:flex lg:items-center justify-between gap-10'>
                     <NavLink 
@@ -32,7 +37,7 @@ export default function NavBar ()
                     <NavLink 
                         onClick={toggle}
                         className={ ({isActive}) => isActive ? activeLink : `duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline block lg:flex font-medium `}
-                        to = {`/rapportJournalier`}>  A&nbsp;propos </NavLink>
+                        to = {`/aPropos`}>  A&nbsp;propos </NavLink>
                     <NavLink 
                         onClick={toggle}
                         className={ ({isActive}) => isActive ? activeLink : `duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline block lg:flex font-medium `}
