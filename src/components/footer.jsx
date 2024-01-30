@@ -1,70 +1,64 @@
 import { Link } from 'react-router-dom';
-import ScrollReveal from 'scrollreveal';
-import { SocialIcon } from 'react-social-icons';
+import logo_pictogrammFichier_1 from '../assets/Icones/logo_pictogrammFichier_1.png';
+import bcBehance from '../assets/Icones/bcBehance.png';
+import bcFb from '../assets/Icones/bcFb.png';
+import bctwitter_2 from '../assets/Icones/bctwitter_2.png';
+import bcInsta from '../assets/Icones/bcInsta.png';
+import bclinkedin from '../assets/Icones/bclinkedin.png';
 
 export function Footer ()
 {
-    const sr = ScrollReveal({
-        origin: 'top',
-           
-    });
-    sr.reveal('.top-footer',{delay: 300});
-    sr.reveal('.footer-menu', {delay: 300});
-    sr.reveal ('.footer-social-icons', {delay: 200});
-
     return (
-        <footer className='w-full justify-center items-center flex flex-col' >
-            <div className="text-2xl font-semibold">
-                <p>Moïse Kafeka</p>
+        <footer className='w-full bg-gray-50 flex flex-col sm:flex-row justify-center  items-center sm:justify-normal  py-8 sm:px-20 px-10'>
+            
+            {/* baraka creation logo and texts */}
+            <div className='sm:w-[30%] sm:block flex items-center gap-x-5 w-[40%%]'>
+                <img className='h-20 mb-1' src={logo_pictogrammFichier_1} alt="pictogram" />
+                <div className='text-left'>
+                    <p className='text-[8px] text-semibold text-gray-800'>Kinshasa, RDC <br/> Baraka creation, votre partenaire <br/> idéal en communication visuelle<br/> <b>Ensemble innovons </b></p>
+                </div>
             </div>
 
-            <div className="">
-                <ul className="flex my-5 sm:gap-x-6 gap-x-3">
-                    <li className="p-1 ">
-                        <Link className='text-teal-500' to = '/'>Acceuil</Link>
-                        
-                    </li>
-                    <li className="p-1 ">
-                        <Link className='text-teal-500' to = '/projets'> Projets </Link>
-                    </li>
-                    <li className="p-1 ">
-                        <Link className='text-teal-500' to = '/apropos'> A&nbsp;propos</Link>
-                    </li>
-                    <li className="p-1 ">
-                        <Link className='text-teal-500' to = '/contacts'> Contacts</Link>
-                    </li>
-                </ul>
-            </div>
-            <div className="flex sm:gap-x-5 gap-x-5 mb-5">
-                <div > <SocialIcon 
-                    target="_blank" 
-                    className="shadow-gray-600 shadow-md rounded-full" 
-                    bgColor='black' 
-                    fgColor='white' 
-                    url="https://twitter.com" />
-                </div>
+            <div className='mt-5 justify-between w-[70%] '>
+                
+                <div className='flex flex-col sm:flex-row justify-center  items-center w-full sm:justify-between'>
+                    {/* menu */}
+                    <div>
+                        <div>
+                            <h4 className='text-left text-xs font-bold text-gray-700 mb-1'>Menu</h4>
+                            <div className=' h-[3px] w-[32px] rounded-full bg-gray-600'></div>
+                        </div>
 
-                <div  > <SocialIcon 
-                    target="_blank" 
-                    className="shadow-gray-600 shadow-md rounded-full" 
-                    bgColor='black' 
-                    fgColor='white' 
-                    url="https://facebook.com" />
-                </div>
+                        <div className='flex gap-x-4 text-left mt-2'>
+                            <div className='flex flex-col gap-y-px'>
+                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Accueil</Link>
+                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>A propos</Link>
+                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Services</Link>
+                            </div>
 
-                <div  > <SocialIcon 
-                    target="_blank" 
-                    className="shadow-gray-600 shadow-md rounded-full" 
-                    bgColor='black' 
-                    fgColor='white' 
-                    url="https://instagram.com" />
+                            <div className='flex flex-col gap-y-px'>
+                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Portfolio</Link>
+                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Publications</Link>
+                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Contactez-nous</Link>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* link  */}
+                    <div className='flex gap-x-[7px] sm:mt-14 mt-3'>
+                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bclinkedin} alt="Linkdin" /> </Link>
+                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bcInsta} alt="Insta" /> </Link>
+                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bcFb} alt="fb" /> </Link>
+                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bctwitter_2} alt="Twitter" /> </Link>
+                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bcBehance} alt="Twitter" /> </Link>
+                    </div>
                 </div>
-                        
-            </div>
-            <div className="bottom-footer">
-                <p>Copyright &copy; <a href="#home" style={{textDecoration: 'none'}}>Job Junior</a> - All rights reserved
-                </p>
+                
+                <div className='h-[2px] w-full rounded-full bg-gray-600 mt-2'>
+
+                </div>
+                <p className='text-black text-[7px] sm:text-left text-center mt-2'>© Copyright 2023 Baraka creation  All Rights Reserved</p>
             </div>
         </footer>
-    )
+    );
 }

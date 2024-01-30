@@ -1,21 +1,19 @@
 import './App.css';
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SharedNav from './components/navBar/Oulet';
 import Acceuil from './components/acceuil';
+import { Footer } from './components/footer';
 function App() {
-
-  const router = createBrowserRouter(createRoutesFromElements(
-
-    <Route path='/' element = {<SharedNav/>}>
-        <Route index element={<Acceuil/>} />
-    </Route>
-
-  ));
   
   return ( 
-    <div className='w-full'>
-     <RouterProvider router={router}/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element = {<SharedNav/>}>
+            <Route index element={<Acceuil/>} />
+        </Route>
+      </Routes>
+        <Footer/>
+    </Router>
 
   );
 }

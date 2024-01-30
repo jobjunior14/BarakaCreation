@@ -83,7 +83,7 @@ export default function Acceuil () {
                 
             </div>
             
-            {/* fourth part "mamour" */}
+            {/* 4th part "mamour" */}
             <div className='w-full flex flex-col text-center justify-center items-center relative '>
 
                 <div className=' w-full items-center text-center flex flex-col left-4 ml-2'>
@@ -106,7 +106,7 @@ export default function Acceuil () {
                 </div>
 
             </div>
-            {/* 4 part "entron en contact" */}
+            {/* 5th part "entron en contact" */}
             <div className='w-full flex flex-col gap-2 text-center justify-center items-center relative bg-gray-50 p-5'>
 
                  <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
@@ -119,6 +119,7 @@ export default function Acceuil () {
                 </div>
             </div>
             
+            {/* 6th part "ils nous ont fait confiance"  */}
             <div className='w-full bg-myBlue flex flex-col justify-center items-center pt-8 pb-5 gap-10 pl-4'>
 
                 <h1 className='md:text-2xl text-xl text-blue-200'>Ils nous ont fait <b>confiance</b></h1>
@@ -136,6 +137,7 @@ export default function Acceuil () {
                     <div className=' col-start-2 md:col-start-auto'> <img src={Logo10} alt='logo' className='sm:h-9 h-7' /></div>
                 </div>
             </div>
+
         </div>
     )
 }
