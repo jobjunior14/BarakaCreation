@@ -16,12 +16,12 @@ export default function NavBar ()
 
     return (
         <nav className={`justify-between  sticky w-full py-2 lg:px-28 md:px-20 sm:px-10 px-7 z-50 bg-white rounded-md shadow-lg flex items-center -top-0 duration-300`}>
-
+            
             <div className=''>
                 <NavLink 
                     to = {`/`}> <img className='h-6' src = {aBarakaCreationLogoBleu} alt='BarakaCreation Logo' /></NavLink>
             </div>
-
+            
             <div className={`lg:flex text-left lg:pl-9  lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[40px] pt-5 pb-[100%] top-[40px] -left-0 ${ toggleBtn ? 'absolute' : 'hidden'} w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 `}>
                 
                 <div className='block lg:flex lg:items-center justify-between gap-10'>
@@ -55,7 +55,6 @@ export default function NavBar ()
                     <img className='h-4 absolute' src={bcconversation2_1} alt='messagerie' />
                 </div>
             </div>
-
 
             {/* when it's become to phone  */}
             <div className='flex lg:hidden justify-center items-center'>
