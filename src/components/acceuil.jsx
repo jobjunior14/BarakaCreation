@@ -21,10 +21,11 @@ import { useState, useEffect } from 'react';
 export default function Acceuil () {
 
     const [index, setIndex] = useState(0);
+    const timers = index * 121;
 
     useEffect(() => {
 
-        const i = setInterval(() => setIndex(prev => prev === 10 ? 0 : prev + 1), 1500);
+        const i = setInterval(() => setIndex(prev => prev === 6 ? 0 : prev + 1), 1500);
         
 
         return () => {
@@ -140,19 +141,18 @@ export default function Acceuil () {
 
                 <h1 className='md:text-2xl text-xl text-blue-200'>Ils nous ont fait <b>confiance</b></h1>
 
-                <div className=' flex  w-[60%] gap-x-5 realtive overflow-hidden '>
-                    <div className={`bg-red-700 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-gray-100 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-gray-700 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-blue-300 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-black min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-teal-500 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-black min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-black min-w-20 h-20 -translate-x-[${index * 10000}%] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-black min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
-                    <div className={`bg-red-800 min-w-20 h-20 -translate-x-[${index * 100}px] ease-out delay-200 duration-150`}></div>
+                <div className=' flex  w-[60%] gap-x-3  overflow-hidden pb-5'>
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo1} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo2} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo3} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo4} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo5} alt='logo' className='h-14' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo6} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo7} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo8} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo9} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo10} alt='logo' /></div> 
                 </div>
-                <p>{index}</p>
             </div>
 
         </div>
