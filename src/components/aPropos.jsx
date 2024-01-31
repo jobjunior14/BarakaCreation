@@ -5,7 +5,7 @@ import iconeetude from '../assets/A propos/iconeetude.png';
 import icone_experience_1 from '../assets/A propos/icone_experience_1.png';
 export default function Apropos () {
     return (
-        <div className="w-full md:bg-slate-100 bg-bgApropos pb-7 md:pb-0">
+        <div className="w-full md:bg-slate-100 bg-bgApropos md:pb-0">
 
             {/* Baraka's summary  1st part*/}
             <div className=" w-full flex flex-col sm:flex-row justify-center text-center md:pt-5">
@@ -46,7 +46,7 @@ export default function Apropos () {
                             <div className='h-px w-full bg-gray-600 mt-1'></div>
                         </div>
 
-                        <div className='px-8'> 
+                        <div className='px-8 bg-bgFormation '> 
                             <div className='text-left grid grid-cols-2 gap-y-5 gap-x-2'>
                                 <div>
                                     <h3 className='font-bold text-[15px] text-gray-800'> Comminicateur </h3>
@@ -68,7 +68,7 @@ export default function Apropos () {
                             <div className='h-px w-full bg-gray-600 mt-1'></div>
                         </div>
 
-                        <div className='px-8 flex gap-3 text-left pt-3'>
+                        <div className='px-8 flex gap-3 text-left pt-3 bg-bgFormation'>
                             <div className='flex justify-center items-center'>
                                 <img src={icone_experience_1} className='h-6 mr-1' alt='iconeprofession'/>
                                 <h1 className=' mr-1 font-bold text-gray-700 text-[11px] flex'>  ans d&apos;expérience professionnelle </h1>
