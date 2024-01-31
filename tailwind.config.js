@@ -10,7 +10,7 @@ export default {
         'myBlue': 'rgb(22, 22, 52)',
         'letsDoIt': 'rgb(123, 104, 224)',
         'bgApropos' : 'rgb(91, 93, 126)',
-        'bgFormation' : 'b(245, 246, 254)',
+        'bgFormation' : 'rgb(245, 246, 254)',
       }
     },
   },

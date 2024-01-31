@@ -19,6 +19,7 @@ export default function NavBar ()
 
     const activeLink = `duration-300 text-gray-700 my-9 text-xs lg:my-0 block lg:flex hover:text-teal-400 font-bold underline `;
 
+    const inactiveLink = 'duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline block font-medium';
     return (
         <nav className={`justify-between  sticky w-full py-2 lg:px-28 md:px-20 sm:px-10 px-7 z-50 bg-white rounded-md shadow-lg flex items-center -top-0 duration-300`}>
             
@@ -32,27 +33,27 @@ export default function NavBar ()
                 <div className='block lg:flex lg:items-center justify-between gap-10'>
                     <NavLink 
                         onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : `duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline font-medium`}
+                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
                         to = {`/`}> Acceuil </NavLink>
                     <NavLink 
                         onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : `duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline block lg:flex font-medium `}
+                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
                         to = {`/aPropos`}>  A&nbsp;propos </NavLink>
                     <NavLink 
                         onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : `duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline block lg:flex font-medium `}
+                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
                         to = {`/rapportJournalier`}> Services </NavLink>
                     <NavLink 
                         onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : `duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline block lg:flex font-medium `}
+                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
                         to = {`/rapportJournalier`}> Portfolio </NavLink>
                     <NavLink 
                         onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : `duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline block lg:flex font-medium `}
+                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
                         to = {`/rapportJournalier`}> Publications </NavLink>
                     <NavLink 
                         onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : `duration-300 text-gray-700 my-9 text-xs lg:my-0 hover:underline block lg:flex font-medium `}
+                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
                         to = {`/rapportJournalier`}> Contacts </NavLink>
                 </div>
 
@@ -67,7 +68,7 @@ export default function NavBar ()
                     <i onClick={toggle} className="  scale-150 hover:bg-gray-100  rounded-xl px-2 duration-300 hover:cursor-pointer "> 
 
                        { 
-                            toggleBtn ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            toggleBtn ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                                     </svg> :
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className= 'text-black w-5 h-5 '>

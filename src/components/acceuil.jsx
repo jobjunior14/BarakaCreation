@@ -142,16 +142,16 @@ export default function Acceuil () {
                 <h1 className='md:text-2xl text-xl text-blue-200'>Ils nous ont fait <b>confiance</b></h1>
 
                 <div className=' flex  w-[60%] gap-x-3  overflow-hidden pb-5'>
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo1} alt='logo' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo2} alt='logo' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo3} alt='logo' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo4} alt='logo' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo5} alt='logo' className='h-14' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo6} alt='logo' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo7} alt='logo' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo8} alt='logo' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo9} alt='logo' /></div> 
-                    <div className={` min-w-20 h-20  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo10} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo1} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo2} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo3} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo4} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 pl-4  flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo5} alt='logo' className='h-14' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo6} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo7} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo8} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo9} alt='logo' /></div> 
+                    <div className={` min-w-20 h-20 flex items-center ease-out delay-200  duration-300`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo10} alt='logo' /></div> 
                 </div>
             </div>
 
