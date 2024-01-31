@@ -36,7 +36,7 @@ export default function Apropos () {
             <div className=" w-full flex flex-col sm:flex-row justify-center text-center md:pt-5">
                 
                 {/* pc's picture  */}
-                <div className=' hidden md:flex justify-center place-items-end px-6 bg-b  '>
+                <div className=' hidden md:flex justify-center place-items-end px-6 bg-bgFormation  md:w-[40%]  '>
                     <img src={moii_2} alt='moi' className='h-auto'/>
                 </div>
 
@@ -145,7 +145,7 @@ export default function Apropos () {
                             </div>
                         </div>
 
-                        {/* passion  */}
+                        {/* passion  */} 
                         <div className='text-left flex gap-3 md:gap-9 justify-normal w-full '>
                             <div className='w-[12%]  pt-1 md:pt-0 flex md:items-center'>
                                 <img src={icone_passion} className='h-10 md:h-auto' alt='icone' />
