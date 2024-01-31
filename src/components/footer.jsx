@@ -46,11 +46,11 @@ export function Footer ()
                     
                     {/* link  */}
                     <div className='flex gap-x-[7px] sm:mt-14 mt-3'>
-                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bclinkedin} alt="Linkdin" /> </Link>
-                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bcInsta} alt="Insta" /> </Link>
-                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bcFb} alt="fb" /> </Link>
-                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bctwitter_2} alt="Twitter" /> </Link>
-                        <Link to='https://google.com'> <img className='h-4 hover:scale-125 duration-200' src={bcBehance} alt="Twitter" /> </Link>
+                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bclinkedin} alt="Linkdin" /> </Link>
+                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bcInsta} alt="Insta" /> </Link>
+                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bcFb} alt="fb" /> </Link>
+                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bctwitter_2} alt="Twitter" /> </Link>
+                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bcBehance} alt="Twitter" /> </Link>
                     </div>
                 </div>
                 

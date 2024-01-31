@@ -1,9 +1,31 @@
+import { useState, useEffect } from 'react';
 import moii_2 from '../assets/A propos/moii_2.jpg';
 import moii_phone from  '../assets/A propos/moii_phone.jpg';
 import iconeprofession from '../assets/A propos/iconeprofession.png';
 import iconeetude from '../assets/A propos/iconeetude.png';
 import icone_experience_1 from '../assets/A propos/icone_experience_1.png';
+import certifié_logo_1 from '../assets/A propos/certifié_logo_1.png';
+import certifié_logo_2 from '../assets/A propos/certifié_logo_2.png';
+import certifié_logo_3 from '../assets/A propos/certifié_logo_3.png';
+import certifié_logo_4 from '../assets/A propos/certifié_logo_4.png';
+import certifié_Logo_5 from '../assets/A propos/certifié_Logo_5.png';
+import certifié_Logo_6 from '../assets/A propos/certifié_Logo_6.png';
+import certifié_Logo_7 from '../assets/A propos/certifié_Logo_7.png';
 export default function Apropos () {
+
+     const [index, setIndex] = useState(0);
+    const timers = index * 100
+
+    useEffect(() => {
+
+        const i = setInterval(() => setIndex(prev => prev === 5 ? 0 : prev + 1), 1000);
+
+        return () => {
+            clearInterval(i);
+        }
+    }, [index]);
+
+    
     return (
         <div className="w-full md:bg-slate-100 bg-bgApropos md:pb-0">
 
@@ -81,6 +103,22 @@ export default function Apropos () {
 
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* certifier par  */}
+            <div className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-5 pb-5 gap-7 pl-4'>
+
+                <h1 className='md:text-3xl text-xl text-gray-50'>Cetifié <span className='text-gray-200'>par</span></h1>
+                <div className='h-px w-[70%] bg-gray-800 '></div>
+                <div className=' flex  w-[70%] gap-x-6  overflow-hidden hover:overflow-x-scroll rounded-3xl shadow-2xl'>
+                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_logo_1} alt='logo' /></div> 
+                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_logo_2} alt='logo' /></div> 
+                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_logo_3} alt='logo' /></div> 
+                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_logo_4} alt='logo' /></div> 
+                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 pl-4  flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_Logo_5} alt='logo' className='h-14' /></div> 
+                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_Logo_6} alt='logo' /></div> 
+                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_Logo_7} alt='logo' /></div> 
                 </div>
             </div>
         </div>
