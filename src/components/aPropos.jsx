@@ -14,6 +14,10 @@ import certifié_Logo_7 from '../assets/A propos/certifié_Logo_7.png';
 import icone_innovation from '../assets/A propos/icone_innovation.png';
 import icone_passion from '../assets/A propos/icone_passion.png';
 import icone_discipline from '../assets/A propos/icone_discipline.png';
+import prix_apatridie from '../assets/A propos/prix_apatridie.png';
+import prix_onu_femmes from '../assets/A propos/prix_onu_femmes.png';
+import prix_ecicr_1 from '../assets/A propos/prix_ecicr_1.png';
+
 export default function Apropos () {
 
      const [index, setIndex] = useState(0);
@@ -129,14 +133,14 @@ export default function Apropos () {
             <div className=' bg-bgFormation w-full p-5 sm:p-7 md:p-9 lg:p-14 flex flex-col gap-y-5 md:items-center md:justify-center'>
 
                 <div className='flex flex-col gap-y-5 md:max-w-[60%] '>
-                    <h1 className='text-5xl sm:text-6xl md:text-7xl text-left text-nos font-bold '>Nos <span className='text-nosVal'>valeurs</span></h1>
+                    <h1 className='text-4xl sm:text-6xl md:text-7xl text-left text-nos font-bold '>Nos <span className='text-nosVal'>valeurs</span></h1>
 
                     <div className='flex flex-col gap-3 md:items-center md:justify-center'>
                         
                         {/* innovation  */}
                         <div className='text-left flex gap-3 md:gap-9 justify-normal w-full '>
                             <div className='w-[12%]  pt-1 md:pt-0 flex md:items-center'>
-                                <img src={icone_innovation} className='h-10 md:h-auto' alt='icone' />
+                                <img src={icone_innovation} className='h-[32px] md:h-auto' alt='icone' />
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
@@ -148,7 +152,7 @@ export default function Apropos () {
                         {/* passion  */} 
                         <div className='text-left flex gap-3 md:gap-9 justify-normal w-full '>
                             <div className='w-[12%]  pt-1 md:pt-0 flex md:items-center'>
-                                <img src={icone_passion} className='h-10 md:h-auto' alt='icone' />
+                                <img src={icone_passion} className='h-[32px] md:h-auto' alt='icone' />
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
@@ -160,7 +164,7 @@ export default function Apropos () {
                         {/* discipline  */}
                         <div className='text-left flex gap-3 md:gap-9 justify-normal w-full '>
                             <div className='w-[12%]  pt-1 md:pt-0 flex md:items-center'>
-                                <img src={icone_discipline} className='h-10 md:h-auto' alt='icone' />
+                                <img src={icone_discipline} className='h-[32px] md:h-auto' alt='icone' />
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
@@ -169,6 +173,18 @@ export default function Apropos () {
                             </div>
                         </div>
                     </div>
+                </div>
+
+            </div>
+
+            {/* prix remporté  */} 
+            <div className='w-full bg-gradient-to-r from-bgRemporter1  to-bgRemporter3 p-7 flex flex-col gap-8 sm:gap-10'>
+                <h3 className='text-3xl sm:text-4xl font-bold text-blue-100'>Prix <span className='text-remporter'>remportés</span></h3>
+                
+                <div className=' flex flex-col sm:flex-row justify-center items-center gap-10'>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 sm:h-24' src={prix_ecicr_1} alt="prix_ecicr_1" /></div>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 sm:h-24' src={prix_onu_femmes} alt="prix_onu_femmes" /></div>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 sm:h-24' src={prix_apatridie} alt="prix_apatridie" /></div>
                 </div>
 
             </div>

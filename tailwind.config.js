@@ -15,6 +15,11 @@ export default {
         'bgPlay' : 'rgb(118, 128, 166)',
         'nosVal': 'rgb(148, 149, 181)',
         'nos': 'rgb(204, 207, 221)',
+        'remporter': 'rgb(110, 102, 150)',
+        'bgPhoneRemporter': 'rgba(22, 21, 35)',
+        'bgRemporter1': 'rgba(22, 22, 23)',
+        'bgRemporter3': 'rgba(60, 57, 66)',
+
         
       }
     },
