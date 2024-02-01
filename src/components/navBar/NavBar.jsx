@@ -46,7 +46,7 @@ export default function NavBar ()
                     <NavLink 
                         onClick={toggle}
                         className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                        to = {`/rapportJournalier`}> Portfolio </NavLink>
+                        to = {`/portfolio`}> Portfolio </NavLink>
                     <NavLink 
                         onClick={toggle}
                         className={ ({isActive}) => isActive ? activeLink : inactiveLink}

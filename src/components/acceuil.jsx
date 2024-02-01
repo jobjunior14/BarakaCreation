@@ -16,6 +16,7 @@ import Logo7 from '../assets/Accueil/Logo7.png';
 import Logo8 from '../assets/Accueil/Logo8.png';
 import Logo9 from '../assets/Accueil/Logo9.png';
 import Logo10 from '../assets/Accueil/Logo10.png';
+import './an.css';
 import { useState, useEffect } from 'react';
 
 export default function Acceuil () {
@@ -36,13 +37,13 @@ export default function Acceuil () {
 
         <div className="flex w-full gap-0 flex-col justify-center items-center first-letter bg-contain bg-no-repeat bg-fixed " >
             {/* first part "Principal picture" */}
-            <div className='-mb-5' >
+            <section className='-mb-5' >
                 <img src={accueil_ok} className='hidden sm:block' alt='Baraka image' />
                 <img src={accueil_phone} className='block sm:hidden' alt='Baraka image' />
-            </div>
+            </section>
 
             {/* seconde part "C'que nous faisons" */}
-            <div className='w-full bg-black flex flex-col text-center '>
+            <section className='w-full bg-black flex flex-col text-center '>
 
                 <div className=' w-full justify-center items-center text-center flex flex-col sm:absolute left-4 ml-2'>
 
@@ -67,10 +68,10 @@ export default function Acceuil () {
                     <img src={Accueildesigngr2} className='h-[170px] lg:h-[470px] md:h-[340px] sm:h-[250px] ' alt='design 1'/>
                     <img src={Accueildesigngr1} className='h-[170px] lg:h-[470px] md:h-[340px] sm:h-[250px] ' alt='design 2'/>
                 </div>
-            </div>
+            </section>
             
             {/* third part "accompagnement" */}
-            <div className='w-full bg-white flex flex-col text-center justify-center relative pt-5 -pb-2'>
+            <section className='w-full bg-white flex flex-col text-center justify-center relative pt-5 -pb-2'>
 
                 <div className=' w-full justify-center items-center text-center flex flex-col left-4 ml-2'>
 
@@ -96,10 +97,10 @@ export default function Acceuil () {
                 </div>
 
                 
-            </div>
+            </section>
             
             {/* 4th part "mamour" */}
-            <div className='w-full flex flex-col text-center justify-center items-center relative '>
+            <section className='w-full flex flex-col text-center justify-center items-center relative '>
 
                 <div className=' w-full items-center text-center flex flex-col left-4 ml-2'>
 
@@ -120,9 +121,9 @@ export default function Acceuil () {
                     <img src={Mamour_phone} className='block sm:hidden' alt='Baraka image' />
                 </div>
 
-            </div>
+            </section>
             {/* 5th part "entron en contact" */}
-            <div className='w-full flex flex-col gap-2 text-center justify-center items-center relative bg-gray-50 p-5'>
+            <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative bg-gray-50 p-5'>
 
                  <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
                     <img src={design_entrons_en_contact} className='' alt='image accompagnement'/>
@@ -132,26 +133,30 @@ export default function Acceuil () {
                     <button className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</button>
                     <button className=' py-1 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander&nbsp;un&nbsp;devis </button>
                 </div>
-            </div>
+            </section>
             
             {/* 6th part "ils nous ont fait confiance"  */}
-            <div className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-8 pb-5 gap-10 pl-4'>
+            <section className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-8 pb-5 gap-10 pl-4'>
 
                 <h1 className='md:text-2xl text-xl text-blue-200'>Ils nous ont fait <b>confiance</b></h1>
 
-                <div className=' flex  w-[70%] gap-x-6  overflow-hidden hover:overflow-x-scroll rounded-3xl shadow-2xl'>
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo1} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo2} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo3} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo4} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 pl-4  flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo5} alt='logo' className='h-14' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo6} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo7} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo8} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo9} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={Logo10} alt='logo' /></div> 
+                <div className=' flex  w-[80%] overflow-hidden rounded-3xl shadow-2xl '>
+
+                    <div className='slider flex items-center justify-center gap-6 py-4'>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo1} alt='logo' className=' h-14'  /></div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo2} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo3} alt='logo' className=' h-14' /> </div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo4} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo5} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo6} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo7} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo8} alt='logo' className=' h-14' /> </div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo9} alt='logo' className=' h-14' /> </div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo10} alt='logo' className='h-14' /></div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo1} alt='logo' className=' h-14' /></div>
+                    </div>
                 </div>
-            </div>
+            </section>
 
         </div>
     )

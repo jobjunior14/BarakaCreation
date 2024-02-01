@@ -25,21 +25,21 @@ export function Footer ()
                     {/* menu */}
                     <div>
                         <div>
-                            <h4 className='text-left text-xs font-bold text-gray-700 mb-1'>Menu</h4>
-                            <div className=' h-[3px] w-[32px] rounded-full bg-gray-600'></div>
+                            <h4 className='text-left text-xs sm:text-base font-bold text-gray-700 mb-1'>Menu</h4>
+                            <div className=' h-[3px] w-[32px] sm:w-[43px] rounded-full bg-gray-600'></div>
                         </div>
 
                         <div className='flex gap-x-4 text-left mt-2'>
                             <div className='flex flex-col gap-y-px'>
-                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Accueil</Link>
-                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>A propos</Link>
-                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Services</Link>
+                                <Link to={'/'} className='text-[10px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Accueil</Link>
+                                <Link to={'/'} className='text-[10px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>A propos</Link>
+                                <Link to={'/'} className='text-[10px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Services</Link>
                             </div>
 
                             <div className='flex flex-col gap-y-px'>
-                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Portfolio</Link>
-                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Publications</Link>
-                                <Link to={'/'} className='text-[9px] text-gray-800 text-semibold hover:underline'>Contactez-nous</Link>
+                                <Link to={'/'} className='text-[9px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Portfolio</Link>
+                                <Link to={'/'} className='text-[9px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Publications</Link>
+                                <Link to={'/'} className='text-[9px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Contactez-nous</Link>
                             </div>
                         </div>
                     </div>

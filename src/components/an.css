@@ -1,0 +1,15 @@
+@keyframes slideshow {
+  0%    { transform: translateX(0); }
+  100%  { transform: translateX(-100%); }
+}
+
+.slider {
+  animation: slideshow 30s linear infinite; /* Augmentez la durée pour un mouvement plus lent */
+}
+
+.slider:hover {
+  transform: none;
+  animation: none;
+  overflow-x: scroll;
+}
+

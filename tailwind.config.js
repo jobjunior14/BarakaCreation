@@ -21,6 +21,13 @@ export default {
         'bgRemporter3': 'rgba(60, 57, 66)',
 
         
+      },
+
+      keyframes:{
+        sliderInfinite: {
+          '0%' : {transform: 'translateX(0)'},
+          '100%' : { transform: 'translateX(-100%)'}
+        }
       }
     },
   },

@@ -17,7 +17,7 @@ import icone_discipline from '../assets/A propos/icone_discipline.png';
 import prix_apatridie from '../assets/A propos/prix_apatridie.png';
 import prix_onu_femmes from '../assets/A propos/prix_onu_femmes.png';
 import prix_ecicr_1 from '../assets/A propos/prix_ecicr_1.png';
-
+import './an.css'
 export default function Apropos () {
 
      const [index, setIndex] = useState(0);
@@ -37,7 +37,7 @@ export default function Apropos () {
         <div className="w-full md:bg-slate-100 bg-bgApropos md:pb-0">
 
             {/* Baraka's summary  1st part*/}
-            <div className=" w-full flex flex-col sm:flex-row justify-center text-center md:pt-5">
+            <section className=" w-full flex flex-col sm:flex-row justify-center text-center md:pt-5">
                 
                 {/* pc's picture  */}
                 <div className=' hidden md:flex justify-center place-items-end px-6 bg-bgFormation  md:w-[40%]  '>
@@ -111,26 +111,30 @@ export default function Apropos () {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* certifier par  */}
-            <div className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-5 pb-5 gap-7 pl-4'>
+            <section className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-5 pb-5 gap-7 pl-4'>
 
                 <h1 className='md:text-3xl text-xl text-gray-50'>Cetifié <span className='text-gray-200'>par</span></h1>
-                <div className='h-px w-[70%] bg-gray-800 '></div>
-                <div className=' flex  w-[70%] gap-x-6  overflow-hidden hover:overflow-x-scroll rounded-3xl shadow-2xl'>
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_logo_1} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_logo_2} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_logo_3} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_logo_4} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 pl-4  flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_Logo_5} alt='logo' className='h-14' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_Logo_6} alt='logo' /></div> 
-                    <div className={` lg:min-w-32 lg:h-20 min-w-20 h-20 flex items-center ease-out delay-100 hover:transform-none hover:cursor-pointer  duration-100`} style={{transform: `translate3d(${-timers}px, 0, 0)`}}> <img src={certifié_Logo_7} alt='logo' /></div> 
+                <div className='h-px w-[70%] bg-gray-600 '></div>
+
+                <div className='flex  w-[70%] overflow-hidden rounded-3xl shadow-2xl  '>
+
+                    <div className=' slider flex items-center justify-center gap-6 py-4'>
+                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_logo_1} alt='logo' className=' h-20' /></div> 
+                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_logo_2} alt='logo' className=' h-20' /></div> 
+                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_logo_3} alt='logo' className=' h-20' /></div> 
+                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_logo_4} alt='logo' className=' h-20' /></div> 
+                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_Logo_5} alt='logo' className=' h-20' /></div> 
+                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_Logo_6} alt='logo' className=' h-20' /></div> 
+                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_Logo_7} alt='logo' className=' h-20' /></div> 
+                    </div>
                 </div>
-            </div>
+            </section>
 
             {/* nos valeurs */}
-            <div className=' bg-bgFormation w-full p-5 sm:p-7 md:p-9 lg:p-14 flex flex-col gap-y-5 md:items-center md:justify-center'>
+            <section className=' bg-bgFormation w-full p-5 sm:p-7 md:p-9 lg:p-14 flex flex-col gap-y-5 md:items-center md:justify-center'>
 
                 <div className='flex flex-col gap-y-5 md:max-w-[60%] '>
                     <h1 className='text-4xl sm:text-6xl md:text-7xl text-left text-nos font-bold '>Nos <span className='text-nosVal'>valeurs</span></h1>
@@ -175,19 +179,19 @@ export default function Apropos () {
                     </div>
                 </div>
 
-            </div>
+            </section>
 
             {/* prix remporté  */} 
-            <div className='w-full bg-gradient-to-r from-bgRemporter1  to-bgRemporter3 p-7 flex flex-col gap-8 sm:gap-10'>
+            <section className='w-full bg-gradient-to-r from-bgRemporter1  to-bgRemporter3 p-7 flex flex-col gap-8 sm:gap-10'>
                 <h3 className='text-3xl sm:text-4xl font-bold text-blue-100'>Prix <span className='text-remporter'>remportés</span></h3>
                 
                 <div className=' flex flex-col sm:flex-row justify-center items-center gap-10'>
-                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 sm:h-24' src={prix_ecicr_1} alt="prix_ecicr_1" /></div>
-                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 sm:h-24' src={prix_onu_femmes} alt="prix_onu_femmes" /></div>
-                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 sm:h-24' src={prix_apatridie} alt="prix_apatridie" /></div>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 lg:h-24' src={prix_ecicr_1} alt="prix_ecicr_1" /></div>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 lg:h-24' src={prix_onu_femmes} alt="prix_onu_femmes" /></div>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 lg:h-24' src={prix_apatridie} alt="prix_apatridie" /></div>
                 </div>
 
-            </div>
+            </section>
         </div>
-    )
+    );
 }
