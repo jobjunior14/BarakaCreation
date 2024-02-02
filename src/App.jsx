@@ -5,6 +5,7 @@ import Acceuil from './components/acceuil';
 import { Footer } from './components/footer';
 import Apropos from './components/aPropos';
 import Portfolio from './components/Portfolio/portFolio';
+import Publication from './components/publications/publications';
 function App() {
   
   return ( 
@@ -14,6 +15,7 @@ function App() {
             <Route index element={<Acceuil/>} />
             <Route path='aPropos' element= {<Apropos/>}/>
             <Route path='portfolio' element={<Portfolio/>}/>
+            <Route path='publication' element={<Publication/>}/>
         </Route>
       </Routes>
       <Footer/>

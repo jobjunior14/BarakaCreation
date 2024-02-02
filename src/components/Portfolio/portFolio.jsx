@@ -35,7 +35,7 @@ export default function Portfolio() {
                     <section className={`w-full relative h-[340px] sm:h-auto rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center`} style={{backgroundImage: `url(${Save_children_dreams_illustration_4okey})`}}>
 
                         <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>
-                            <img src={Save_children_dreams_illustration_4okey} alt='image' className='sm:flex hidden rounded-lg'/>
+                            <img src={Save_children_dreams_illustration_4okey} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
 
                         </div>
 
@@ -50,7 +50,7 @@ export default function Portfolio() {
                     <section className='w-full relative h-[340px] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${logofolio_collectionC})`}}>
 
                         <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>        
-                            <img src={logofolio_collectionC} alt='image' className='sm:flex hidden rounded-lg'/>
+                            <img src={logofolio_collectionC} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
 
                         </div>
 
@@ -64,7 +64,7 @@ export default function Portfolio() {
                     <section className='w-full relative h-[340px] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${docs_mocks_mC})`}}>
 
                         <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>        
-                            <img src={docs_mocks_mC} alt='image' className='sm:flex hidden rounded-lg'/>
+                            <img src={docs_mocks_mC} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
         
                         </div>
 
@@ -75,10 +75,10 @@ export default function Portfolio() {
                     </section>
 
                     {/* motion design  */}
-                    <section className='w-full relative h-[340px] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${Save_children_dreams_illustration_4okey})`}}>
+                    <section className='w-full relative h-[340px] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${animation_service_2C})`}}>
 
                         <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>        
-                            <img src={animation_service_2C} alt='image' className='sm:flex hidden rounded-lg'/>
+                            <img src={animation_service_2C} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 hover:-translate-x-5 hover:-translate-y-2 duration-150'/>
 
                         </div>
 
@@ -91,5 +91,5 @@ export default function Portfolio() {
                 </div>
             </section>
         </div>
-    )
+    );
 }
