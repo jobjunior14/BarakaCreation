@@ -1,14 +1,19 @@
 import { useState, useEffect } from 'react';
 import coover_ordi_mamour from '../../assets/Publication/Mamour/coover_ordi_mamour.jpg';
 import coover_phone_mamour from '../../assets/Publication/Mamour/coover_phone_mamour.jpg';
-import defi from '../../assets/Publication/defi.jpg';
 import defiTel from '../../assets/Publication/defiTel.jpg';
 import chute from '../../assets/Publication/chute.jpg';
 import chuteTel from '../../assets/Publication/chuteTel.jpg';
-import haut from '../../assets/Publication/haut.jpg';
 import hautTel from '../../assets/Publication/hautTel.jpg';
 import titlemamour from '../../assets/Publication/titlemamour.png';
 import iconPhotoshop_2 from '../../assets/Publication/iconPhotoshop_2.png';
+import iconPhotoshop from '../../assets/Publication/iconPhotoshop.png';
+import icon4 from '../../assets/Publication/icon4.png';
+import icon4N from '../../assets/Publication/icon4N.png';
+import Accueil_hautS from '../../assets/Publication/Haut/Accueil_hautS.jpg';
+import titlele_reve_et_le_defi from '../../assets/Publication/titlele_reve_et_le_defi.png';
+import titlehaut_copie from '../../assets/Publication/titlehaut_copie.png';
+import Accueil_Le_reve_et_le_defi from '../../assets/Publication/Le reve et le defi/Accueil_Le_reve_et_le_defi.jpg'
 export default function Publication () {
 
     const [index, setIndex] = useState(0);
@@ -44,9 +49,9 @@ export default function Publication () {
                 <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 flex overflow-hidden '>
                     {/* image pc  */}
                     <img src={coover_ordi_mamour} alt='image' className=' duration-1000 delay-150 hidden sm:flex  ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={defi} alt='image' className=' duration-1000 delay-150 hidden sm:flex ' style={{transform: `translateX(${-index}%)`}} />
+                    <img src={Accueil_Le_reve_et_le_defi} alt='image' className=' duration-1000 delay-150 hidden sm:flex ' style={{transform: `translateX(${-index}%)`}} />
                     <img src={chute} alt='image' className=' duration-1000 delay-150 hidden sm:flex ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={haut} alt='image' className=' duration-1000 delay-150 hidden sm:flex ' style={{transform: `translateX(${-index}%)`}} />
+                    <img src={Accueil_hautS} alt='image' className=' duration-1000 delay-150 hidden sm:flex ' style={{transform: `translateX(${-index}%)`}} />
 
 
                     {/* image phone  */}
@@ -55,30 +60,115 @@ export default function Publication () {
                     <img src={chuteTel} alt='image' className=' duration-1000 delay-150 sm:hidden ' style={{transform: `translateX(${-index}%)`}} />
                     <img src={hautTel} alt='image' className=' duration-1000 delay-150 sm:hidden ' style={{transform: `translateX(${-index}%)`}} />
                     
-                </div>
+                    {/* button suivre sur l'image  */}
+                    {/* image's text and button 'fist image mamour' */}
+                    <div className='h-full w-full duration-200 delay-150 flex absolute overflow-hidden'> 
+                        
+                        {/* mamour texte  */}
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center bottom-[60px] sm: text-center sm:right-[40px] duration-1000 delay-150 `} style={{transform: `translateX(${-index}%)`}}>
 
-                {/* button suivre sur l'image  */}
-                
-                {/* image's text and button 'fist image mamour' */}
-                <div className={`w-full absolute flex sm:justify-end justify-center items-center bottom-[60px] text-center sm:right-[40px]`}>
+                            <div className='sm:w-[40%] w-[80%] '>
+                                <div className='w-full sm:items-end items-center sm:justify-end justify-center flex flex-col '>
+                                    <img src={titlemamour} alt='mamous' className='sm:h-[30px] h-[27px] sm:items-end items-center' />
+                                </div>
 
-                    <div className='sm:w-[40%] w-[80%] '>
-                        <div className='w-full sm:items-end items-center sm:justify-end justify-center flex flex-col '>
-                            <img src={titlemamour} alt='mamous' className='sm:h-[30px] h-[27px] sm:items-end items-center' />
-                        </div>
+                                <p className='sm:text-[13px] text-[10px] text-gray-300 sm:text-right text-center mt-2'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
 
-                        <p className='sm:text-[13px] text-[10px] text-gray-300 sm:text-right text-center mt-2'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+                                <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
 
-                        <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
-
-                            <div className='flex gap-2 items-center'>
-                                <p className='text-gray-100 text-[10px]'> Drame | 2022</p> 
-                                <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
+                                    <div className='flex gap-2 items-center'>
+                                        <p className='text-gray-100 text-[10px]'> Drame | 2022</p> 
+                                        <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
+                                        <img src={icon4} alt="icon" className='h-5'/>
+                                    </div>
+                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                                </div>
                             </div>
-                            <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
                         </div>
+                        
+                        {/* le defi text  */}
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[60px] bottom-[48px] text-center sm:right-[40px] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 100}%)`}}>
+
+                            <div className='sm:w-[40%] w-[80%] '>
+                                <div className='w-full sm:items-end items-center sm:justify-end justify-center sm:flex flex-col hidden '>
+                                    <img src={titlele_reve_et_le_defi} alt='mamous' className='sm:h-[100px] md:h-[100px] lg:h-[150px] h-[100px] sm:items-end items-center' />
+                                </div>
+
+                                <p className='sm:text-[13px] text-[10px] text-gray-300 sm:text-right text-center mt-2 sm:block hidden'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+
+                                <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
+
+                                    <div className='sm:flex  hidden gap-2 items-center '>
+                                        <p className='text-gray-100 text-[10px]'> Drame | 2022</p> 
+                                        <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
+                                        <img src={icon4} alt="icon" className='h-5'/>
+                                    </div>
+                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* apres la chute  */}
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[30px] md:bottom-[40px] bottom-[48px] text-center sm:right-[40px] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 200}%)`}}>
+
+                            <div className='sm:w-[40%] w-[80%] '>
+
+                                <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
+
+                                    <div className='sm:flex  hidden gap-2 items-center '>
+                                        <p className='text-gray-900 text-[10px]'> Drame | 2022</p> 
+                                        <img src={iconPhotoshop} alt="icon" className='h-5'/>
+                                        <img src={icon4N} alt="icon" className='h-5'/>
+                                    </div>
+                                    <button className='px-5 bg-gray-700 text-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Haut text  */}
+                        <div className={`w-full absolute flex sm:justify-start justify-center items-center lg:bottom-[60px] md:bottom-[40px] sm:bottom-[30px] bottom-[48px] sm:text-center sm:left-[80px] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 300}%)`}}>
+
+                            <div className='sm:w-[60%] md:w-[50%] lg:w-[40%] w-[80%] '>
+                                
+                                <p className='sm:text-[13px] text-[10px] text-gray-50 sm:text-left text-center mt-2 hidden sm:block'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+
+                                <div className='flex sm:flex-row flex-col gap-4 sm:justify-start justify-center items-center mt-2'>
+
+                                    <div className='sm:flex gap-2 items-center hidden'>
+                                        <p className='text-gray-100 text-[10px]'> Drame | 2022</p> 
+                                        <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
+                                        <img src={icon4} alt="icon" className='h-5'/>
+                                    </div>
+                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+                
+
+                    {/* true code  */}
+                    {/* <div className={`w-full absolute flex sm:justify-end justify-center items-center bottom-[60px] text-center sm:right-[40px] duration-1000 delay-150 `} style={{transform: `translateX(${-index}%)`}}>
+
+                        <div className='sm:w-[40%] w-[80%] '>
+                            <div className='w-full sm:items-end items-center sm:justify-end justify-center flex flex-col '>
+                                <img src={titlemamour} alt='mamous' className='sm:h-[30px] h-[27px] sm:items-end items-center' />
+                            </div>
+
+                            <p className='sm:text-[13px] text-[10px] text-gray-300 sm:text-right text-center mt-2'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+
+                            <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
+
+                                <div className='flex gap-2 items-center'>
+                                    <p className='text-gray-100 text-[10px]'> Drame | 2022</p> 
+                                    <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
+                                </div>
+                                <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                            </div>
+                        </div>
+                    </div> */}
 
 
                  {/* div to prev or next images  */}
