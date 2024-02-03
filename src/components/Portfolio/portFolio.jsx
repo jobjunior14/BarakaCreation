@@ -24,12 +24,12 @@ export default function Portfolio() {
 
             <section className='flex flex-col justify-center bg-black pb-5'>
 
-                <div className='w-full '>
+                <section className='w-full '>
                     <img src={portfolio_accueil_phone} alt='image acceuil' className='sm:hidden'/>
                     <img src={portfolio_accueilC} alt='image acceuil' className='sm:flex flex-col hidden'/>
-                </div>
+                </section>
 
-                <div className=' grid grid-cols-1 sm:grid-cols-2 gap-3 px-2 sm:px-[10%]'>
+                <section className=' grid grid-cols-1 sm:grid-cols-2 gap-3 px-2 sm:px-[10%]'>
                     
                     {/* Gallerie  */}
                     <section className={`w-full relative h-[340px] sm:h-auto rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center`} style={{backgroundImage: `url(${Save_children_dreams_illustration_4okey})`}}>
@@ -88,7 +88,7 @@ export default function Portfolio() {
                             <button className=' rounded-3xl bg-blue-600 text-xs py-px px-3 text-white hover:bg-myBlue text-center'>Voir</button>
                         </div>
                     </section>
-                </div>
+                </section>
             </section>
         </div>
     );
