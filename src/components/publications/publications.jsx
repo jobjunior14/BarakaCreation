@@ -84,7 +84,7 @@ export default function Publication () {
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold hover:bg-slate-400 duration-200'>Suivre</button>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ export default function Publication () {
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold hover:bg-slate-400 duration-200'>Suivre</button>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +123,7 @@ export default function Publication () {
                                         <img src={iconPhotoshop} alt="icon" className='h-5'/>
                                         <img src={icon4N} alt="icon" className='h-5'/>
                                     </div>
-                                    <button className='px-5 bg-gray-700 text-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                                    <button className='px-5 bg-gray-700 text-gray-200 rounded-lg text-[14px] font-bold hover:bg-slate-400 duration-200'>Suivre</button>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ export default function Publication () {
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold'>Suivre</button>
+                                    <button className='px-5 bg-gray-200 rounded-lg text-[14px] font-bold hover:bg-slate-400 duration-200'>Suivre</button>
                                 </div>
                             </div>
                         </div>
@@ -154,16 +154,16 @@ export default function Publication () {
                 <div className='absolute flex items-center justify-between  w-full px-5'>
                     
                    <div className='md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px] w-[25px] h-[25px] items-center justify-center rounded-full hover:bg-gray-300 duration-200 cursor-pointer pr-[4px] border border-blue-200 flex' onClick={prevImage}>
-                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-20 h-20 text-blue-200 hover:text-gray-800 ">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-20 h-20 text-blue-200 hover:text-gray-800 ">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
 
                     </div>
                     
                     
                    <div className='md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px] w-[25px] h-[25px] items-center justify-center rounded-full hover:bg-gray-300 duration-200 cursor-pointer pl-[4px] border border-blue-200 flex' onClick={nextImage}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-20 h-20 text-blue-200 hover:text-gray-800 ">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-20 h-20 text-blue-200 hover:text-gray-800 ">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
                     </div>
 
@@ -178,6 +178,7 @@ export default function Publication () {
                     <div onClick={() => setIndex(300)} className={`w-[10px] h-[10px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 300 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
                 </div>
             </section>
+            
             {/* seconde party gallery */}
             <div className='w-full bg-bgRemporter1 pt-10 flex flex-col gap-14 pb-10'>
                 <h1 className='font-bold md:text-5xl text-3xl text-blue-100'> Découvrez nos <br/> histoires inspirantes</h1>
@@ -225,5 +226,5 @@ export default function Publication () {
                 </div>
             </div>
         </section>
-    )
+    );
 }
