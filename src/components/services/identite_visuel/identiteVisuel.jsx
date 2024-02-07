@@ -22,13 +22,13 @@ export default function IdentiteVisuel () {
             </section>
             
             {/* demarquez vous  */}
-            <section className="px-3 flex flex-col justify-center bg-slate-200 w-full pb-5">
+            <section className="px-3 flex flex-col justify-center bg-bgIdVisuel w-full pb-5">
 
                 {/* welcom text  */}
                 <section className="text-left p-7 sm:px-20 md:px-28 w-full flex flex-col md:justify-center md:items-center">
                         
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  text-gray-700 w-[80%] sm:w-[75%] md:w-[70%]  font-bold mb-7 leading-6"> Démarquez-vous <span className="text-gray-400">par une identité visuelle qui</span> marque les esprits</h1>
-                        <p className=" text-md sm:text-[18px] md:text-[22px] lg:text-[26px] text-gray-700 w-[80%] sm:w-[75%] md:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoiété, augmenter votre crédibilité, communiquer efficacement et <span className="text-gray-400">vous démarquer en créant une relation durable avec votre public.</span> </p>
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  text-gray-700 w-[80%] sm:w-[75%] md:w-[70%]  font-bold mb-7 leading-6"> Démarquez-vous <span className=" text-bgPlay">par une identité visuelle qui</span> marque les esprits</h1>
+                        <p className=" text-md sm:text-[18px] md:text-[22px] lg:text-[26px] text-gray-700 w-[80%] sm:w-[75%] md:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoiété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
                 </section>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:px-5 md:px-8 lg:px-14">
@@ -39,7 +39,7 @@ export default function IdentiteVisuel () {
                         image={Id_Vieuellelogo}
                         name={'Logotype'}
                         text={"Il s'agit du cœur de votre identité visuelle. Nous créons un logo qui vous distingue"}
-                        link={'../'}
+                        link={'/services/idVisuelle/logotype'}
                     />
 
                     {/* charte graphique  */}

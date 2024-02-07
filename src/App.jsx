@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio/portFolio';
 import Publication from './components/publications/publications';
 import Services from './components/services/services';
 import IdentiteVisuel from './components/services/identite_visuel/identiteVisuel';
+import Logotype from './components/services/identite_visuel/LogoType';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -22,7 +23,11 @@ function App() {
 
             <Route path='services' element={<> <Outlet/></>}>
               <Route index element={<Services/>}/>
-              <Route path='idVisuelle' element={<IdentiteVisuel/>}/>
+
+              <Route path='idVisuelle' element={<> <Outlet/> </>}>
+                <Route index element={<IdentiteVisuel/>}/>
+                <Route path='logotype' element={<Logotype/>}/>
+              </Route>
             </Route>
             
         </Route>
