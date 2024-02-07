@@ -7,6 +7,8 @@ import Apropos from './components/aPropos';
 import Portfolio from './components/Portfolio/portFolio';
 import Publication from './components/publications/publications';
 import Services from './components/services/services';
+import IdentiteVisuel from './components/services/identite_visuel/identiteVisuel';
+import { Outlet } from 'react-router-dom';
 function App() {
   
   return ( 
@@ -17,7 +19,12 @@ function App() {
             <Route path='aPropos' element= {<Apropos/>}/>
             <Route path='portfolio' element={<Portfolio/>}/>
             <Route path='publication' element={<Publication/>}/>
-            <Route path='services' element={<Services/>}/>
+
+            <Route path='services' element={<> <Outlet/></>}>
+              <Route index element={<Services/>}/>
+              <Route path='idVisuelle' element={<IdentiteVisuel/>}/>
+            </Route>
+            
         </Route>
       </Routes>
       <Footer/>

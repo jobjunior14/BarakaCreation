@@ -114,21 +114,20 @@ export default function Apropos () {
             </section>
 
             {/* certifier par  */}
-            <section className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-5 pb-5 gap-7 pl-4'>
+            <section className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-5 pb-5 gap-7 px-3'>
 
                 <h1 className='md:text-3xl text-xl text-gray-50'>Cetifié <span className='text-gray-200'>par</span></h1>
-                <div className='h-px w-[70%] bg-gray-600 '></div>
 
-                <div className='flex  w-[70%] overflow-hidden rounded-3xl shadow-2xl  '>
+                <div className='flex  w-full sm:w-[90%] md:w-[80%] lg:w-[75%] overflow-hidden rounded-3xl shadow-2xl  '>
 
-                    <div className=' slider flex items-center justify-center gap-6 py-4'>
-                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_logo_1} alt='logo' className=' h-20' /></div> 
-                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_logo_2} alt='logo' className=' h-20' /></div> 
-                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_logo_3} alt='logo' className=' h-20' /></div> 
-                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_logo_4} alt='logo' className=' h-20' /></div> 
-                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_Logo_5} alt='logo' className=' h-20' /></div> 
-                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_Logo_6} alt='logo' className=' h-20' /></div> 
-                        <div className={` min-w-[30%] flex items-center`} > <img src={certifié_Logo_7} alt='logo' className=' h-20' /></div> 
+                    <div className='slider flex items-center gap-8 py-4 w-full'>
+                        <div className={` min-w-[40%] lg:min-w-[30%] flex items-center`} > <img src={certifié_logo_1} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[34%] flex items-center`} > <img src={certifié_logo_2} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[20%] flex items-center`} > <img src={certifié_logo_3} alt='logo' className=' h-[50px]' /></div> 
+                        <div className={` min-w-[20%] flex items-center`} > <img src={certifié_logo_4} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[20%] flex items-center`} > <img src={certifié_Logo_5} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[33%] lg:min-w-[25%] flex items-center`} > <img src={certifié_Logo_6} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[20%] flex items-center`} > <img src={certifié_Logo_7} alt='logo' className=' h-[50px]' /></div> 
                     </div>
                 </div>
             </section>

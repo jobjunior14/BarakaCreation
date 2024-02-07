@@ -17,21 +17,11 @@ import Logo8 from '../assets/Accueil/Logo8.png';
 import Logo9 from '../assets/Accueil/Logo9.png';
 import Logo10 from '../assets/Accueil/Logo10.png';
 import './an.css';
-import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Acceuil () {
 
-    const [index, setIndex] = useState(0);
-    const timers = index * 100
-
-    useEffect(() => {
-
-        const i = setInterval(() => setIndex(prev => prev === 7 ? 0 : prev + 1), 1000);
-
-        return () => {
-            clearInterval(i);
-        }
-    }, [index]);
+    const navigate = useNavigate();
 
     return (
 
@@ -50,9 +40,12 @@ export default function Acceuil () {
                     <h2 className=' text-blue-200 font-semibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 '>Ce que nous faisons</h2>
 
                     <div className=' w-[200px]  sm:w-[250px]  items-center flex flex-col gap-y-3 sm:gap-y-5 mt-[25px] sm:mt-[40px] md:mt-[100px] lg:mt-[120px]'>
+
                         <h3 className=' text-blue-100 text-center text-3xl md:text-4xl lg:text-6xl font-bold'>Innover</h3>
+
                         <p className='text-center text-xs sm:text-base text-gray-200 font-normal'>Nous apportons des solutions innovantes, originales et efficaces en communication visuelle</p>
-                        <div className=' rounded-full p-1 border border-blue-200 flex relative w-[60%] pl-7 hover:bg-gray-500 duration-200'> 
+
+                        <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-blue-200 flex relative w-[60%] pl-7 hover:bg-gray-500 duration-200'> 
                             <p className='text-gray-300 text-[8px] sm:text-xs mb-px'> Nos réalisations </p>
                             <div className='w-[16px] h-[16px] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-gray-100">
@@ -81,8 +74,9 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-gray-800 font-normal'>De la stratégie à la mise en œuvre, nous aidons les entreprises à créer une image de marque forte et durable</p>
                         
-                        <div className=' rounded-full p-1 border bg-slate-500 flex relative w-[60%] sm:pl-9 pl-7 hover:bg-myBlue duration-200'> 
+                        <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-slate-500 flex relative w-[60%] sm:pl-9 pl-7 hover:bg-myBlue duration-200'> 
                             <p className='text-white text-[8px] sm:text-xs mb-px'>Voir nos services </p>
+
                             <div className='w-[16px] h-[16px] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -110,7 +104,7 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-white font-normal'>Découvrez nos histoires inspirantes</p>
                         
-                        <div className=' rounded-full py-1 px-6 border flex relative  hover:bg-myBlue duration-200'> 
+                        <div onClick={() => navigate('/publication')} className=' rounded-full cursor-pointer py-1 px-6 border flex relative  hover:bg-myBlue duration-200'> 
                             <p className='text-white text-[10px] sm:text-sm text-center'>Voir plus </p>
                         </div>
                     </div>
@@ -136,24 +130,24 @@ export default function Acceuil () {
             </section>
             
             {/* 6th part "ils nous ont fait confiance"  */}
-            <section className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-8 pb-5 gap-10 pl-4'>
+            <section className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-8 pb-5 gap-10 px-3'>
 
                 <h1 className='md:text-2xl text-xl text-blue-200'>Ils nous ont fait <b>confiance</b></h1>
 
-                <div className=' flex  w-[80%] overflow-hidden rounded-3xl shadow-2xl '>
+                <div className=' flex  w-full sm:w-[90%] md:w-[80%] lg:w-[75%] overflow-hidden rounded-3xl shadow-2xl '>
 
-                    <div className='slider flex items-center justify-center gap-6 py-4'>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo1} alt='logo' className=' h-14'  /></div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo2} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo3} alt='logo' className=' h-14' /> </div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo4} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo5} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo6} alt='logo' className=' h-14' /></div>
+                    <div className='slider flex items-center gap-5 py-4'>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo1} alt='logo' className=' h-10'  /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo2} alt='logo' className=' h-10' /></div>
+                        <div className='min-w-[25%] flex justify-center items-center'> <img src={Logo3} alt='logo' className=' h-14' /> </div>
+                        <div className='min-w-[20%] flex justify-center items-center'> <img src={Logo4} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[20%] flex justify-center items-center'> <img src={Logo5} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo6} alt='logo' className=' h-10' /></div>
                         <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo7} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo8} alt='logo' className=' h-14' /> </div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo9} alt='logo' className=' h-14' /> </div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo10} alt='logo' className='h-14' /></div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo1} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo8} alt='logo' className=' h-10' /> </div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo9} alt='logo' className=' h-10' /> </div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo10} alt='logo' className='h-10' /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo1} alt='logo' className=' h-10' /></div>
                     </div>
                 </div>
             </section>

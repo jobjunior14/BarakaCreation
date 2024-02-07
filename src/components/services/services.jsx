@@ -15,8 +15,10 @@ import icone2 from '../../assets/Services/icone2.png';
 import icone3 from '../../assets/Services/icone3.png';
 import NosServices from './components/nosServices';
 import ToggleText from './components/toggleText';
-
+import { useNavigate } from 'react-router-dom';
 export default function Services () {
+
+    const navigate = useNavigate();
 
     return (
         <main className="w-full flex flex-col gap-5">
@@ -40,7 +42,7 @@ export default function Services () {
                         <h1 className='font-bold sm:hidden text-[23px] sm:text-3xl md:text-4xl lg:text-6xl'>Identité Visuelle</h1>
                         <h1 className='font-bold hidden sm:block text-[23px] sm:text-3xl md:text-4xl lg:text-6xl'>Identité<br/>Visuelle</h1>
                         <p className='text-[11px] sm:text-[18px] md:text-xl  sm:text-left'>LOGO, Charte graphique <br/> Supports print & Digital <br/> Packaging</p>
-                        <button className='bg-blue-500 px-3 py-[2px] text-white text-xs rounded-full sm:text-[18px] hover:bg-myBlue duration-200 ' > Plus </button>
+                        <button onClick={() => navigate('/services/idVisuelle') } className='bg-blue-500 px-3 py-[2px] text-white text-xs rounded-full sm:text-[18px] hover:bg-myBlue duration-200 ' > Plus </button>
                     </div>
                 </section>
 
@@ -199,7 +201,7 @@ export default function Services () {
                             La résiliation d'un contrat s'effectue conformément aux conditions prévues dans le contrat. Il est important de respecter les délais de préavis et les frais de résiliation, si ceux-ci sont prévus.
                         </p>
                     </>}
-                    height = {"sm:h-[150px] lg:h-[180px] md:h-[170px] h-[230px] pt-3"}
+                    height = {"sm:h-[150px] lg:h-[180px] md:h-[170px] h-[270px] pt-3"}
                 />
 
                 <ToggleText
@@ -226,7 +228,7 @@ export default function Services () {
                             Nous sommes toujours ouverts à vous répondre aux questions ou préoccupations concernant la protection et la confidentialité de vos données personnelles.
                         </p>
                     </>}
-                    height = {"sm:h-[260px] lg:h-[350px] md:h-[340px] h-[410px] pt-3"}
+                    height = {"sm:h-[260px] lg:h-[350px] md:h-[340px] h-[470px] pt-3"}
                 />
 
             </section>

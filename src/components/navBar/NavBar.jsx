@@ -21,7 +21,7 @@ export default function NavBar ()
 
     const inactiveLink = 'duration-300 transition easy-in-out delay-400 text-gray-700 my-9 text-xs lg:my-0 hover:underline block font-medium';
     return (
-        <nav className={`justify-between  sticky w-full py-2 lg:px-28 md:px-20 sm:px-10 px-7 z-50 bg-white rounded-md shadow-lg flex items-center -top-0 duration-300 transition easy-in-out delay-400`}>
+        <nav className={`justify-between  sticky w-full py-2 lg:px-28 md:px-20 sm:px-10 px-7 z-50 bg-white shadow-lg flex items-center -top-0 duration-300 transition easy-in-out delay-400`}>
             
             <div className=''>
                 <NavLink 
