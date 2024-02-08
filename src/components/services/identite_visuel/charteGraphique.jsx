@@ -2,6 +2,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 import SecondeNav, {OnTopBtn} from './comp/util';
 import Charte_graphique1 from '../../../assets/Services/Id visuelle/Charte_graphique1.jpg'
+import Charte_graphique2 from '../../../assets/Services/Id visuelle/Charte_graphique2.jpg'
 import charte_logoFichier_3 from '../../../assets/Services/Id visuelle/charte_logoFichier_3.jpg';
 import Charte_couleurs from '../../../assets/Services/Id visuelle/Charte_couleurs.jpg';
 import Chartmotif from '../../../assets/Services/Id visuelle/Chartmotif.jpg';
@@ -52,7 +53,8 @@ export default function CharteGraphique () {
 
                     {/* welcom image  */}
                     <div>
-                        <img src={Charte_graphique1} alt="Id_visuelle_Charte_graphique" />
+                        <img src={Charte_graphique2} alt="Id_visuelle_Charte_graphique" className="sm:hidden" />
+                        <img src={Charte_graphique1} alt="Id_visuelle_Charte_graphique" className="hidden sm:block"/>
                     </div>
 
                     {/* second welcom text  */}

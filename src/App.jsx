@@ -10,6 +10,7 @@ import Services from './components/services/services';
 import IdentiteVisuel from './components/services/identite_visuel/identiteVisuel';
 import Logotype from './components/services/identite_visuel/LogoType';
 import CharteGraphique from './components/services/identite_visuel/charteGraphique';
+import SupportPrint from './components/services/identite_visuel/supportPrint';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
                 <Route index element={<IdentiteVisuel/>}/>
                 <Route path='logotype' element={<Logotype/>}/>
                 <Route path='charteGraphique' element={<CharteGraphique/>}/>
+                <Route path='supportPrint' element={<SupportPrint/>}/>
               </Route>
             </Route>
             

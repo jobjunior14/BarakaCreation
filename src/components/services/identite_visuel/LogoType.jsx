@@ -10,7 +10,6 @@ export default function Logotype () {
         <div className='w-full bg-bgIdVisuel'>
             
             <SecondeNav 
-                title={'Identité visuelle'} 
                 link={'/services/idVisuelle'} 
                 bgColor={'bg-bgIdVisuel'} 
                 titleColor='text-gray-600'
@@ -87,5 +86,5 @@ export default function Logotype () {
                 <OnTopBtn brdrColor='border-gray-600' textColor = ' text-black'/>
             </div>
         </div>
-    )
+    );
 }

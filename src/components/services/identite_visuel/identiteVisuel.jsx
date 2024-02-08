@@ -73,7 +73,7 @@ export default function IdentiteVisuel () {
                         image={Id_visuelle_print}
                         name={'Support Print'}
                         text={"Supports de présentation, affichages, supports administratifs et habillages"}
-                        link={'../'}
+                        link={'/services/idVisuelle/supportPrint'}
                     />
 
                     {/*Digital  */}
