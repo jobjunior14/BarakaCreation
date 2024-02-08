@@ -2,27 +2,20 @@ import { Link } from 'react-router-dom';
 import Id_Vieuellelogo from '../../../assets/Services/Id visuelle/Id_Vieuellelogo.png';
 import Logo_accueil from '../../../assets/Services/Id visuelle/Logo_accueil.png';
 import Accueil_Logofolio from '../../../assets/Portofolio/Logofolio/Accueil_Logofolio.jpg';
-import { useNavigate } from 'react-router-dom';
-export default function Logotype () {
+import SecondeNav, {OnTopBtn} from './comp/util';
 
-    const navigate = useNavigate();
+export default function Logotype () {
 
     return (
         <div className='w-full bg-bgIdVisuel'>
-
-            <div className='py-3 px-[5%] sticky top-0 bg-bgIdVisuel z-50 overflow-hidden'>
-                <section className='w-full flex justify-between item-center'>
-                    <h1 className='font-bold text-gray-600'> Identité visuelle </h1>
-
-                    <div onClick={() => navigate('/services/idVisuelle')} className='p-1 border border-gray-500 rounded-full cursor-pointer'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
-                        </svg>
-                    </div>
-                </section>
-
-                <div className='w-full h-[1px] bg-gray-400 mt-2'> </div>
-            </div>
+            
+            <SecondeNav 
+                title={'Identité visuelle'} 
+                link={'/services/idVisuelle'} 
+                bgColor={'bg-bgIdVisuel'} 
+                titleColor='text-gray-600'
+                brdrColor='border-gray-600' textColor = ' text-black'
+            />
             
             <div className=' sm:px-[80px] md:px-[100px] lg:px-[120px]'>
                 
@@ -91,15 +84,7 @@ export default function Logotype () {
                 </section>
 
                 {/* retrun to origin boutton  */}
-                <section className='x-full flex items-center justify-center pb-[8%]'>
-
-                    <div onClick={() => document.documentElement.scrollTop = 0} className='p-1 border border-gray-500 rounded-full cursor-pointer'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 ">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
-                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
-                        </svg>
-                    </div>
-                </section>
+                <OnTopBtn brdrColor='border-gray-600' textColor = ' text-black'/>
             </div>
         </div>
     )

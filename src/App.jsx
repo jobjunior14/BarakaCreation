@@ -9,6 +9,7 @@ import Publication from './components/publications/publications';
 import Services from './components/services/services';
 import IdentiteVisuel from './components/services/identite_visuel/identiteVisuel';
 import Logotype from './components/services/identite_visuel/LogoType';
+import CharteGraphique from './components/services/identite_visuel/charteGraphique';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
               <Route path='idVisuelle' element={<> <Outlet/> </>}>
                 <Route index element={<IdentiteVisuel/>}/>
                 <Route path='logotype' element={<Logotype/>}/>
+                <Route path='charteGraphique' element={<CharteGraphique/>}/>
               </Route>
             </Route>
             
