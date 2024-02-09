@@ -11,6 +11,12 @@ import IdVisuelleComp from "../components/idVisuelS_Comp";
 import { Link } from "react-router-dom";
 export default function IdentiteVisuel () {
 
+    const [digitalClick, setDigitalClick] = useState(false);
+
+    const digitalClickHandler  = () => {
+        setDigitalClick(prev => prev ? false : true);
+    }
+
     return (
         <>
             
@@ -77,13 +83,32 @@ export default function IdentiteVisuel () {
                     />
 
                     {/*Digital  */}
-                    <IdVisuelleComp 
-                        hImage='h-[200px] sm:h-[250px] md:h-[270px]'
-                        image={id_visuel_digital}
-                        name={'Digital'}
-                        text={"Connectez-vous avec votre public grâce à une stratégie et des supports digitaux efficaces"}
-                        link={'../'}
-                    />
+                    <section className="w-full flex overflow-hidden relative">
+
+                        <div className="w-full ">
+                            <IdVisuelleComp 
+                                hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                                image={id_visuel_digital}
+                                name={'Digital'}
+                                text={"Connectez-vous avec votre public grâce à une stratégie et des supports digitaux efficaces"}
+                                link={'../'}
+                                onclick={digitalClickHandler}
+                            />
+                        </div>
+
+                        <div className={`w-full h-full bg-white absolute rounded-lg duration-500 ${digitalClick ?  'translate-x-[100%]' : 'translate-x-[0%]'}`}>
+                            
+                            <div className="text-left flex">
+                                <img src="" alt="" />
+                                <div>
+                                    <h1>Présentation</h1>
+                                    <p></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </section>
 
                     {/*Packaging  */}
                     <IdVisuelleComp 

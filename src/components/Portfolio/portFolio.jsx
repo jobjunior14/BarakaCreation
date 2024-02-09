@@ -4,7 +4,6 @@ import logofolio_collectionC from '../../assets/Portofolio/logofolio_collectionC
 import docs_mocks_mC from '../../assets/Portofolio/docs_mocks_mC.jpg';
 import portfolio_accueilC from '../../assets/Portofolio/portfolio_accueilC.jpg';
 import animation_service_2C from '../../assets/Services/Animation/animation_service_2C.jpg'
-import { useState } from 'react';
 export default function Portfolio() {
 
     // const [bgAttachment, setBgAttachment] = useState('bg-fixed');
