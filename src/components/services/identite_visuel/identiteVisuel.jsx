@@ -7,11 +7,15 @@ import Id_visuelle_print from '../../../assets/Services/Id visuelle/Id_visuelle_
 import id_visuel_digital from '../../../assets/Services/Id visuelle/id_visuel_digital.jpg';
 import Id_visuelle_packaging from '../../../assets/Services/Id visuelle/Id_visuelle_packaging.jpg';
 import id_visuelle_video from '../../../assets/Services/Id visuelle/id_visuelle_video.jpg';
+import Digital_presentation from '../../../assets/Services/Id visuelle/Digital_presentation.png';
+import Digital_supports_digitaux_Copie from '../../../assets/Services/Id visuelle/Digital_supports_digitaux_Copie.png';
+import Digital_site_web_icone from '../../../assets/Services/Id visuelle/Digital_site_web_icone.png';
 import IdVisuelleComp from "../components/idVisuelS_Comp";
+
 import { Link } from "react-router-dom";
 export default function IdentiteVisuel () {
 
-    const [digitalClick, setDigitalClick] = useState(false);
+    const [digitalClick, setDigitalClick] = useState(true);
 
     const digitalClickHandler  = () => {
         setDigitalClick(prev => prev ? false : true);
@@ -33,8 +37,8 @@ export default function IdentiteVisuel () {
                 {/* welcom text  */}
                 <section className="text-left p-7 sm:px-20 md:px-28 w-full flex flex-col md:justify-center md:items-center">
                         
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  text-gray-700 w-[80%] sm:w-[75%] md:w-[70%]  font-bold mb-7 leading-6"> Démarquez-vous <span className=" text-bgPlay">par une identité visuelle qui</span> marque les esprits</h1>
-                        <p className=" text-md sm:text-[18px] md:text-[22px] lg:text-[26px] text-gray-700 w-[80%] sm:w-[75%] md:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoiété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  text-gray-600 w-[80%] sm:w-[75%] md:w-[70%]  font-bold mb-7 leading-6"> Démarquez-vous <span className=" text-bgPlay">par une identité visuelle qui</span> marque les esprits</h1>
+                        <p className=" text-md sm:text-[18px] md:text-[22px] lg:text-[26px] text-gray-600 w-[80%] sm:w-[75%] md:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoiété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
                 </section>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:px-5 md:px-8 lg:px-14">
@@ -61,8 +65,8 @@ export default function IdentiteVisuel () {
                             {/* charte Graphique logoType  */}
                             <div className="text-center flex flex-col items-center justify-center gap-3">
 
-                                <h1 className="text-2xl md:text-3xl text-gray-700 font-bold  ">Charte Graphique</h1>
-                                <p className="w-[75%] sm:w-[70%] md:w-[65%]  text-[11px] sm:text-[14px] md:text-[15px] text-gray-700">Pour maintenir votre identité visuelle, unifiée, forte et cohérente</p>
+                                <h1 className="text-2xl md:text-3xl text-gray-600 font-bold  ">Charte Graphique</h1>
+                                <p className="w-[75%] sm:w-[70%] md:w-[65%]  text-[11px] sm:text-[14px] lg:text-[15px] text-gray-600">Pour maintenir votre identité visuelle, unifiée, forte et cohérente</p>
                             </div>
 
                             {/* Charte Graphique button  */}
@@ -96,13 +100,43 @@ export default function IdentiteVisuel () {
                             />
                         </div>
 
-                        <div className={`w-full h-full bg-white absolute rounded-lg duration-500 ${digitalClick ?  'translate-x-[100%]' : 'translate-x-[0%]'}`}>
+                        <div className={`flex flex-col justify-center items-center  gap-4 sm:gap-6 w-full p-7 sm:p-10 lg:p-14 h-full bg-white absolute rounded-lg duration-500 ${digitalClick ?  'translate-x-[100%]' : 'translate-x-[0%]'}`}>
                             
-                            <div className="text-left flex">
-                                <img src="" alt="" />
-                                <div>
-                                    <h1>Présentation</h1>
-                                    <p></p>
+                            {/* presentation  */}
+                            <div className="text-left flex w-full gap-3" >
+                                <div className="w-[10%]">
+                                    <img src={Digital_presentation} alt="Digital_presentation" />
+                                </div>
+                                <div className="w-[90%] flex flex-col  gap-1">
+                                    <h1 className="md:text-[18px] font-bold text-gray-600">Présentation</h1>
+                                    <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Nous sommes à vos cotés pour élaborer et créer des supports de présentation de votre entreprise adaptés les aux écrans </p>
+                                </div>
+                            </div>
+
+                            {/* reseaux sociaux  */}
+                            <div className="text-left flex w-full gap-3" >
+                                <div className="w-[10%]">
+                                    <img src={Digital_supports_digitaux_Copie} alt="Digital_supports_digitaux_Copie" />
+                                </div>
+                                <div className="w-[90%] flex flex-col  gap-1">
+                                    <h1 className="md:text-[18px] font-bold text-gray-600">Réseaux sociaux</h1>
+                                    <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Nous élaborons et nous concevons des supports efficaces pour créer un lien affectif avec votre public ciblé. </p>
+                                </div>
+                            </div>
+
+                            {/* web services  */}
+                            <div className="text-left flex w-full gap-3" >
+                                <div className="w-[10%]">
+                                    <img src={Digital_site_web_icone} alt="Digital_site_web_icone" />
+                                </div>
+                                <div className="w-[90%] flex flex-col  gap-1">
+                                    <h1 className="md:text-[18px] font-bold text-gray-600">Web design</h1>
+                                    <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600"> Conception graphique des sites web & applications mobile</p>
+                                    <button className="text-[11px] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center "  onClick={() => digitalClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                                        </svg>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                             

@@ -42,11 +42,11 @@ export default function SupportPrint() {
             />
             
             {/* welcom image  */}
-            <section className='w-full px-[5%] flex flex-col items-center justify-center  '>
+            <section className='w-full px-[5%] flex flex-col items-center justify-center relative '>
             
                 <img src={print_accueil} alt=" print_accueil" className=''/>
                 
-                <div className=' flex justify-center items-center gap-2 flex-col  w-full pl-[3%]'>
+                <div className=' flex justify-center items-center gap-2 flex-col  w-full pl-[3%] relative bottom-2 lg:bottom-5 '>
                     
                     <Link to='../' className=" duration-200  text-gray-100 text-[12px] sm:text-[14px] md:text-[16px] px-1 pb-[1.5px] rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                     
