@@ -16,9 +16,14 @@ import { Link } from "react-router-dom";
 export default function IdentiteVisuel () {
 
     const [digitalClick, setDigitalClick] = useState(true);
+    const [packegingClick, setPackegingClick] = useState(true);
 
     const digitalClickHandler  = () => {
         setDigitalClick(prev => prev ? false : true);
+    };
+    
+    const packegingClickHandler  = () => {
+        setPackegingClick(prev => prev ? false : true);
     }
 
     return (
@@ -145,13 +150,47 @@ export default function IdentiteVisuel () {
                     </section>
 
                     {/*Packaging  */}
-                    <IdVisuelleComp 
-                        hImage='h-[200px] sm:h-[250px] md:h-[270px]'
-                        image={Id_visuelle_packaging}
-                        name={'Packaging'}
-                        text={"Faites concevoir un packaging attractif et informatif avec nous"}
-                        link={'../'}
-                    />
+                    <section className="w-full flex overflow-hidden relative">
+
+                        <div className="w-full ">
+                            <IdVisuelleComp 
+                                hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                                image={Id_visuelle_packaging}
+                                name={'Packaging'}
+                                text={"Faites concevoir un packaging attractif et informatif avec nous"}
+                                link={'../'}
+                                onclick={packegingClickHandler}
+                            />
+                        </div>
+
+                        <div className={` text-left flex flex-col justify-center items-start  gap-4 sm:gap-6 w-full p-7 sm:p-10 lg:p-14 h-full bg-white absolute rounded-lg duration-500 ${packegingClick ?  'translate-x-[100%]' : 'translate-x-[0%]'}`}>
+
+                            <h1 className="text-left md:text-[18px] font-bold text-gray-600">Un atout marketing incontournable</h1>
+
+                            <p className="text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Le packaging est le premier contact que vos clients ont avec votre produit. <br /> 
+                                Nous créons un packaging qui vous permettra d&apos;atteindre vos objectifs marketing.
+                            </p>
+
+                            <p className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600"> Le packaging vous aidera à:</p>
+
+                            <div className="w-full text-left px-4">
+                               <ul className="list-disc ">
+                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Augmenter la notoriété de votre marque</li>
+                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Développer votre imaege de marque</li>
+                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Améliorer la perception de votre produit</li>
+                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Faciliter la vente de votre produit</li>
+                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Démarquer votre produit</li>
+                                </ul>     
+                            </div>
+                            <button className="text-[11px] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center " onClick={() => packegingClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                                </svg>
+                                </span>
+                            </button>
+                            
+                        </div>
+
+                    </section>
 
                     {/*Video  */}
                     <IdVisuelleComp 
@@ -159,7 +198,7 @@ export default function IdentiteVisuel () {
                         image={id_visuelle_video}
                         name={'Vidéo'}
                         text={"Spot publicitaire, Présentation, promotions en motion design"}
-                        link={'../'}
+                        link={'/services/idVisuelle/motionDesign'}
                     />
 
                 </div>

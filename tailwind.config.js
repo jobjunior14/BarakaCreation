@@ -19,9 +19,8 @@ export default {
         'bgPhoneRemporter': 'rgba(22, 21, 35)',
         'bgRemporter1': 'rgba(22, 22, 23)',
         'bgRemporter3': 'rgba(60, 57, 66)',
-        'bgIdVisuel': 'rgba(226, 235, 255)'
-
-        
+        'bgIdVisuel': 'rgba(226, 235, 255)',
+        'bgAnnimation': 'rgba(41, 40, 72)' 
       },
 
       keyframes:{

@@ -11,6 +11,7 @@ import IdentiteVisuel from './components/services/identite_visuel/identiteVisuel
 import Logotype from './components/services/identite_visuel/LogoType';
 import CharteGraphique from './components/services/identite_visuel/charteGraphique';
 import SupportPrint from './components/services/identite_visuel/supportPrint';
+import MotionDesign from './components/services/identite_visuel/motionDesign';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -31,6 +32,7 @@ function App() {
                 <Route path='logotype' element={<Logotype/>}/>
                 <Route path='charteGraphique' element={<CharteGraphique/>}/>
                 <Route path='supportPrint' element={<SupportPrint/>}/>
+                <Route path='motionDesign' element={<MotionDesign/>}/>
               </Route>
             </Route>
             
