@@ -58,7 +58,7 @@ export default function MotionDesign() {
 
                             <div className='w-[80%] sm:w-[77%] md:w-[74%] lg:w-[71%] flex flex-col gap-2 md:gap-3 lg:gap-4 items-start pl-[5%] sm:pl-0'>
                                 <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]'> Présentation </h1>
-                                <p className='text-gray-100 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] text-left'>Présentation des projets. Animation des contenus</p>
+                                <p className='text-gray-100 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] text-left'>Présentation des projets. <br /> Animation des contenus</p>
                                 <Link to={'../'} className='text-gray-100 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-4 pb-px bg-blue-500'>Intéressé</Link>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ export default function MotionDesign() {
                     <div>
                         <h1 className=' text-blue-100 text-[24px] sm:text-[26px] md:text-[28px] lg:text-[30px] font-bold leading-7 w-[70%]' >Votre partenaire créatif pour la préproduction des dessins animés</h1>
                     </div>
-
+                   
                     <div>
                         <p className='font-[500] text-blue-50 text-[15px] sm:text-[17px] md:text-[19px] lg:text-[21px] leading-5'>Nous vous accompagnons durant tout le processus, du biefing à la post-production, passant par le développement de votre univers visuel et la ligne graphique</p>
                     </div>
