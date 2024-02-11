@@ -20,7 +20,8 @@ export default {
         'bgRemporter1': 'rgba(22, 22, 23)',
         'bgRemporter3': 'rgba(60, 57, 66)',
         'bgIdVisuel': 'rgba(226, 235, 255)',
-        'bgAnnimation': 'rgba(41, 40, 72)' 
+        'bgAnnimation': 'rgba(41, 40, 72)', 
+        'bgCharteGraphique': 'rgba(118, 136, 182)' 
       },
 
       keyframes:{

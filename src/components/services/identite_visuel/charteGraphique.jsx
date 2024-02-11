@@ -12,12 +12,12 @@ import Charte_prototypes from '../../../assets/Services/Id visuelle/Charte_proto
 export default function CharteGraphique () {
     
     return (
-        <div className="w-full bg-bgPlay">
+        <div className="w-full bg-bgCharteGraphique">
 
-            <SecondeNav 
+            <SecondeNav
                 title={'Charte Graphique'} 
                 link={'/services/idVisuelle'} 
-                bgColor={'bg-bgPlay'} 
+                bgColor={'bg-bgCharteGraphique'} 
                 titleColor='text-gray-100'
                 brdrColor='border-gray-100' textColor = ' text-white'
             />
@@ -28,19 +28,26 @@ export default function CharteGraphique () {
                 <section className="w-full">
 
                     {/* welcome text  */}
-                    <div className="flex flex-col gap-5 md:text-left">
+                    <div className="flex flex-col gap-5 sm:text-left">
 
-                        <h1 className="text-gray-100 text-5xl md:text-6xl font-bold md:mt-8">Charte<br/>graphique</h1>
+                        <h1 className="text-gray-100 text-5xl md:text-6xl lg:text-[70px] sm:pl-[10%] font-bold md:mt-8">Charte<br/>graphique</h1>
 
-                        <p className="text-gray-100 md:w-[50%] lg:w-[40%] leading-5 text-[14.5px]">C&apos;est un document qui définit votre identité visuelle.
-                            Elle est essentielle pour garantir la cohérence de
-                            votre communication sur tous vos supports.
-                            Nous vous aidons à créer une charte graphique qui
-                            soit à la fois unique et efficace.
-                        </p>
+
+                        <div className="w-full  sm:block hidden sm:pl-[10%] sm:z-30">
+                            <p className="text-gray-100 w-[62%] leading-5 text-[14.5px] text-left lg:text-xl sm:text-[18px]">C&apos;est un document qui définit votre identité visuelle.
+                                Elle est essentielle pour garantir la cohérence de
+                                votre communication sur tous vos supports.
+                                <br className="sm:hidden" />
+                                <br />
+                                <span className="text-blue-100 sm:text-gray-100">
+                                    Nous vous aidons à créer une charte graphique qui
+                                    soit à la fois unique et efficace.
+                                </span>
+                            </p>
+                        </div>
 
                         {/* Interessé button and nous contacter  */}
-                        <div className=' flex  justify-center items-center md:justify-start md:items-start flex-col w-full'>
+                        <div className=' flex  justify-center items-center sm:justify-start sm:items-start flex-col w-full sm:pl-[10%] sm:z-30'>
                             
                             <div className=" h-fit w-fit flex flex-col text-center items-center gap-2">
 
@@ -52,13 +59,27 @@ export default function CharteGraphique () {
                     </div>
 
                     {/* welcom image  */}
-                    <div>
+                    <div className="lg:-mt-[10%] sm:-mt-[10%]">
                         <img src={Charte_graphique2} alt="Id_visuelle_Charte_graphique" className="sm:hidden" />
                         <img src={Charte_graphique1} alt="Id_visuelle_Charte_graphique" className="hidden sm:block"/>
                     </div>
+                    
+
+                    <div className="w-[80%] pl-[10%] -mt-10 sm:hidden">
+                        <p className="text-gray-100 md:w-[50%] lg:w-[40%] leading-5 text-[14.5px] text-left font-bold">C&apos;est un document qui définit votre identité visuelle.
+                            Elle est essentielle pour garantir la cohérence de
+                            votre communication sur tous vos supports.
+                            <br />
+                            <br />
+                            <span className="text-blue-100">
+                                Nous vous aidons à créer une charte graphique qui
+                                soit à la fois unique et efficace.
+                            </span>
+                        </p>
+                    </div>
 
                     {/* second welcom text  */}
-                    <div className="w-full text-left justify-end flex">
+                    {/* <div className="w-full text-left justify-end flex">
 
                         <p className="text-gray-100 md:w-[60%] lg:w-[50%] leading-5 text-[14.5px]">Nous créons des lignes directrices d'identité aussi bien pour les
                             logos existants que pour les nouveaux logos que nous créons. La
@@ -67,7 +88,7 @@ export default function CharteGraphique () {
                             reste cohérente dans le temps et dans une multitude
                             d&apos;environnements (imprimé, écran ou web).
                         </p>
-                    </div>
+                    </div> */}
                 </section>
 
                 {/* aspect de la charte  */}
