@@ -55,7 +55,7 @@ export default function Services () {
                         <h1 className='font-bold sm:hidden text-[23px] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'>Design Graphique</h1>
                         <h1 className='font-bold hidden sm:block text-[23px] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100 text-left'>Design<br/>Graphique</h1>
                         <p className='text-[11px] sm:text-[18px] md:text-xl sm:text-left text-gray-100'>Campagne de comm. <span className='text-gray-500'>&</span> Evènementiels<br/> Mise en page <span className='text-gray-500'>&</span> Présentation <br/> Web design</p>
-                        <button className='bg-blue-500 px-3 py-[2px] text-white text-xs rounded-full sm:text-[18px] hover:bg-myBlue duration-200' > Plus </button>
+                        <button onClick={() => navigate('/services/graphiqueDesign')} className='bg-blue-500 px-3 py-[2px] text-white text-xs rounded-full sm:text-[18px] hover:bg-myBlue duration-200' > Plus </button>
                     </div>
                 </section>
 

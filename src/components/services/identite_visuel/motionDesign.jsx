@@ -6,6 +6,7 @@ import animation_service_2 from '../../../assets/Services/Animation/animation_se
 import animation_service_3 from '../../../assets/Services/Animation/animation_service_3.jpg';
 import Illustration_concept_art_1 from '../../../assets/Services/Illustration/Illustration_concept_art_1.jpg'; 
 import animation_partner from '../../../assets/Services/Animation/animation_partner.jpg';
+
 export default function MotionDesign() {
 
 

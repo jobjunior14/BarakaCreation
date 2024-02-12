@@ -21,7 +21,9 @@ export default {
         'bgRemporter3': 'rgba(60, 57, 66)',
         'bgIdVisuel': 'rgba(226, 235, 255)',
         'bgAnnimation': 'rgba(41, 40, 72)', 
-        'bgCharteGraphique': 'rgba(118, 136, 182)' 
+        'bgCharteGraphique': 'rgba(118, 136, 182)' ,
+        'bgEvent' : 'rgba(54, 58, 70)',
+        'bgMiseEnpage' : 'rgba(232, 240, 251)'
       },
 
       keyframes:{

@@ -59,7 +59,7 @@ export default function CharteGraphique () {
                     </div>
 
                     {/* welcom image  */}
-                    <div className="lg:-mt-[10%] sm:-mt-[10%]">
+                    <div className="lg:-my-[10%] sm:-my-[10%]  ">
                         <img src={Charte_graphique2} alt="Id_visuelle_Charte_graphique" className="sm:hidden" />
                         <img src={Charte_graphique1} alt="Id_visuelle_Charte_graphique" className="hidden sm:block"/>
                     </div>
@@ -79,16 +79,16 @@ export default function CharteGraphique () {
                     </div>
 
                     {/* second welcom text  */}
-                    {/* <div className="w-full text-left justify-end flex">
+                    <div className="w-full text-left justify-end hidden md:flex">
 
-                        <p className="text-gray-100 md:w-[60%] lg:w-[50%] leading-5 text-[14.5px]">Nous créons des lignes directrices d'identité aussi bien pour les
+                        <p className="text-gray-100 md:w-[60%] lg:w-[60%] leading-5 text-[14.5px] lg:text-xl sm:text-[18px]">Nous créons des lignes directrices d'identité aussi bien pour les
                             logos existants que pour les nouveaux logos que nous créons. La
                             mission de la charte graphique est toujours de définir les
                             paramètres clés de l&apos;identité visuelle et de s&apos;assurer que l&apos;identité
                             reste cohérente dans le temps et dans une multitude
                             d&apos;environnements (imprimé, écran ou web).
                         </p>
-                    </div> */}
+                    </div>
                 </section>
 
                 {/* aspect de la charte  */}
@@ -101,34 +101,34 @@ export default function CharteGraphique () {
                     <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div className="w-full">
                             <img src={charte_logoFichier_3} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] font-bold text-gray-100 m-1 leading-4 "> Logotype <span className="text-blue-100">&  règle <br  className="hidden md:block"/>d&apos;usage</span></h3>
+                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4 "> Logotype <span className="text-blue-100">&  règle <br  className="hidden md:block"/>d&apos;usage</span></h3>
                         </div>
 
                         <div className="w-full">
                             <img src={Charte_couleurs} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] font-bold text-gray-100 m-1 leading-4">La charte des <br  className="hidden md:block"/>couleurs</h3>
+                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">La charte des <br  className="hidden md:block"/>couleurs</h3>
                         </div>
 
                         <div className="w-full">
                             <img src={Chartmotif} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] font-bold text-gray-100 m-1 leading-4"> Iconographie <span className="text-blue-100">& <br className="hidden md:block"/> Motifs</span></h3>
+                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4"> Iconographie <span className="text-blue-100">& <br className="hidden md:block"/> Motifs</span></h3>
                         </div>
 
 
                         <div className="w-full">
                             <img src={Charte_typo} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] font-bold text-gray-100 m-1 leading-4">Polices de <br className="hidden md:block" />caractère</h3>
+                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">Polices de <br className="hidden md:block" />caractère</h3>
 
                         </div>
 
                         <div className="w-full">
                             <img src={Charte_prototypes} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] font-bold text-gray-100 m-1 leading-4">Prototypes</h3>
+                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">Prototypes</h3>
 
                         </div>
                         <div className="w-full h-full hidden md:block">
                             <div className="w-full h-full bg-white rounded-lg border-red-600 border-4 flex justify-center items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-14 h-14 text-red-500"> <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" /></svg></div>
-                            <h3 className="text-[13px] font-bold text-gray-100 m-1 leading-4">Iterdit</h3>
+                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">Iterdit</h3>
 
                         </div>
                     </div>
@@ -138,9 +138,9 @@ export default function CharteGraphique () {
                 {/* ended text  */}
                 <section className='text-left px-[10%] flex flex-col gap-3 pb-[8%]'>
 
-                    <p className='text-[14px] font-bold text-gray-100'>Nous guidons nos clients dans les processus complexe et participons activement à l&apos;élaboration d&apos;un briefing clair et pratique. En fonction des besoins et du budget, nous élaborons les supports d&apos;une mini-charte à une charte graphique plus développée. </p>
+                    <p className='text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-gray-100'>Nous guidons nos clients dans les processus complexe et participons activement à l&apos;élaboration d&apos;un briefing clair et pratique. En fonction des besoins et du budget, nous élaborons les supports d&apos;une mini-charte à une charte graphique plus développée. </p>
 
-                    <p className='text-[14px] font-bold text-blue-100'>La conception d&apos;une charte graphique est indispensable pour toute entreprise, commerciale souhaitant se démarquer de la concurrence</p>
+                    <p className='text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-blue-100'>La conception d&apos;une charte graphique est indispensable pour toute entreprise, commerciale souhaitant se démarquer de la concurrence</p>
 
                 </section>
 
