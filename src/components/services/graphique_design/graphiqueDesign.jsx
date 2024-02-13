@@ -55,7 +55,7 @@ export default function GraphiqueDesign () {
                     image={campagne}
                     name={'Campagne comm.'}
                     text={"Nous créons des visuels percutants qui transmettent votre message de manière claire et concise "}
-                    link={'/services/idVisuelle/supportPrint'}
+                    link={'/services/graphiqueDesign/campagnDeComm'}
                     bg={'bg-white'}
                     colorText={'text-gray-700'}
                 />

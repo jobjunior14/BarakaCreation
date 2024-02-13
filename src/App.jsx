@@ -13,6 +13,7 @@ import CharteGraphique from './components/services/identite_visuel/charteGraphiq
 import SupportPrint from './components/services/identite_visuel/supportPrint';
 import MotionDesign from './components/services/identite_visuel/motionDesign';
 import GraphiqueDesign from './components/services/graphique_design/graphiqueDesign';
+import CampagneDeComm from './components/services/graphique_design/campagne_de_comm';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -38,7 +39,7 @@ function App() {
 
               <Route path='graphiqueDesign' element = {<> <Outlet/></>}> 
                 <Route index element = {<GraphiqueDesign/>} />
-                
+                <Route path='campagnDeComm' element = {<CampagneDeComm/>} />
               </Route>
             </Route>
             
