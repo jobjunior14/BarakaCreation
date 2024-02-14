@@ -13,6 +13,7 @@ export default function Logotype () {
                 link={'/services/idVisuelle'} 
                 bgColor={'bg-bgIdVisuel'} 
                 titleColor='text-gray-600'
+                title={'Identité visuelle'}
                 brdrColor='border-gray-600' textColor = ' text-black'
             />
             

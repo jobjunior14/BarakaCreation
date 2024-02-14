@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import DesignGraphiqueCom from './comp/util';
 import Accueildesigngr1 from '../../../assets/Accueil/Accueildesigngr1.jpg';
 import Accueildesigngr2 from '../../../assets/Accueil/Accueildesigngr2.jpg';
@@ -65,7 +64,7 @@ export default function GraphiqueDesign () {
                     image={evenementiel}
                     name={'Event'}
                     text={"De la planification à la réalisation de votre événement, nous concevons tout supports "}
-                    link={'/services/idVisuelle/supportPrint'}
+                    link={'/services/graphiqueDesign/event'}
                     bg={'bg-bgEvent'}
                     colorText={'text-gray-100'}
                 />   

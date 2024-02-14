@@ -38,6 +38,7 @@ export default function SupportPrint() {
                 link={'/services/idVisuelle'} 
                 bgColor={'bg-white'} 
                 titleColor='text-gray-600'
+                title={'Identité visuelle'}
                 brdrColor='border-gray-600' textColor = ' text-black'
             />
             

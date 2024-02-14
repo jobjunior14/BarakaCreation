@@ -15,7 +15,7 @@ export default function CharteGraphique () {
         <div className="w-full bg-bgCharteGraphique">
 
             <SecondeNav
-                title={'Charte Graphique'} 
+                title={' Identité visuelle'} 
                 link={'/services/idVisuelle'} 
                 bgColor={'bg-bgCharteGraphique'} 
                 titleColor='text-gray-100'
