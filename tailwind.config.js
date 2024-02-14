@@ -23,7 +23,8 @@ export default {
         'bgAnnimation': 'rgba(41, 40, 72)', 
         'bgCharteGraphique': 'rgba(118, 136, 182)' ,
         'bgEvent' : 'rgba(54, 58, 70)',
-        'bgMiseEnpage' : 'rgba(232, 240, 251)'
+        'bgMiseEnpage' : 'rgba(232, 240, 251)',
+        'bgCampagnCom' : 'rgba(107, 107, 131)',
       },
 
       keyframes:{
