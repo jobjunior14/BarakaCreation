@@ -84,7 +84,7 @@ export default function GraphiqueDesign () {
                     image={Presentation}
                     name={'Présentation'}
                     text={"Vous pouvez désormais présenter votre projet de la manière visuelle la plus efficace et convaincante "}
-                    link={'/services/idVisuelle/supportPrint'}
+                    link={'/services/graphiqueDesign/presentation'}
                     bg={'bg-bgEvent'}
                     colorText={'text-gray-100'}
                 />  

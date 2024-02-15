@@ -41,7 +41,7 @@ export default function Event() {
  
                 <div className='w-full pt-[6%] sm:pt-[1%] flex flex-col gap-4 md:gap-0 z-40'>
 
-                    <div className=' flex flex-col justify-center items-center px-[5%] sm:px-[10%] md:px-[13%] lg:px-[16%]  '>
+                    <div className=' flex flex-col justify-center items-center px-[10%]  sm:px-[10%] md:px-[13%] lg:px-[16%]  '>
                         <img src={evenementielT} alt="evenementielT" />
                     </div>
 
@@ -83,7 +83,7 @@ export default function Event() {
 
                 
                 {/* conception des supports publicitaire  */}
-                <section className='w-full bg-white px-[5%] rounded-lg flex flex-col gap-5 md:gap-10 lg:gap-14 py-5 md:py-10 lg:py-14'>
+                <section className='w-full bg-white px-[10%] md:px-[5%] lg:px-[10%]  rounded-lg flex flex-col gap-5 md:gap-10 lg:gap-14 py-5 md:py-10 lg:py-14'>
 
                     <h1 className='text-left font-bold text-gray-700 text-[24px] md:text-[28px] lg:text-[32px] leading-6 lg:leading-7'>Conception des <br/> supports publicitaires</h1>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-2 lg:gap-4 justify-center items-center w-full'>
@@ -159,9 +159,9 @@ export default function Event() {
                 </section>
                 
                 {/* conception des supports evenementiels penadant et apres  */}
-                <section className='w-full bg-bgConception rounded-lg px-[5%] flex flex-col gap-5 md:gap-10 lg:gap-14 py-5 md:py-10 lg:py-14'>
+                <section className='w-full bg-bgConception rounded-lg px-[10%] md:px-[5%] lg:px-[10%]  flex flex-col gap-5 md:gap-10 lg:gap-14 py-5 md:py-10 lg:py-14'>
 
-                    <h1 className='text-left font-bold text-gray-100 text-[24px] md:text-[28px] lg:text-[32px] leading-6 lg:leading-7'><span className=' text-bgPlay'>Conception des</span> <br/> supports publicitaires</h1>
+                    <h1 className='text-left font-bold text-gray-100 text-[24px] md:text-[28px] lg:text-[32px] leading-6 md:leading-7'><span className=' text-bgPlay md:text-gray-100'>Conception des</span> <br className='md:hidden'/> supports <br /> évènementiels <br className='md:hidden'/> pendant et <br className='hidden md:block' /> après</h1>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-2 lg:gap-4 justify-center items-center w-full'>
 
                         <div className='flex flex-col gap-3 md:gap-2 lg:gap-4 justify-center items-center w-full'>

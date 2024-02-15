@@ -15,6 +15,7 @@ import MotionDesign from './components/services/identite_visuel/motionDesign';
 import GraphiqueDesign from './components/services/graphique_design/graphiqueDesign';
 import CampagneDeComm from './components/services/graphique_design/campagne_de_comm';
 import Event from './components/services/graphique_design/event';
+import Presentation from './components/services/graphique_design/presentation';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -42,6 +43,7 @@ function App() {
                 <Route index element = {<GraphiqueDesign/>} />
                 <Route path='campagnDeComm' element = {<CampagneDeComm/>} />
                 <Route path='event' element = {<Event/>} />
+                <Route path='presentation' element = {<Presentation/>} />
               </Route>
             </Route>
             
