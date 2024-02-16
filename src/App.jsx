@@ -17,6 +17,7 @@ import CampagneDeComm from './components/services/graphique_design/campagne_de_c
 import Event from './components/services/graphique_design/event';
 import Presentation from './components/services/graphique_design/presentation';
 import MiseEnPage from './components/services/graphique_design/miseEnPage';
+import WebDesign from './components/services/graphique_design/webDesign';
 
 import { Outlet } from 'react-router-dom';
 function App() {
@@ -47,6 +48,7 @@ function App() {
                 <Route path='event' element = {<Event/>} />
                 <Route path='presentation' element = {<Presentation/>} />
                 <Route path='miseEnPage' element = {<MiseEnPage/>} />
+                <Route path='webDesign' element = {<WebDesign/>} />
               </Route>
             </Route>
             

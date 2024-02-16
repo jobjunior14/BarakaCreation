@@ -13,8 +13,9 @@ export default function NavBar ()
     const hideNave5 = useMatch('/services/graphiqueDesign/event');
     const hideNave6 = useMatch('/services/graphiqueDesign/presentation');
     const hideNave7 = useMatch('/services/graphiqueDesign/miseEnPage');
+    const hideNave8 = useMatch('/services/graphiqueDesign/webDesign');
 
-    const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7
+    const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7 || hideNave8;
     const [toggleBtn, setToggleBtn] = useState(false);
     
     // window.onscroll = () => {
