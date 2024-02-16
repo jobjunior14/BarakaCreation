@@ -97,7 +97,7 @@ export default function GraphiqueDesign () {
                     image={motion_design}
                     name={'Motion design'}
                     text={"Spot publicitaire, Présentation, promotions en motion design "}
-                    link={'/services/idVisuelle/supportPrint'}
+                    link={'/services/idVisuelle/motionDesign'}
                     bg={'bg-white'}
                     colorText={'text-gray-700'}
                 />  

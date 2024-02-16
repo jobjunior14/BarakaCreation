@@ -60,7 +60,7 @@ export default function WebDesign() {
                             {/* first paragraph  */}
                             <section className=' md:px-0  '>
 
-                                <p className=' text-left font-[500] text-blue-200 text-[14px] md:text-[13px] lg:text-[15px] leading-5 lg:leading-6  '> 
+                                <p className=' text-left font-[500] mx-[10%] md:mx-0 text-blue-200 text-[14px] md:text-[15px] lg:text-[18px] leading-5 lg:leading-6  '> 
                                     Vous souhaitez créer un site web qui reflète votre image de marque ?
                                     Nous sommes à vos cotés pour la création de sites web professionnels et performants.
                                     Notre réseau de designers et de développeurs expérimentés vous accompagnent de la
@@ -79,33 +79,57 @@ export default function WebDesign() {
 
                     <div className='flex justify-center items-center w-full md:w-[80%]'>
 
-                        <section className=' px-[10%] w-full pt-10 flex flex-col gap-7 sm:gap-10 md:gap-14 lg:gap-14 '>
+                        <section className=' px-[10%] w-full pt-10 pb-5 flex flex-col gap-7 sm:gap-10 md:gap-14 lg:gap-14 '>
                             
                             <h1 className='md:mx-[8%] mx-[10%] text-xl text-gray-500  font-bold text-left'> Notre objectif est de rendre votre site :</h1>
                             <section className=' grid grid-cols-2 md:grid-cols-4 gap-5 justify-center items-center w-full'>
 
                                 <div className='flex flex-col gap-5 justify-center items-center'>
-                                        <img src={web_fluide} alt="Mise_en_page_icone_1" className='h-7'/>
+                                    <div className='h-20 w-full flex justify-center items-center pt-9'>
+
+                                        <img src={web_fluide} alt="Mise_en_page_icone_1" className='md:h-[28px] h-[20px]'/>
+                                    </div>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
-                                    <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Fonctionnel, <br />fluide et facile à <br />utiliser</h1>
+                                    <div className='h-20 w-full'>
+
+                                        <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Fonctionnel, <br />fluide et facile à <br />utiliser</h1>
+                                    </div>
                                 </div>
 
                                 <div className='flex flex-col gap-5 justify-center items-center'>
-                                        <img src={web_objectif} alt="web_objectif" className='h-[55px]'/>
+                                    <div className='h-20 w-full flex justify-center items-center pt-9'>
+
+                                        <img src={web_objectif} alt="web_objectif" className='md:h-[55px] h-[35px]'/>
+                                    </div>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
-                                    <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Attrayant et <br />répondant aux <br />objectifs de votre <br />marque <span className='text-gray-500'>ou <br />l&apos;entreprise</span></h1>
+                                    <div className='h-20 w-full'>
+
+                                        <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Attrayant et <br />répondant aux <br />objectifs de votre <br />marque <span className='text-gray-500'>ou <br />l&apos;entreprise</span></h1>
+                                    </div>
                                 </div>
 
                                 <div className='flex flex-col gap-5 justify-center items-center'>
-                                        <img src={web_positif} alt="web_positif" className='h-[55px]'/>
+                                    <div className='h-20 w-full flex justify-center items-center pt-9'>
+
+                                        <img src={web_positif} alt="web_positif" className='md:h-[55px] h-[35px]'/>
+                                    </div>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
-                                    <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Créant une <br />impression <br />positive chez <br />les visiteurs</h1>
+                                    <div className='h-20 w-full'>
+
+                                        <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Créant une <br />impression <br />positive chez <br />les visiteurs</h1>
+                                    </div>
                                 </div>
 
                                 <div className='flex flex-col gap-5 justify-center items-center'>
-                                        <img src={web_adapté} alt="Mise_en_page_icone_4" className='h-[55px]'/>
+                                    <div className='h-20 w-full flex justify-center items-center pt-9'>
+
+                                        <img src={web_adapté} alt="Mise_en_page_icone_4" className='md:h-[55px] h-[35px]'/>
+                                    </div>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
-                                    <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Adapté à tous les <br />types d&apos;écrans, <span className='text-gray-500'>y <br />compris les <br />smartphones et <br />les tablettes</span></h1>
+                                    <div className='h-20 w-full'>
+
+                                        <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Adapté à tous les <br />types d&apos;écrans, <span className='text-gray-500'>y <br />compris les <br />smartphones et <br />les tablettes</span></h1>
+                                    </div>
                                 </div>
                             </section>
 
