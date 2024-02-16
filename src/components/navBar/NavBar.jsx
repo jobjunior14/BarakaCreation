@@ -12,7 +12,9 @@ export default function NavBar ()
     const hideNave4 = useMatch('/services/graphiqueDesign/campagnDeComm');
     const hideNave5 = useMatch('/services/graphiqueDesign/event');
     const hideNave6 = useMatch('/services/graphiqueDesign/presentation');
+    const hideNave7 = useMatch('/services/graphiqueDesign/miseEnPage');
 
+    const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7
     const [toggleBtn, setToggleBtn] = useState(false);
     
     // window.onscroll = () => {
@@ -29,7 +31,7 @@ export default function NavBar ()
 
     const inactiveLink = 'duration-300 transition easy-in-out delay-400 text-gray-700 my-9 text-xs lg:my-0 hover:underline block font-medium';
     return (
-        <nav className={`justify-between ${hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6  ? 'hidden' : 'flex'} sticky w-full py-2 lg:px-28 md:px-20 sm:px-10 px-7 z-50 bg-white shadow-lg items-center -top-0 duration-300 transition easy-in-out delay-400`}>
+        <nav className={`justify-between ${  hideNave ? 'hidden' : 'flex'} sticky w-full py-2 lg:px-28 md:px-20 sm:px-10 px-7 z-50 bg-white shadow-lg items-center -top-0 duration-300 transition easy-in-out delay-400`}>
             
             <div className=''>
                 <NavLink 

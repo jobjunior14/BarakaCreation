@@ -25,7 +25,7 @@ export default function Presentation() {
                 <div className='w-full pt-[6%] sm:pt-[1%] flex flex-col gap-4 md:gap-4'>
 
                     <div className=' flex flex-col justify-center items-center px-[10%]  sm:px-[10%] md:px-[13%] lg:px-[16%]  '>
-                        <h1 className=' text-6xl sm:text-[68px] md:text-[74px] lg:text-[90px] font-bold text-gray-100'>Présentation</h1>
+                        <h1 className=' text-5xl sm:text-[68px] md:text-[74px] lg:text-[90px] font-bold text-gray-100'>Présentation</h1>
                     </div>
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full z-40  '>
@@ -71,6 +71,8 @@ export default function Presentation() {
 
                     </section>
                 </section>
+                
+                
 
                 {/* section Aspect des outils  */}
                 <section className='w-full flex flex-col gap-5 md:gap-14'>

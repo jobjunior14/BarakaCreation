@@ -16,6 +16,8 @@ import GraphiqueDesign from './components/services/graphique_design/graphiqueDes
 import CampagneDeComm from './components/services/graphique_design/campagne_de_comm';
 import Event from './components/services/graphique_design/event';
 import Presentation from './components/services/graphique_design/presentation';
+import MiseEnPage from './components/services/graphique_design/miseEnPage';
+
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -44,6 +46,7 @@ function App() {
                 <Route path='campagnDeComm' element = {<CampagneDeComm/>} />
                 <Route path='event' element = {<Event/>} />
                 <Route path='presentation' element = {<Presentation/>} />
+                <Route path='miseEnPage' element = {<MiseEnPage/>} />
               </Route>
             </Route>
             

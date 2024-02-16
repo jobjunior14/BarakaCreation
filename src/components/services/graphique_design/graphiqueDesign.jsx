@@ -74,7 +74,7 @@ export default function GraphiqueDesign () {
                     image={mise_en_page_accueil}
                     name={'Mise enpage'}
                     text={"Livres, magazines, brochures, documents administratifs, institutionnels… "}
-                    link={'/services/idVisuelle/supportPrint'}
+                    link={'/services/graphiqueDesign/miseEnPage'}
                     bg={'bg-bgMiseEnpage'}
                     colorText={'text-gray-700'}
                 />    
