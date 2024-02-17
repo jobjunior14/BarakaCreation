@@ -22,11 +22,11 @@ export default function GraphiqueDesign () {
                 <h1 className='text-blue-100 font-bold text-2xl sm:hidden'>Des supports <br /> diversifiés et <br /> efficaces</h1>
 
                 <div className=' justify-between flex items-center'>
-                    <img src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[170px] lg:h-[470px] md:h-[340px] sm:h-[250px] ' />
+                    <img src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[170px] lg:h-[470px] md:h-[32.5rem] sm:h-[250px] ' />
 
                     <div className='flex flex-col items-center justify-center pr-[5%] gap-4'>
-                        <h1 className='text-blue-100 font-bold text-2xl md:text-[26px] lg:text-[28px] sm:flex hidden leading-[30px]'>Des supports <br /> diversifiés et <br /> efficaces</h1>
-                        <p className='text-blue-100 text-[12px] md:text-[14px] lg:text-[16px] sm:flex hidden '>Nos services couvrent la conception de tous les 
+                        <h1 className='text-blue-100 font-bold text-2xl md:text-[26px] lg:text-[28px] sm:flex hidden leading-[1.875rem]'>Des supports <br /> diversifiés et <br /> efficaces</h1>
+                        <p className='text-blue-100 text-[0.75rem] md:text-[0.875rem] lg:text-[1rem] sm:flex hidden '>Nos services couvrent la conception de tous les 
                             supports de communication print ou digitaux. 
                             Nous menons à bien les projets les plus variés et 
                             vous accompagnons dans la mise en place d&apos;une 
@@ -34,14 +34,14 @@ export default function GraphiqueDesign () {
                         </p>
                     </div>
 
-                    <img src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[170px] lg:h-[470px] md:h-[340px] sm:h-[250px]' />
+                    <img src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[170px] lg:h-[470px] md:h-[32.5rem] sm:h-[250px]' />
                 </div>
 
                 <div className='px-[5%]'>
                     <img src={Design_graphic_title} alt="" className='' />
                 </div>
 
-                <p className='text-blue-100 px-[10%] text-[12px] sm:hidden'  >Nos services couvrent la conception de tous les 
+                <p className='text-blue-100 px-[10%] text-[0.75rem] sm:hidden'  >Nos services couvrent la conception de tous les 
                     supports de communication print ou digitaux. 
                     Nous menons à bien les projets les plus variés et 
                     vous accompagnons dans la mise en place d&apos;une 
@@ -112,13 +112,13 @@ export default function GraphiqueDesign () {
                             <div className='md:-mb-5'>
                                 <img src={Web_design} alt="" className='h-[50px] md:h-[60px]' />
                             </div>
-                            <p className={`w-[75%] sm:w-[70%] md:w-[65%]  text-[11px] sm:text-[14px] md:text-[15px] text-gray-100`}> Spot publicitaire, Présentation, promotions en motion design </p>
+                            <p className={`w-[75%] sm:w-[70%] md:w-[65%]  text-[0.69rem] sm:text-[0.875rem] md:text-[15px] text-gray-100`}> Spot publicitaire, Présentation, promotions en motion design </p>
                         </div>
 
                         {/* button  */}
                         <div className="flex justify-evenly gap-10">
-                            <Link to={'/services/graphiqueDesign/webDesign'} className=" text-blue-500 text-[12px] sm:text-[15px] md:text-[16px] flex "> Voir plus <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[12px] sm:text-[15px] md:text-[16px] px-1 pb-[1.5px] rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to={'/services/graphiqueDesign/webDesign'} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex "> Voir plus <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-1 pb-[1.5px] rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
 
                         {/* Image  */}

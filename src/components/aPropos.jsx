@@ -52,7 +52,7 @@ export default function Apropos () {
                         
                         <div className='w-full flex flex-col justify-center items-center md:justify-start md:items-start'>
                             <div className='w-[70%] md:w-[100%] '>
-                                <p className='text-gray-200 md:text-left md:text-gray-700 text-[11px] font-normal text-center '>Je suis Baraka LURHAKWA, un artiste communicateur visuel. <br/>Je suis passionné par la production d&apos;œuvres artistiques innovantes et j&apos;accompagne les entreprises dans la réussite de leurs objectifs dans lesecteur de la communication</p>
+                                <p className='text-gray-200 md:text-left md:text-gray-700 text-[0.69rem] font-normal text-center '>Je suis Baraka LURHAKWA, un artiste communicateur visuel. <br/>Je suis passionné par la production d&apos;œuvres artistiques innovantes et j&apos;accompagne les entreprises dans la réussite de leurs objectifs dans lesecteur de la communication</p>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default function Apropos () {
                             <div className='flex items-start'>
                                 <div className='flex justify-center items-center'>
                                     <img src={iconeprofession} className='h-6  mr-1' alt='iconeprofession'/>
-                                    <h1 className=' mr-1 font-bold text-gray-700 text-[16px] flex'> Profession </h1>
+                                    <h1 className=' mr-1 font-bold text-gray-700 text-[1rem] flex'> Profession </h1>
                                 </div>
                             </div>
                             <div className='h-px w-full bg-gray-600 mt-1'></div>
@@ -100,12 +100,12 @@ export default function Apropos () {
                         <div className='px-8 flex gap-3 text-left pt-3 bg-bgFormation'>
                             <div className='flex justify-center items-center'>
                                 <img src={icone_experience_1} className='h-6 mr-1' alt='iconeprofession'/>
-                                <h1 className=' mr-1 font-bold text-gray-700 text-[11px] flex'>  ans d&apos;expérience professionnelle </h1>
+                                <h1 className=' mr-1 font-bold text-gray-700 text-[0.69rem] flex'>  ans d&apos;expérience professionnelle </h1>
                             </div>
 
                             <div className='flex justify-center items-center'>
                                 <img src={iconeetude} className='h-6 mr-1' alt='iconeprofession'/> 
-                                <h1 className=' mr-1 font-bold text-gray-700 text-[11px] flex'> Académie de Beaux-arts Kinshasa </h1>
+                                <h1 className=' mr-1 font-bold text-gray-700 text-[0.69rem] flex'> Académie de Beaux-arts Kinshasa </h1>
                             </div>
 
                         </div>
@@ -148,7 +148,7 @@ export default function Apropos () {
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
                                 <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl font-bold'>Innvation</h2>
-                                <p className='text-gray-800 text-[10px] sm:text-[12px] md:text-[14px]'>  Nous nous engageons à apporter de la valeur et vous faire vivre une expérience mémorable. Chaque nouveau projet est pour nous un défi à relever; une occasion de repousser nos limites et celles de nos clients. <br/> C&apos;est ce qui nous a permis de satisfaire plus de 90 % de +250 projets réalisés</p>
+                                <p className='text-gray-800 text-[10px] sm:text-[0.75rem] md:text-[0.875rem]'>  Nous nous engageons à apporter de la valeur et vous faire vivre une expérience mémorable. Chaque nouveau projet est pour nous un défi à relever; une occasion de repousser nos limites et celles de nos clients. <br/> C&apos;est ce qui nous a permis de satisfaire plus de 90 % de +250 projets réalisés</p>
                             </div>
                         </div>
 
@@ -160,7 +160,7 @@ export default function Apropos () {
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
                                 <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl font-bold'>Passion</h2>
-                                <p className='text-gray-800 text-[10px] sm:text-[12px] md:text-[14px]'>  Nous sommes animés par la passion de créer des œuvres d&apos;art à la fois belles et significatives. Elle nous permet de partager nos idées avec le monde entier et nous pousse donner une grande considération à chaque projet et chaque client</p>
+                                <p className='text-gray-800 text-[10px] sm:text-[0.75rem] md:text-[0.875rem]'>  Nous sommes animés par la passion de créer des œuvres d&apos;art à la fois belles et significatives. Elle nous permet de partager nos idées avec le monde entier et nous pousse donner une grande considération à chaque projet et chaque client</p>
                             </div>
                         </div>
 
@@ -172,7 +172,7 @@ export default function Apropos () {
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
                                 <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl font-bold'>Discipline</h2>
-                                <p className='text-gray-800 text-[10px] sm:text-[12px] md:text-[14px]'>  Nous nous engageons à comprendre les besoins de nos clients, à leur proposer des solutions qui répondent à leurs attentes et à respecter les délais fixés. Nous travaillons de manière organisée et nous sécurisons les projets de nos clients pendant et après le contrat</p>
+                                <p className='text-gray-800 text-[10px] sm:text-[0.75rem] md:text-[0.875rem]'>  Nous nous engageons à comprendre les besoins de nos clients, à leur proposer des solutions qui répondent à leurs attentes et à respecter les délais fixés. Nous travaillons de manière organisée et nous sécurisons les projets de nos clients pendant et après le contrat</p>
                             </div>
                         </div>
                     </div>

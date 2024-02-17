@@ -19,6 +19,8 @@ import Presentation from './components/services/graphique_design/presentation';
 import MiseEnPage from './components/services/graphique_design/miseEnPage';
 import WebDesign from './components/services/graphique_design/webDesign';
 import Illustation from './components/services/illustation/illustation';
+import Consultance from './components/services/consultance/consultance';
+
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -52,9 +54,10 @@ function App() {
               </Route>
               
               <Route path='illustration' element={<Outlet/>}>
-
                 <Route index element ={<Illustation/>}/>
               </Route>
+
+              <Route path='consultance' element={<Consultance/>} />
 
             </Route>
             

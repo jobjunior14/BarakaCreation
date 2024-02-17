@@ -51,9 +51,9 @@ export default function CharteGraphique () {
                             
                             <div className=" h-fit w-fit flex flex-col text-center items-center gap-2">
 
-                                <Link to='../' className=" duration-200  text-gray-100 text-[12px] sm:text-[14px] md:text-[16px] px-1 pb-[1.5px] md:px-4 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                                <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 pb-[1.5px] md:px-4 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                                 
-                                <Link to={'../'} className=" text-gray-100 text-[12px] sm:text-[14px] md:text-[16px] flex "> Nos créations <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                                <Link to={'../'} className=" text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex "> Nos créations <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
                             </div>
                         </div>
                     </div>
@@ -138,9 +138,9 @@ export default function CharteGraphique () {
                 {/* ended text  */}
                 <section className='text-left px-[10%] flex flex-col gap-3 pb-[8%]'>
 
-                    <p className='text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-gray-100'>Nous guidons nos clients dans les processus complexe et participons activement à l&apos;élaboration d&apos;un briefing clair et pratique. En fonction des besoins et du budget, nous élaborons les supports d&apos;une mini-charte à une charte graphique plus développée. </p>
+                    <p className='text-[0.875rem] sm:text-[1rem] md:text-[18px] lg:text-[20px] font-bold text-gray-100'>Nous guidons nos clients dans les processus complexe et participons activement à l&apos;élaboration d&apos;un briefing clair et pratique. En fonction des besoins et du budget, nous élaborons les supports d&apos;une mini-charte à une charte graphique plus développée. </p>
 
-                    <p className='text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-blue-100'>La conception d&apos;une charte graphique est indispensable pour toute entreprise, commerciale souhaitant se démarquer de la concurrence</p>
+                    <p className='text-[0.875rem] sm:text-[1rem] md:text-[18px] lg:text-[20px] font-bold text-blue-100'>La conception d&apos;une charte graphique est indispensable pour toute entreprise, commerciale souhaitant se démarquer de la concurrence</p>
 
                 </section>
 

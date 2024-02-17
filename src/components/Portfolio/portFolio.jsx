@@ -31,7 +31,7 @@ export default function Portfolio() {
                 <section className=' grid grid-cols-1 sm:grid-cols-2 gap-3 px-2 sm:px-[10%]'>
                     
                     {/* Gallerie  */}
-                    <section className={`w-full relative h-[340px] sm:h-auto rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center`} style={{backgroundImage: `url(${Save_children_dreams_illustration_4okey})`}}>
+                    <section className={`w-full relative h-[32.5rem] sm:h-auto rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center`} style={{backgroundImage: `url(${Save_children_dreams_illustration_4okey})`}}>
 
                         <div className='h-full w-full duration-200 delay-150 relative'>
                             <img src={Save_children_dreams_illustration_4okey} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
@@ -46,7 +46,7 @@ export default function Portfolio() {
                     </section>
                     
                     {/* logofolio  */}
-                    <section className='w-full relative h-[340px] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${logofolio_collectionC})`}}>
+                    <section className='w-full relative h-[32.5rem] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${logofolio_collectionC})`}}>
 
                         <div className='h-full w-full duration-200 delay-150 relative'>        
                             <img src={logofolio_collectionC} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
@@ -60,7 +60,7 @@ export default function Portfolio() {
                     </section>
 
                     {/* design graphique  */}
-                    <section className='w-full relative h-[340px] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${docs_mocks_mC})`}}>
+                    <section className='w-full relative h-[32.5rem] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${docs_mocks_mC})`}}>
 
                         <div className='h-full w-full duration-200 delay-150 relative'>        
                             <img src={docs_mocks_mC} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
@@ -74,7 +74,7 @@ export default function Portfolio() {
                     </section>
 
                     {/* motion design  */}
-                    <section className='w-full relative h-[340px] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${animation_service_2C})`}}>
+                    <section className='w-full relative h-[32.5rem] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${animation_service_2C})`}}>
 
                         <div className='h-full w-full duration-200 delay-150 relative'>        
                             <img src={animation_service_2C} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 hover:-translate-x-5 hover:-translate-y-2 duration-150'/>

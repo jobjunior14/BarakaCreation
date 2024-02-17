@@ -39,7 +39,7 @@ export default function NavBar ()
                     to = {`/`}> <img className='h-6' src = {aBarakaCreationLogoBleu} alt='BarakaCreation Logo' /></NavLink>
             </div>
             
-            <div className={`lg:flex text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[40px] pt-5 pb-[100%] top-[40px] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
+            <div className={`lg:flex text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[2.5rem] pt-5 pb-[100%] top-[2.5rem] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
                 
                 <div className='block lg:flex lg:items-center justify-between gap-10'>
                     <NavLink 

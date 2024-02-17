@@ -13,9 +13,9 @@ export default function ToggleText ({title, toggled, jsxText, height})  {
          <section className="p-3 text-left">
             {/* toogle btn  */}
             <div className=' justify-between flex cursor-pointer ' onClick={() => showText(toggled)}>
-                <h1 className='font-bold text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-gray-800'> {title} </h1>
+                <h1 className='font-bold text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[1rem] text-gray-800'> {title} </h1>
 
-                <div  className='w-[16px] h-[16px] sm:w-5 sm:h-5 rounded-full justify-center items-center border border-gray-900 flex '>
+                <div  className='w-[1rem] h-[1rem] sm:w-5 sm:h-5 rounded-full justify-center items-center border border-gray-900 flex '>
                     {!toggle[toggled] ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">

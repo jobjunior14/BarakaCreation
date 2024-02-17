@@ -34,9 +34,9 @@ export default function WebDesign() {
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full z-40 -mt-5 md:-mt-10  '>
                         
-                        <Link to='../' className=" duration-200  text-gray-100 text-[12px] sm:text-[14px] md:text-[16px] px-1 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                        <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[12px] sm:text-[14px] md:text-[16px] flex "> Notre portfolio <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex "> Notre portfolio <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@ export default function WebDesign() {
                             {/* first paragraph  */}
                             <section className=' md:px-0  '>
 
-                                <p className=' text-left font-[500] mx-[10%] md:mx-0 text-blue-200 text-[14px] md:text-[15px] lg:text-[18px] leading-5 lg:leading-6  '> 
+                                <p className=' text-left font-[500] mx-[10%] md:mx-0 text-blue-200 text-[0.875rem] md:text-[15px] lg:text-[18px] leading-5 lg:leading-6  '> 
                                     Vous souhaitez créer un site web qui reflète votre image de marque ?
                                     Nous sommes à vos cotés pour la création de sites web professionnels et performants.
                                     Notre réseau de designers et de développeurs expérimentés vous accompagnent de la
@@ -92,7 +92,7 @@ export default function WebDesign() {
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <div className='h-20 w-full'>
 
-                                        <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Fonctionnel, <br />fluide et facile à <br />utiliser</h1>
+                                        <h1 className='font-bold text-gray-100 text-[0.875rem] leading-4'>Fonctionnel, <br />fluide et facile à <br />utiliser</h1>
                                     </div>
                                 </div>
 
@@ -104,7 +104,7 @@ export default function WebDesign() {
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <div className='h-20 w-full'>
 
-                                        <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Attrayant et <br />répondant aux <br />objectifs de votre <br />marque <span className='text-gray-500'>ou <br />l&apos;entreprise</span></h1>
+                                        <h1 className='font-bold text-gray-100 text-[0.875rem] leading-4'>Attrayant et <br />répondant aux <br />objectifs de votre <br />marque <span className='text-gray-500'>ou <br />l&apos;entreprise</span></h1>
                                     </div>
                                 </div>
 
@@ -116,7 +116,7 @@ export default function WebDesign() {
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <div className='h-20 w-full'>
 
-                                        <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Créant une <br />impression <br />positive chez <br />les visiteurs</h1>
+                                        <h1 className='font-bold text-gray-100 text-[0.875rem] leading-4'>Créant une <br />impression <br />positive chez <br />les visiteurs</h1>
                                     </div>
                                 </div>
 
@@ -128,7 +128,7 @@ export default function WebDesign() {
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <div className='h-20 w-full'>
 
-                                        <h1 className='font-bold text-gray-100 text-[14px] leading-4'>Adapté à tous les <br />types d&apos;écrans, <span className='text-gray-500'>y <br />compris les <br />smartphones et <br />les tablettes</span></h1>
+                                        <h1 className='font-bold text-gray-100 text-[0.875rem] leading-4'>Adapté à tous les <br />types d&apos;écrans, <span className='text-gray-500'>y <br />compris les <br />smartphones et <br />les tablettes</span></h1>
                                     </div>
                                 </div>
                             </section>

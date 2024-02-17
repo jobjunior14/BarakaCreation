@@ -71,13 +71,13 @@ export default function IdentiteVisuel () {
                             <div className="text-center flex flex-col items-center justify-center gap-3">
 
                                 <h1 className="text-2xl md:text-3xl text-gray-600 font-bold  ">Charte Graphique</h1>
-                                <p className="w-[75%] sm:w-[70%] md:w-[65%]  text-[11px] sm:text-[14px] lg:text-[15px] text-gray-600">Pour maintenir votre identité visuelle, unifiée, forte et cohérente</p>
+                                <p className="w-[75%] sm:w-[70%] md:w-[65%]  text-[0.69rem] sm:text-[0.875rem] lg:text-[15px] text-gray-600">Pour maintenir votre identité visuelle, unifiée, forte et cohérente</p>
                             </div>
 
                             {/* Charte Graphique button  */}
                             <div className="flex justify-evenly gap-10">
-                                <Link to={'/services/idVisuelle/charteGraphique'} className=" text-blue-500 text-[12px] sm:text-[15px] md:text-[16px] flex "> Voir plus <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 pb-1"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
-                                <Link to='../' className=" duration-200  text-blue-500 text-[12px] sm:text-[15px] md:text-[16px] px-1 pb-[1.5px] rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                                <Link to={'/services/idVisuelle/charteGraphique'} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex "> Voir plus <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 pb-1"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                                <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-1 pb-[1.5px] rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                             </div>
                         </section>
                     </section>
@@ -114,7 +114,7 @@ export default function IdentiteVisuel () {
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[18px] font-bold text-gray-600">Présentation</h1>
-                                    <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Nous sommes à vos cotés pour élaborer et créer des supports de présentation de votre entreprise adaptés les aux écrans </p>
+                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Nous sommes à vos cotés pour élaborer et créer des supports de présentation de votre entreprise adaptés les aux écrans </p>
                                 </div>
                             </div>
 
@@ -125,7 +125,7 @@ export default function IdentiteVisuel () {
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[18px] font-bold text-gray-600">Réseaux sociaux</h1>
-                                    <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Nous élaborons et nous concevons des supports efficaces pour créer un lien affectif avec votre public ciblé. </p>
+                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Nous élaborons et nous concevons des supports efficaces pour créer un lien affectif avec votre public ciblé. </p>
                                 </div>
                             </div>
 
@@ -136,8 +136,8 @@ export default function IdentiteVisuel () {
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[18px] font-bold text-gray-600">Web design</h1>
-                                    <p className="text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600"> Conception graphique des sites web & applications mobile</p>
-                                    <button className="text-[11px] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center "  onClick={() => digitalClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600"> Conception graphique des sites web & applications mobile</p>
+                                    <button className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center "  onClick={() => digitalClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
                                         </svg>
                                         </span>
@@ -167,22 +167,22 @@ export default function IdentiteVisuel () {
 
                             <h1 className="text-left md:text-[18px] font-bold text-gray-600">Un atout marketing incontournable</h1>
 
-                            <p className="text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Le packaging est le premier contact que vos clients ont avec votre produit. <br /> 
+                            <p className="text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Le packaging est le premier contact que vos clients ont avec votre produit. <br /> 
                                 Nous créons un packaging qui vous permettra d&apos;atteindre vos objectifs marketing.
                             </p>
 
-                            <p className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600"> Le packaging vous aidera à:</p>
+                            <p className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600"> Le packaging vous aidera à:</p>
 
                             <div className="w-full text-left px-4">
                                <ul className="list-disc ">
-                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Augmenter la notoriété de votre marque</li>
-                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Développer votre imaege de marque</li>
-                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Améliorer la perception de votre produit</li>
-                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Faciliter la vente de votre produit</li>
-                                    <li className=" text-left text-[11px] sm:text-[13px] lg:text-[15px] text-gray-600">Démarquer votre produit</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Augmenter la notoriété de votre marque</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Développer votre imaege de marque</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Améliorer la perception de votre produit</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Faciliter la vente de votre produit</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Démarquer votre produit</li>
                                 </ul>     
                             </div>
-                            <button className="text-[11px] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center " onClick={() => packegingClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                            <button className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center " onClick={() => packegingClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
                                 </svg>
                                 </span>

@@ -30,12 +30,12 @@ export default function MotionDesign() {
                 <section className='w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10'>
                     {/* first paraagraph  */}
                     <div className='w-full px-[15%] sm:px-0'>
-                        <p className='text-left font-[500] text-gray-100 text-[14px] sm:text-[15px] md:text-[17px] leading-5  sm:w-[75%] md:w-[70%] lg:w-[65%] '>Un puissant message qui permet de capter l&apos;attention de votre public et transmettre des messages de maniere claire et concise.</p>
+                        <p className='text-left font-[500] text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[75%] md:w-[70%] lg:w-[65%] '>Un puissant message qui permet de capter l&apos;attention de votre public et transmettre des messages de maniere claire et concise.</p>
                     </div>
                     
                     {/* second paragraph  */}
                     <div className='w-full px-[15%] sm:px-0'>
-                        <p className='text-left font-[500] text-bgPlay text-[14px] sm:text-[15px] md:text-[17px] leading-5'>Nous créons des animations personalisées et qui reflètent votre message. <br /> Nous vous accompagnons durant tout le processus du briefing au rendu final.</p>
+                        <p className='text-left font-[500] text-bgPlay text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5'>Nous créons des animations personalisées et qui reflètent votre message. <br /> Nous vous accompagnons durant tout le processus du briefing au rendu final.</p>
                     </div>
 
                     {/* first image Spot publicitaire */}
@@ -45,8 +45,8 @@ export default function MotionDesign() {
 
                             <div className='w-[80%] sm:w-[77%] md:w-[74%] lg:w-[71%] flex flex-col gap-2 md:gap-3 lg:gap-4 items-start pl-[5%] sm:pl-0'>
                                 <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]'> Spot Publicitaire</h1>
-                                <p className='text-gray-100 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] text-left'>Présentation d&apos;entreprise, des sservices, promotion des produits</p>
-                                <Link to={'../'} className='text-gray-100 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-3 pb-px bg-blue-500'>Intéressé</Link>
+                                <p className='text-gray-100 text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] text-left'>Présentation d&apos;entreprise, des sservices, promotion des produits</p>
+                                <Link to={'../'} className='text-gray-100 text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-3 pb-px bg-blue-500'>Intéressé</Link>
                             </div>
                         </div>
                     </div>
@@ -59,8 +59,8 @@ export default function MotionDesign() {
 
                             <div className='w-[80%] sm:w-[77%] md:w-[74%] lg:w-[71%] flex flex-col gap-2 md:gap-3 lg:gap-4 items-start pl-[5%] sm:pl-0'>
                                 <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]'> Présentation </h1>
-                                <p className='text-gray-100 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] text-left'>Présentation des projets. <br /> Animation des contenus</p>
-                                <Link to={'../'} className='text-gray-100 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-4 pb-px bg-blue-500'>Intéressé</Link>
+                                <p className='text-gray-100 text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] text-left'>Présentation des projets. <br /> Animation des contenus</p>
+                                <Link to={'../'} className='text-gray-100 text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-4 pb-px bg-blue-500'>Intéressé</Link>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default function MotionDesign() {
                 {/* final text  */}
                 <section className='grid grid-cols-1 gap-6 md:gap-10 px-[5%] sm:px-[10%]  text-left'> 
                     <div>
-                        <h1 className=' text-blue-100 text-[24px] sm:text-[26px] md:text-[28px] lg:text-[30px] font-bold leading-7 w-[70%]' >Votre partenaire créatif pour la préproduction des dessins animés</h1>
+                        <h1 className=' text-blue-100 text-[24px] sm:text-[26px] md:text-[28px] lg:text-[1.875rem] font-bold leading-7 w-[70%]' >Votre partenaire créatif pour la préproduction des dessins animés</h1>
                     </div>
                    
                     <div>
