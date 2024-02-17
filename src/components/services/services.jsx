@@ -68,7 +68,7 @@ export default function Services () {
                         <h1 className='font-bold text-[23px] sm:text-3xl md:text-4xl lg:text-6xl '>Illustration</h1>
                         <p className='text-[11px] sm:hidden sm:text-[18px] md:text-xl sm:text-right '>Livre, Couverture <span className='text-gray-500'>&</span> Bande dessinée <br/> Campagne <span className='text-gray-500'>&</span> web</p>
                         <p className='text-[11px] hidden sm:block sm:text-[18px] md:text-xl sm:text-right '>Livre  <span className='text-gray-500'>&</span> Couverture <br/>Bande dessinée <br/> Campagne <span className='text-gray-500'>&</span> web</p>
-                        <button className='bg-blue-500 px-3 py-[2px] text-white text-xs rounded-full sm:text-[18px] hover:bg-myBlue duration-200' > Plus </button>
+                        <button onClick={() => navigate('/services/illustration')} className='bg-blue-500 px-3 py-[2px] text-white text-xs rounded-full sm:text-[18px] hover:bg-myBlue duration-200' > Plus </button>
                     </div>
                 </section>
 

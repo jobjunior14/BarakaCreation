@@ -18,7 +18,7 @@ import Event from './components/services/graphique_design/event';
 import Presentation from './components/services/graphique_design/presentation';
 import MiseEnPage from './components/services/graphique_design/miseEnPage';
 import WebDesign from './components/services/graphique_design/webDesign';
-
+import Illustation from './components/services/illustation/illustation';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -50,6 +50,12 @@ function App() {
                 <Route path='miseEnPage' element = {<MiseEnPage/>} />
                 <Route path='webDesign' element = {<WebDesign/>} />
               </Route>
+              
+              <Route path='illustration' element={<Outlet/>}>
+
+                <Route index element ={<Illustation/>}/>
+              </Route>
+
             </Route>
             
         </Route>
