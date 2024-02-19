@@ -4,6 +4,7 @@ import logofolio_collectionC from '../../assets/Portofolio/logofolio_collectionC
 import docs_mocks_mC from '../../assets/Portofolio/docs_mocks_mC.jpg';
 import portfolio_accueilC from '../../assets/Portofolio/portfolio_accueilC.jpg';
 import animation_service_2C from '../../assets/Services/Animation/animation_service_2C.jpg'
+import { Link } from 'react-router-dom';
 export default function Portfolio() {
 
     // const [bgAttachment, setBgAttachment] = useState('bg-fixed');
@@ -32,16 +33,17 @@ export default function Portfolio() {
                     
                     {/* Gallerie  */}
                     <section className={`w-full relative h-[32.5rem] sm:h-auto rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center`} style={{backgroundImage: `url(${Save_children_dreams_illustration_4okey})`}}>
+                        <Link to={'/portfolio/galleryArt'}>
+                            <div className='h-full w-full duration-200 delay-150 relative'>
+                                <img src={Save_children_dreams_illustration_4okey} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
 
-                        <div className='h-full w-full duration-200 delay-150 relative'>
-                            <img src={Save_children_dreams_illustration_4okey} alt='image' className='sm:flex hidden rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
-
-                        </div>
+                            </div>
+                        </Link>
 
                         
                         <div className='absolute flex flex-col items-center justify-center top-4  gap-2'>
                             <h1 className=' text-3xl font-semibold text-gray-100'>Gallerie <br/>d&apos;art</h1>
-                            <button className=' rounded-3xl bg-blue-600 text-xs py-px px-3 text-white hover:bg-myBlue text-center'>Voir</button>
+                            <Link to={'/portfolio/galleryArt'} className=' rounded-3xl bg-blue-600 text-xs py-px px-3 text-white hover:bg-myBlue text-center'>Voir</Link>
                         </div>
                     </section>
                     

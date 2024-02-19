@@ -263,7 +263,7 @@ export default function Illustation () {
             </section> 
 
             {/* section entron en contact  */}
-                <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative p-5'>
+            <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative p-5'>
 
                  <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
                     <img src={design_entrons_en_contact} className='' alt='image accompagnement'/>

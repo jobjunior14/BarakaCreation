@@ -20,6 +20,7 @@ import MiseEnPage from './components/services/graphique_design/miseEnPage';
 import WebDesign from './components/services/graphique_design/webDesign';
 import Illustation from './components/services/illustation/illustation';
 import Consultance from './components/services/consultance/consultance';
+import GalleryArt from './components/Portfolio/gallerie_Art';
 
 import { Outlet } from 'react-router-dom';
 function App() {
@@ -30,7 +31,10 @@ function App() {
         <Route path='/' element = {<SharedNav/>}>
             <Route index element={<Acceuil/>} />
             <Route path='aPropos' element= {<Apropos/>}/>
-            <Route path='portfolio' element={<Portfolio/>}/>
+            <Route path='portfolio' element={<><Outlet/></>}>
+              <Route index element={<Portfolio/>}/>
+              <Route path='galleryArt' element={<GalleryArt/>}/>
+            </Route>
             <Route path='publication' element={<Publication/>}/>
 
             <Route path='services' element={<> <Outlet/></>}>
