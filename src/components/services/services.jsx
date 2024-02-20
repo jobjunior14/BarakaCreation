@@ -16,9 +16,11 @@ import icone3 from '../../assets/Services/icone3.png';
 import NosServices from './components/nosServices';
 import ToggleText from './components/toggleText';
 import { useNavigate } from 'react-router-dom';
+import useWindowWidth from '../windowWidth';
 export default function Services () {
 
     const navigate = useNavigate();
+    const width = useWindowWidth();
 
     return (
         <main className="w-full flex flex-col gap-5">
@@ -35,8 +37,7 @@ export default function Services () {
 
                 {/* 2nd part "identité" visuelle  */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={ac2P} alt='ac2P' className='sm:hidden rounded-lg' />
-                    <img src={ac2O} alt='ac2O' className='sm:flex hidden rounded-lg' />
+                    <img src={width <= 640 ? ac2P : ac2O} alt='ac2P' className='rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold sm:hidden text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl'>Identité Visuelle</h1>
@@ -48,8 +49,7 @@ export default function Services () {
 
                 {/* 3rd part "design graohique" */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={ac3P} alt='ac2P' className='sm:hidden rounded-lg' />
-                    <img src={ac3O} alt='ac2O' className='sm:flex hidden rounded-lg' />
+                    <img src={width <= 640 ? ac3P : ac3O} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold sm:hidden text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'>Design Graphique</h1>
@@ -61,8 +61,7 @@ export default function Services () {
 
                 {/* illustration */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={ac1} alt='ac2P' className='sm:hidden rounded-lg' />
-                    <img src={Acillustration} alt='ac2O' className='sm:flex rounded-lgex hidden' />
+                    <img src={width <= 640 ? ac1 : Acillustration} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-end sm:right-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl '>Illustration</h1>
@@ -74,8 +73,7 @@ export default function Services () {
 
                 {/* annimation  */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={ac5P} alt='ac2P' className='sm:hidden rounded-lg' />
-                    <img src={ac5O} alt='ac2O' className='sm:flex hidden rounded-lg' />
+                    <img src={width <= 640 ? ac5P : ac5O} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl '>Annimation</h1>
@@ -86,8 +84,7 @@ export default function Services () {
                 
                 {/* consulting  */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={ac4P} alt='ac2P' className='sm:hidden rounded-lg' />
-                    <img src={ac4O} alt='ac2O' className='sm:flex hidden rounded-lg' />
+                    <img src={width <= 640 ? ac4P : ac4O} alt='ac2P' className='rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'> Consulting</h1>

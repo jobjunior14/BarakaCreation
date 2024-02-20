@@ -12,15 +12,16 @@ import icon4 from '../../assets/Publication/icon4.png';
 import icon4N from '../../assets/Publication/icon4N.png';
 import Accueil_hautS from '../../assets/Publication/Haut/Accueil_hautS.jpg';
 import titlele_reve_et_le_defi from '../../assets/Publication/titlele_reve_et_le_defi.png';
-import Accueil_Le_reve_et_le_defi from '../../assets/Publication/Le reve et le defi/Accueil_Le_reve_et_le_defi.jpg'
-import Publication_ordi_3 from '../../assets/Publication/Publication_ordi_3.jpg'
-import Publication_ordi from '../../assets/Publication/Publication_ordi.jpg'
-import Publicationord2 from '../../assets/Publication/Publicationord2.jpg'
-import Publicationord1 from '../../assets/Publication/Publicationord1.jpg'
+import Accueil_Le_reve_et_le_defi from '../../assets/Publication/Le reve et le defi/Accueil_Le_reve_et_le_defi.jpg';
+import Publication_ordi_3 from '../../assets/Publication/Publication_ordi_3.jpg';
+import Publication_ordi from '../../assets/Publication/Publication_ordi.jpg';
+import Publicationord2 from '../../assets/Publication/Publicationord2.jpg';
+import Publicationord1 from '../../assets/Publication/Publicationord1.jpg';
+import useWindowWidth from '../windowWidth';
 export default function Publication () {
 
     const [index, setIndex] = useState(0);
-
+    const width = useWindowWidth();
     // slide the images automaticaly
     useEffect(() => {
 
@@ -50,18 +51,12 @@ export default function Publication () {
 
                  {/* images to slideShow  */}
                 <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 flex overflow-hidden '>
-                    {/* image pc  */}
-                    <img src={coover_ordi_mamour} alt='image' className=' duration-1000 delay-150 hidden sm:flex  ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={Accueil_Le_reve_et_le_defi} alt='image' className=' duration-1000 delay-150 hidden sm:flex ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={chute} alt='image' className=' duration-1000 delay-150 hidden sm:flex ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={Accueil_hautS} alt='image' className=' duration-1000 delay-150 hidden sm:flex ' style={{transform: `translateX(${-index}%)`}} />
 
-
-                    {/* image phone  */}
-                    <img src={coover_phone_mamour} alt='image' className=' duration-1000 delay-150 sm:hidden ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={defiTel} alt='image' className=' duration-1000 delay-150 sm:hidden ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={chuteTel} alt='image' className=' duration-1000 delay-150 sm:hidden ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={hautTel} alt='image' className=' duration-1000 delay-150 sm:hidden ' style={{transform: `translateX(${-index}%)`}} />
+                    {/* image   */}
+                    <img src={width <= 640 ? coover_phone_mamour : coover_ordi_mamour} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
+                    <img src={width <= 640 ? defiTel : Accueil_Le_reve_et_le_defi} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
+                    <img src={width <= 640 ? chuteTel : chute} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
+                    <img src={width <= 640 ? hautTel :Accueil_hautS} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
                     
                     {/* button suivre sur l'image  */}
                     {/* image's text and button 'fist image mamour' */}

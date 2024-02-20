@@ -6,9 +6,10 @@ import animation_service_2 from '../../../assets/Services/Animation/animation_se
 import animation_service_3 from '../../../assets/Services/Animation/animation_service_3.jpg';
 import Illustration_concept_art_1 from '../../../assets/Services/Illustration/Illustration_concept_art_1.jpg'; 
 import animation_partner from '../../../assets/Services/Animation/animation_partner.jpg';
-
+import useWindowWidth from '../../windowWidth';
 export default function MotionDesign() {
 
+    const width = useWindowWidth();
 
     return (
         <div className='w-full bg-white'>
@@ -17,8 +18,7 @@ export default function MotionDesign() {
             {/* welcom image  */}
             <section className='w-full flex flex-col items-center justify-center relative '>
             
-                <img src={Accueil_animation_accueil} alt=" print_accueil" className='hidden sm:block'/>
-                <img src={Accueil_Animation_phone} alt=" print_accueil" className=' sm:hidden'/>
+                <img src={width <= 640 ? Accueil_Animation_phone : Accueil_animation_accueil} alt=" print_accueil"/>
 
             </section>
 

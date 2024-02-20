@@ -17,19 +17,20 @@ import Logo8 from '../assets/Accueil/Logo8.png';
 import Logo9 from '../assets/Accueil/Logo9.png';
 import Logo10 from '../assets/Accueil/Logo10.png';
 import './an.css';
+import useWindowWidth from './windowWidth';
 import { useNavigate } from 'react-router-dom';
 
 export default function Acceuil () {
 
     const navigate = useNavigate();
 
+    const width = useWindowWidth();
     return (
 
         <div className="flex w-full gap-0 flex-col justify-center items-center first-letter bg-contain bg-no-repeat bg-fixed " >
             {/* first part "Principal picture" */}
             <section className='-mb-5' >
-                <img src={accueil_ok} className='hidden sm:block' alt='Baraka image' />
-                <img src={accueil_phone} className='block sm:hidden' alt='Baraka image' />
+                <img src={ width >= 640 ? accueil_ok : accueil_phone} className='' alt='Baraka image' />
             </section>
 
             {/* seconde part "C'que nous faisons" */}
@@ -39,7 +40,7 @@ export default function Acceuil () {
 
                     <h2 className=' text-blue-200 font-semibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 '>Ce que nous faisons</h2>
 
-                    <div className=' w-[200px]  sm:w-[250px]  items-center flex flex-col gap-y-3 sm:gap-y-5 mt-[25px] sm:mt-[2.5rem] md:mt-[100px] lg:mt-[120px]'>
+                    <div className=' w-[200px]  sm:w-[250px]  items-center flex flex-col gap-y-3 sm:gap-y-5 mt-[25px] sm:mt-[40px] md:mt-[100px] lg:mt-[120px]'>
 
                         <h3 className=' text-blue-100 text-center text-3xl md:text-4xl lg:text-6xl font-bold'>Innover</h3>
 
@@ -47,7 +48,7 @@ export default function Acceuil () {
 
                         <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-blue-200 flex relative w-[60%] pl-7 hover:bg-gray-500 duration-200'> 
                             <p className='text-gray-300 text-[8px] sm:text-xs mb-px'> Nos réalisations </p>
-                            <div className='w-[1rem] h-[1rem] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
+                            <div className='w-[16px] h-[16px] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
@@ -58,8 +59,8 @@ export default function Acceuil () {
                 </div>
                 
                 <div className='flex justify-between mt-4 sm:mt-7'>
-                    <img src={Accueildesigngr2} className='h-[170px] lg:h-[470px] md:h-[32.5rem] sm:h-[250px] ' alt='design 1'/>
-                    <img src={Accueildesigngr1} className='h-[170px] lg:h-[470px] md:h-[32.5rem] sm:h-[250px] ' alt='design 2'/>
+                    <img src={Accueildesigngr2} className='h-[170px] lg:h-[470px] md:h-[340px] sm:h-[250px] ' alt='design 1'/>
+                    <img src={Accueildesigngr1} className='h-[170px] lg:h-[470px] md:h-[340px] sm:h-[250px] ' alt='design 2'/>
                 </div>
             </section>
             
@@ -77,7 +78,7 @@ export default function Acceuil () {
                         <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-slate-500 flex relative w-[60%] sm:pl-9 pl-7 hover:bg-myBlue duration-200'> 
                             <p className='text-white text-[8px] sm:text-xs mb-px'>Voir nos services </p>
 
-                            <div className='w-[1rem] h-[1rem] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
+                            <div className='w-[16px] h-[16px] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
@@ -111,8 +112,7 @@ export default function Acceuil () {
                 </div>
               
                 <div className=''>
-                    <img src={Mamour_ordi} className='hidden sm:block' alt='Baraka image' />
-                    <img src={Mamour_phone} className='block sm:hidden' alt='Baraka image' />
+                    <img src={width >= 640 ? Mamour_ordi : Mamour_phone} alt='Baraka image' />
                 </div>
 
             </section>

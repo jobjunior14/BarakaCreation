@@ -26,167 +26,376 @@ import Diplome_0 from '../../assets/Portofolio/GallerieArt/Diplome_0.jpg';
 import Covid_atack_0 from '../../assets/Portofolio/GallerieArt/Covid_atack_0.jpg';
 import Aides_0 from '../../assets/Portofolio/GallerieArt/Aides_0.jpg';
 import Ungana_0 from '../../assets/Portofolio/GallerieArt/Ungana_0.jpg';
+import useWindowWidth from '../windowWidth';
+import { useEffect, useState } from 'react';
 
 export default function GalleryArt() {
+    
+    const [height, setHeight] = useState(0);
+    const width = useWindowWidth();
+    
+    useEffect(() => {
+        const handleHeight = () => {
+            setHeight ((document.documentElement.scrollTop * 100) / document.documentElement.scrollHeight) ;
+        }
 
-    return (<section className='pt-10 flex flex-col gap-3'>
-        
-        {/* first div  */}
-        <section className='w-full  grid sm:grid-rows-2 grid-cols-1 sm:grid-cols-3 gap-3 px-[10%]'>
+        window.addEventListener('scroll', handleHeight);
 
-            <div className='w-full h-full  sm:col-start-1 sm:col-span-3 sm:col-end-3 flex items-center justify-center '>
-                <div className='sm:w-[50%] '>
+        return () => {
+            window.removeEventListener('scroll', handleHeight);
+        }
+    }, []);
+       
 
-                    <img  src={CICR_0} alt="" />
+    if (width <= 640) {
+
+        return (<section className='pt-10 flex flex-col gap-3'>
+            
+            {/* first div  */}
+            <section className='w-full  grid sm:grid-rows-2 grid-cols-1 sm:grid-cols-3 gap-3 px-[10%]'>
+
+                <div className='w-full h-full  sm:col-start-1 sm:col-span-3 sm:col-end-3 flex items-center justify-center '>
+                    <div className='sm:w-[50%] '>
+
+                        <img  src={CICR_0} alt="" />
+                    </div>
                 </div>
-            </div>
 
-            <div className='w-full h-full sm:col-start-3 sm:row-start-1 sm:row-end-3 '>
-                <img src={Le_retour_0} alt="" />
-            </div>
+                <div className='w-full h-full sm:col-start-3 sm:row-start-1 sm:row-end-3 '>
+                    <img src={Le_retour_0} alt="" />
+                </div>
 
-            <div className='w-full h-full '>
-                <img src={Envol_end_0} alt="" />
-            </div>
+                <div className='w-full h-full '>
+                    <img src={Envol_end_0} alt="" />
+                </div>
 
-            <div className='w-full h-full '>
-                <img src={Ambouteillage_0} alt="" />
-            </div>
-        </section>
+                <div className='w-full h-full '>
+                    <img src={Ambouteillage_0} alt="" />
+                </div>
+            </section>
 
-        {/* second div  */}
-        <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
-            <div className=''>
-                <img src={Mama_hero_0} alt="Mama_hero_0" />
-            </div>
+
+            {/* second div  */}
+            <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
+                <div className=''>
+                    <img src={ Mama_hero_0} alt="Mama_hero_0" />
+                </div>
+                
+                <div className='lg:w-[85%]'>
+                    <img src={Apatridie_0} alt="Apatridie_0" />
+                </div>
+            </section>
+
+            {/* third div */}
+            { height >= 14  && <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
+
+                <div className='sm:w-[99%]'>
+                    <img src={bye_2022_0} alt="bye_2022_0" />
+                </div>
+
+                <div>
+                    <img src={save_children_dreams_3_0} alt="save_children_dreams_3_0" />
+                </div>
+
+                <div className='w-[99%]'>
+                    <img src={Au_controle_0} alt="Au_controle_0" />
+                </div>
+            </section>}
+
+            {/* 4th div  */}
+            { height >= 21 && <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
+
+                <div className='lg:w-[88%] '>
+                    <img src={Peintre_work_0} alt="Peintre_work_0" />
+                </div>
+
+                <div>
+                    <img src={save_children_dreams_2_0} alt="Mama_hero_0" />
+                </div>
+                
+            </section>}
+
+            {/* 5th div  */}
+            {height >= 28 && <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
+                <div>
+                    <img src={Aurevoir_0} alt="Aurevoir_0" />
+                </div>
+
+                <div className='sm:w-full md:w-[90%] lg:w-[80%] xl:w-[65%]'>
+                    <img src={sav_children_dreams_1_0} alt="sav_children_dreams_1_0" />
+                </div>
+            </section>}
+
+            {/* 6th div  */}
+            { height >= 35  && <section className='w-full grid sm:grid-rows-2 grid-cols-1 sm:grid-cols-3 gap-3 px-[10%]'>
+
+                <div className='w-full  sm:row-span-2 h-full'>
+
+                    <img  src={yambala_oyo_0} alt="yambala_oyo_0" />
+                </div>
+
+                <div className='w-full h-full'>
+                    <img src={Mama_sacrifice_0} alt="Mama_sacrifice_0" />
+                </div>
+
+                <div className='w-full h-full sm:row-start-2 sm:col-start-3'>
+                    <img src={Matadi_kibala_0} alt="" />
+                </div>
+            </section>}
+
+            {/* 7th div  */}
+            {  height >= 42  && <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] '>
+
+                <div className='w-full'>
+                    <img src={Apatridie_0_2} alt="Mama_hero_0" />
+                </div>
+
+                <div className='lg:w-[60%]  sm:w-[80%] '>
+                    <img src={Livre_monde_0} alt="Peintre_work_0" />
+                </div>
+            </section>}
+
+            {/* 8th div  */}
+            { height >= 49  && <section className=' grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-3 px-[10%]'>
+
+                <div className='w-full'>
+                    <img src={Woman_tech_0} alt="Woman_tech_0" />
+                </div>
+                <div className=' row-start-2 col-start-1 '>
+                    <img src={Woman_warior_0} alt="Woman_warior_0" />
+                </div>
+                <div  className='h-full w-full row-span-2 justify-center items-center flex'>
+                    <img src={Milele_africa_illustration_Square_0} alt="" />
+                </div>
+            </section>}
+
+            {/* 9th div  */}
+            { height >= 56  && <section className='grid grid-cols-1 sm:grid-cols-3 sm:flex-row gap-3 px-[10%]'>
+
+                <div className=' sm:col-start-2'>
+                    <img src={Envol_0} alt="save_children_dreams_3_0" />
+                </div>
+
+                <div className='w-[99%]'>
+                    <img src={Apatridie_0_1} alt="Au_controle_0" />
+                </div>
+            </section>}
+
+            {/* 10th div  */}
+            { height >= 63  && <section className=' w-full gap-3 grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 px-[10%] '>
+
+                <div className=' sm:row-span-2'>
+                    <img src={NAZA_MOLONGI_0} alt="NAZA_MOLONGI_0" />
+                </div>
+                <div className='lg:w-[60%]  sm:w-[80%] sm:row-start-2 sm:col-start-2'>
+                    <img src={Diplome_0} alt="Diplome_0" />
+                </div>
+            </section>}
             
-            <div className='lg:w-[85%]'>
-                <img src={Apatridie_0} alt="Apatridie_0" />
-            </div>
-        </section>
+            {/* 11th div  */}
+            { height >= 73  && <section className='w-full flex justify-center items-center px-[10%] '>
+                <div className='md:w-[70%] lg:w-[60%]'>
+                    <img src={Covid_atack_0} alt="" />
+                </div>
+            </section>}
 
-        {/* third div */}
-        <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
+            {/* 12th div  */}
+            { height >= 73  && <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
 
-            <div className='sm:w-[99%]'>
-                <img src={bye_2022_0} alt="bye_2022_0" />
-            </div>
+                <div className='lg:w-[88%] '>
+                    <img src={Aides_0} alt="Peintre_work_0" />
+                </div>
 
-            <div>
-                <img src={save_children_dreams_3_0} alt="save_children_dreams_3_0" />
-            </div>
+                <div>
+                    <img src={Ungana_0} alt="Mama_hero_0" />
+                </div>
+                
+            </section>}
 
-            <div className='w-[99%]'>
-                <img src={Au_controle_0} alt="Au_controle_0" />
-            </div>
-        </section>
+            <section className='w-full flex items-end justify-end sticky bottom-5 px-[2%] py-[3%]'>
 
-        {/* 4th div  */}
-        <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
-
-            <div className='lg:w-[88%] '>
-                <img src={Peintre_work_0} alt="Peintre_work_0" />
-            </div>
-
-            <div>
-                <img src={save_children_dreams_2_0} alt="Mama_hero_0" />
-            </div>
+                <div onClick={() => document.documentElement.scrollTop = 0} className={`p-1 border border-gray-400 bg-gray-400 rounded-full cursor-pointer`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-5 h-5 white`}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                </div>
+            </section>
+        </section>)
+    } else {
+        return (<section className='pt-10 flex flex-col gap-3'>
             
-        </section>
+            {/* first div  */}
+            <section className='w-full  grid sm:grid-rows-2 grid-cols-1 sm:grid-cols-3 gap-3 px-[10%]'>
 
-        {/* 5th div  */}
-        <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
-            <div>
-                <img src={Aurevoir_0} alt="Aurevoir_0" />
-            </div>
+                <div className='w-full h-full  sm:col-start-1 sm:col-span-3 sm:col-end-3 flex items-center justify-center '>
+                    <div className='sm:w-[50%] '>
 
-            <div className='sm:w-full md:w-[90%] lg:w-[80%] xl:w-[65%]'>
-                <img src={sav_children_dreams_1_0} alt="sav_children_dreams_1_0" />
-            </div>
-        </section>
+                        <img  src={CICR_0} alt="" />
+                    </div>
+                </div>
 
-        {/* 6th div  */}
-        <section className='w-full grid sm:grid-rows-2 grid-cols-1 sm:grid-cols-3 gap-3 px-[10%]'>
+                <div className='w-full h-full sm:col-start-3 sm:row-start-1 sm:row-end-3 '>
+                    <img src={Le_retour_0} alt="" />
+                </div>
 
-            <div className='w-full  sm:row-span-2 h-full'>
+                <div className='w-full h-full '>
+                    <img src={Envol_end_0} alt="" />
+                </div>
 
-                <img  src={yambala_oyo_0} alt="yambala_oyo_0" />
-            </div>
+                <div className='w-full h-full '>
+                    <img src={Ambouteillage_0} alt="" />
+                </div>
+            </section>
 
-            <div className='w-full h-full'>
-                <img src={Mama_sacrifice_0} alt="Mama_sacrifice_0" />
-            </div>
 
-            <div className='w-full h-full sm:row-start-2 sm:col-start-3'>
-                <img src={Matadi_kibala_0} alt="" />
-            </div>
-        </section>
+            {/* second div  */}
+            <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
+                <div className=''>
+                    <img src={ Mama_hero_0} alt="Mama_hero_0" />
+                </div>
+                
+                <div className='lg:w-[85%]'>
+                    <img src={Apatridie_0} alt="Apatridie_0" />
+                </div>
+            </section>
 
-        {/* 7th div  */}
-        <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] '>
+            {/* third div */}
+            <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
 
-            <div>
-                <img src={Apatridie_0_2} alt="Mama_hero_0" />
-            </div>
-            <div className='lg:w-[60%]  sm:w-[80%] '>
-                <img src={Livre_monde_0} alt="Peintre_work_0" />
-            </div>
-        </section>
+                <div className='sm:w-[99%]'>
+                    <img src={bye_2022_0} alt="bye_2022_0" />
+                </div>
 
-        {/* 8th div  */}
-        <section className=' grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-3 px-[10%]'>
-            <div className=''>
-                <img src={Woman_tech_0} alt="Woman_tech_0" />
-            </div>
-            <div className=' row-start-2 col-start-1 '>
-                <img src={Woman_warior_0} alt="Woman_warior_0" />
-            </div>
-            <div  className='h-full w-full row-span-2 justify-center items-center flex'>
-                <img src={Milele_africa_illustration_Square_0} alt="" />
-            </div>
-        </section>
+                <div>
+                    <img src={save_children_dreams_3_0} alt="save_children_dreams_3_0" />
+                </div>
 
-        {/* 9th div  */}
-          <section className='grid grid-cols-1 sm:grid-cols-3 sm:flex-row gap-3 px-[10%]'>
+                <div className='w-[99%]'>
+                    <img src={Au_controle_0} alt="Au_controle_0" />
+                </div>
+            </section>
 
-            <div className=' sm:col-start-2'>
-                <img src={Envol_0} alt="save_children_dreams_3_0" />
-            </div>
+            {/* 4th div  */}
+            <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
 
-            <div className='w-[99%]'>
-                <img src={Apatridie_0_1} alt="Au_controle_0" />
-            </div>
-        </section>
+                <div className='lg:w-[88%] '>
+                    <img src={Peintre_work_0} alt="Peintre_work_0" />
+                </div>
 
-        {/* 10th div  */}
-         <section className=' w-full gap-3 grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 px-[10%] '>
+                <div>
+                    <img src={save_children_dreams_2_0} alt="Mama_hero_0" />
+                </div>
+                
+            </section>
 
-            <div className=' sm:row-span-2'>
-                <img src={NAZA_MOLONGI_0} alt="NAZA_MOLONGI_0" />
-            </div>
-            <div className='lg:w-[60%]  sm:w-[80%] sm:row-start-2 sm:col-start-2'>
-                <img src={Diplome_0} alt="Diplome_0" />
-            </div>
-        </section>
-        
-        {/* 11th div  */}
-        <section className='w-full flex justify-center items-center px-[10%] '>
-            <div className='md:w-[70%] lg:w-[60%]'>
-                <img src={Covid_atack_0} alt="" />
-            </div>
-        </section>
+            {/* 5th div  */}
+            <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
+                <div>
+                    <img src={Aurevoir_0} alt="Aurevoir_0" />
+                </div>
 
-        {/* 12th div  */}
-        <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
+                <div className='sm:w-full md:w-[90%] lg:w-[80%] xl:w-[65%]'>
+                    <img src={sav_children_dreams_1_0} alt="sav_children_dreams_1_0" />
+                </div>
+            </section>
 
-            <div className='lg:w-[88%] '>
-                <img src={Aides_0} alt="Peintre_work_0" />
-            </div>
+            {/* 6th div  */}
+            <section className='w-full grid sm:grid-rows-2 grid-cols-1 sm:grid-cols-3 gap-3 px-[10%]'>
 
-            <div>
-                <img src={Ungana_0} alt="Mama_hero_0" />
-            </div>
+                <div className='w-full  sm:row-span-2 h-full'>
+
+                    <img  src={yambala_oyo_0} alt="yambala_oyo_0" />
+                </div>
+
+                <div className='w-full h-full'>
+                    <img src={Mama_sacrifice_0} alt="Mama_sacrifice_0" />
+                </div>
+
+                <div className='w-full h-full sm:row-start-2 sm:col-start-3'>
+                    <img src={Matadi_kibala_0} alt="" />
+                </div>
+            </section>
+
+            {/* 7th div  */}
+             <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] '>
+
+                <div className='w-full'>
+                    <img src={Apatridie_0_2} alt="Mama_hero_0" />
+                </div>
+
+                <div className='lg:w-[60%]  sm:w-[80%] '>
+                    <img src={Livre_monde_0} alt="Peintre_work_0" />
+                </div>
+            </section>
+
+            {/* 8th div  */}
+            <section className=' grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-3 px-[10%]'>
+
+                <div className='w-full'>
+                    <img src={Woman_tech_0} alt="Woman_tech_0" />
+                </div>
+                <div className=' row-start-2 col-start-1 '>
+                    <img src={Woman_warior_0} alt="Woman_warior_0" />
+                </div>
+                <div  className='h-full w-full row-span-2 justify-center items-center flex'>
+                    <img src={Milele_africa_illustration_Square_0} alt="" />
+                </div>
+            </section>
+
+            {/* 9th div  */}
+            <section className='grid grid-cols-1 sm:grid-cols-3 sm:flex-row gap-3 px-[10%]'>
+
+                <div className=' sm:col-start-2'>
+                    <img src={Envol_0} alt="save_children_dreams_3_0" />
+                </div>
+
+                <div className='w-[99%]'>
+                    <img src={Apatridie_0_1} alt="Au_controle_0" />
+                </div>
+            </section>
+
+            {/* 10th div  */}
+            <section className=' w-full gap-3 grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 px-[10%] '>
+
+                <div className=' sm:row-span-2'>
+                    <img src={NAZA_MOLONGI_0} alt="NAZA_MOLONGI_0" />
+                </div>
+                <div className='lg:w-[60%]  sm:w-[80%] sm:row-start-2 sm:col-start-2'>
+                    <img src={Diplome_0} alt="Diplome_0" />
+                </div>
+            </section>
             
-        </section>
-    </section>)
+            {/* 11th div  */}
+            <section className='w-full flex justify-center items-center px-[10%] '>
+                <div className='md:w-[70%] lg:w-[60%]'>
+                    <img src={Covid_atack_0} alt="" />
+                </div>
+            </section>
+
+            {/* 12th div  */}
+            <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
+
+                <div className='lg:w-[88%] '>
+                    <img src={Aides_0} alt="Peintre_work_0" />
+                </div>
+
+                <div>
+                    <img src={Ungana_0} alt="Mama_hero_0" />
+                </div>
+                
+            </section>
+
+            <section className='w-full flex items-end justify-end sticky bottom-5 px-[2%] py-[3%]'>
+
+                <div onClick={() => document.documentElement.scrollTop = 0} className={`p-1 border border-gray-400 bg-gray-400 rounded-full cursor-pointer`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-5 h-5 white`}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                </div>
+            </section>
+        </section>)
+
+    }
 }

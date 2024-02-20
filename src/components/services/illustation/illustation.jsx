@@ -13,15 +13,17 @@ import illustratration_concept_art_story_board from '../../../assets/Services/Il
 import Illustration_concept_art_3 from '../../../assets/Services/Illustration/Illustration_concept_art_1.jpg';
 import Illustration_concept_art_5 from '../../../assets/Services/Illustration/Illustration_concept_art_5.jpg';
 import Accueil_illustration from '../../../assets/Services/Illustration/Accueil_illustration.jpg';
-import design_entrons_en_contact from '../../../assets/Accueil/design_entrons_en_contact.png'
+import design_entrons_en_contact from '../../../assets/Accueil/design_entrons_en_contact.png';
+import useWindowWidth from '../../windowWidth';
 import { Link } from 'react-router-dom'
 export default function Illustation () {
+
+    const width = useWindowWidth();
     return (<main>
 
         {/* welcome image  */}
         <section>
-            <img src={Accueil_Illustration_phone1} alt="sm:hidden" className='sm:hidden' />
-            <img src={Accueil_illustration} alt="" className='hidden sm:block'/>
+            <img src={width <= 640 ? Accueil_Illustration_phone1 : Accueil_illustration} alt="sm:hidden" />
         </section>
 
         {/* first tetxt  */}

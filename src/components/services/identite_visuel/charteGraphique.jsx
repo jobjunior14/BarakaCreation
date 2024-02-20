@@ -8,9 +8,10 @@ import Charte_couleurs from '../../../assets/Services/Id visuelle/Charte_couleur
 import Chartmotif from '../../../assets/Services/Id visuelle/Chartmotif.jpg';
 import Charte_typo from '../../../assets/Services/Id visuelle/Charte_typo.jpg';
 import Charte_prototypes from '../../../assets/Services/Id visuelle/Charte_prototypes.jpg';
-
+import useWindowWidth from "../../windowWidth";
 export default function CharteGraphique () {
     
+    const width = useWindowWidth();
     return (
         <div className="w-full bg-bgCharteGraphique">
 
@@ -60,8 +61,7 @@ export default function CharteGraphique () {
 
                     {/* welcom image  */}
                     <div className="lg:-my-[10%] sm:-my-[10%]  ">
-                        <img src={Charte_graphique2} alt="Id_visuelle_Charte_graphique" className="sm:hidden" />
-                        <img src={Charte_graphique1} alt="Id_visuelle_Charte_graphique" className="hidden sm:block"/>
+                        <img src={width <= 640 ? Charte_graphique2 : Charte_graphique1} alt="Id_visuelle_Charte_graphique" />
                     </div>
                     
 

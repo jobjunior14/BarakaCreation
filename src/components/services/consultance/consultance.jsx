@@ -3,8 +3,10 @@ import Accueil_Consulting_services_phone from '../../../assets/Services/Consulti
 import Accueil_consulting_accueil from '../../../assets/Services/Consulting/Accueil_consulting_accueil.jpg';
 import Consulting_service_pics from '../../../assets/Services/Consulting/Consulting_service_pics.jpg';
 import design_entrons_en_contact from '../../../assets/Accueil/design_entrons_en_contact.png';
-
+import useWindowWidth from "../../windowWidth";
 export default function Consultance () {
+
+    const width = useWindowWidth();
 
     return ( <section className="w-full">
 
@@ -15,8 +17,7 @@ export default function Consultance () {
                 <h1 className="text-6xl text-gray-100 font-bold">Consulting</h1>
                 <Link to={'../'} className=" hover:bg-gray-100 hover:text-blue-600 duration-200 text-sm text-gray-100 border border-gray-50 rounded-full px-[0.25rem] py-[0.125rem]"> Nous contacter</Link>
             </div>
-            <img src={Accueil_Consulting_services_phone} alt="" className="sm:hidden" />
-            <img src={Accueil_consulting_accueil} alt="" className="sm:block hidden " />
+            <img src={width <= 640 ? Accueil_Consulting_services_phone : Accueil_consulting_accueil} alt="width <= 640 ? " />
         </section>
 
          {/* first tetxt  */}

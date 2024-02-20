@@ -3,9 +3,10 @@ import Id_Vieuellelogo from '../../../assets/Services/Id visuelle/Id_Vieuellelog
 import Logo_accueil from '../../../assets/Services/Id visuelle/Logo_accueil.png';
 import Accueil_Logofolio from '../../../assets/Portofolio/Logofolio/Accueil_Logofolio.jpg';
 import SecondeNav, {OnTopBtn} from './comp/util';
-
+import useWindowWidth from '../../windowWidth';
 export default function Logotype () {
 
+    const width = useWindowWidth();
     return (
         <div className='w-full bg-bgIdVisuel'>
             
@@ -22,8 +23,7 @@ export default function Logotype () {
                 {/* welcom image  */}
                 <section className='w-full flex items-center justify-center px-[14%] sm:px-[10%] md:px-[7%] pt-[1.875rem] sm:pt-[20px] lg:pt-[1.875rem] pb-[25%] sm:pb-[15%] md:pb-[10%] relative'>
                 
-                    <img src={Id_Vieuellelogo} alt=" Id_Vieuellelogo" className='sm:hidden'/>
-                    <img src={Logo_accueil} alt=" Logo_accueil" className='hidden sm:block'/>
+                    <img src={width <= 640 ? Id_Vieuellelogo : Logo_accueil} alt=" Id_Vieuellelogo"/>
                     
 
                     <div className='absolute flex sm:flex-row justify-center items-center flex-col gap-2 sm:gap-x-[5%] bottom-5 w-full'>

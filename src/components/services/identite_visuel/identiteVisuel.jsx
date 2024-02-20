@@ -11,12 +11,14 @@ import Digital_presentation from '../../../assets/Services/Id visuelle/Digital_p
 import Digital_supports_digitaux_Copie from '../../../assets/Services/Id visuelle/Digital_supports_digitaux_Copie.png';
 import Digital_site_web_icone from '../../../assets/Services/Id visuelle/Digital_site_web_icone.png';
 import IdVisuelleComp from "../components/idVisuelS_Comp";
-
+import useWindowWidth from "../../windowWidth";
 import { Link } from "react-router-dom";
 export default function IdentiteVisuel () {
 
     const [digitalClick, setDigitalClick] = useState(true);
     const [packegingClick, setPackegingClick] = useState(true);
+    
+    const width = useWindowWidth ();
 
     const digitalClickHandler  = () => {
         setDigitalClick(prev => prev ? false : true);
@@ -31,8 +33,7 @@ export default function IdentiteVisuel () {
             
             {/* welcom image  */}
             <section className="w-full">
-                <img src={accueil_i_visuelle_phone} alt="image d'accueil" className="sm:hidden"/>
-                <img src={accueil_Id_visuelle} alt="image d'accueil" className="sm:block hidden"/>
+                <img src={ width <= 640 ? accueil_i_visuelle_phone : accueil_Id_visuelle} alt="image d'accueil"/>
 
             </section>
             
