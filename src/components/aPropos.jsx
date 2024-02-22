@@ -39,7 +39,7 @@ export default function Apropos () {
             <section className=" w-full flex flex-col sm:flex-row justify-center text-center md:pt-5">
                 
                 {/* pc's picture  */}
-                <div className=' hidden md:flex justify-center place-items-end px-6 bg-bgFormation  md:w-[40%]  '>
+                <div className=' hidden md:flex justify-center isolate place-items-end px-6 bg-bgFormation  md:w-[40%]  '>
                     <img src={moii_2} alt='moi' className='h-auto'/>
                 </div>
 
@@ -51,9 +51,9 @@ export default function Apropos () {
                         
                         <div className='w-full flex flex-col justify-center items-center md:justify-start md:items-start gap-2'>
                             <div className='w-[70%] md:w-[100%] '>
-                                <p className='text-gray-200 md:text-left md:text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] sm:text-[0.75rem] md:text-[0.8rem] lg:text-[0.87rem] font-normal text-center '>Je suis Baraka LURHAKWA, un artiste communicateur visuel. <br/>Je suis passionné par la production d&apos;œuvres artistiques innovantes et j&apos;accompagne les entreprises dans la réussite de leurs objectifs dans lesecteur de la communication</p>
+                                <p className='text-gray-200 md:text-left md:text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] font-normal text-center '>Je suis Baraka LURHAKWA, un artiste communicateur visuel. <br/>Je suis passionné par la production d&apos;œuvres artistiques innovantes et j&apos;accompagne les entreprises dans la réussite de leurs objectifs dans lesecteur de la communication</p>
                             </div>
-                       lg:leading-5  </div>
+                       </div>
                     </div>
                     
                     {/* phone's image */}
