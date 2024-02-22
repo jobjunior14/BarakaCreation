@@ -43,6 +43,7 @@ import Logo_Afrique_millenaire_1 from '../../assets/Portofolio/Logofolio/Logo_Af
 import {OnTopBtn} from '../services/identite_visuel/comp/util';
 import { useState, useEffect, useCallback } from 'react';
 
+// logo details component 
 function LogoDetail ({images,text, title, state, hideDetails }) {
     
     const [index, setIndex] = useState(0);
@@ -437,19 +438,17 @@ export default function Logofolio () {
 
     return (
         <main className="w-full flex flex-col gap-5 relative">
+            {/* logo details displayed in absolute  */}
             <div aria-hidden={true} className={` ${showDetails.hidden() ? 'sticky' : 'hidden'} absolute top-0 md:top-5 z-40 backdrop-blur-md   w-full h-[100vh]  justify-center items-center flex px-[2%] sm:px-[5%] md:px-[10%] lg:px-[15%]`}>{myDetailsLogo()}</div>
-
-            <section className='w-full h-[18.75rem] sm:h-auto bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${Accueil_Logofolio})`}}>
-                        
+            
+            {/* welcom imaga  */}
+            <section className='w-full h-[18.75rem] sm:h-auto bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${Accueil_Logofolio})`}}>       
                 <div className='h-full w-full duration-200 delay-150 relative'>        
                     <img src={Accueil_Logofolio} alt='image' className='sm:block hidden'/>
-
-                </div>  
-
-                    
+                </div>     
             </section>
             
-
+            {/* logo display  */}
             <section className="grid grid-cols-2 sm:grid-cols-3 w-full gap-2 px-[2%] bg-slate-300 py-5 sm:px-[10%]" > {logos ()} </section>
 
             <OnTopBtn brdrColor='border-gray-700' textColor = ' text-black'/>

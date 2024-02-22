@@ -73,7 +73,7 @@ export default function Portfolio() {
 
                         <div className='absolute flex flex-col items-center justify-center top-4  gap-2'>
                             <h1 className=' text-3xl font-semibold text-gray-100'>Design <br/>graphique</h1>
-                            <button className=' rounded-3xl bg-blue-600 text-xs py-px px-3 text-white hover:bg-myBlue text-center'>Voir</button>
+                            <Link to={'/portfolio/graphicDesign'} className=' rounded-3xl bg-blue-600 text-xs py-px px-3 text-white hover:bg-myBlue text-center'>Voir</Link>
                         </div>
                     </section>
 

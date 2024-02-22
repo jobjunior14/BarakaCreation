@@ -22,6 +22,7 @@ import Illustation from './components/services/illustation/illustation';
 import Consultance from './components/services/consultance/consultance';
 import GalleryArt from './components/Portfolio/gallerie_Art';
 import Logofolio from './components/Portfolio/logofolio';
+import ImageGraphiqueDesign from './components/Portfolio/graphicDesign';
 
 import { Outlet } from 'react-router-dom';
 function App() {
@@ -36,6 +37,7 @@ function App() {
               <Route index element={<Portfolio/>}/>
               <Route path='galleryArt' element={<GalleryArt/>}/>
               <Route path='logofolio' element={<Logofolio/>}/>
+              <Route path='graphicDesign' element={<ImageGraphiqueDesign/>}/>
             </Route>
             <Route path='publication' element={<Publication/>}/>
 
