@@ -70,7 +70,7 @@ export default function Illustation () {
             <div className='w-full h-[300px] sm:h-[12.5rem] md:h-[15.625rem] lg:h-[270px] bg-black rounded-md overflow-hidden pt-[15%] pr-[20%] sm:pt-[0px] sm:pr-[15%] md:pr-[0]  relative'>
 
                     <div className='w-full justify-center absolute items-center z-40 top-5'>
-                        <h2 className='font-bold text-gray-100 text-[18px]'>Plus d&apos;émotions</h2>
+                        <h2 className='font-bold text-gray-100 text-[1.125rem]'>Plus d&apos;émotions</h2>
                     </div>
                     <img src={illustration_emotion} alt="illustration_emotion" className=' scale-[3.4] sm:scale-[1.4] md:scale-[1.1] w-full md:pb-[600px] ' />
             </div>
@@ -79,7 +79,7 @@ export default function Illustation () {
                 <div className='w-full h-[300px] rounded-md overflow-hidden  relative'>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
-                            <h2 className='font-bold text-gray-700 text-[18px]'>Plus <br /> de style</h2>
+                            <h2 className='font-bold text-gray-700 text-[1.125rem]'>Plus <br /> de style</h2>
                         </div>
                         <img src={Illustration_vectoriel} alt="illustration_emotion" className='scale-[1.2] ' />
                 </div>
@@ -87,7 +87,7 @@ export default function Illustation () {
                 <div className='w-full h-[300px] rounded-md bg-fixed bg-no-repeat  overflow-hidden pr-[8%] pt-[5%]  relative' style={{backgroundImage: `url(${Illustration_excellence})`}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
-                            <h2 className='font-bold text-gray-100 text-[18px]'>Plus <br /> d&apos;excellence</h2>
+                            <h2 className='font-bold text-gray-100 text-[1.125rem]'>Plus <br /> d&apos;excellence</h2>
                         </div>
                         <img src={Illustration_excellence} alt="illustration_emotion" className='scale-[3.2] sm:scale-[3.4] md:scale-[3] ' />
                 </div>
@@ -117,7 +117,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center'>
                             <h1 className='font-bold text-gray-700'>Courverture</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour démarquer et rendre captivant les livres, romans, magazines</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 pb-[1.5px] md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
@@ -133,7 +133,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center z-40'>
                             <h1 className='font-bold text-gray-700'>Livre / manuel </h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour raconter les histoires et pour illustrer parfaitement votre contenu</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 pb-[1.5px] md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
@@ -146,7 +146,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center'>
                             <h1 className='font-bold text-gray-700'>Bande dessinée</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Nous vous accompagnons durant tout le processus, du briefing à la réalisation passant par le storyboard</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 pb-[1.5px] md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
@@ -163,7 +163,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-5'>
                             <h1 className='font-bold text-gray-100'>Campagne</h1>
                             <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Nous créons des images captivantes de haute résolution qui illustrent parfaitement votre message</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 pb-[1.5px] md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
 
@@ -175,7 +175,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center'>
                             <h1 className='font-bold text-gray-700'>Mascotte</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour créer un lien affectif entre votre cible et votre marque ou évènement.</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 pb-[1.5px] md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
 
@@ -187,7 +187,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-5'>
                             <h1 className='font-bold text-gray-100'>Web</h1>
                             <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Illustrations simples et attrayante, création des icones personnalisées, gestion du design de site/ apps</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 pb-[1.5px] md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
                 </div>

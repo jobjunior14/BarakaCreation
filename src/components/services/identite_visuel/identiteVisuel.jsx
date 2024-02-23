@@ -44,7 +44,7 @@ export default function IdentiteVisuel () {
                 <section className="text-left p-7 sm:px-20 md:px-28 w-full flex flex-col md:justify-center md:items-center">
                         
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  text-gray-600 w-[80%] sm:w-[75%] md:w-[70%]  font-bold mb-7 leading-6"> Démarquez-vous <span className=" text-bgPlay">par une identité visuelle qui</span> marque les esprits</h1>
-                        <p className=" text-md sm:text-[18px] md:text-[22px] lg:text-[26px] text-gray-600 w-[80%] sm:w-[75%] md:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoiété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
+                        <p className=" text-md sm:text-[1.125rem] md:text-[1.375rem] lg:text-[1.625rem] text-gray-600 w-[80%] sm:w-[75%] md:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoiété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
                 </section>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:px-5 md:px-8 lg:px-14">
@@ -77,8 +77,8 @@ export default function IdentiteVisuel () {
 
                             {/* Charte Graphique button  */}
                             <div className="flex justify-evenly gap-10">
-                                <Link to={'/services/idVisuelle/charteGraphique'} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex "> Voir plus <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 pb-1"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
-                                <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-1 pb-[1.5px] rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                                <Link to={'/services/idVisuelle/charteGraphique'} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex items-center"> Voir plus <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                                <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-1  rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                             </div>
                         </section>
                     </section>
@@ -114,7 +114,7 @@ export default function IdentiteVisuel () {
                                     <img src={Digital_presentation} alt="Digital_presentation" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
-                                    <h1 className="md:text-[18px] font-bold text-gray-600">Présentation</h1>
+                                    <h1 className="md:text-[1.125rem] font-bold text-gray-600">Présentation</h1>
                                     <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Nous sommes à vos cotés pour élaborer et créer des supports de présentation de votre entreprise adaptés les aux écrans </p>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@ export default function IdentiteVisuel () {
                                     <img src={Digital_supports_digitaux_Copie} alt="Digital_supports_digitaux_Copie" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
-                                    <h1 className="md:text-[18px] font-bold text-gray-600">Réseaux sociaux</h1>
+                                    <h1 className="md:text-[1.125rem] font-bold text-gray-600">Réseaux sociaux</h1>
                                     <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Nous élaborons et nous concevons des supports efficaces pour créer un lien affectif avec votre public ciblé. </p>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ export default function IdentiteVisuel () {
                                     <img src={Digital_site_web_icone} alt="Digital_site_web_icone" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
-                                    <h1 className="md:text-[18px] font-bold text-gray-600">Web design</h1>
+                                    <h1 className="md:text-[1.125rem] font-bold text-gray-600">Web design</h1>
                                     <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600"> Conception graphique des sites web & applications mobile</p>
                                     <button className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center "  onClick={() => digitalClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
@@ -166,7 +166,7 @@ export default function IdentiteVisuel () {
 
                         <div className={` text-left flex flex-col justify-center items-start  gap-4 sm:gap-6 w-full p-7 sm:p-10 lg:p-14 h-full bg-white absolute rounded-lg duration-500 ${packegingClick ?  'translate-x-[100%]' : 'translate-x-[0%]'}`}>
 
-                            <h1 className="text-left md:text-[18px] font-bold text-gray-600">Un atout marketing incontournable</h1>
+                            <h1 className="text-left md:text-[1.125rem] font-bold text-gray-600">Un atout marketing incontournable</h1>
 
                             <p className="text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Le packaging est le premier contact que vos clients ont avec votre produit. <br /> 
                                 Nous créons un packaging qui vous permettra d&apos;atteindre vos objectifs marketing.

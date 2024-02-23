@@ -36,7 +36,7 @@ export default function MiseEnPage() {
                         
                         <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex "> Notre portfolio <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@ export default function MiseEnPage() {
                     
                     <div className='md:w-[75%] w-full flex flex-col gap-5'>
                         <div>
-                            <p className='text-left text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] lg:text-[18px] text-gray-700 flex items-start w-[90%]'>Les projets de conception de publications les plus courants que nous traitons sont: </p>
+                            <p className='text-left text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] text-gray-700 flex items-start w-[90%]'>Les projets de conception de publications les plus courants que nous traitons sont: </p>
                             <div className='w-full h-px bg-gray-500'> </div>
 
                         </div>

@@ -36,7 +36,7 @@ export default function WebDesign() {
                         
                         <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex "> Notre portfolio <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@ export default function WebDesign() {
                             {/* first paragraph  */}
                             <section className=' md:px-0  '>
 
-                                <p className=' text-left font-[500] mx-[10%] md:mx-0 text-blue-200 text-[0.875rem] md:text-[15px] lg:text-[18px] leading-5 lg:leading-6  '> 
+                                <p className=' text-left font-[500] mx-[10%] md:mx-0 text-blue-200 text-[0.875rem] md:text-[15px] lg:text-[1.125rem] leading-5 lg:leading-6  '> 
                                     Vous souhaitez créer un site web qui reflète votre image de marque ?
                                     Nous sommes à vos cotés pour la création de sites web professionnels et performants.
                                     Notre réseau de designers et de développeurs expérimentés vous accompagnent de la

@@ -44,7 +44,7 @@ export default function MotionDesign() {
                         <div className='w-full text-left flex flex-col gap-2 md:gap-3 lg:gap-4  items-center pb-5'>
 
                             <div className='w-[80%] sm:w-[77%] md:w-[74%] lg:w-[71%] flex flex-col gap-2 md:gap-3 lg:gap-4 items-start pl-[5%] sm:pl-0'>
-                                <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]'> Spot Publicitaire</h1>
+                                <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[1.375rem] md:text-[24px] lg:text-[1.625rem]'> Spot Publicitaire</h1>
                                 <p className='text-gray-100 text-[0.625rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] text-left'>Présentation d&apos;entreprise, des sservices, promotion des produits</p>
                                 <Link to={'../'} className='text-gray-100 text-[0.625rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-3 pb-px bg-blue-500'>Intéressé</Link>
                             </div>
@@ -58,7 +58,7 @@ export default function MotionDesign() {
                         <div className='w-full text-left flex flex-col gap-2 md:gap-3 lg:gap-4  items-center pb-5'>
 
                             <div className='w-[80%] sm:w-[77%] md:w-[74%] lg:w-[71%] flex flex-col gap-2 md:gap-3 lg:gap-4 items-start pl-[5%] sm:pl-0'>
-                                <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]'> Présentation </h1>
+                                <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[1.375rem] md:text-[24px] lg:text-[1.625rem]'> Présentation </h1>
                                 <p className='text-gray-100 text-[0.625rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] text-left'>Présentation des projets. <br /> Animation des contenus</p>
                                 <Link to={'../'} className='text-gray-100 text-[0.625rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-4 pb-px bg-blue-500'>Intéressé</Link>
                             </div>
@@ -69,7 +69,7 @@ export default function MotionDesign() {
                 {/* final text  */}
                 <section className='grid grid-cols-1 gap-6 md:gap-10 px-[5%] sm:px-[10%]  text-left'> 
                     <div>
-                        <h1 className=' text-blue-100 text-[24px] sm:text-[26px] md:text-[28px] lg:text-[1.875rem] font-bold leading-7 w-[70%]' >Votre partenaire créatif pour la préproduction des dessins animés</h1>
+                        <h1 className=' text-blue-100 text-[24px] sm:text-[1.625rem] md:text-[28px] lg:text-[1.875rem] font-bold leading-7 w-[70%]' >Votre partenaire créatif pour la préproduction des dessins animés</h1>
                     </div>
                    
                     <div>

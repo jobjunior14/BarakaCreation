@@ -41,9 +41,9 @@ export default function CampagneDeComm () {
                     <h1 className='text-gray-700 text-[1.875rem] sm:text-[2.5rem] md:text-[2.75rem] lg:text-[3.375rem] font-bold leading-8 sm:leading-[2.5rem] md:leading-[2.75rem] lg:leading-[56px]'>Camapagne de <br /> Communication</h1>
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full  '>
                         
-                        <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 pb-[1.5px] rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                        <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex "> Notre portfolio <span className="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@ export default function CampagneDeComm () {
 
                         <div className='w-full bg-gradient-to-b from-slate-200 from-5% to-white pt-[25%] md:pt-[23%] rounded-lg flex flex-col gap-5'>
                             <div className=' justify-start items-start flex flex-col gap-2 w-full px-[15%]'>
-                                <h3 className='text-left text-[24px] sm:text-[26px] md:text-[28px] lg:text-[1.875rem] font-bold leading-7 text-gray-800'>Plan & <br /> strategies de <br /> communication</h3>
+                                <h3 className='text-left text-[24px] sm:text-[1.625rem] md:text-[28px] lg:text-[1.875rem] font-bold leading-7 text-gray-800'>Plan & <br /> strategies de <br /> communication</h3>
                                 <button onClick={() => handleToggled('a')} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex items-center "> Voir plus <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></button>
                             </div>
                             
@@ -107,7 +107,7 @@ export default function CampagneDeComm () {
                                     <img src={Campagne_plan_comm_analyse} alt="Campagne_plan_comm_analyse" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
-                                    <h1 className="md:text-[18px] font-bold text-gray-600">Analyse du contexte</h1>
+                                    <h1 className="md:text-[1.125rem] font-bold text-gray-600">Analyse du contexte</h1>
                                     <p className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-gray-600"> Analyse de votre entreprise, du cible, des concurents, de l&apos;objectif et des enjeux ainsi que la politique de communication </p>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ export default function CampagneDeComm () {
                                     <img src={Campagne_plan_comm_strategie} alt="Campagne_plan_comm_strategie" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
-                                    <h1 className="md:text-[18px] font-bold text-gray-600">Les stratégies</h1>
+                                    <h1 className="md:text-[1.125rem] font-bold text-gray-600">Les stratégies</h1>
                                     <p className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-gray-600"> Elaboration du message, la manière de la transmettre, des outils de communication adaptés, le style et la ligne graphique</p>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ export default function CampagneDeComm () {
                                     <img src={Campagne_plan_comm_action} alt="Campagne_plan_comm_action" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
-                                    <h1 className="md:text-[18px] font-bold text-gray-600"> Modalités d&apos;action </h1>
+                                    <h1 className="md:text-[1.125rem] font-bold text-gray-600"> Modalités d&apos;action </h1>
                                     <p className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-gray-600"> le choix des canaux de communication. Le Budget alloué à votre action & le pilotage de l&apos;action</p>
                                     <button className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-blue-500 mt-2 text-left flex items-center "  onClick={() => handleToggled('a')}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
@@ -148,7 +148,7 @@ export default function CampagneDeComm () {
 
                         <div className='w-full bg-gradient-to-t from-[rgb(74,76,127)] to-[rgb(141,143,228)] pt-[23%] md:pt-[20%] rounded-lg flex flex-col gap-5'>
                             <div className=' justify-start items-start flex flex-col gap-2 w-full px-[15%]'>
-                                <h3 className='text-left text-[24px] sm:text-[26px] md:text-[28px] lg:text-[1.875rem] font-bold leading-7 md:leading-8 text-gray-100'>Conception <br />graphique des <br />supports</h3>
+                                <h3 className='text-left text-[24px] sm:text-[1.625rem] md:text-[28px] lg:text-[1.875rem] font-bold leading-7 md:leading-8 text-gray-100'>Conception <br />graphique des <br />supports</h3>
                                 <button onClick={() => handleToggled('b')} className=" text-blue-100 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex items-center "> Voir plus <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></button>
                             </div>
 
@@ -230,7 +230,7 @@ export default function CampagneDeComm () {
                         <div className='w-full bg-black pt-[15%] md:py-[5%] rounded-lg flex flex-col md:flex-row gap-[60px]  justify-center items-center'>
 
                             <div className=' justify-center items-center md:justify-start md:items-start flex flex-col gap-0 w-full'>
-                                <h3 className='text-left text-[18px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-7 text-gray-100 md:px-[83px]'>Communication</h3>
+                                <h3 className='text-left text-[1.125rem] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-7 text-gray-100 md:px-[83px]'>Communication</h3>
                                 <div className='w-full px-[83px]'>
                                     <img src={campagne_digital_title} alt=''/>
                                 </div>
@@ -256,7 +256,7 @@ export default function CampagneDeComm () {
                                     <img src={Digital_supports_digitaux_Copie} alt="Digital_supports_digitaux_Copie" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
-                                    <h1 className="md:text-[18px] font-bold text-gray-600"> Réseaux sociaux</h1>
+                                    <h1 className="md:text-[1.125rem] font-bold text-gray-600"> Réseaux sociaux</h1>
                                     <p className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-gray-600">Nous élaborons et concevons des support digitaux efficaces pour atteindre une large audience lors de votre campagne. </p>
                                 </div>
                             </div>
@@ -268,7 +268,7 @@ export default function CampagneDeComm () {
                                 </div>
                                 <div className="w-[90%] flex flex-col ">
                                     <div className='w-full flex flex-col  gap-1'>
-                                        <h1 className="md:text-[18px] font-bold text-gray-600">Web Design</h1>
+                                        <h1 className="md:text-[1.125rem] font-bold text-gray-600">Web Design</h1>
                                         <p className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-gray-600"> Conception graphique des sites wb, application mobile et tout support numerique</p>
                                     </div>
                                     <button className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-blue-500 mt-2 text-left flex items-center "  onClick={() => handleToggled('c')}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
