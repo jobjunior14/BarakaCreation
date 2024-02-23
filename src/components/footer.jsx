@@ -15,7 +15,7 @@ export function Footer ()
             <div className='sm:w-[30%] sm:block flex items-center gap-x-5 w-[40%%]'>
                 <img className='h-20 mb-1' src={logo_pictogrammFichier_1} alt="pictogram" />
                 <div className='text-left'>
-                    <p className='text-[8px] text-semibold text-gray-800'>Kinshasa, RDC <br/> Baraka creation, votre partenaire <br/> idéal en communication visuelle<br/> <b>Ensemble innovons </b></p>
+                    <p className='text-[0.5rem] text-semibold text-gray-800'>Kinshasa, RDC <br/> Baraka creation, votre partenaire <br/> idéal en communication visuelle<br/> <b>Ensemble innovons </b></p>
                 </div>
             </div>
 
@@ -31,9 +31,9 @@ export function Footer ()
 
                         <div className='flex gap-x-4 text-left mt-2'>
                             <div className='flex flex-col gap-y-px'>
-                                <Link to={'/'} className='text-[10px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Accueil</Link>
-                                <Link to={'/'} className='text-[10px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>A propos</Link>
-                                <Link to={'/'} className='text-[10px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Services</Link>
+                                <Link to={'/'} className='text-[0.625rem] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Accueil</Link>
+                                <Link to={'/'} className='text-[0.625rem] sm:text-[13px] text-gray-800 text-semibold hover:underline'>A propos</Link>
+                                <Link to={'/'} className='text-[0.625rem] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Services</Link>
                             </div>
 
                             <div className='flex flex-col gap-y-px'>

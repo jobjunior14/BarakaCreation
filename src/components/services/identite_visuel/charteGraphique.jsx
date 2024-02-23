@@ -23,7 +23,7 @@ export default function CharteGraphique () {
                 brdrColor='border-gray-100' textColor = ' text-white'
             />
 
-            <div className=' sm:px-[80px] md:px-[100px] lg:px-[120px]'> 
+            <div className=' sm:px-[5rem] md:px-[6.25rem] lg:px-[7.5rem]'> 
 
                 {/* text and welocm image */}
                 <section className="w-full">

@@ -150,12 +150,12 @@ export default function Services () {
                         <div className='flex flex-col items-start justify-start text-left'>
 
                             <div className='flex justify-center items-center'>
-                                <div className='bg-black w-[6px] h-[6px] md:w-[8px] md:h-[8px] lg:w-[10px] lg:h-[10px] mr-1'> </div>
+                                <div className='bg-black w-[6px] h-[6px] md:w-[0.5rem] md:h-[0.5rem] lg:w-[0.625rem] lg:h-[0.625rem] mr-1'> </div>
                                 <p className='text-gray-600 text-[0.63rem] md:text-[0.75rem] lg:text-[0.9rem]'>Virement bancaire</p>
                             </div>
 
                             <div className='flex justify-center items-center'>
-                                <div className='bg-black w-[6px] h-[6px] md:w-[8px] md:h-[8px] lg:w-[10px] lg:h-[10px] mr-1'> </div>
+                                <div className='bg-black w-[6px] h-[6px] md:w-[0.5rem] md:h-[0.5rem] lg:w-[0.625rem] lg:h-[0.625rem] mr-1'> </div>
                                 <p className='text-gray-600 text-[0.63rem] md:text-[0.75rem] lg:text-[0.9rem]'>Mobile Money</p>
                             </div>
 

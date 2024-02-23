@@ -55,7 +55,7 @@ export default function SupportPrint() {
                 </div>
             </section>
 
-            <div className=' sm:px-[80px] md:px-[100px] lg:px-[120px] bg-slate-50 w-full flex flex-col gap-14'>
+            <div className=' sm:px-[5rem] md:px-[6.25rem] lg:px-[7.5rem] bg-slate-50 w-full flex flex-col gap-14'>
                 
                 {/* Supports de présentation  */}
                 <section className='flex flex-col gap-3  bg-white w-full p-5 mt-5 rounded-lg'>

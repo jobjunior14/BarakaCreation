@@ -67,7 +67,7 @@ export default function Illustation () {
 
         {/* here section  manque d'image de meme ration  */}
         <section className='px-[10%] grid grid-cols-1 gap-3 justify-center bg-slate-100'>
-            <div className='w-full h-[300px] sm:h-[200px] md:h-[250px] lg:h-[270px] bg-black rounded-md overflow-hidden pt-[15%] pr-[20%] sm:pt-[0px] sm:pr-[15%] md:pr-[0]  relative'>
+            <div className='w-full h-[300px] sm:h-[12.5rem] md:h-[15.625rem] lg:h-[270px] bg-black rounded-md overflow-hidden pt-[15%] pr-[20%] sm:pt-[0px] sm:pr-[15%] md:pr-[0]  relative'>
 
                     <div className='w-full justify-center absolute items-center z-40 top-5'>
                         <h2 className='font-bold text-gray-100 text-[18px]'>Plus d&apos;émotions</h2>
@@ -248,7 +248,7 @@ export default function Illustation () {
 
                 <div className=' overflow-hidden w-full h-full pr-[20% pt-[5%]'>
 
-                    <img src={Illustration_concept_art_5} alt="Illustration_concept_art_2" className='rounded-lg scale-[3] mr-[100px] md:mr-0 md:scale-[1]' />
+                    <img src={Illustration_concept_art_5} alt="Illustration_concept_art_2" className='rounded-lg scale-[3] mr-[6.25rem] md:mr-0 md:scale-[1]' />
                 </div>
 
                 <div className='w-full relative md:hidden'>

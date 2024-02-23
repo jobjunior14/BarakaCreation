@@ -51,7 +51,7 @@ export default function IdentiteVisuel () {
 
                     {/* logo type  */}
                     <IdVisuelleComp 
-                        hImage='h-[200px] sm:h-[250px]  md:h-[270px]'
+                        hImage='h-[12.5rem] sm:h-[15.625rem]  md:h-[270px]'
                         image={Id_Vieuellelogo}
                         name={'Logotype'}
                         text={"Il s'agit du cœur de votre identité visuelle. Nous créons un logo qui vous distingue"}
@@ -63,7 +63,7 @@ export default function IdentiteVisuel () {
 
                         {/* Charte graphique image  */}
                         <div className="w-full justify-start items-start flex">
-                                <img src={Id_visuelle_Charte_graphique} alt="Id_Vieuellelogo" className="h-[200px] sm:h-[250px] md:h-[270px]" />
+                                <img src={Id_visuelle_Charte_graphique} alt="Id_Vieuellelogo" className="h-[12.5rem] sm:h-[15.625rem] md:h-[270px]" />
                         </div>
 
                         <section className="w-full justify-center items-center flex flex-col gap-4">
@@ -85,7 +85,7 @@ export default function IdentiteVisuel () {
                     
                     {/* support Print  */}
                     <IdVisuelleComp 
-                        hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                        hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                         image={Id_visuelle_print}
                         name={'Support Print'}
                         text={"Supports de présentation, affichages, supports administratifs et habillages"}
@@ -97,7 +97,7 @@ export default function IdentiteVisuel () {
 
                         <div className="w-full ">
                             <IdVisuelleComp 
-                                hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                                hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                                 image={id_visuel_digital}
                                 name={'Digital'}
                                 text={"Connectez-vous avec votre public grâce à une stratégie et des supports digitaux efficaces"}
@@ -155,7 +155,7 @@ export default function IdentiteVisuel () {
 
                         <div className="w-full ">
                             <IdVisuelleComp 
-                                hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                                hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                                 image={Id_visuelle_packaging}
                                 name={'Packaging'}
                                 text={"Faites concevoir un packaging attractif et informatif avec nous"}
@@ -195,7 +195,7 @@ export default function IdentiteVisuel () {
 
                     {/*Video  */}
                     <IdVisuelleComp 
-                        hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                        hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                         image={id_visuelle_video}
                         name={'Vidéo'}
                         text={"Spot publicitaire, Présentation, promotions en motion design"}

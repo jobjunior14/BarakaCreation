@@ -18,7 +18,7 @@ export default function Logotype () {
                 brdrColor='border-gray-600' textColor = ' text-black'
             />
             
-            <div className=' sm:px-[80px] md:px-[100px] lg:px-[120px]'>
+            <div className=' sm:px-[5rem] md:px-[6.25rem] lg:px-[7.5rem]'>
                 
                 {/* welcom image  */}
                 <section className='w-full flex items-center justify-center px-[14%] sm:px-[10%] md:px-[7%] pt-[1.875rem] sm:pt-[20px] lg:pt-[1.875rem] pb-[25%] sm:pb-[15%] md:pb-[10%] relative'>

@@ -95,9 +95,9 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
         {/* circle div to show the image's number  */}
         <section className=' flex items-center justify-center w-full px-5 gap-2'>
 
-            <div onClick={() => setIndex(0)} className={`w-[10px] h-[10px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 0 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
-            <div onClick={() => setIndex(100)} className={`w-[10px] h-[10px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 100 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
-            <div onClick={() => setIndex(200)} className={`w-[10px] h-[10px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 200 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
+            <div onClick={() => setIndex(0)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 0 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
+            <div onClick={() => setIndex(100)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 100 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
+            <div onClick={() => setIndex(200)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 200 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
         </section>
 
         {/* section texte  */}

@@ -22,7 +22,7 @@ export default function GraphiqueDesign () {
                 <h1 className='text-blue-100 font-bold text-2xl sm:hidden'>Des supports <br /> diversifiés et <br /> efficaces</h1>
 
                 <div className=' justify-between flex items-center'>
-                    <img src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[170px] lg:h-[470px] md:h-[32.5rem] sm:h-[250px] ' />
+                    <img src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[10.625rem] lg:h-[29.375rem] md:h-[32.5rem] sm:h-[15.625rem] ' />
 
                     <div className='flex flex-col items-center justify-center pr-[5%] gap-4'>
                         <h1 className='text-blue-100 font-bold text-2xl md:text-[26px] lg:text-[28px] sm:flex hidden leading-[1.875rem]'>Des supports <br /> diversifiés et <br /> efficaces</h1>
@@ -34,7 +34,7 @@ export default function GraphiqueDesign () {
                         </p>
                     </div>
 
-                    <img src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[170px] lg:h-[470px] md:h-[32.5rem] sm:h-[250px]' />
+                    <img src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[10.625rem] lg:h-[29.375rem] md:h-[32.5rem] sm:h-[15.625rem]' />
                 </div>
 
                 <div className='px-[5%]'>
@@ -53,7 +53,7 @@ export default function GraphiqueDesign () {
             <section className='grid grid-cols-1 md:grid-cols-2 justify-center items-center px-[2%] gap-3'>
 
                 <DesignGraphiqueCom 
-                    hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                    hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                     image={campagne}
                     name={'Campagne comm.'}
                     text={"Nous créons des visuels percutants qui transmettent votre message de manière claire et concise "}
@@ -63,7 +63,7 @@ export default function GraphiqueDesign () {
                 />
 
                 <DesignGraphiqueCom 
-                    hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                    hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                     image={evenementiel}
                     name={'Event'}
                     text={"De la planification à la réalisation de votre événement, nous concevons tout supports "}
@@ -73,7 +73,7 @@ export default function GraphiqueDesign () {
                 />   
 
                 <DesignGraphiqueCom 
-                    hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                    hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                     image={mise_en_page_accueil}
                     name={'Mise enpage'}
                     text={"Livres, magazines, brochures, documents administratifs, institutionnels… "}
@@ -83,7 +83,7 @@ export default function GraphiqueDesign () {
                 />    
                            
                 <DesignGraphiqueCom 
-                    hImage='h-[200px] sm:h-[250px] md:h-[270px]'
+                    hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                     image={Presentation}
                     name={'Présentation'}
                     text={"Vous pouvez désormais présenter votre projet de la manière visuelle la plus efficace et convaincante "}
@@ -93,7 +93,7 @@ export default function GraphiqueDesign () {
                 />  
 
                 <DesignGraphiqueCom 
-                    hImage='h-[175px] sm:h-[250px] md:h-[270px]'
+                    hImage='h-[175px] sm:h-[15.625rem] md:h-[270px]'
                     image={motion_design}
                     name={'Motion design'}
                     text={"Spot publicitaire, Présentation, promotions en motion design "}
@@ -123,7 +123,7 @@ export default function GraphiqueDesign () {
 
                         {/* Image  */}
                         <div className="w-full justify-center items-center flex">
-                                <img src={web_design} alt="Id_Vieuellelogo" className={'h-[200px] sm:h-[250px] md:h-[270px]'} />
+                                <img src={web_design} alt="Id_Vieuellelogo" className={'h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'} />
                         </div>
                     </section>
                 </div>

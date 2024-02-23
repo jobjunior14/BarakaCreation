@@ -70,12 +70,12 @@ export default function Publication () {
                                     <img src={titlemamour} alt='mamous' className='sm:h-[1.875rem] h-[27px] sm:items-end items-center' />
                                 </div>
 
-                                <p className='sm:text-[13px] text-[10px] text-gray-300 sm:text-right text-center mt-2'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+                                <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
 
                                 <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
 
                                     <div className='flex gap-2 items-center'>
-                                        <p className='text-gray-100 text-[10px]'> Drame | 2022</p> 
+                                        <p className='text-gray-100 text-[0.625rem]'> Drame | 2022</p> 
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
@@ -89,15 +89,15 @@ export default function Publication () {
 
                             <div className='sm:w-[40%] w-[80%] '>
                                 <div className='w-full sm:items-end items-center sm:justify-end justify-center sm:flex flex-col hidden '>
-                                    <img src={titlele_reve_et_le_defi} alt='mamous' className='sm:h-[100px] md:h-[100px] lg:h-[150px] h-[100px] sm:items-end items-center' />
+                                    <img src={titlele_reve_et_le_defi} alt='mamous' className='sm:h-[6.25rem] md:h-[6.25rem] lg:h-[150px] h-[6.25rem] sm:items-end items-center' />
                                 </div>
 
-                                <p className='sm:text-[13px] text-[10px] text-gray-300 sm:text-right text-center mt-2 sm:block hidden'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+                                <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2 sm:block hidden'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
 
                                 <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
 
                                     <div className='sm:flex  hidden gap-2 items-center '>
-                                        <p className='text-gray-100 text-[10px]'> Drame | 2022</p> 
+                                        <p className='text-gray-100 text-[0.625rem]'> Drame | 2022</p> 
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
@@ -114,7 +114,7 @@ export default function Publication () {
                                 <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
 
                                     <div className='sm:flex  hidden gap-2 items-center '>
-                                        <p className='text-gray-900 text-[10px]'> Drame | 2022</p> 
+                                        <p className='text-gray-900 text-[0.625rem]'> Drame | 2022</p> 
                                         <img src={iconPhotoshop} alt="icon" className='h-5'/>
                                         <img src={icon4N} alt="icon" className='h-5'/>
                                     </div>
@@ -124,16 +124,16 @@ export default function Publication () {
                         </div>
 
                         {/* Haut text  */}
-                        <div className={`w-full absolute flex sm:justify-start justify-center items-center lg:bottom-[60px] md:bottom-[2.5rem] sm:bottom-[1.875rem] bottom-[48px] sm:text-center sm:left-[80px] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 300}%)`}}>
+                        <div className={`w-full absolute flex sm:justify-start justify-center items-center lg:bottom-[60px] md:bottom-[2.5rem] sm:bottom-[1.875rem] bottom-[48px] sm:text-center sm:left-[5rem] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 300}%)`}}>
 
                             <div className='sm:w-[60%] md:w-[50%] lg:w-[40%] w-[80%] '>
                                 
-                                <p className='sm:text-[13px] text-[10px] text-gray-50 sm:text-left text-center mt-2 hidden sm:block'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+                                <p className='sm:text-[13px] text-[0.625rem] text-gray-50 sm:text-left text-center mt-2 hidden sm:block'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
 
                                 <div className='flex sm:flex-row flex-col gap-4 sm:justify-start justify-center items-center mt-2'>
 
                                     <div className='sm:flex gap-2 items-center hidden'>
-                                        <p className='text-gray-100 text-[10px]'> Drame | 2022</p> 
+                                        <p className='text-gray-100 text-[0.625rem]'> Drame | 2022</p> 
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
@@ -167,10 +167,10 @@ export default function Publication () {
                 {/* circle div to show the image's number  */}
                 <div className='absolute flex items-center justify-center bottom-5  w-full px-5 gap-2'>
 
-                    <div onClick={() => setIndex(0)} className={`w-[10px] h-[10px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 0 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
-                    <div onClick={() => setIndex(100)} className={`w-[10px] h-[10px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 100 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
-                    <div onClick={() => setIndex(200)} className={`w-[10px] h-[10px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 200 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
-                    <div onClick={() => setIndex(300)} className={`w-[10px] h-[10px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 300 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
+                    <div onClick={() => setIndex(0)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 0 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
+                    <div onClick={() => setIndex(100)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 100 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
+                    <div onClick={() => setIndex(200)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 200 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
+                    <div onClick={() => setIndex(300)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === 300 ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>
                 </div>
             </section>
             

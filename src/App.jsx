@@ -23,7 +23,7 @@ import Consultance from './components/services/consultance/consultance';
 import GalleryArt from './components/Portfolio/gallerie_Art';
 import Logofolio from './components/Portfolio/logofolio';
 import ImageGraphiqueDesign from './components/Portfolio/graphicDesign';
-
+import MotionDesignPortofolio from './components/Portfolio/motionDesign';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -33,12 +33,15 @@ function App() {
         <Route path='/' element = {<SharedNav/>}>
             <Route index element={<Acceuil/>} />
             <Route path='aPropos' element= {<Apropos/>}/>
+            
             <Route path='portfolio' element={<><Outlet/></>}>
               <Route index element={<Portfolio/>}/>
               <Route path='galleryArt' element={<GalleryArt/>}/>
               <Route path='logofolio' element={<Logofolio/>}/>
               <Route path='graphicDesign' element={<ImageGraphiqueDesign/>}/>
+              <Route path='motionDesign' element={<MotionDesignPortofolio/>}/>
             </Route>
+
             <Route path='publication' element={<Publication/>}/>
 
             <Route path='services' element={<> <Outlet/></>}>

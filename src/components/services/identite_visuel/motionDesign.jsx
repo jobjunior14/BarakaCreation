@@ -22,7 +22,7 @@ export default function MotionDesign() {
 
             </section>
 
-            <div className=' sm:px-[80px] md:px-[100px] lg:px-[120px] bg-myBlue w-full flex flex-col gap-6 md:gap-10  p-5'>
+            <div className=' sm:px-[5rem] md:px-[6.25rem] lg:px-[7.5rem] bg-myBlue w-full flex flex-col gap-6 md:gap-10  p-5'>
                 
                 {/* welcom text  */}
                 <h1 className='sm:text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-8 text-blue-50 font-bold'>Motion <br className='sm:hidden'/> design <br /> <span className=' text-blue-500'>solution <br className='sm:hidden'/> innovante</span></h1>
@@ -45,8 +45,8 @@ export default function MotionDesign() {
 
                             <div className='w-[80%] sm:w-[77%] md:w-[74%] lg:w-[71%] flex flex-col gap-2 md:gap-3 lg:gap-4 items-start pl-[5%] sm:pl-0'>
                                 <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]'> Spot Publicitaire</h1>
-                                <p className='text-gray-100 text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] text-left'>Présentation d&apos;entreprise, des sservices, promotion des produits</p>
-                                <Link to={'../'} className='text-gray-100 text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-3 pb-px bg-blue-500'>Intéressé</Link>
+                                <p className='text-gray-100 text-[0.625rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] text-left'>Présentation d&apos;entreprise, des sservices, promotion des produits</p>
+                                <Link to={'../'} className='text-gray-100 text-[0.625rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-3 pb-px bg-blue-500'>Intéressé</Link>
                             </div>
                         </div>
                     </div>
@@ -59,8 +59,8 @@ export default function MotionDesign() {
 
                             <div className='w-[80%] sm:w-[77%] md:w-[74%] lg:w-[71%] flex flex-col gap-2 md:gap-3 lg:gap-4 items-start pl-[5%] sm:pl-0'>
                                 <h1 className=' text-gray-100 font-bold text-left text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]'> Présentation </h1>
-                                <p className='text-gray-100 text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] text-left'>Présentation des projets. <br /> Animation des contenus</p>
-                                <Link to={'../'} className='text-gray-100 text-[10px] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-4 pb-px bg-blue-500'>Intéressé</Link>
+                                <p className='text-gray-100 text-[0.625rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] text-left'>Présentation des projets. <br /> Animation des contenus</p>
+                                <Link to={'../'} className='text-gray-100 text-[0.625rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[15px] hover:bg-blue-600 duration-200 rounded-full px-2 sm:px-4 pb-px bg-blue-500'>Intéressé</Link>
                             </div>
                         </div>
                     </div>

@@ -40,15 +40,15 @@ export default function Acceuil () {
 
                     <h2 className=' text-blue-200 font-semibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 '>Ce que nous faisons</h2>
 
-                    <div className=' w-[200px]  sm:w-[250px]  items-center flex flex-col gap-y-3 sm:gap-y-5 mt-[25px] sm:mt-[40px] md:mt-[100px] lg:mt-[120px]'>
+                    <div className=' w-[12.5rem]  sm:w-[15.625rem]  items-center flex flex-col gap-y-3 sm:gap-y-5 mt-[25px] sm:mt-[2.5rem] md:mt-[6.25rem] lg:mt-[7.5rem]'>
 
                         <h3 className=' text-blue-100 text-center text-3xl md:text-4xl lg:text-6xl font-bold'>Innover</h3>
 
                         <p className='text-center text-xs sm:text-base text-gray-200 font-normal'>Nous apportons des solutions innovantes, originales et efficaces en communication visuelle</p>
 
                         <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-blue-200 flex relative w-[60%] pl-7 hover:bg-gray-500 duration-200'> 
-                            <p className='text-gray-300 text-[8px] sm:text-xs mb-px'> Nos réalisations </p>
-                            <div className='w-[16px] h-[16px] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
+                            <p className='text-gray-300 text-[0.5rem] sm:text-xs mb-px'> Nos réalisations </p>
+                            <div className='w-[1rem] h-[1rem] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
@@ -59,8 +59,8 @@ export default function Acceuil () {
                 </div>
                 
                 <div className='flex justify-between mt-4 sm:mt-7'>
-                    <img src={Accueildesigngr2} className='h-[170px] lg:h-[470px] md:h-[340px] sm:h-[250px] ' alt='design 1'/>
-                    <img src={Accueildesigngr1} className='h-[170px] lg:h-[470px] md:h-[340px] sm:h-[250px] ' alt='design 2'/>
+                    <img src={Accueildesigngr2} className='h-[10.625rem] lg:h-[29.375rem] md:h-[32.5rem] sm:h-[15.625rem] ' alt='design 1'/>
+                    <img src={Accueildesigngr1} className='h-[10.625rem] lg:h-[29.375rem] md:h-[32.5rem] sm:h-[15.625rem] ' alt='design 2'/>
                 </div>
             </section>
             
@@ -69,16 +69,16 @@ export default function Acceuil () {
 
                 <div className=' w-full justify-center items-center text-center flex flex-col left-4 ml-2'>
 
-                    <div className=' w-[200px]  sm:w-[280px]  items-center flex flex-col gap-y-2 sm:gap-y-5 '>
+                    <div className=' w-[12.5rem]  sm:w-[25rem]  items-center flex flex-col gap-y-2 sm:gap-y-5 '>
 
                         <h3 className=' text-black text-center text-3xl md:text-4xl lg:text-6xl font-bold'>Accompagner</h3>
 
                         <p className='text-center text-xs sm:text-base text-gray-800 font-normal'>De la stratégie à la mise en œuvre, nous aidons les entreprises à créer une image de marque forte et durable</p>
                         
                         <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-slate-500 flex relative w-[60%] sm:pl-9 pl-7 hover:bg-myBlue duration-200'> 
-                            <p className='text-white text-[8px] sm:text-xs mb-px'>Voir nos services </p>
+                            <p className='text-white text-[0.5rem] sm:text-xs mb-px'>Voir nos services </p>
 
-                            <div className='w-[16px] h-[16px] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
+                            <div className='w-[1rem] h-[1rem] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
@@ -99,14 +99,14 @@ export default function Acceuil () {
 
                 <div className=' w-full items-center text-center flex flex-col left-4 ml-2'>
 
-                    <div className=' w-[200px]  sm:w-[280px]  items-center flex flex-col gap-y-2 sm:gap-y-5 absolute bottom-3 '>
+                    <div className=' w-[12.5rem]  sm:w-[25rem]  items-center flex flex-col gap-y-2 sm:gap-y-5 absolute bottom-3 '>
 
                         <h3 className=' text-blue-100 text-center text-3xl md:text-4xl lg:text-6xl font-bold'>Créer</h3>
 
                         <p className='text-center text-xs sm:text-base text-white font-normal'>Découvrez nos histoires inspirantes</p>
                         
                         <div onClick={() => navigate('/publication')} className=' rounded-full cursor-pointer py-1 px-6 border flex relative  hover:bg-myBlue duration-200'> 
-                            <p className='text-white text-[10px] sm:text-sm text-center'>Voir plus </p>
+                            <p className='text-white text-[0.625rem] sm:text-sm text-center'>Voir plus </p>
                         </div>
                     </div>
                 </div>
