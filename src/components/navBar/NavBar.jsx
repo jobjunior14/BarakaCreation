@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import aBarakaCreationLogoBleu from '../../assets/Icones/aBarakaCreationLogoBleu.png';
+import abarakacreationLogophonebleu from '../../assets/Icones/abarakacreationLogophonebleu.png';
 import bcconversation2_1 from '../../assets/Icones/bcconversation2_1.png';
 import { useMatch } from 'react-router-dom';
 export default function NavBar ()
@@ -14,6 +15,7 @@ export default function NavBar ()
     const hideNave6 = useMatch('/services/graphiqueDesign/presentation');
     const hideNave7 = useMatch('/services/graphiqueDesign/miseEnPage');
     const hideNave8 = useMatch('/services/graphiqueDesign/webDesign');
+    const changeLogo = useMatch('/');
 
     const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7 || hideNave8;
     const [toggleBtn, setToggleBtn] = useState(false);
@@ -36,7 +38,7 @@ export default function NavBar ()
             
             <div className=''>
                 <NavLink 
-                    to = {`/`}> <img className='h-6' src = {aBarakaCreationLogoBleu} alt='BarakaCreation Logo' /></NavLink>
+                    to = {`/`}> <img className='h-6' src = { changeLogo ? aBarakaCreationLogoBleu : abarakacreationLogophonebleu} alt='BarakaCreation Logo' /></NavLink>
             </div>
             
             <div className={`lg:flex text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[2.5rem] pt-5 pb-[100%] top-[2.5rem] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>

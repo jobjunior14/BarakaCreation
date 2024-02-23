@@ -44,7 +44,7 @@ import {OnTopBtn} from '../services/identite_visuel/comp/util';
 import { useState, useEffect, useCallback } from 'react';
 
 // logo details component 
-function LogoDetail ({images,text, title, state, hideDetails }) {
+export function LogoDetail ({images,text, title, state, hideDetails }) {
     
     const [index, setIndex] = useState(0);
 
@@ -130,6 +130,8 @@ function LogoDetail ({images,text, title, state, hideDetails }) {
 
 export default function Logofolio () {
     
+
+    //all the stastes
     const [showDetails, setShowDetails] = useState({
     a1: false, a2: false, a3: false, a4: false, a5: false, a6: false, a7: false, a8: false, a9: false,
     a10: false, a11: false, a12: false, a13: false, a14: false, a15: false, a16: false, a17: false,
@@ -156,7 +158,7 @@ export default function Logofolio () {
           return this.a1 || this.a2 || this.a3 || this.a4 || this.a5 || this.a6 || this.a7 || this.a8 || this.a9 || this.a10 || this.a11 || this.a12 || this.a13 || this.a14 || this.a15 || this.a16 || this.a17 || this.a18 || this.a19 || this.a20 || this.a21 || this.a22 || this.a23 || this.a24 || this.a25 || this.a26 || 
           this.a27  || this.a28  || this.a29  || this.a30  || this.a31  || this.a32  || this.a33  || this.a34  || this.a35  || this.a36    
         } 
-    }
+    };
 
 
     const handleDetails = (letter) => {
@@ -407,7 +409,7 @@ export default function Logofolio () {
 
         const loadImage = () => {
 
-            if (((window.innerHeight + window.scrollY) - 1000) >= (document.body.offsetHeight - 1100) ) {
+            if (((window.innerHeight + window.scrollY) - 1000) >= (document.body.offsetHeight - 1400) ) {
 
                 setMainImages(prev => {
                     if (prev.length <= 33) {
@@ -457,45 +459,3 @@ export default function Logofolio () {
     )
 }
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   const imageContainer = document.getElementById('image-container');
-//   const totalImages = 20; // Nombre total d'images à afficher
-//   const batchSize = 5; // Nombre d'images chargées à chaque fois
-
-//   // Génération des éléments d'image statiques
-//   for (let i = 1; i <= totalImages; i++) {
-//     const imageItem = document.createElement('div');
-//     imageItem.classList.add('image-item');
-//     imageItem.innerHTML = `<img src="images/image${i}.jpg" alt="Image ${i}">`;
-//     imageContainer.appendChild(imageItem);
-//   }
-
-//   // Fonction pour charger plus d'images lors du défilement
-//   function loadMoreImages() {
-//     // Calcul du nombre d'images déjà affichées
-//     const displayedImages = document.querySelectorAll('.image-item').length;
-//     // Calcul du nombre d'images restantes à afficher
-//     const remainingImages = totalImages - displayedImages;
-//     // Nombre réel d'images à charger dans ce lot
-//     const imagesToLoad = Math.min(batchSize, remainingImages);
-    
-//     // Génération des éléments d'image pour ce lot
-//     for (let i = displayedImages + 1; i <= displayedImages + imagesToLoad; i++) {
-//       const imageItem = document.createElement('div');
-//       imageItem.classList.add('image-item');
-//       imageItem.innerHTML = `<img src="images/image${i}.jpg" alt="Image ${i}">`;
-//       imageContainer.appendChild(imageItem);
-//     }
-//   }
-
-//   // Écouteur d'événement pour détecter le défilement
-//   window.addEventListener('scroll', function() {
-//     // Déclencher le chargement d'images supplémentaires lorsque l'utilisateur atteint le bas de la page
-//     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-//       loadMoreImages();
-//     }
-//   });
-
-//   // Charger les premières images au chargement de la page
-//   loadMoreImages();
-// });
