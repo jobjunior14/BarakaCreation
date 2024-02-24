@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
 import mamour_1 from '../../assets/Publication/Mamour/mamour_1.jpg';
 import mamour_1_2 from '../../assets/Publication/Mamour/mamour_1_2.jpg';
 import mamour_2 from '../../assets/Publication/Mamour/mamour_2.jpg';

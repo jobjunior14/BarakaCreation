@@ -25,6 +25,9 @@ import Logofolio from './components/Portfolio/logofolio';
 import ImageGraphiqueDesign from './components/Portfolio/graphicDesign';
 import MotionDesignPortofolio from './components/Portfolio/motionDesign';
 import Mamour from './components/publications/mamour';
+import Haut from './components/publications/haut';
+import Defi from './components/publications/defi';
+import Chute from './components/publications/chute';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -46,6 +49,9 @@ function App() {
             <Route path='publication' element={<><Outlet/></>}>
               <Route index element={<Publication/>}/>
               <Route path='mamour' element={<Mamour/>}/>
+              <Route path='haut' element={<Haut/>}/>
+              <Route path='defi' element={<Defi/>}/>
+              <Route path='chute' element={<Chute/>}/>
             </Route>
 
             <Route path='services' element={<> <Outlet/></>}>

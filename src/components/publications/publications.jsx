@@ -102,7 +102,7 @@ export default function Publication () {
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <button className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</button>
+                                    <Link to={'/publication/defi'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@ export default function Publication () {
                                         <img src={iconPhotoshop} alt="icon" className='h-5'/>
                                         <img src={icon4N} alt="icon" className='h-5'/>
                                     </div>
-                                    <button className='px-5 bg-gray-700 text-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</button>
+                                    <Link to={'/publication/chute'} className='px-5 bg-gray-700 text-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +138,7 @@ export default function Publication () {
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <button className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</button>
+                                    <Link to={'/publication/haut'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +185,9 @@ export default function Publication () {
                         <section className={`w-full relative sm:h-auto rounded-lg flex flex-col items-center justify-center`}>
 
                             <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>
-                                <img src={Publicationord1} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                                <Link to={'/publication/chute'}>
+                                    <img src={Publicationord1} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                                </Link>
 
                             </div>
 
@@ -195,8 +197,9 @@ export default function Publication () {
                         <section className='w-full relative sm:h-auto rounded-lg flex flex-col items-center justify-center'>
 
                             <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>
-
-                                <img src={Publication_ordi} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                                <Link to={'/publication/defi'}>
+                                    <img src={Publication_ordi} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                                </Link>
 
                             </div>
                         </section>
@@ -217,8 +220,10 @@ export default function Publication () {
                         {/* Haut  */}
                         <section className='w-full relative sm:h-auto rounded-lg flex flex-col items-center justify-center'>
 
-                            <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>                                
-                                <img src={Publicationord2} alt='image' className='flex rounded-lg hover:scale-105 hover:-translate-x-5 hover:-translate-y-2 duration-150'/>
+                            <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>  
+                                <Link to={'/publication/haut'}>
+                                    <img src={Publicationord2} alt='image' className='flex rounded-lg hover:scale-105 hover:-translate-x-5 hover:-translate-y-2 duration-150'/>
+                                </Link>                              
 
                             </div>
                         </section>
