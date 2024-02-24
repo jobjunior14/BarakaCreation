@@ -40,6 +40,9 @@ import Logo_Fojed_1 from '../../assets/Portofolio/Logofolio/Logo_Fojed_1.jpg';
 import Logo_Ecobuilding_1 from '../../assets/Portofolio/Logofolio/Logo_Ecobuilding_1.jpg';
 import Logo_centenaire_cepac_1 from '../../assets/Portofolio/Logofolio/Logo_centenaire_cepac_1.jpg';
 import Logo_Afrique_millenaire_1 from '../../assets/Portofolio/Logofolio/Logo_Afrique_millenaire_1.jpg';
+import Accueil_logofolio_phone from '../../assets/Portofolio/Logofolio/Accueil_logofolio_phone.mp4';
+import accueil_logofolio_ordi_video from '../../assets/Portofolio/Logofolio/accueil_logofolio_ordi_video.mp4';
+import useWindowWidth from '../windowWidth';
 import {OnTopBtn} from '../services/identite_visuel/comp/util';
 import { useState, useEffect, useCallback } from 'react';
 
@@ -436,16 +439,18 @@ export default function Logofolio () {
 
         return logoDetails.map((prev, index) => <LogoDetail key={index}  images={prev.images} title={prev.title} text={prev.text} hideDetails={hideDetails} state={showDetails[`a${index + 1}`]}/>)
     }, [showDetails]);
-
+    const width = useWindowWidth();
     return (
         <main className="w-full flex flex-col gap-5 relative">
             {/* logo details displayed in absolute  */}
             <div aria-hidden={true} className={` ${showDetails.hidden() ? 'sticky' : 'hidden'} absolute top-0 md:top-5 z-40 backdrop-blur-md   w-full h-[100vh]  justify-center items-center flex px-[2%] sm:px-[5%] md:px-[10%] lg:px-[15%]`}>{myDetailsLogo()}</div>
             
             {/* welcom imaga  */}
-            <section className='w-full h-[18.75rem] sm:h-auto bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${Accueil_Logofolio})`}}>       
+            <section className='w-full h-auto relative overflow-hidden  flex flex-col items-center justify-center' >       
                 <div className='h-full w-full duration-200 delay-150 relative'>        
-                    <img src={Accueil_Logofolio} alt='image' className='sm:block hidden'/>
+                    <video autoPlay muted loop src={width <= 640 ? Accueil_logofolio_phone : accueil_logofolio_ordi_video}>
+                        Ton navigateur ne support cette video
+                    </video>
                 </div>     
             </section>
             

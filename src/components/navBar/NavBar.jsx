@@ -18,9 +18,12 @@ export default function NavBar ()
     const hideNave8 = useMatch('/services/graphiqueDesign/webDesign');
     const hideNave9 = useMatch('/portfolio/motionDesign');
     const hideNave10 = useMatch('/publication/mamour');
+    const hideNave11 = useMatch('/publication/chute');
+    const hideNave12 = useMatch('/publication/defi');
+    const hideNave13 = useMatch('/publication/haut');
     const changeLogo = useMatch('/');
 
-    const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7 || hideNave8 || hideNave9 || hideNave10;
+    const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7 || hideNave8 || hideNave9 || hideNave10 || hideNave11 || hideNave12 || hideNave13;
 
     const [toggleBtn, setToggleBtn] = useState(false);
     const [toggleNav, setToggleNav] = useState({services: false, portfolio: false});
