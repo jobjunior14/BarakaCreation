@@ -17,6 +17,7 @@ import Publication_ordi_3 from '../../assets/Publication/Publication_ordi_3.jpg'
 import Publication_ordi from '../../assets/Publication/Publication_ordi.jpg';
 import Publicationord2 from '../../assets/Publication/Publicationord2.jpg';
 import Publicationord1 from '../../assets/Publication/Publicationord1.jpg';
+import { Link } from 'react-router-dom';
 import useWindowWidth from '../windowWidth';
 export default function Publication () {
 
@@ -79,7 +80,7 @@ export default function Publication () {
                                         <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <button className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</button>
+                                    <Link to={'/publication/mamour'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
                             </div>
                         </div>
@@ -190,21 +191,24 @@ export default function Publication () {
 
                         </section>
                         
-                        {/* mamour  */}
+                        {/* Defi  */}
                         <section className='w-full relative sm:h-auto rounded-lg flex flex-col items-center justify-center'>
 
-                            <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>        
+                            <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>
+
                                 <img src={Publication_ordi} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
 
                             </div>
-
                         </section>
 
-                        {/* design graphique  */}
+                        {/* Mamour  */}
                         <section className='w-full relative sm:h-auto rounded-lg flex flex-col items-center justify-center'>
 
-                            <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>        
-                                <img src={Publication_ordi_3} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                            <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>   
+                                <Link to={'/publication/mamour'}>
+                                
+                                    <img src={Publication_ordi_3} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                                </Link>     
             
                             </div>
 
@@ -213,7 +217,7 @@ export default function Publication () {
                         {/* Haut  */}
                         <section className='w-full relative sm:h-auto rounded-lg flex flex-col items-center justify-center'>
 
-                            <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>        
+                            <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>                                
                                 <img src={Publicationord2} alt='image' className='flex rounded-lg hover:scale-105 hover:-translate-x-5 hover:-translate-y-2 duration-150'/>
 
                             </div>

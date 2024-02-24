@@ -17,9 +17,11 @@ export default function NavBar ()
     const hideNave7 = useMatch('/services/graphiqueDesign/miseEnPage');
     const hideNave8 = useMatch('/services/graphiqueDesign/webDesign');
     const hideNave9 = useMatch('/portfolio/motionDesign');
+    const hideNave10 = useMatch('/publication/mamour');
     const changeLogo = useMatch('/');
 
-    const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7 || hideNave8 || hideNave9;
+    const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7 || hideNave8 || hideNave9 || hideNave10;
+
     const [toggleBtn, setToggleBtn] = useState(false);
     const [toggleNav, setToggleNav] = useState({services: false, portfolio: false});
     // window.onscroll = () => {
@@ -47,7 +49,7 @@ export default function NavBar ()
         const myFubction = (e) => {
 
             const classl = [...e.target.classList];
-
+            
             if (!classl.includes('mainDiv')) {
                 if (!toggleBtn) {
 
@@ -82,7 +84,7 @@ export default function NavBar ()
             
             <div className={`pt-[10%] mainDiv lg:pt-0 flex flex-col lg:flex-row  text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[2.5rem] pt-5 pb-[100vh] top-[2.5rem] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
                 
-                <ul className='flex flex-col lg:flex-row lg:items-center justify-between gap-10'>
+                <ul className='flex flex-col lg:flex-row lg:items-center justify-between gap-10 mainDiv'>
 
                     <li>
                         <NavLink 

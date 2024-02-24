@@ -24,6 +24,7 @@ import GalleryArt from './components/Portfolio/gallerie_Art';
 import Logofolio from './components/Portfolio/logofolio';
 import ImageGraphiqueDesign from './components/Portfolio/graphicDesign';
 import MotionDesignPortofolio from './components/Portfolio/motionDesign';
+import Mamour from './components/publications/mamour';
 import { Outlet } from 'react-router-dom';
 function App() {
   
@@ -42,7 +43,10 @@ function App() {
               <Route path='motionDesign' element={<MotionDesignPortofolio/>}/>
             </Route>
 
-            <Route path='publication' element={<Publication/>}/>
+            <Route path='publication' element={<><Outlet/></>}>
+              <Route index element={<Publication/>}/>
+              <Route path='mamour' element={<Mamour/>}/>
+            </Route>
 
             <Route path='services' element={<> <Outlet/></>}>
               <Route index element={<Services/>}/>
@@ -53,7 +57,7 @@ function App() {
                 <Route path='charteGraphique' element={<CharteGraphique/>}/>
                 <Route path='supportPrint' element={<SupportPrint/>}/>
               </Route>
-              
+
               <Route path='motionDesign' element={<MotionDesign/>}/>
 
               <Route path='graphiqueDesign' element = {<> <Outlet/></>}> 
@@ -65,9 +69,7 @@ function App() {
                 <Route path='webDesign' element = {<WebDesign/>} />
               </Route>
               
-              <Route path='illustration' element={<Outlet/>}>
-                <Route index element ={<Illustation/>}/>
-              </Route>
+              <Route path='illustration' element={<Illustation/>}/>
 
               <Route path='consultance' element={<Consultance/>} />
 

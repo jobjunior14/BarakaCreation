@@ -82,7 +82,6 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
 
         {/* images slider */}
         {state && <section className='w-full flex justify-center overflow-hidden items-center gap-2'>
-            {/* style={{transform: `translateX(${-index}%)`}} */}
             <div className='w-full flex duration-200' style={{transform: `translateX(${-index}%)`}} >
                 <img src={images[0]} alt='image'/>
                 <img src={images[1]} alt='image'/>
