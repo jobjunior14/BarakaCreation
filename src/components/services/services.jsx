@@ -78,7 +78,7 @@ export default function Services () {
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl '>Annimation</h1>
                         <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left '>Spot publicitaire<br/>Présentation <span className='text-gray-500'>&</span> <br/> Conténu</p>
-                        <button onClick={() => navigate('/services/idVisuelle/motionDesign')} className='bg-blue-500 px-3 py-[0.13rem] text-white text-xs rounded-full sm:text-[1.125rem] hover:bg-myBlue duration-200' > Plus </button>
+                        <button onClick={() => navigate('/services/motionDesign')} className='bg-blue-500 px-3 py-[0.13rem] text-white text-xs rounded-full sm:text-[1.125rem] hover:bg-myBlue duration-200' > Plus </button>
                     </div>
                 </section>
                 

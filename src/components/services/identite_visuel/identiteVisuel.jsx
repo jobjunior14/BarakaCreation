@@ -199,7 +199,7 @@ export default function IdentiteVisuel () {
                         image={id_visuelle_video}
                         name={'Vidéo'}
                         text={"Spot publicitaire, Présentation, promotions en motion design"}
-                        link={'/services/idVisuelle/motionDesign'}
+                        link={'/services/motionDesign'}
                     />
 
                 </div>

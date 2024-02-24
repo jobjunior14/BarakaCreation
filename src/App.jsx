@@ -52,8 +52,9 @@ function App() {
                 <Route path='logotype' element={<Logotype/>}/>
                 <Route path='charteGraphique' element={<CharteGraphique/>}/>
                 <Route path='supportPrint' element={<SupportPrint/>}/>
-                <Route path='motionDesign' element={<MotionDesign/>}/>
               </Route>
+              
+              <Route path='motionDesign' element={<MotionDesign/>}/>
 
               <Route path='graphiqueDesign' element = {<> <Outlet/></>}> 
                 <Route index element = {<GraphiqueDesign/>} />

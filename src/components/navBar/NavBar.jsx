@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import aBarakaCreationLogoBleu from '../../assets/Icones/aBarakaCreationLogoBleu.png';
 import abarakacreationLogophonebleu from '../../assets/Icones/abarakacreationLogophonebleu.png';
 import bcconversation2_1 from '../../assets/Icones/bcconversation2_1.png';
 import { useMatch } from 'react-router-dom';
+import { click } from '@testing-library/user-event/dist/click';
 export default function NavBar ()
 {
 
@@ -20,7 +21,7 @@ export default function NavBar ()
 
     const hideNave = hideNave1 || hideNave2 || hideNave3 || hideNave4 || hideNave5 || hideNave6 || hideNave7 || hideNave8 || hideNave9;
     const [toggleBtn, setToggleBtn] = useState(false);
-    
+    const [toggleNav, setToggleNav] = useState({services: false, portfolio: false});
     // window.onscroll = () => {
         
     //     console.log(document.documentElement.scrollTop);
@@ -28,12 +29,49 @@ export default function NavBar ()
     // }
 
     function toggle () {
-        if (window.innerWidth <= 1024)  setToggleBtn(prev => prev === true ? false : true );
+        if (window.innerWidth <= 1024)  setToggleBtn(prev => {
+            setToggleNav({services: false, portfolio: false});
+
+            return prev === true ? false : true
+        } );
+
     }
 
-    const activeLink = `duration-300 transition easy-in-out delay-400 text-gray-700 my-9 text-xs lg:my-0 block lg:flex hover:text-teal-400 font-bold underline `;
+    function handleSubNav (name) {
+        setToggleNav(prev => ({...prev, [name]: prev[name] ? false : true}));
+    } 
+    
+    // hidding nav clicking anywhere else expect it 
+    useEffect (() => {
 
-    const inactiveLink = 'duration-300 transition easy-in-out delay-400 text-gray-700 my-9 text-xs lg:my-0 hover:underline block font-medium';
+        const myFubction = (e) => {
+
+            const classl = [...e.target.classList];
+
+            if (!classl.includes('mainDiv')) {
+                if (!toggleBtn) {
+
+                    if (window.innerWidth <= 1024)  setToggleBtn(prev => {
+                        setToggleNav({services: false, portfolio: false});
+    
+                        return false;
+                    } );
+                }
+            }
+            
+            
+        };
+
+        window.addEventListener('click', (e) =>  myFubction(e));
+
+        return () => window.removeEventListener('click', (e) => myFubction(e));
+
+    }, []);
+
+
+    const activeLink = `duration-300 flex transition easy-in-out delay-400 text-gray-700 text-xs lg:my-0 block lg:flex hover:text-teal-400 font-bold underline `;
+
+    const inactiveLink = 'duration-300 flex transition easy-in-out delay-400 text-gray-700 text-xs lg:my-0 hover:underline block font-medium';
     return (
         <nav className={`justify-between ${  hideNave ? 'hidden' : 'flex'} sticky w-full py-2 lg:px-28 md:px-20 sm:px-10 px-7 z-50 bg-white shadow-lg items-center -top-0 duration-300 transition easy-in-out delay-400`}>
             
@@ -42,34 +80,92 @@ export default function NavBar ()
                     to = {`/`}> <img className='h-6' src = { changeLogo ? aBarakaCreationLogoBleu : abarakacreationLogophonebleu} alt='BarakaCreation Logo' /></NavLink>
             </div>
             
-            <div className={`lg:flex text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[2.5rem] pt-5 pb-[100%] top-[2.5rem] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
+            <div className={`pt-[10%] mainDiv lg:pt-0 flex flex-col lg:flex-row  text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[2.5rem] pt-5 pb-[100vh] top-[2.5rem] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
                 
-                <div className='block lg:flex lg:items-center justify-between gap-10'>
-                    <NavLink 
-                        onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                        to = {`/`}> Acceuil </NavLink>
-                    <NavLink 
-                        onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                        to = {`/aPropos`}>  A&nbsp;propos </NavLink>
-                    <NavLink 
-                        onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                        to = {`/services`}> Services </NavLink>
-                    <NavLink 
-                        onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                        to = {`/portfolio`}> Portfolio </NavLink>
-                    <NavLink 
-                        onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                        to = {`/publication`}> Publications </NavLink>
-                    <NavLink 
-                        onClick={toggle}
-                        className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                        to = {`/rapportJournalier`}> Contacts </NavLink>
-                </div>
+                <ul className='flex flex-col lg:flex-row lg:items-center justify-between gap-10'>
+
+                    <li>
+                        <NavLink 
+                            onClick={toggle}
+                            className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                            to = {`/`}> Acceuil </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink 
+                            onClick={toggle}
+                            className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                            to = {`/aPropos`}>  A&nbsp;propos </NavLink>
+                    </li>
+                    
+                    <li className='flex justify-start flex-col'>
+
+                        <div className=' flex gap-3'>
+                            <NavLink 
+                                onClick={toggle}
+                                className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                                to = {`/services`}> Services 
+                            </NavLink>
+
+                            {!toggleNav.services ? <svg onClick={() => handleSubNav('services')} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 flex justify-center items-center mainDiv lg:hidden cursor-pointer"><path fillRule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" /></svg> : 
+                                <svg onClick={() => handleSubNav('services')} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 flex justify-center items-center mainDiv lg:hidden cursor-pointer">
+                                 <path fillRule="evenodd" d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clipRule="evenodd" />
+                                </svg>
+                            }
+                        </div>
+
+                        <div className={`w-fit overflow-hidden ${toggleNav.services ? 'h-[6.25rem]' : 'h-0'} transition-all `}>
+                            <ul className='pl-2 list-none flex flex-col gap-2 pt-3'>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/services/idVisuelle'}>Identité Visuelle</NavLink></li>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/services/graphiqueDesign'}> Design Graphique</NavLink></li>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/services/illustration'}>Illustration</NavLink></li>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/services/motionDesign'}>Annimation</NavLink></li>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/services/consultance'}>Consulting</NavLink></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li className='flex justify-start flex-col'>
+
+                        <div className=' flex gap-3'>
+                            <NavLink 
+                                onClick={toggle}
+                                className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                                to = {`/portfolio`}> Portfolio 
+                            </NavLink>
+
+                            {!toggleNav.portfolio ? <svg onClick={() => handleSubNav('portfolio')} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 flex justify-center items-center mainDiv lg:hidden cursor-pointer"><path fillRule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" /></svg> : 
+                                <svg onClick={() => handleSubNav('portfolio')} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 flex justify-center items-center mainDiv lg:hidden cursor-pointer">
+                                 <path fillRule="evenodd" d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clipRule="evenodd" />
+                                </svg>
+                            }
+                        </div>
+
+                        <div className={`w-fit overflow-hidden ${toggleNav.portfolio ? 'h-[6.25rem]' : 'h-0'} transition-all `}>
+                            <ul className='pl-2 list-none flex flex-col gap-2 pt-3'>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/galleryArt'}> Gallerie d&apos;art</NavLink></li>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/logofolio'}>Logofolio</NavLink></li>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/graphicDesign'}>Design graphique</NavLink></li>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'portfolio/motionDesign'}>Motion design</NavLink></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <NavLink 
+                            onClick={toggle}
+                            className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                            to = {`/publication`}> Publications </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink 
+                            onClick={toggle}
+                            className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                            to = {`/rapportJournalier`}> Contacts </NavLink>
+                    </li>
+                </ul>
 
                 <div className='  px-1 py-2 ml-[30%] hidden lg:flex justify-center items-center rounded-lg  '>
                     <img className='h-4 absolute' src={bcconversation2_1} alt='messagerie' />
@@ -82,10 +178,10 @@ export default function NavBar ()
                     <i onClick={toggle} className="  scale-150 hover:bg-gray-100  rounded-xl px-2 duration-300 transition easy-in-out delay-400 hover:cursor-pointer "> 
 
                        { 
-                            toggleBtn ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+                            toggleBtn ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 mainDiv">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
                             </svg>:
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className= 'text-black w-5 h-5 '>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className= 'text-black w-5 h-5 mainDiv '>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         }
