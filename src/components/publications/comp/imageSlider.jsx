@@ -20,7 +20,7 @@ export default function ImageSlider ({images, title, audio}) {
         }
     }, [])
 
-      // slide the images automaticaly///////////////////////////////////////////
+    // slide the images automaticaly///////////////////////////////////////////
     useEffect(() => {
 
         const interval = setInterval(() => {
@@ -35,7 +35,7 @@ export default function ImageSlider ({images, title, audio}) {
         }
     }, [index]);
 
-    // if the audio reach the end must began //////////////////////////////////////
+    // check if the audio background reach the end to restart it //////////////////////////////////////
     if (audioRef.current.currentTime >= (images.length * 6)) {
         audioRef.current.currentTime = 0;
     }
@@ -86,20 +86,35 @@ export default function ImageSlider ({images, title, audio}) {
 
     //initialize the controller tio true 
     const [hideVideoController, setHideVideoController] = useState (true);
+    //help us to store the setTimeoutID
     const timeoutRef = useRef(null);
-    
-    //
+
+    //check if the audio is ready to player than restart the slider
+    const [canPlay, setCanPlay] = useState(0);
+
+    //restart the slider if the canPlay number === 1
+    useEffect(() => {
+
+        if (canPlay === 1) {
+            setIndex(0);
+        }
+    }, [canPlay])
+
+
+    //time out to show the silde controller
     useEffect(() => {
 
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current);
         }
-        
+
         // Set a new timeout to hide the controller after 5 seconds
         timeoutRef.current = setTimeout(() => {
             setHideVideoController(false);
         }, 5000);
+
     }, []);
+
     const handleShowController = (e) => {
         // Toggle hide/show controller state based on 'e'
         setHideVideoController(prev => e ? !prev : true);
@@ -191,7 +206,7 @@ export default function ImageSlider ({images, title, audio}) {
         
         {/* audio  ambiance in background   */}
         {/* onCanPlay function are here to begin the slider if the background song can play ////////////////////////////////////// */}
-        <audio ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
+        <audio onCanPlay={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
 
         
     </main>)
