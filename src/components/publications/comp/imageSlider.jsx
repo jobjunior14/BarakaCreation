@@ -1,42 +1,121 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
 import useWindowWidth from "../../windowWidth";
 
-export default function ImageSlider ({images, title}) {
+export default function ImageSlider ({images, title, audio}) {
 
 
     const [index, setIndex] = useState(0);
+    const audioRef = useRef (new Audio(audio));
+    const [currentTime, setCurrentTime] = useState(audioRef.current.currentTime);
+    
+    // useEffect to update time //////////////////////////////////
+    useEffect(() => {
 
-      // slide the images automaticaly
+        const interval = setInterval(() => setCurrentTime(audioRef.current.currentTime), 1000);
+
+        return () => {
+            clearInterval(interval);
+        }
+    }, [])
+
+      // slide the images automaticaly///////////////////////////////////////////
     useEffect(() => {
 
         const interval = setInterval(() => {
             
-            setIndex ( prev => prev === (images.length - 1 ) * 100 ? 0 : prev + 100);
-        }, 5000) ;
+            setIndex ( prev => {
+                return prev === (images.length - 1 ) * 100 ? 0 : prev + 100
+            });
+        }, 6000) ;
 
         return () => {
             clearInterval(interval);
         }
     }, [index]);
 
+    // if the audio reach the end must began //////////////////////////////////////
+    if (audioRef.current.currentTime >= (images.length * 6)) {
+        audioRef.current.currentTime = 0;
+    }
+
     const nextImage = () =>  {
-        setIndex ( prev => prev === (images.length - 1 ) * 100 ? 0 : prev + 100);
+        setIndex ( prev => {
+            
+            audioRef.current.currentTime = ((prev === (images.length - 1 ) * 100 ? 0 : prev + 100) / 100) * 6;
+            return prev === (images.length - 1 ) * 100 ? 0 : prev + 100;
+        });
+
+        setCurrentTime(audioRef.current.currentTime);
+
     };
 
+
     const prevImage = () =>  {
-        setIndex ( prev => prev === 0 ? (images.length - 1 ) * 100 : prev - 100);
+
+        setIndex ( prev => {
+            
+            audioRef.current.currentTime = ((prev === 0 ? (images.length - 1 ) * 100 : prev - 100) / 100) * 6;
+            return prev === 0 ? (images.length - 1 ) * 100 : prev - 100;
+        });
+
+        audioRef.current.currentTime = (index / 100) * 6;
+        setCurrentTime(audioRef.current.currentTime);
     };
 
     //set the orientation of the screen to landscape if we are under 640px
     const width = useWindowWidth();
 
+    //side effect to not re render all the image to improve performance
     const myImages = useCallback(() => {
         return images.map((prev, index) => <img key={index} src={prev} alt="image"/>);
     }, [images]);
 
-    const circleDiv = images.map((prev, myIndex) => <div key={index + prev} onClick={() => setIndex(myIndex * 100)} className={`w-[5px] h-[5px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === (myIndex * 100) ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div> )
+    //state to mute background music or not 
+    const [mute, setMute] = useState(false);
+
+    const formatTime = (time) => {
+        const minutes = Math.floor(time / 60);
+        const seconds = Math.floor(time % 60);
+        return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    };
+    const handleMuted = () => {
+        setMute(prev => prev ? false : true);
+    };
+
+    //initialize the controller tio true 
+    const [hideVideoController, setHideVideoController] = useState (true);
+    const timeoutRef = useRef(null);
+    
+    //
+    useEffect(() => {
+
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
+        }
+        
+        // Set a new timeout to hide the controller after 5 seconds
+        timeoutRef.current = setTimeout(() => {
+            setHideVideoController(false);
+        }, 5000);
+    }, []);
+    const handleShowController = (e) => {
+        // Toggle hide/show controller state based on 'e'
+        setHideVideoController(prev => e ? !prev : true);
+
+        // Clear the previous timeout if it exists
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
+        }
+
+        // Set a new timeout to hide the controller after 5 seconds
+        timeoutRef.current = setTimeout(() => {
+            setHideVideoController(false);
+        }, 5000);
+    };
+
+    const circleDiv = images.map((prev, myIndex) => <div key={index + prev} onClick={() => {setIndex(myIndex * 100); audioRef.current.currentTime = myIndex * 6}} className={` w-[100%] h-[3px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === (myIndex * 100) ? 'bg-gray-50' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div> )
 
     return (<main className="w-full h-[100vh] relative flex flex-col justify-center items-center bg-gray-900">
         
@@ -49,16 +128,16 @@ export default function ImageSlider ({images, title}) {
             <p className="text-gray-200 text-xs font-semibold">Roter votre téléphone pour un meilleur visionnage  </p>
         </div>}
         {/* section image */}
-        <section className="w-full relative  flex justify-center overflow-hidden items-center gap-2">
+        <section  className="w-full relative  flex justify-center overflow-hidden items-center gap-2">
 
-            <div className='w-full flex duration-200' style={{transform: `translateX(${-index}%)`}} >
+            <div onClick={ (e) => handleShowController (e)} className='w-full flex duration-[1000ms] delay-300' style={{transform: `translateX(${-index}%)`}} >
                {myImages() }
             </div>
 
              {/* div to prev or next images  */}
-            <div className=' absolute bottom-5 flex items-center justify-evenly  w-full px-5'>
+            <div className=' absolute bottom-5 flex items-center duration-500 justify-evenly  w-full px-5' style={{transform: !hideVideoController ? `translateY(20vh)` : `translateY(0%)`}}>
                 
-                <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] bg-slate-100 bg-opacity-25 items-center justify-center rounded-full  duration-200 cursor-pointer pr-[4px] border border-gray-600 flex' onClick={prevImage}>
+                <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] bg-slate-100 bg-opacity-25 items-center justify-center rounded-full  duration-200 cursor-pointer pr-[4px] border border-gray-600 flex' onClick={() => {prevImage()}}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-20 h-20 text-gray-200  ">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
@@ -66,7 +145,7 @@ export default function ImageSlider ({images, title}) {
                 </div>
                 
                 
-                <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] bg-slate-100 bg-opacity-25 items-center justify-center rounded-full  duration-200 cursor-pointer pl-[4px] border border-gray-600 flex' onClick={nextImage}>
+                <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] bg-slate-100 bg-opacity-25 items-center justify-center rounded-full  duration-200 cursor-pointer pl-[4px] border border-gray-600 flex' onClick={ () => {nextImage()}}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-20 h-20 text-gray-200 ">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
@@ -75,12 +154,12 @@ export default function ImageSlider ({images, title}) {
             </div>
 
              {/* circle div to show the image's number  */}
-            <section className='absolute bottom-2 flex items-center justify-between h-2 w-full px-5 flex-wrap'>
+            <section className={`absolute bottom-2 grid grid-flow-col duration-500  items-center gap-1 h-2 w-full px-5` } style={{transform: !hideVideoController ? `translateY(20vh)` : `translateY(0%)`}}>
                 {circleDiv}
             </section>
             
             {/* custom navBar         */}
-            <section className={`py-3 px-[5%] w-full absolute top-0 z-50 `}>
+            <section className={`py-3 px-[5%] w-full absolute duration-500 top-0 z-50 ` } style={{transform: !hideVideoController ? `translateY(-20vh)` : `translateY(0%)`}}>
 
                 <section className='w-full flex justify-between item-center'>
 
@@ -93,9 +172,14 @@ export default function ImageSlider ({images, title}) {
                             </svg>
                         </Link>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white">
+                        { mute ? <svg onClick={handleMuted} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white cursor-pointer ">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                            </svg> :
+                            <svg onClick={handleMuted} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white cursor-pointer">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
-                        </svg>
+                        </svg>}
+
+                        <p className="text-gray-100 text-xs">{formatTime(currentTime)}</p>
 
 
                     </div>
@@ -104,7 +188,10 @@ export default function ImageSlider ({images, title}) {
                 <div className='w-full h-[1px] bg-gray-400 mt-2'> </div>
             </section>
         </section>
-
+        
+        {/* audio  ambiance in background   */}
+        {/* onCanPlay function are here to begin the slider if the background song can play ////////////////////////////////////// */}
+        <audio ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
 
         
     </main>)

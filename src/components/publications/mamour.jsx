@@ -19,7 +19,7 @@ import mamour_14 from '../../assets/Publication/Mamour/mamour_14.jpg';
 import mamour_15 from '../../assets/Publication/Mamour/mamour_15.jpg';
 import mamour_15_2 from '../../assets/Publication/Mamour/mamour_15_2.jpg';
 import mamour_16 from '../../assets/Publication/Mamour/mamour_16.jpg';
-
+import m1 from '../../assets/Musics/m1.mp3';
 import ImageSlider from "./comp/imageSlider";
 export default function Mamour () {
 
@@ -52,6 +52,7 @@ export default function Mamour () {
         <ImageSlider
             images={images}
             title={'Mamour'}
+            audio={m1}
         />
     </>)
 }
