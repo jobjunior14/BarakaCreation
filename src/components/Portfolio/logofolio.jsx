@@ -38,10 +38,17 @@ import Logo_Malabar_1 from '../../assets/Portofolio/Logofolio/Logo_Malabar_1.jpg
 import Logo_Lafamiliya_1 from '../../assets/Portofolio/Logofolio/Logo_Lafamiliya_1.jpg';
 import Logo_Fojed_1 from '../../assets/Portofolio/Logofolio/Logo_Fojed_1.jpg';
 import Logo_Ecobuilding_1 from '../../assets/Portofolio/Logofolio/Logo_Ecobuilding_1.jpg';
-import Logo_centenaire_cepac_1 from '../../assets/Portofolio/Logofolio/Logo_centenaire_cepac_1.jpg';
 import Logo_Afrique_millenaire_1 from '../../assets/Portofolio/Logofolio/Logo_Afrique_millenaire_1.jpg';
 import Accueil_logofolio_phone from '../../assets/Portofolio/Logofolio/Accueil_logofolio_phone.mp4';
 import accueil_logofolio_ordi_video from '../../assets/Portofolio/Logofolio/accueil_logofolio_ordi_video.mp4';
+import Logo_centenaire_cepac_1 from '../../assets/Portofolio/Logofolio/Logo_centenaire_cepac_1.jpg';
+import Logo_Architectonic_3 from '../../assets/Portofolio/Logofolio/Logo_centenaire_cepac_3.jpg';
+import Logo_Zali_2 from '../../assets/Portofolio/Logofolio/Logo_Zali_2.jpg';
+import Logo_Zali_3 from '../../assets/Portofolio/Logofolio/Logo_Zali_3.jpg';
+import Logo_Transformation_church_3 from '../../assets/Portofolio/Logofolio/Logo_Transformation_church_3.jpg';
+import Logo_Transformation_church_2 from '../../assets/Portofolio/Logofolio/Logo_Transformation_church_2.jpg';
+
+
 import useWindowWidth from '../windowWidth';
 import {OnTopBtn} from '../services/identite_visuel/comp/util';
 import { useState, useEffect, useCallback } from 'react';
@@ -73,7 +80,7 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
     };
     
 
-    return (<div className={`${ state ? 'absolute' : 'hidden'} p-5 sm:p-7 md:px-10 lg:px-[8%] w-full flex flex-col justify-center items-center gap-5 bg-slate-200 relative rounded-xl`}>
+    return (<div className={`${ state ? 'absolute' : 'hidden'} p-5 sm:p-7 md:px-10 lg:px-[8%] w-full sm:w-[90%] sm:h-[90vh] flex flex-col justify-center items-center gap-5 bg-slate-200 relative rounded-xl`}>
             
 
         {/* button to hide the details  */}
@@ -133,7 +140,7 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
 export default function Logofolio () {
     
 
-    //all the stastes
+    //all the stastes tot handle the showen details logo or note
     const [showDetails, setShowDetails] = useState({
     a1: false, a2: false, a3: false, a4: false, a5: false, a6: false, a7: false, a8: false, a9: false,
     a10: false, a11: false, a12: false, a13: false, a14: false, a15: false, a16: false, a17: false,
@@ -223,7 +230,17 @@ export default function Logofolio () {
     // all logo details  
     const logoDetails = [
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Architectonic_1, Logo_Architectonic_2, Logo_Architectonic_3],
+            title: 'ODJ asbl',
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
+        },
+        {
+            images: [Logo_Zali_3, Logo_Zali_2, Logo_Zali_1],
+            title: 'ODJ asbl',
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
+        },
+        {
+            images: [Logo_Transformation_church_3, Logo_Transformation_church_2, Logo_Transformation_church_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
@@ -240,17 +257,7 @@ export default function Logofolio () {
         {
             images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
             title: 'ODJ asbl',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
-        },
-        {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
-            title: 'ODJ asbl',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
-        },
-        {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
-            title: 'ODJ asbl',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'ide``nté visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],

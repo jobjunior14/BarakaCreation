@@ -59,8 +59,8 @@ export default function Acceuil () {
                 </div>
                 
                 <div className='flex justify-between mt-4 sm:mt-7'>
-                    <img src={Accueildesigngr2} className='h-[10.625rem] lg:h-[29.375rem] md:h-[32.5rem] sm:h-[15.625rem] ' alt='design 1'/>
-                    <img src={Accueildesigngr1} className='h-[10.625rem] lg:h-[29.375rem] md:h-[32.5rem] sm:h-[15.625rem] ' alt='design 2'/>
+                    <img src={Accueildesigngr2} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 1'/>
+                    <img src={Accueildesigngr1} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 2'/>
                 </div>
             </section>
             

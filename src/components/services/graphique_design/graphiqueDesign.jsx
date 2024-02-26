@@ -22,7 +22,7 @@ export default function GraphiqueDesign () {
                 <h1 className='text-blue-100 font-bold text-2xl sm:hidden'>Des supports <br /> diversifiés et <br /> efficaces</h1>
 
                 <div className=' justify-between flex items-center'>
-                    <img src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[10.625rem] lg:h-[29.375rem] md:h-[32.5rem] sm:h-[15.625rem] ' />
+                    <img src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' />
 
                     <div className='flex flex-col items-center justify-center pr-[5%] gap-4'>
                         <h1 className='text-blue-100 font-bold text-2xl md:text-[1.625rem] lg:text-[28px] sm:flex hidden leading-[1.875rem]'>Des supports <br /> diversifiés et <br /> efficaces</h1>
@@ -34,7 +34,7 @@ export default function GraphiqueDesign () {
                         </p>
                     </div>
 
-                    <img src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[10.625rem] lg:h-[29.375rem] md:h-[32.5rem] sm:h-[15.625rem]' />
+                    <img src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem]' />
                 </div>
 
                 <div className='px-[5%]'>
@@ -97,7 +97,7 @@ export default function GraphiqueDesign () {
                     image={motion_design}
                     name={'Motion design'}
                     text={"Spot publicitaire, Présentation, promotions en motion design "}
-                    link={'/services/idVisuelle/motionDesign'}
+                    link={'/services/motionDesign'}
                     bg={'bg-white'}
                     colorText={'text-gray-700'}
                 />  
