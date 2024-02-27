@@ -116,7 +116,7 @@ export default function Apropos () {
             <section className='w-full bg-bgCertifier flex flex-col justify-center items-center py-5 gap-7 px-3'>
                 <div className='w-full justify-center items-center flex flex-col gap-5'>
                     <h1 className='md:text-3xl text-xl text-blue-50 font-normal'>Cetifié <span className='text-gray-200'>par</span></h1>
-                    <div className='sm:w-[90%] md:w-[80%] lg:w-[75%] h-px bg-slate-300'></div>
+                    <div className='sm:w-[90%] md:w-[80%] lg:w-[75%] w-full h-px bg-slate-300'></div>
                 </div>
 
                 <div className='flex  w-full sm:w-[90%] md:w-[80%] lg:w-[75%] overflow-hidden rounded-3xl shadow-2xl  '>
