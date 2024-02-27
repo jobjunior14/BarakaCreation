@@ -52,9 +52,9 @@ export default function CharteGraphique () {
                             
                             <div className=" h-fit w-fit flex flex-col text-center items-center gap-2">
 
-                                <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                                <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-2  md:px-4 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                                 
-                                <Link to={'../'} className=" text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Nos créations <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                                <Link to={'/portfolio/graphicDesign'} className=" text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Nos créations <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ export default function CharteGraphique () {
                 <section className="flex flex-col gap-5 md:gap-7 w-full px-[10%] text-left py-[8%]">
 
                     <div className='w-full flex flex-col gap-2' >
-                        <h1 className='text-2xl text-gray-100 font-bold ' >Aspect <span className=' text-blue-100'>de la charte</span></h1>
+                        <h1 className='text-2xl sm:text-3xl md:text-4xl text-gray-100 font-bold ' >Aspect <span className=' text-blue-100'>de la charte</span></h1>
                     </div>
 
                     <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3">

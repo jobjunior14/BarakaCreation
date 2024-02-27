@@ -16,6 +16,7 @@ import Logo7 from '../assets/Accueil/Logo7.png';
 import Logo8 from '../assets/Accueil/Logo8.png';
 import Logo9 from '../assets/Accueil/Logo9.png';
 import Logo10 from '../assets/Accueil/Logo10.png';
+import { Link } from 'react-router-dom';
 import './an.css';
 import useWindowWidth from './windowWidth';
 import { useNavigate } from 'react-router-dom';
@@ -46,10 +47,14 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-gray-200 font-normal'>Nous apportons des solutions innovantes, originales et efficaces en communication visuelle</p>
 
-                        <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-blue-200 flex relative w-[60%] pl-7 hover:bg-gray-500 duration-200'> 
-                            <p className='text-gray-300 text-[0.5rem] sm:text-xs mb-px'> Nos réalisations </p>
-                            <div className='w-[1rem] h-[1rem] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-gray-100">
+                        <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-blue-200 flex gap-3 justify-center items-center  pl-5 hover:bg-gray-500 duration-200'> 
+                            <div>
+                                <p className='text-gray-300 text-[0.7rem] sm:text-xs '> Nos réalisations </p>
+                            </div>
+
+                            <div className='p-[0.1875rem] border border-blue-100 rounded-full flex justify-center items-center'>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-3 h-3  text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
                             </div>
@@ -75,11 +80,11 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-gray-800 font-normal'>De la stratégie à la mise en œuvre, nous aidons les entreprises à créer une image de marque forte et durable</p>
                         
-                        <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-slate-500 flex relative w-[60%] sm:pl-9 pl-7 hover:bg-myBlue duration-200'> 
-                            <p className='text-white text-[0.5rem] sm:text-xs mb-px'>Voir nos services </p>
+                        <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-slate-500 flex justify-center items-center pl-5 gap-3 hover:bg-myBlue duration-200'> 
+                            <p className='text-white text-[0.7rem] sm:text-xs '>Voir nos services </p>
 
-                            <div className='w-[1rem] h-[1rem] sm:w-5 sm:h-5 rounded-full justify-center items-center pl-[3px] border border-blue-200 flex absolute left-[83%] top-[2px] sm:left-[85%] sm:top-[2px] '>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-gray-100">
+                            <div className='p-[0.1875rem] rounded-full justify-center items-center  border border-blue-200 flex '>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-3 h-3 text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
                             </div>
@@ -124,8 +129,8 @@ export default function Acceuil () {
                 </div>
 
                 <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>
-                    <button className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</button>
-                    <button className=' py-1 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander&nbsp;un&nbsp;devis </button>
+                    <Link to={'/contacts'} className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</Link>
+                    <Link to={'/contacts'} className=' py-2 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander un devis </Link>
                 </div>
             </section>
             

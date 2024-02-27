@@ -43,8 +43,8 @@ export default function IdentiteVisuel () {
                 {/* welcom text  */}
                 <section className="text-left p-7 sm:px-20 md:px-28 w-full flex flex-col md:justify-center md:items-center">
                         
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  text-gray-600 w-[80%] sm:w-[75%] md:w-[70%]  font-bold mb-7 leading-6"> Démarquez-vous <span className=" text-bgPlay">par une identité visuelle qui</span> marque les esprits</h1>
-                        <p className=" text-md sm:text-[1.125rem] md:text-[1.375rem] lg:text-[1.625rem] text-gray-600 w-[80%] sm:w-[75%] md:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoiété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
+                        <h1 className="text-2xl sm:text-3xl text-gray-600 w-[80%] sm:w-[70%] md:w-[80%] lg:w-[70%]  font-bold mb-7 leading-6"> Démarquez-vous <span className=" text-bgPlay">par une identité visuelle qui</span> marque les esprits</h1>
+                        <p className=" text-md sm:text-[1.125rem]  text-gray-600 w-[80%] sm:w-[70%] md:w-[80%] lg:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoiété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
                 </section>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:px-5 md:px-8 lg:px-14">
@@ -78,7 +78,7 @@ export default function IdentiteVisuel () {
                             {/* Charte Graphique button  */}
                             <div className="flex justify-evenly gap-10">
                                 <Link to={'/services/idVisuelle/charteGraphique'} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex items-center"> Voir plus <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
-                                <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-1  rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                                <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-2  rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                             </div>
                         </section>
                     </section>

@@ -15,11 +15,10 @@ import icone2 from '../../assets/Services/icone2.png';
 import icone3 from '../../assets/Services/icone3.png';
 import NosServices from './components/nosServices';
 import ToggleText from './components/toggleText';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import useWindowWidth from '../windowWidth';
 export default function Services () {
 
-    const navigate = useNavigate();
     const width = useWindowWidth();
 
     return (
@@ -40,10 +39,10 @@ export default function Services () {
                     <img src={width <= 640 ? ac2P : ac2O} alt='ac2P' className='rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
-                        <h1 className='font-bold sm:hidden text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl'>Identité Visuelle</h1>
-                        <h1 className='font-bold hidden sm:block text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl'>Identité<br/>Visuelle</h1>
-                        <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl  sm:text-left'>LOGO, Charte graphique <br/> Supports print & Digital <br/> Packaging</p>
-                        <button onClick={() => navigate('/services/idVisuelle') } className='bg-blue-500 px-3 py-[0.13rem] text-white text-xs rounded-full sm:text-[1.125rem] hover:bg-myBlue duration-200 ' > Plus </button>
+                        <h1 className='font-bold sm:hidden text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800'>Identité Visuelle</h1>
+                        <h1 className='font-bold hidden sm:block text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800'>Identité<br/>Visuelle</h1>
+                        <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl  sm:text-left text-gray-700'>LOGO, Charte graphique <br/> Supports print & Digital <br/> Packaging</p>
+                        <Link to={'/services/idVisuelle'} className='bg-blue-500 px-4 py-[0.23rem]  text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200 ' > Plus </Link>
                     </div>
                 </section>
 
@@ -55,7 +54,7 @@ export default function Services () {
                         <h1 className='font-bold sm:hidden text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'>Design Graphique</h1>
                         <h1 className='font-bold hidden sm:block text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100 text-left'>Design<br/>Graphique</h1>
                         <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left text-gray-100'>Campagne de comm. <span className='text-gray-500'>&</span> Evènementiels<br/> Mise en page <span className='text-gray-500'>&</span> Présentation <br/> Web design</p>
-                        <button onClick={() => navigate('/services/graphiqueDesign')} className='bg-blue-500 px-3 py-[0.13rem] text-white text-xs rounded-full sm:text-[1.125rem] hover:bg-myBlue duration-200' > Plus </button>
+                        <Link to={'/services/graphiqueDesign'} className='bg-blue-500 px-4 py-[0.23rem] text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </Link>
                     </div>
                 </section>
 
@@ -64,10 +63,10 @@ export default function Services () {
                     <img src={width <= 640 ? ac1 : Acillustration} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-end sm:right-20 sm:gap-3 md:gap-5 lg:gap-6'>
-                        <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl '>Illustration</h1>
-                        <p className='text-[0.69rem] sm:hidden sm:text-[1.125rem] md:text-xl sm:text-right '>Livre, Couverture <span className='text-gray-500'>&</span> Bande dessinée <br/> Campagne <span className='text-gray-500'>&</span> web</p>
-                        <p className='text-[0.69rem] hidden sm:block sm:text-[1.125rem] md:text-xl sm:text-right '>Livre  <span className='text-gray-500'>&</span> Couverture <br/>Bande dessinée <br/> Campagne <span className='text-gray-500'>&</span> web</p>
-                        <button onClick={() => navigate('/services/illustration')} className='bg-blue-500 px-3 py-[0.13rem] text-white text-xs rounded-full sm:text-[1.125rem] hover:bg-myBlue duration-200' > Plus </button>
+                        <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800 '>Illustration</h1>
+                        <p className='text-[0.69rem] sm:hidden sm:text-[1.125rem] md:text-xl sm:text-right text-gray-800 '>Livre, Couverture <span className='text-gray-500'>&</span> Bande dessinée <br/> Campagne <span className='text-gray-500'>&</span> web</p>
+                        <p className='text-[0.69rem] hidden sm:block sm:text-[1.125rem] md:text-xl sm:text-right text-gray-800 '>Livre  <span className='text-gray-500'>&</span> Couverture <br/>Bande dessinée <br/> Campagne <span className='text-gray-500'>&</span> web</p>
+                        <Link to={'/services/illustration'} className='bg-blue-500 px-4 py-[0.23rem] text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </Link>
                     </div>
                 </section>
 
@@ -76,9 +75,9 @@ export default function Services () {
                     <img src={width <= 640 ? ac5P : ac5O} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
-                        <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl '>Annimation</h1>
-                        <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left '>Spot publicitaire<br/>Présentation <span className='text-gray-500'>&</span> <br/> Conténu</p>
-                        <button onClick={() => navigate('/services/motionDesign')} className='bg-blue-500 px-3 py-[0.13rem] text-white text-xs rounded-full sm:text-[1.125rem] hover:bg-myBlue duration-200' > Plus </button>
+                        <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800 '>Annimation</h1>
+                        <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left text-gray-800 '>Spot publicitaire<br/>Présentation <span className='text-gray-500'>&</span> <br/> Conténu</p>
+                        <Link to={'/services/motionDesign'} className='bg-blue-500 px-4 py-[0.23rem] text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </Link>
                     </div>
                 </section>
                 
@@ -89,7 +88,7 @@ export default function Services () {
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'> Consulting</h1>
                         <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left text-gray-100'>Nous vous accompagnons dans la <br/> définition de votre stratégie de<br/>communication, la mise en place de vos<br/>outils et la mesure de vos résultats</p>
-                        <button onClick={() => navigate('/services/consultance')} className='bg-gray-50 px-3 py-[0.13rem] text-blue-500 text-xs rounded-full sm:text-[1.125rem] hover:bg-myBlue duration-200' > Plus </button>
+                        <button to={'/services/consultance'} className='bg-gray-50 px-4 py-[0.23rem] text-blue-500 text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </button>
                     </div>
                 </section>
             </section>
@@ -115,7 +114,7 @@ export default function Services () {
 
             </section>
 
-            <section className='text-left px-7 md:px-20'>
+            <section className='text-left px-7 md:px-20 lg:mt-5'>
                 
                 <ToggleText
                     title={'Nos procédures & Times Lines'}

@@ -96,7 +96,8 @@ export default function ImageSlider ({images, title, audio}) {
     useEffect(() => {
 
         if (canPlay === 1) {
-            setIndex(0);
+
+            setIndex( prev => prev = 0);
         }
     }, [canPlay])
 
@@ -178,7 +179,7 @@ export default function ImageSlider ({images, title, audio}) {
         
           {/* audio  ambiance in background   */}
         {/* onCanPlay function are here to begin the slider if the background song can play ////////////////////////////////////// */}
-        <audio onCanPlay={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
+        <audio onCanPlay={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay={true} type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
 
         {/* message to rotate the screen  */}
         {width <=640 && <div className="absolute top-[20vh] flex flex-col gap-3 justify-center items-center">

@@ -28,7 +28,9 @@ import Mamour from './components/publications/mamour';
 import Haut from './components/publications/haut';
 import Defi from './components/publications/defi';
 import Chute from './components/publications/chute';
+import Contacts from './components/contact';
 import { Outlet } from 'react-router-dom';
+
 function App() {
   
   return ( 
@@ -37,6 +39,7 @@ function App() {
         <Route path='/' element = {<SharedNav/>}>
             <Route index element={<Acceuil/>} />
             <Route path='aPropos' element= {<Apropos/>}/>
+            <Route path='contacts' element= {<Contacts/>}/>
             
             <Route path='portfolio' element={<><Outlet/></>}>
               <Route index element={<Portfolio/>}/>

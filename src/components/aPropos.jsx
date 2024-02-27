@@ -62,7 +62,7 @@ export default function Apropos () {
                     </div>
                     
                     {/* proffession */}
-                    <div>
+                    <div className='pb-5  bg-bgFormation'>
                         <div className='bg-bgFormation text-left p-8 md:py-0 w-full '>
 
                             <div className='flex items-start'>
@@ -113,9 +113,11 @@ export default function Apropos () {
             </section>
 
             {/* certifier par  */}
-            <section className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-5 pb-5 gap-7 px-3'>
-
-                <h1 className='md:text-3xl text-xl text-gray-50'>Cetifié <span className='text-gray-200'>par</span></h1>
+            <section className='w-full bg-bgCertifier flex flex-col justify-center items-center py-5 gap-7 px-3'>
+                <div className='w-full justify-center items-center flex flex-col gap-5'>
+                    <h1 className='md:text-3xl text-xl text-blue-50 font-normal'>Cetifié <span className='text-gray-200'>par</span></h1>
+                    <div className='sm:w-[90%] md:w-[80%] lg:w-[75%] h-px bg-slate-300'></div>
+                </div>
 
                 <div className='flex  w-full sm:w-[90%] md:w-[80%] lg:w-[75%] overflow-hidden rounded-3xl shadow-2xl  '>
 

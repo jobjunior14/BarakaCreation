@@ -93,7 +93,7 @@ export default function NavBar ()
                         <NavLink 
                             onClick={toggle}
                             className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                            to = {`/`}> Acceuil </NavLink>
+                            to = {`/`}> Accueil </NavLink>
                     </li>
 
                     <li>
@@ -168,7 +168,7 @@ export default function NavBar ()
                         <NavLink 
                             onClick={toggle}
                             className={ ({isActive}) => isActive ? activeLink : inactiveLink}
-                            to = {`/rapportJournalier`}> Contacts </NavLink>
+                            to = {`/contacts`}> Contacts </NavLink>
                     </li>
                 </ul>
 

@@ -9,13 +9,16 @@ import bclinkedin from '../assets/Icones/bclinkedin.png';
 export function Footer ()
 {
     return (
-        <footer className='w-full bg-gray-50 flex flex-col sm:flex-row justify-center  items-center sm:justify-normal  py-8 sm:px-20 px-10'>
+        <footer className='w-full bg-gray-50 flex flex-col sm:flex-row sm:gap-10 justify-center  items-center sm:justify-normal  py-8 sm:px-20 px-10'>
             
             {/* baraka creation logo and texts */}
-            <div className='sm:w-[30%] sm:block flex items-center gap-x-5 w-[40%%]'>
-                <img className='h-20 mb-1' src={logo_pictogrammFichier_1} alt="pictogram" />
-                <div className='text-left'>
-                    <p className='text-[0.5rem] text-semibold text-gray-800'>Kinshasa, RDC <br/> Baraka creation, votre partenaire <br/> idéal en communication visuelle<br/> <b>Ensemble innovons </b></p>
+            <div className='flex justify-center  '>
+
+                <div className='sm:block flex items-center gap-x-5 w-[90%]'>
+                    <img className='h-20 mb-1' src={logo_pictogrammFichier_1} alt="pictogram" />
+                    <div className='text-left'>
+                        <p className='text-[0.6rem] text-semibold text-gray-800'>Kinshasa, RDC <br/> Baraka creation, votre partenaire <br/> idéal en communication visuelle<br/> <b>Ensemble innovons </b></p>
+                    </div>
                 </div>
             </div>
 
@@ -30,34 +33,34 @@ export function Footer ()
                         </div>
 
                         <div className='flex gap-x-4 text-left mt-2'>
-                            <div className='flex flex-col gap-y-px'>
-                                <Link to={'/'} className='text-[0.625rem] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Accueil</Link>
-                                <Link to={'/'} className='text-[0.625rem] sm:text-[13px] text-gray-800 text-semibold hover:underline'>A propos</Link>
-                                <Link to={'/'} className='text-[0.625rem] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Services</Link>
+                            <div className='flex flex-col gap-y-1'>
+                                <Link to={'/'} className='text-[0.7rem] sm:text-[0.8rem] text-gray-800 text-semibold hover:underline'>Accueil</Link>
+                                <Link to={'/aPropos'} className='text-[0.7rem] sm:text-[0.8rem] text-gray-800 text-semibold hover:underline'>A propos</Link>
+                                <Link to={'/services'} className='text-[0.7rem] sm:text-[0.8rem] text-gray-800 text-semibold hover:underline'>Services</Link>
                             </div>
 
-                            <div className='flex flex-col gap-y-px'>
-                                <Link to={'/'} className='text-[9px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Portfolio</Link>
-                                <Link to={'/'} className='text-[9px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Publications</Link>
-                                <Link to={'/'} className='text-[9px] sm:text-[13px] text-gray-800 text-semibold hover:underline'>Contactez-nous</Link>
+                            <div className='flex flex-col gap-y-1'>
+                                <Link to={'/portfolio'} className='text-[0.7rem] sm:text-[0.8rem] text-gray-800 text-semibold hover:underline'>Portfolio</Link>
+                                <Link to={'/publication'} className='text-[0.7rem] sm:text-[0.8rem] text-gray-800 text-semibold hover:underline'>Publications</Link>
+                                <Link to={'/contacts'} className='text-[0.7rem] sm:text-[0.8rem] text-gray-800 text-semibold hover:underline'>Contactez-nous</Link>
                             </div>
                         </div>
                     </div>
                     
                     {/* link  */}
                     <div className='flex gap-x-[7px] sm:mt-14 mt-3'>
-                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bclinkedin} alt="Linkdin" /> </Link>
-                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bcInsta} alt="Insta" /> </Link>
-                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bcFb} alt="fb" /> </Link>
-                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bctwitter_2} alt="Twitter" /> </Link>
-                        <Link to='https://google.com'> <img className=' h-5 hover:scale-125 duration-200' src={bcBehance} alt="Twitter" /> </Link>
+                        <Link to='https://www.linkedin.com/in/baraka-creation-a0a69321b/'> <img className=' h-5 hover:scale-125 duration-200' src={bclinkedin} alt="Linkdin" /> </Link>
+                        <Link to='https://www.instagram.com/barakacreation/'> <img className=' h-5 hover:scale-125 duration-200' src={bcInsta} alt="Insta" /> </Link>
+                        <Link to='https://web.facebook.com/barakalurhakwa'> <img className=' h-5 hover:scale-125 duration-200' src={bcFb} alt="fb" /> </Link>
+                        <Link to='https://twitter.com/BarakaLurhakwa'> <img className=' h-5 hover:scale-125 duration-200' src={bctwitter_2} alt="Twitter" /> </Link>
+                        <Link to='https://www.behance.net/barakacreation'> <img className=' h-5 hover:scale-125 duration-200' src={bcBehance} alt="Twitter" /> </Link>
                     </div>
                 </div>
                 
                 <div className='h-[2px] w-full rounded-full bg-gray-600 mt-2'>
 
                 </div>
-                <p className='text-black text-[7px] sm:text-left text-center mt-2'>© Copyright 2023 Baraka creation  All Rights Reserved</p>
+                <p className='text-black text-[10px] sm:text-left text-center mt-2'>© Copyright 2023 Baraka creation  All Rights Reserved</p>
             </div>
         </footer>
     );
