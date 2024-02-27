@@ -29,10 +29,10 @@ export default function Contacts () {
         setData(prev => ({...prev, [name]: value}))
     };
 
-    const Usermessage = `Nom: ${data.nom}\n Telephone: ${data.tel}\n Email: ${data.email}\n \n ${data.message}`
+    const Usermessage = `Nom: ${data.nom}\nTelephone: ${data.tel}\nEmail: ${data.email}\n \n  MESSAGE \n n\${data.message}`
 
     
-    const sendingData = (data) => {
+    const sendingData = async (data) => {
 
         if (data.nom === '') {
             return setDataMessage(prev => ({...prev, nom: true}))
@@ -47,9 +47,9 @@ export default function Contacts () {
         try {
             
             setLoading(true);
-            const data = axios.post('https://degobar.onrender.com/api/v1/user/barakaCreation', Usermessage,{"headers": { 'Content-Type': 'application/json'}} );
+            const dataFect = await axios.post('https://degobar.onrender.com/api/v1/user/barakaCreation', {message: Usermessage});
 
-
+            console.log (dataFect.data)
             setFetchingMessage('Message envoyé avec succès');
             
         } catch (err) {
