@@ -47,7 +47,7 @@ export default function Contacts () {
         try {
             
             setLoading(true);
-            const dataFect = await axios.post('http://localhost:5001/api/v1/user/barakaCreation', {message: Usermessage});
+            const dataFect = await axios.post('https://degobar.onrender.com/api/v1/user/barakaCreation', {message: Usermessage});
 
             setFetchingMessage('Message envoyé avec succès');
             
