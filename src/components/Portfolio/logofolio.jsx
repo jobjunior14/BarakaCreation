@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
-import Accueil_Logofolio from '../../assets/Portofolio/Logofolio/Accueil_Logofolio.jpg';
 import Logo_AED_1 from '../../assets/Portofolio/Logofolio/Logo_AED_1.jpg';
-import Logo_Afrique_millenaire_3_ from '../../assets/Portofolio/Logofolio/Logo_Afrique_millenaire_3_.jpg';
 import Logo_AED_2 from '../../assets/Portofolio/Logofolio/Logo_AED_2.jpg';
 import Logo_AED_3 from '../../assets/Portofolio/Logofolio/Logo_AED_3.jpg';
 import Logo_Architectonic_2 from '../../assets/Portofolio/Logofolio/Logo_Architectonic_2.jpg';
@@ -20,35 +18,86 @@ import Logo_uibec_1 from '../../assets/Portofolio/Logofolio/Logo_uibec_1.jpg';
 import Logo_uibec_2 from '../../assets/Portofolio/Logofolio/Logo_uibec_2.jpg';
 import Logo_uibec_3 from '../../assets/Portofolio/Logofolio/Logo_uibec_3.jpg';
 import Logo_TF_School_1 from '../../assets/Portofolio/Logofolio/Logo_TF_School_1.jpg';
+import Logo_TF_School_2 from '../../assets/Portofolio/Logofolio/Logo_TF_School_2.jpg';
+import Logo_TF_School_3 from '../../assets/Portofolio/Logofolio/Logo_TF_School_3.jpg';
 import Logo_synergy_1 from '../../assets/Portofolio/Logofolio/Logo_synergy_1.jpg';
+import Logo_synergy_2 from '../../assets/Portofolio/Logofolio/Logo_synergy_2.jpg';
+import Logo_synergy_3 from '../../assets/Portofolio/Logofolio/Logo_synergy_3.jpg';
 import Logo_SLIGRA_2 from '../../assets/Portofolio/Logofolio/Logo_SLIGRA_2.jpg';
 import Logo_plus_pres_de_moi_1 from '../../assets/Portofolio/Logofolio/Logo_plus_pres_de_moi_1.jpg';
+import Logo_plus_pres_de_moi_2 from '../../assets/Portofolio/Logofolio/Logo_plus_pres_de_moi_2.jpg';
+import Logo_plus_pres_de_moi_3 from '../../assets/Portofolio/Logofolio/Logo_plus_pres_de_moi_3.jpg';
 import Logo_FPEF_1 from '../../assets/Portofolio/Logofolio/Logo_FPEF_1.jpg';
+import Logo_FPEF_2 from '../../assets/Portofolio/Logofolio/Logo_FPEF_2.jpg';
+import Logo_FPEF_3 from '../../assets/Portofolio/Logofolio/Logo_FPEF_3.jpg';
 import Logo_Entreprenher_1 from '../../assets/Portofolio/Logofolio/Logo_Entreprenher_1.jpg';
+import Logo_Entreprenher_2 from '../../assets/Portofolio/Logofolio/Logo_Entreprenher_2.jpg';
+import Logo_Entreprenher_3 from '../../assets/Portofolio/Logofolio/Logo_Entreprenher_3.jpg';
 import Logo_cepac_1 from '../../assets/Portofolio/Logofolio/Logo_cepac_1.jpg';
+import Logo_cepac_2 from '../../assets/Portofolio/Logofolio/Logo_cepac_2.jpg';
+import Logo_cepac_3 from '../../assets/Portofolio/Logofolio/Logo_cepac_3.jpg';
 import Logo_ONT_1 from '../../assets/Portofolio/Logofolio/Logo_ONT_1.jpg';
+import Logo_ONT_2 from '../../assets/Portofolio/Logofolio/Logo_ONT_2.jpg';
+import Logo_ONT_3 from '../../assets/Portofolio/Logofolio/Logo_ONT_3.jpg';
 import Logo_Nyota_1 from '../../assets/Portofolio/Logofolio/Logo_Nyota_1.jpg';
+import Logo_Nyota_2 from '../../assets/Portofolio/Logofolio/Logo_Nyota_2.jpg';
+import Logo_Nyota_3 from '../../assets/Portofolio/Logofolio/Logo_Nyota_3.jpg';
 import logo_elenge_1 from '../../assets/Portofolio/Logofolio/logo_elenge_1.jpg';
+import logo_elenge_2 from '../../assets/Portofolio/Logofolio/logo_elenge_2.jpg';
+import logo_elenge_3 from '../../assets/Portofolio/Logofolio/logo_elenge_3.jpg';
 import Logo_DHAD_1 from '../../assets/Portofolio/Logofolio/Logo_DHAD_1.jpg';
+import Logo_DHAD_2 from '../../assets/Portofolio/Logofolio/Logo_DHAD_2.jpg';
+import Logo_DHAD_3 from '../../assets/Portofolio/Logofolio/Logo_DHAD_3.jpg';
 import Logo_Architectonic_1 from '../../assets/Portofolio/Logofolio/Logo_Architectonic_1.jpg';
 import Logo_Baraka_creation_1 from '../../assets/Portofolio/Logofolio/Logo_Baraka_creation_1.jpg';
+import Logo_Baraka_creation_2 from '../../assets/Portofolio/Logofolio/Logo_Baraka_creation_2.jpg';
+import Logo_Baraka_creation_3 from '../../assets/Portofolio/Logofolio/Logo_Baraka_creation_3.jpg';
 import Logo_Mon_plongeur_1 from '../../assets/Portofolio/Logofolio/Logo_Mon_plongeur_1.jpg';
+import Logo_Mon_plongeur_2 from '../../assets/Portofolio/Logofolio/Logo_Mon_plongeur_2.jpg';
+import Logo_Mon_plongeur_3 from '../../assets/Portofolio/Logofolio/Logo_Mon_plongeur_3.jpg';
 import Logo_Santé_et_moi_1 from '../../assets/Portofolio/Logofolio/Logo_Santé_et_moi_1.jpg';
+import Logo_Santé_et_moi_2 from '../../assets/Portofolio/Logofolio/Logo_Santé_et_moi_2.jpg';
+import Logo_Santé_et_moi_3 from '../../assets/Portofolio/Logofolio/Logo_Santé_et_moi_3.jpg';
 import Logo_SLIGRA_1 from '../../assets/Portofolio/Logofolio/Logo_SLIGRA_1.jpg';
+import Logo_SLIGRA_3 from '../../assets/Portofolio/Logofolio/Logo_SLIGRA_3.jpg';
 import Logo_Impactpub_1 from '../../assets/Portofolio/Logofolio/Logo_Impactpub_1.jpg';
+import Logo_Impactpub_2 from '../../assets/Portofolio/Logofolio/Logo_Impactpub_2.jpg';
+import Logo_Impactpub_3 from '../../assets/Portofolio/Logofolio/Logo_Impactpub_3.jpg';
 import Logo_Idemboxes_1 from '../../assets/Portofolio/Logofolio/Logo_Idemboxes_1.jpg';
+import Logo_Idemboxes_2 from '../../assets/Portofolio/Logofolio/Logo_Idemboxes_2.jpg';
+import Logo_Idemboxes_3 from '../../assets/Portofolio/Logofolio/Logo_Idemboxes_3.jpg';
 import Logo_VMH_1 from '../../assets/Portofolio/Logofolio/Logo_VMH_1.jpg';
+import Logo_VMH_2 from '../../assets/Portofolio/Logofolio/Logo_VMH_2.jpg';
+import Logo_VMH_3 from '../../assets/Portofolio/Logofolio/Logo_VMH_3.jpg';
 import Logo_UK_DRC_Forum_1 from '../../assets/Portofolio/Logofolio/Logo_UK_DRC_Forum_1.jpg';
+import Logo_UK_DRC_Forum_2 from '../../assets/Portofolio/Logofolio/Logo_UK_DRC_Forum_2.jpg';
+import Logo_UK_DRC_Forum_3 from '../../assets/Portofolio/Logofolio/Logo_UK_DRC_Forum_3.jpg';
 import Logo_Extreme_holding_1 from '../../assets/Portofolio/Logofolio/Logo_Extreme_holding_1.jpg';
+import Logo_Extreme_holding_2 from '../../assets/Portofolio/Logofolio/Logo_Extreme_holding_2.jpg';
+import Logo_Extreme_holding_3 from '../../assets/Portofolio/Logofolio/Logo_Extreme_holding_3.jpg';
 import Logo_Mobc_1 from '../../assets/Portofolio/Logofolio/Logo_Mobc_1.jpg';
+import Logo_Mobc_2 from '../../assets/Portofolio/Logofolio/Logo_Mobc_2.jpg';
+import Logo_Mobc_3 from '../../assets/Portofolio/Logofolio/Logo_Mobc_3.jpg';
 import Logo_Malabar_1 from '../../assets/Portofolio/Logofolio/Logo_Malabar_1.jpg';
+import Logo_Malabar_2 from '../../assets/Portofolio/Logofolio/Logo_Malabar_2.jpg';
+import Logo_Malabar_3 from '../../assets/Portofolio/Logofolio/Logo_Malabar_3.jpg';
 import Logo_Lafamiliya_1 from '../../assets/Portofolio/Logofolio/Logo_Lafamiliya_1.jpg';
+import Logo_Lafamiliya_2 from '../../assets/Portofolio/Logofolio/Logo_Lafamiliya_2.jpg';
+import Logo_Lafamiliya_3 from '../../assets/Portofolio/Logofolio/Logo_Lafamiliya_3.jpg';
 import Logo_Fojed_1 from '../../assets/Portofolio/Logofolio/Logo_Fojed_1.jpg';
+import Logo_Fojed_2 from '../../assets/Portofolio/Logofolio/Logo_Fojed_2.jpg';
+import Logo_Fojed_3 from '../../assets/Portofolio/Logofolio/Logo_Fojed_3.jpg';
 import Logo_Ecobuilding_1 from '../../assets/Portofolio/Logofolio/Logo_Ecobuilding_1.jpg';
+import Logo_Ecobuilding_2 from '../../assets/Portofolio/Logofolio/Logo_Ecobuilding_2.jpg';
+import Logo_Ecobuilding_3 from '../../assets/Portofolio/Logofolio/Logo_Ecobuilding_3.jpg';
 import Logo_Afrique_millenaire_1 from '../../assets/Portofolio/Logofolio/Logo_Afrique_millenaire_1.jpg';
+import Logo_Afrique_millenaire_2 from '../../assets/Portofolio/Logofolio/Logo_Afrique_millenaire_2.jpg';
+import Logo_Afrique_millenaire_3 from '../../assets/Portofolio/Logofolio/Logo_Afrique_millenaire_3.jpg';
 import Accueil_logofolio_phone from '../../assets/Portofolio/Logofolio/Accueil_logofolio_phone.mp4';
 import accueil_logofolio_ordi_video from '../../assets/Portofolio/Logofolio/accueil_logofolio_ordi_video.mp4';
 import Logo_centenaire_cepac_1 from '../../assets/Portofolio/Logofolio/Logo_centenaire_cepac_1.jpg';
+import Logo_centenaire_cepac_2 from '../../assets/Portofolio/Logofolio/Logo_centenaire_cepac_2.jpg';
+import Logo_centenaire_cepac_3 from '../../assets/Portofolio/Logofolio/Logo_centenaire_cepac_3.jpg';
 import Logo_Architectonic_3 from '../../assets/Portofolio/Logofolio/Logo_Architectonic_3.jpg';
 import Logo_Zali_2 from '../../assets/Portofolio/Logofolio/Logo_Zali_2.jpg';
 import Logo_Zali_3 from '../../assets/Portofolio/Logofolio/Logo_Zali_3.jpg';
@@ -87,25 +136,31 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
     };
     
     //my images
-    const myImages = images.map( prev => <img key={prev} src={prev} alt='image' />);
+    const myImages = images.map( prev => {
+        return <img key={prev + 'jello'} src={prev} alt="image" className=' rounded-xl object-cover' />
+    });
 
     //my circles div 
-    const myCircles = images.map ((prev, myIndex) =>             <div key={prev + 'circle'} onClick={() => setIndex(myIndex)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === (myIndex * 100) ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>)
-    return (<div className={`${ state ? 'absolute' : 'hidden'} p-5 sm:p-7 md:px-10 lg:px-[8%] w-full sm:w-[90%] sm:h-[90vh] flex flex-col justify-center items-center gap-5 bg-slate-200 relative rounded-xl`}>
+    const myCircles = images.map ((prev, myIndex) => <div key={prev + 'circle'} onClick={() => setIndex(myIndex * 100)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === (myIndex * 100) ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>)
+
+    return (<div className={`${ state ? '' : 'hidden'} p-5 sm:p-7 md:px-10 lg:px-[8%] w-full sm:w-[90%] flex flex-col justify-center gap-5 bg-slate-200 relative rounded-xl`}>
             
 
         {/* button to hide the details  */}
-        <div onClick={() => hideDetails()} className={`p-1 border border-gray-700 rounded-full cursor-pointer`}>
-           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
-            </svg>
+        <div className='w-full  flex justify-center items-center'>
+
+            <div onClick={() => hideDetails()} className={`p-1 border border-gray-700 rounded-full cursor-pointer` }>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                    <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                </svg>
+            </div>
         </div>
 
         {/* images slider */}
-        {state && <section className='w-full flex justify-center overflow-hidden items-center gap-2'>
-            <div className='w-full flex duration-200' style={{transform: `translateX(${-index}%)`}} >
-              {myImages}
+        {state && <section className='w-full flex justify-center items-center overflow-hidden' >
 
+            <div className='w-full flex duration-200'  style={{transform: `translateX(${-index}%)`}}>
+                {myImages}
             </div>
 
         </section>}
@@ -118,7 +173,7 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
         {/* section texte  */}
         <section className='text-left flex flex-col gap-3 '>
             <h1 className='font-bold text-[1rem] sm:text-[1.3rem] md:text-[1.5rem] text-gray-700'>{title}</h1>
-            <p className='text-[0.75rem] sm:text-[0.9rem] md:text-[1.1rem] md:leading-6 text-gray-700 w-[70%]'> {text}</p>
+            <p className='text-[0.75rem] sm:text-[0.8rem] md:text-[1rem] md:leading-6 text-gray-700 w-full sm:w-[80%]'> {text}</p>
         </section>
 
         {/* div to prev or next images  */}
@@ -277,147 +332,142 @@ export default function Logofolio () {
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'entreprise UIBEC tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_TF_School_3, Logo_TF_School_2, Logo_TF_School_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_synergy_3, Logo_synergy_2, Logo_synergy_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_SLIGRA_3, Logo_SLIGRA_1, Logo_SLIGRA_2],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation SoS Libota tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_plus_pres_de_moi_3, Logo_plus_pres_de_moi_2, Logo_plus_pres_de_moi_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_FPEF_3, Logo_FPEF_2, Logo_FPEF_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Entreprenher_3, Logo_Entreprenher_2, Logo_Entreprenher_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_cepac_3, Logo_cepac_2, Logo_cepac_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_ONT_3, Logo_ONT_2, Logo_ONT_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Nyota_3, Logo_Nyota_2, Logo_Nyota_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [logo_elenge_3, logo_elenge_2, logo_elenge_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_DHAD_3, Logo_DHAD_2, Logo_DHAD_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Architectonic_3, Logo_Architectonic_2, Logo_Architectonic_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Baraka_creation_3, Logo_Baraka_creation_2, Logo_Baraka_creation_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Mon_plongeur_3, Logo_Mon_plongeur_2, Logo_Mon_plongeur_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Santé_et_moi_3, Logo_Santé_et_moi_2, Logo_Santé_et_moi_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_SLIGRA_3, Logo_SLIGRA_2, Logo_SLIGRA_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Impactpub_3, Logo_Impactpub_2, Logo_Impactpub_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Idemboxes_3, Logo_Idemboxes_2, Logo_Idemboxes_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_VMH_3, Logo_VMH_2, Logo_VMH_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_UK_DRC_Forum_3, Logo_UK_DRC_Forum_2, Logo_UK_DRC_Forum_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Extreme_holding_3, Logo_Extreme_holding_2, Logo_Extreme_holding_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Mobc_3, Logo_Mobc_2, Logo_Mobc_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Malabar_3, Logo_Malabar_2, Logo_Malabar_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Lafamiliya_3, Logo_Lafamiliya_2, Logo_Lafamiliya_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Fojed_3, Logo_Fojed_2, Logo_Fojed_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Ecobuilding_3, Logo_Ecobuilding_2, Logo_Ecobuilding_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_centenaire_cepac_3, Logo_centenaire_cepac_2, Logo_centenaire_cepac_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
-            title: 'ODJ asbl',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
-        },
-        {
-            images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
+            images: [Logo_Afrique_millenaire_3, Logo_Afrique_millenaire_2, Logo_Afrique_millenaire_1],
             title: 'ODJ asbl',
             text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
         },
@@ -457,26 +507,29 @@ export default function Logofolio () {
     const myDetailsLogo =  logoDetails.map((prev, index) => <LogoDetail key={index}  images={prev.images} title={prev.title} text={prev.text} hideDetails={hideDetails} state={showDetails[`a${index + 1}`]}/>);
 
     const width = useWindowWidth();
+
     return (
         <main className="w-full flex flex-col gap-5 relative">
             {/* logo details displayed in absolute  */}
-            <div aria-hidden={true} className={` ${showDetails.hidden() ? 'sticky' : 'hidden'} absolute top-0 md:top-5 z-40 backdrop-blur-md   w-full h-[100vh]  justify-center items-center flex px-[2%] sm:px-[5%] md:px-[10%] lg:px-[15%]`}>{myDetailsLogo}</div>
+            <div aria-hidden={true} className={` ${showDetails.hidden() ? 'sticky' : 'hidden'} top-0 z-40 backdrop-blur-md   w-full h-[100vh]  justify-center items-center flex px-[2%] sm:px-[5%] md:px-[10%] lg:px-[15%]`}> {myDetailsLogo}</div>
             
-            {/* welcom imaga  */}
-            <section className='w-full h-auto relative overflow-hidden  flex flex-col items-center justify-center' >       
-                <div className='h-full w-full duration-200 delay-150 relative'>        
-                    <video autoPlay muted loop src={width <= 640 ? Accueil_logofolio_phone : accueil_logofolio_ordi_video}>
-                        Ton navigateur ne support cette video
-                    </video>
-                </div>     
-            </section>
-            
-            {/* logo display  */}
-            <section className="grid grid-cols-2 sm:grid-cols-3 w-full gap-2 px-[2%] bg-slate-300 py-5 sm:px-[10%]" > {logos ()} </section>
+            <div className='w-full flex flex-col gap-5'>
+                {/* welcom imaga  */}
+                <section className='w-full h-auto relative overflow-hidden  flex flex-col items-center justify-center' >       
+                    <div className='h-full w-full duration-200 delay-150 relative'>        
+                        <video autoPlay muted loop src={width <= 640 ? Accueil_logofolio_phone : accueil_logofolio_ordi_video}>
+                            Ton navigateur ne support cette video
+                        </video>
+                    </div>     
+                </section>
+                
+                {/* logo display  */}
+                <section className="grid grid-cols-2 sm:grid-cols-3 w-full gap-2 px-[2%] bg-slate-300 py-5 sm:px-[10%]" > {logos ()} </section>
 
-            <OnTopBtn brdrColor='border-gray-700' textColor = ' text-black'/>
+                <OnTopBtn brdrColor='border-gray-700' textColor = ' text-black'/>
+            </div>
 
         </main>
-    )
+    );
 }
 
