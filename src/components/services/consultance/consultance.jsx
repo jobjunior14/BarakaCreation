@@ -17,7 +17,7 @@ export default function Consultance () {
                 <h1 className="text-6xl text-gray-100 font-bold">Consulting</h1>
                 <Link to={'../'} className=" hover:bg-gray-100 hover:text-blue-600 duration-200 text-sm text-gray-100 border border-gray-50 rounded-full px-[0.25rem] py-[0.125rem]"> Nous contacter</Link>
             </div>
-            <img src={width <= 640 ? Accueil_Consulting_services_phone : Accueil_consulting_accueil} alt="width <= 640 ? " />
+            <img loading='lazy' src={width <= 640 ? Accueil_Consulting_services_phone : Accueil_consulting_accueil} alt="width <= 640 ? " />
         </section>
 
          {/* first tetxt  */}
@@ -94,7 +94,7 @@ export default function Consultance () {
             <div className="w-full flex justify-center ">
 
                 <div className="flex w-[60%] sm:w-full md:w-[80%] lg:w-[65%]">
-                    <img src={Consulting_service_pics} alt="Consulting_service_pics" />
+                    <img loading='lazy' src={Consulting_service_pics} alt="Consulting_service_pics" />
                 </div>
             </div>
         </section>
@@ -103,7 +103,7 @@ export default function Consultance () {
         <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative p-5'>
 
                 <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
-                <img src={design_entrons_en_contact} className='' alt='image accompagnement'/>
+                <img loading='lazy' src={design_entrons_en_contact} className='' alt='image accompagnement'/>
             </div>
 
             <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>

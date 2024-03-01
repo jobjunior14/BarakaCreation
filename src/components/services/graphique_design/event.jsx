@@ -42,7 +42,7 @@ export default function Event() {
                 <div className='w-full pt-[6%] sm:pt-[1%] flex flex-col gap-4 md:gap-0 z-40'>
 
                     <div className=' flex flex-col justify-center items-center px-[10%]  sm:px-[10%] md:px-[13%] lg:px-[16%]  '>
-                        <img src={evenementielT} alt="evenementielT" />
+                        <img loading='lazy' src={evenementielT} alt="evenementielT" />
                     </div>
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full  '>
@@ -56,7 +56,7 @@ export default function Event() {
                 <div className=' justify-center items-center flex  '>
                     <div className='w-full sm:w-[60%] md:w-[60%] lg:w-[45%]'>
 
-                        <img src={evenementiel} alt="campagne"/>
+                        <img loading='lazy' src={evenementiel} alt="campagne"/>
                     </div>
                 </div>
             </section>
@@ -91,21 +91,21 @@ export default function Event() {
                         <div className='flex flex-col gap-3 md:gap-2 lg:gap-4 justify-center items-center w-full'>
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={campagne_conception_affichage} alt="campagne_conception_affichage" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={campagne_conception_affichage} alt="campagne_conception_affichage" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'> Affichage</h2>
                             </div>
 
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={campagne_conception_flyers} alt="campagne_conception_flyers" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={campagne_conception_flyers} alt="campagne_conception_flyers" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'> Brochure / Flyers</h2>
                             </div>
 
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={campagne_conception_banderole} alt="campagne_conception_banderole" className = 'h-3' />
+                                    <img loading='lazy' src={campagne_conception_banderole} alt="campagne_conception_banderole" className = 'h-3' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'>Banderole</h2>
                             </div>
@@ -114,21 +114,21 @@ export default function Event() {
                         <div className='flex flex-col gap-3 md:gap-2 lg:gap-4 justify-center items-center w-full'>
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={campagne_conception_pub} alt="campagne_conception_pub" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={campagne_conception_pub} alt="campagne_conception_pub" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'>Publicité</h2>
                             </div>
 
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_presentation_1} alt="event_Album" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_presentation_1} alt="event_Album" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'>Support de présentation</h2>
                             </div>
                             
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={campagne_conception_t_shirt} alt="campagne_conception_t_shirt" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={campagne_conception_t_shirt} alt="campagne_conception_t_shirt" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'> Support d&apos;habillage</h2>
                             </div>
@@ -138,19 +138,19 @@ export default function Event() {
                         <div className='flex flex-col gap-3 md:gap-2 lg:gap-4 justify-center items-center w-full'>
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={Digital_site_web_icone} alt="Digital_site_web_icone" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={Digital_site_web_icone} alt="Digital_site_web_icone" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'> Site Web</h2>
                             </div>
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_supports_digitaux} alt="campagne_conception_vehicule" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_supports_digitaux} alt="campagne_conception_vehicule" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'> Réseaux sociaux </h2>
                             </div>
                             <div className='w-full flex bg-slate-200 rounded-lg items-center md:gap-4 py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={campagne_conception_vehicule} alt="campagne_conception_vehicule" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={campagne_conception_vehicule} alt="campagne_conception_vehicule" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'>Et bien plus</h2>
                             </div>
@@ -167,28 +167,28 @@ export default function Event() {
                         <div className='flex flex-col gap-3 md:gap-2 lg:gap-4 justify-center items-center w-full'>
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_Backdrop} alt="event_Backdrop" className = 'h-3 ' />
+                                    <img loading='lazy' src={event_Backdrop} alt="event_Backdrop" className = 'h-3 ' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'> Back drop</h2>
                             </div>
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_stand} alt="event_stand" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_stand} alt="event_stand" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'> Stand design</h2>
                             </div>
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_Habillage} alt="event_Habillage" className = 'h-3 ' />
+                                    <img loading='lazy' src={event_Habillage} alt="event_Habillage" className = 'h-3 ' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'>Habillages</h2>
                             </div>
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_Signaletique} alt="event_Signaletique" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_Signaletique} alt="event_Signaletique" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'>Signalétiques</h2>
                             </div>
@@ -198,28 +198,28 @@ export default function Event() {
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_Badges} alt="event_Badges" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_Badges} alt="event_Badges" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'>Badges</h2>
                             </div>
                             
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_Album} alt="campagne_conception_t_shirt" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_Album} alt="campagne_conception_t_shirt" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'> Albulms / Magazines</h2>
                             </div>
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_Rollup} alt="Digital_site_web_icone" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_Rollup} alt="Digital_site_web_icone" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'> Rollup </h2>
                             </div>
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_invitatations} alt="event_invitatations" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_invitatations} alt="event_invitatations" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'> Invitation / Tickets </h2>
                             </div>
@@ -230,21 +230,21 @@ export default function Event() {
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_digital} alt="event_digital" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_digital} alt="event_digital" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'> Support digitaux</h2>
                             </div>
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_package} alt="event_package" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_package} alt="event_package" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'> Package des invités</h2>
                             </div>
 
                             <div className='w-full flex bg-bgConceptionGrid rounded-lg md:gap-2 items-center py-[5px] md:py-3 px-5'>
                                 <div className='w-[20%] md:w-[15%]'>
-                                    <img src={event_plus} alt="event_plus" className = 'h-4 sm:h-5 md:h-4' />
+                                    <img loading='lazy' src={event_plus} alt="event_plus" className = 'h-4 sm:h-5 md:h-4' />
                                 </div>
                                 <h2 className='font-bold text-gray-100 text-left text-[0.75rem] sm:text-[0.875rem]'>Et bien plus</h2>
                             </div>

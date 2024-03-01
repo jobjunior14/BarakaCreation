@@ -23,7 +23,7 @@ export default function Logotype () {
                 {/* welcom image  */}
                 <section className='w-full flex items-center justify-center px-[14%] sm:px-[10%] md:px-[7%] pt-[1.875rem] sm:pt-[20px] lg:pt-[1.875rem] pb-[25%] sm:pb-[15%] md:pb-[10%] relative'>
                 
-                    <img src={width <= 640 ? Id_Vieuellelogo : Logo_accueil} alt=" Id_Vieuellelogo"/>
+                    <img loading='lazy' src={width <= 640 ? Id_Vieuellelogo : Logo_accueil} alt=" Id_Vieuellelogo"/>
                     
 
                     <div className='absolute flex sm:flex-row justify-center items-center flex-col gap-2 sm:gap-x-[5%] bottom-5 w-full'>

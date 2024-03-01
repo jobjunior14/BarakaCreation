@@ -45,7 +45,7 @@ export default function SupportPrint() {
             {/* welcom image  */}
             <section className='w-full px-[5%] flex flex-col items-center justify-center relative '>
             
-                <img src={print_accueil} alt=" print_accueil" className=''/>
+                <img loading='lazy' src={print_accueil} alt=" print_accueil" className=''/>
                 
                 <div className=' flex justify-center items-center gap-2 flex-col  w-full pl-[3%] relative bottom-2 lg:bottom-5 '>
                     
@@ -67,56 +67,56 @@ export default function SupportPrint() {
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_Brochure} alt="print_Brochure" className='h-6'  />
+                                <img loading='lazy' src={print_Brochure} alt="print_Brochure" className='h-6'  />
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold pt-2'>Brochure</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_flyers_1} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_flyers_1} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Flyers</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_rollup} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_rollup} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Rollup</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_catalogue} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_catalogue} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Catalogue</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_deplient} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_deplient} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Depliant</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_carte_de_visite} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_carte_de_visite} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Cartes de visite</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_plaquette} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_plaquette} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Plaquette</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_livret} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_livret} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Livret</p>
                         </div>
@@ -133,35 +133,35 @@ export default function SupportPrint() {
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_affiche_A3_A0} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_affiche_A3_A0} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold '>A3 - A0</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_bilboard} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_bilboard} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Affiche lumineuse</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_signaletique} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_signaletique} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Signaletique</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_panneau} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_panneau} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Panneau publicitaire</p>
                         </div>
                         <div className='flex  md:justify-start justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_banderole_1} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_banderole_1} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Banderole</p>
                         </div>
@@ -179,63 +179,63 @@ export default function SupportPrint() {
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_lettre_entete} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_lettre_entete} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold '> Lettre entete</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_calendar} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_calendar} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Calendiers</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_envellope} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_envellope} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Enveloppe</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_carte_de_service} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_carte_de_service} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Cates de sevices</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_agenda} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_agenda} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Agenda/notebook</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_cachet} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_cachet} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Cachet</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_registre} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_registre} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Registre, bons …</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_facture} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_facture} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Factures</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_plus_1} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_plus_1} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Autres documents</p>
                         </div>
@@ -253,35 +253,35 @@ export default function SupportPrint() {
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_interieur} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_interieur} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold text-left '> Habillage intene & extene</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_tenu} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_tenu} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Tenu de travail</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_plus_1} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_plus_1} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Et bien plus</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_vehicule} alt="print_Brochure"  className='md:h-6 h-5'/>
+                                <img loading='lazy' src={print_vehicule} alt="print_Brochure"  className='md:h-6 h-5'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Habillage vehicules</p>
                         </div>
                         <div className='flex  justify-start items-center md:gap-4 gap-3'>
                             <div className='w-[25%] lg:w-[13%] h-auto'>
 
-                                <img src={print_veteùent} alt="print_Brochure"  className='md:h-5 h-4'/>
+                                <img loading='lazy' src={print_veteùent} alt="print_Brochure"  className='md:h-5 h-4'/>
                             </div>
                             <p className='text-gray-700 md:text-[15px] sm:text-[13px] text-[0.69rem]  font-semibold'>Vetement</p>
                         </div>

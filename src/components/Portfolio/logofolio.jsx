@@ -137,7 +137,7 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
     
     //my images
     const myImages = images.map( prev => {
-        return <img key={prev + 'jello'} src={prev} alt="image" className=' rounded-xl object-cover' />
+        return <img loading='lazy' key={prev + 'jello'} src={prev} alt="image" className=' rounded-xl object-cover' />
     });
 
     //my circles div 

@@ -15,7 +15,7 @@ export function Footer ()
             <div className='flex justify-center  '>
 
                 <div className='sm:block flex items-center gap-x-5 w-[90%]'>
-                    <img className='h-20 mb-1' src={logo_pictogrammFichier_1} alt="pictogram" />
+                    <img loading='lazy' className='h-20 mb-1' src={logo_pictogrammFichier_1} alt="pictogram" />
                     <div className='text-left'>
                         <p className='text-[0.6rem] text-semibold text-gray-800'>Kinshasa, RDC <br/> Baraka creation, votre partenaire <br/> idéal en communication visuelle<br/> <b>Ensemble innovons </b></p>
                     </div>
@@ -49,11 +49,11 @@ export function Footer ()
                     
                     {/* link  */}
                     <div className='flex gap-x-[7px] sm:mt-14 mt-3'>
-                        <Link to='https://www.linkedin.com/in/baraka-creation-a0a69321b/'> <img className=' h-5 hover:scale-125 duration-200' src={bclinkedin} alt="Linkdin" /> </Link>
-                        <Link to='https://www.instagram.com/barakacreation/'> <img className=' h-5 hover:scale-125 duration-200' src={bcInsta} alt="Insta" /> </Link>
-                        <Link to='https://web.facebook.com/barakalurhakwa'> <img className=' h-5 hover:scale-125 duration-200' src={bcFb} alt="fb" /> </Link>
-                        <Link to='https://twitter.com/BarakaLurhakwa'> <img className=' h-5 hover:scale-125 duration-200' src={bctwitter_2} alt="Twitter" /> </Link>
-                        <Link to='https://www.behance.net/barakacreation'> <img className=' h-5 hover:scale-125 duration-200' src={bcBehance} alt="Twitter" /> </Link>
+                        <Link to='https://www.linkedin.com/in/baraka-creation-a0a69321b/'> <img loading='lazy' className=' h-5 hover:scale-125 duration-200' src={bclinkedin} alt="Linkdin" /> </Link>
+                        <Link to='https://www.instagram.com/barakacreation/'> <img loading='lazy' className=' h-5 hover:scale-125 duration-200' src={bcInsta} alt="Insta" /> </Link>
+                        <Link to='https://web.facebook.com/barakalurhakwa'> <img loading='lazy' className=' h-5 hover:scale-125 duration-200' src={bcFb} alt="fb" /> </Link>
+                        <Link to='https://twitter.com/BarakaLurhakwa'> <img loading='lazy' className=' h-5 hover:scale-125 duration-200' src={bctwitter_2} alt="Twitter" /> </Link>
+                        <Link to='https://www.behance.net/barakacreation'> <img loading='lazy' className=' h-5 hover:scale-125 duration-200' src={bcBehance} alt="Twitter" /> </Link>
                     </div>
                 </div>
                 

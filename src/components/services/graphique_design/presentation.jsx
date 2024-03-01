@@ -39,7 +39,7 @@ export default function Presentation() {
                 <div className=' justify-center items-center flex -mt-4  '>
                     <div className='w-[90%] sm:w-[60%] md:w-[60%] lg:w-[45%]'>
 
-                        <img src={presentation} alt="campagne"/>
+                        <img loading='lazy' src={presentation} alt="campagne"/>
                     </div>
                 </div>
             </section>
@@ -84,7 +84,7 @@ export default function Presentation() {
                         <div className='w-full flex flex-col gap-2'>
                             <div className='flex justify-between items-center md:gap-x-4 w-full'>
                                 <div className='w-[30%]'>
-                                    <img src={Presentation_icone1} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
+                                    <img loading='lazy' src={Presentation_icone1} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
                                 </div>
                                 <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-5'>Design épuré, <br /> Animation & simulation</h3>
                             </div>
@@ -95,7 +95,7 @@ export default function Presentation() {
                         <div className='w-full flex flex-col gap-2'>
                             <div className='flex justify-between items-center md:gap-x-4 w-full'>
                                 <div className='w-[30%]'>
-                                    <img src={Presentation_icone3} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
+                                    <img loading='lazy' src={Presentation_icone3} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
                                 </div>
                                 <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-5'>Support divérsifiés <br /> <span className=' text-bgPlay'>{'(print & digital)'}</span></h3>
                             </div>
@@ -106,7 +106,7 @@ export default function Presentation() {
                         <div className='w-full flex flex-col gap-2'>
                             <div className='flex justify-between items-center md:gap-x-4 w-full'>
                                 <div className='w-[30%]'>
-                                    <img src={Presentation_icone_2} alt="Presentation_icone_2" className='h-[45px] md:h-[55px]' />
+                                    <img loading='lazy' src={Presentation_icone_2} alt="Presentation_icone_2" className='h-[45px] md:h-[55px]' />
                                 </div>
                                 <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-5'>Graphique <br /> et illustrations <span className=' text-bgPlay'>personnalisés</span></h3>
                             </div>
@@ -117,7 +117,7 @@ export default function Presentation() {
                         <div className='w-full flex flex-col gap-2'>
                             <div className='flex justify-between items-center md:gap-x-4 w-full'>
                                 <div className='w-[30%]'>
-                                    <img src={Presentation_icone1} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
+                                    <img loading='lazy' src={Presentation_icone1} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
                                 </div>
                                 <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-5'>Design épuré, <br /> Animation & simulation</h3>
                             </div>

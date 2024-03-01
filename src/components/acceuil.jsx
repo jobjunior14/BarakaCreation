@@ -31,7 +31,7 @@ export default function Acceuil () {
         <div className="flex w-full gap-0 flex-col justify-center items-center first-letter bg-contain bg-no-repeat bg-fixed " >
             {/* first part "Principal picture" */}
             <section className='-mb-5' >
-                <img src={ width >= 640 ? accueil_ok : accueil_phone} className='' alt='Baraka image' />
+                <img loading='lazy' src={ width >= 640 ? accueil_ok : accueil_phone} className='' alt='Baraka image' />
             </section>
 
             {/* seconde part "C'que nous faisons" */}
@@ -64,8 +64,8 @@ export default function Acceuil () {
                 </div>
                 
                 <div className='flex justify-between mt-4 sm:mt-7'>
-                    <img src={Accueildesigngr2} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 1'/>
-                    <img src={Accueildesigngr1} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 2'/>
+                    <img loading='lazy' src={Accueildesigngr2} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 1'/>
+                    <img loading='lazy' src={Accueildesigngr1} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 2'/>
                 </div>
             </section>
             
@@ -93,7 +93,7 @@ export default function Acceuil () {
                 </div>
               
                 <div className='h-[95%] w-[80%] sm:h-[80%] sm:w-[65%] ml-[10%] sm:ml-[18%]  '>
-                    <img src={accueil_accompagnons} className='' alt='image accompagnement'/>
+                    <img loading='lazy' src={accueil_accompagnons} className='' alt='image accompagnement'/>
                 </div>
 
                 
@@ -117,7 +117,7 @@ export default function Acceuil () {
                 </div>
               
                 <div className=''>
-                    <img src={width >= 640 ? Mamour_ordi : Mamour_phone} alt='Baraka image' />
+                    <img loading='lazy' src={width >= 640 ? Mamour_ordi : Mamour_phone} alt='Baraka image' />
                 </div>
 
             </section>
@@ -125,7 +125,7 @@ export default function Acceuil () {
             <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative bg-gray-50 p-5'>
 
                  <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
-                    <img src={design_entrons_en_contact} className='' alt='image accompagnement'/>
+                    <img loading='lazy' src={design_entrons_en_contact} className='' alt='image accompagnement'/>
                 </div>
 
                 <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>
@@ -142,17 +142,17 @@ export default function Acceuil () {
                 <div className=' flex  w-full sm:w-[90%] md:w-[80%] lg:w-[75%] overflow-hidden rounded-3xl shadow-2xl '>
 
                     <div className='slider flex items-center gap-5 py-4'>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo1} alt='logo' className=' h-10'  /></div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo2} alt='logo' className=' h-10' /></div>
-                        <div className='min-w-[25%] flex justify-center items-center'> <img src={Logo3} alt='logo' className=' h-14' /> </div>
-                        <div className='min-w-[20%] flex justify-center items-center'> <img src={Logo4} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[20%] flex justify-center items-center'> <img src={Logo5} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo6} alt='logo' className=' h-10' /></div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img src={Logo7} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo8} alt='logo' className=' h-10' /> </div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo9} alt='logo' className=' h-10' /> </div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo10} alt='logo' className='h-10' /></div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img src={Logo1} alt='logo' className=' h-10' /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo1} alt='logo' className=' h-10'  /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo2} alt='logo' className=' h-10' /></div>
+                        <div className='min-w-[25%] flex justify-center items-center'> <img loading='lazy' src={Logo3} alt='logo' className=' h-14' /> </div>
+                        <div className='min-w-[20%] flex justify-center items-center'> <img loading='lazy' src={Logo4} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[20%] flex justify-center items-center'> <img loading='lazy' src={Logo5} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo6} alt='logo' className=' h-10' /></div>
+                        <div className='min-w-[30%] flex justify-center items-center'> <img loading='lazy' src={Logo7} alt='logo' className=' h-14' /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo8} alt='logo' className=' h-10' /> </div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo9} alt='logo' className=' h-10' /> </div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo10} alt='logo' className='h-10' /></div>
+                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo1} alt='logo' className=' h-10' /></div>
                     </div>
                 </div>
             </section>

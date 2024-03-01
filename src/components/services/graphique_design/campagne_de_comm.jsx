@@ -50,7 +50,7 @@ export default function CampagneDeComm () {
                 <div className=' justify-center items-center flex -mt-[13%] sm:-mt-[8%] md:-mt-[5%] '>
                     <div className='w-full sm:w-[60%] md:w-[40%] lg:w-[35%]'>
 
-                        <img src={campagne} alt="campagne"/>
+                        <img loading='lazy' src={campagne} alt="campagne"/>
                     </div>
                 </div>
             </section>
@@ -94,7 +94,7 @@ export default function CampagneDeComm () {
                             
                             <div className=' md:flex md:justify-start md:w-[70%]'>
 
-                                <img src={campagne_plan_comm_2} alt="campagne_plan_comm_2" />
+                                <img loading='lazy' src={campagne_plan_comm_2} alt="campagne_plan_comm_2" />
                             </div>
                         </div>
 
@@ -104,7 +104,7 @@ export default function CampagneDeComm () {
                             {/* Analyse  */}
                             <div className="text-left flex w-full gap-3" >
                                 <div className="w-[10%]">
-                                    <img src={Campagne_plan_comm_analyse} alt="Campagne_plan_comm_analyse" />
+                                    <img loading='lazy' src={Campagne_plan_comm_analyse} alt="Campagne_plan_comm_analyse" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600">Analyse du contexte</h1>
@@ -115,7 +115,7 @@ export default function CampagneDeComm () {
                             {/* Les Strategies  */}
                             <div className="text-left flex w-full gap-3" >
                                 <div className="w-[10%]">
-                                    <img src={Campagne_plan_comm_strategie} alt="Campagne_plan_comm_strategie" />
+                                    <img loading='lazy' src={Campagne_plan_comm_strategie} alt="Campagne_plan_comm_strategie" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600">Les stratégies</h1>
@@ -126,7 +126,7 @@ export default function CampagneDeComm () {
                             {/*Modalites d'action  */}
                             <div className="text-left flex w-full gap-3" >
                                 <div className="w-[10%]">
-                                    <img src={Campagne_plan_comm_action} alt="Campagne_plan_comm_action" />
+                                    <img loading='lazy' src={Campagne_plan_comm_action} alt="Campagne_plan_comm_action" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600"> Modalités d&apos;action </h1>
@@ -156,7 +156,7 @@ export default function CampagneDeComm () {
 
                                 <div className='w-[48%] flex justify-center items-center'>
 
-                                    <img src={campagne_conception} alt="campagne_conception" />
+                                    <img loading='lazy' src={campagne_conception} alt="campagne_conception" />
                                 </div>
                             </div>
                         </div>
@@ -170,49 +170,49 @@ export default function CampagneDeComm () {
 
                                 <div className='w-full flex bg-slate-200 rounded-lg items-center py-[2px] px-5'>
                                     <div className='w-[20%]'>
-                                        <img src={campagne_conception_affichage} alt="campagne_conception_affichage" className = 'h-4 sm:h-5 md:h-4' />
+                                        <img loading='lazy' src={campagne_conception_affichage} alt="campagne_conception_affichage" className = 'h-4 sm:h-5 md:h-4' />
                                     </div>
                                     <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'> Affichage</h2>
                                 </div>
 
                                 <div className='w-full flex bg-slate-200 rounded-lg items-center py-[2px] px-5'>
                                     <div className='w-[20%]'>
-                                        <img src={campagne_conception_flyers} alt="campagne_conception_flyers" className = 'h-4 sm:h-5 md:h-4' />
+                                        <img loading='lazy' src={campagne_conception_flyers} alt="campagne_conception_flyers" className = 'h-4 sm:h-5 md:h-4' />
                                     </div>
                                     <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'> Brochure / Flyers</h2>
                                 </div>
 
                                 <div className='w-full flex bg-slate-200 rounded-lg items-center py-[2px] px-5'>
                                     <div className='w-[20%]'>
-                                        <img src={campagne_conception_banderole} alt="campagne_conception_banderole" className = 'h-3' />
+                                        <img loading='lazy' src={campagne_conception_banderole} alt="campagne_conception_banderole" className = 'h-3' />
                                     </div>
                                     <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'>Banderole</h2>
                                 </div>
 
                                 <div className='w-full flex bg-slate-200 rounded-lg items-center py-[2px] px-5'>
                                     <div className='w-[20%]'>
-                                        <img src={campagne_conception_pub} alt="campagne_conception_pub" className = 'h-4 sm:h-5 md:h-4' />
+                                        <img loading='lazy' src={campagne_conception_pub} alt="campagne_conception_pub" className = 'h-4 sm:h-5 md:h-4' />
                                     </div>
                                     <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'>Publicité</h2>
                                 </div>
 
                                 <div className='w-full flex bg-slate-200 rounded-lg items-center py-[2px] px-5'>
                                     <div className='w-[20%]'>
-                                        <img src={campagne_conception_illustration} alt="campagne_conception_illustration" className = 'h-4 sm:h-5 md:h-4' />
+                                        <img loading='lazy' src={campagne_conception_illustration} alt="campagne_conception_illustration" className = 'h-4 sm:h-5 md:h-4' />
                                     </div>
                                     <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'>Illustation</h2>
                                 </div>
                                 
                                 <div className='w-full flex bg-slate-200 rounded-lg items-center py-[2px] px-5'>
                                     <div className='w-[20%]'>
-                                        <img src={campagne_conception_t_shirt} alt="campagne_conception_t_shirt" className = 'h-4 sm:h-5 md:h-4' />
+                                        <img loading='lazy' src={campagne_conception_t_shirt} alt="campagne_conception_t_shirt" className = 'h-4 sm:h-5 md:h-4' />
                                     </div>
                                     <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'> Support d&apos;habillage</h2>
                                 </div>
 
                                 <div className='w-full flex bg-slate-200 rounded-lg items-center py-[2px] px-5'>
                                     <div className='w-[20%]'>
-                                        <img src={campagne_conception_vehicule} alt="campagne_conception_vehicule" className = 'h-4 sm:h-5 md:h-4' />
+                                        <img loading='lazy' src={campagne_conception_vehicule} alt="campagne_conception_vehicule" className = 'h-4 sm:h-5 md:h-4' />
                                     </div>
                                     <h2 className='font-bold text-gray-700 text-left text-[0.75rem] sm:text-[0.875rem]'>Et bien plus</h2>
                                 </div>
@@ -232,7 +232,7 @@ export default function CampagneDeComm () {
                             <div className=' justify-center items-center md:justify-start md:items-start flex flex-col gap-0 w-full'>
                                 <h3 className='text-left text-[1.125rem] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-7 text-gray-100 md:px-[83px]'>Communication</h3>
                                 <div className='w-full px-[83px]'>
-                                    <img src={campagne_digital_title} alt=''/>
+                                    <img loading='lazy' src={campagne_digital_title} alt=''/>
                                 </div>
                                 <button onClick={() => handleToggled('c')} className=" text-blue-400 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex items-center  md:px-[83px]"> Voir plus <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></button>
                             </div>
@@ -241,7 +241,7 @@ export default function CampagneDeComm () {
 
                                 <div className='w-[80%] flex justify-center items-center'>
 
-                                    <img src={campagne_digital_1} alt="campagne_digital_1" />
+                                    <img loading='lazy' src={campagne_digital_1} alt="campagne_digital_1" />
                                 </div>
                             </div>
                         </div>
@@ -253,7 +253,7 @@ export default function CampagneDeComm () {
                             {/* Reseaux sociaux  */}
                             <div className="text-left flex w-full gap-3" >
                                 <div className="w-[10%]">
-                                    <img src={Digital_supports_digitaux_Copie} alt="Digital_supports_digitaux_Copie" />
+                                    <img loading='lazy' src={Digital_supports_digitaux_Copie} alt="Digital_supports_digitaux_Copie" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600"> Réseaux sociaux</h1>
@@ -264,7 +264,7 @@ export default function CampagneDeComm () {
                             {/* web Design  */}
                             <div className="text-left flex w-full gap-3" >
                                 <div className="w-[10%]">
-                                    <img src={Digital_site_web_icone} alt="Digital_site_web_icone" />
+                                    <img loading='lazy' src={Digital_site_web_icone} alt="Digital_site_web_icone" />
                                 </div>
                                 <div className="w-[90%] flex flex-col ">
                                     <div className='w-full flex flex-col  gap-1'>

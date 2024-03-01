@@ -69,7 +69,7 @@ export default function ImageSlider ({images, title, audio}) {
 
     //side effect to not re render all the image to improve performance
     const myImages = useCallback(() => {
-        return images.map((prev, index) => <img key={index} src={prev} alt="image"/>);
+        return images.map((prev, index) => <img loading='lazy' key={index} src={prev} alt="image"/>);
     }, [images]);
 
     //state to mute background music or not 

@@ -61,7 +61,7 @@ export default function CharteGraphique () {
 
                     {/* welcom image  */}
                     <div className="lg:-my-[10%] sm:-my-[10%]  ">
-                        <img src={width <= 640 ? Charte_graphique2 : Charte_graphique1} alt="Id_visuelle_Charte_graphique" />
+                        <img loading='lazy' src={width <= 640 ? Charte_graphique2 : Charte_graphique1} alt="Id_visuelle_Charte_graphique" />
                     </div>
                     
 
@@ -100,29 +100,29 @@ export default function CharteGraphique () {
 
                     <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div className="w-full">
-                            <img src={charte_logoFichier_3} alt="" className="rounded-lg" />
+                            <img loading='lazy' src={charte_logoFichier_3} alt="" className="rounded-lg" />
                             <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4 "> Logotype <span className="text-blue-100">&  règle <br  className="hidden md:block"/>d&apos;usage</span></h3>
                         </div>
 
                         <div className="w-full">
-                            <img src={Charte_couleurs} alt="" className="rounded-lg" />
+                            <img loading='lazy' src={Charte_couleurs} alt="" className="rounded-lg" />
                             <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">La charte des <br  className="hidden md:block"/>couleurs</h3>
                         </div>
 
                         <div className="w-full">
-                            <img src={Chartmotif} alt="" className="rounded-lg" />
+                            <img loading='lazy' src={Chartmotif} alt="" className="rounded-lg" />
                             <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4"> Iconographie <span className="text-blue-100">& <br className="hidden md:block"/> Motifs</span></h3>
                         </div>
 
 
                         <div className="w-full">
-                            <img src={Charte_typo} alt="" className="rounded-lg" />
+                            <img loading='lazy' src={Charte_typo} alt="" className="rounded-lg" />
                             <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">Polices de <br className="hidden md:block" />caractère</h3>
 
                         </div>
 
                         <div className="w-full">
-                            <img src={Charte_prototypes} alt="" className="rounded-lg" />
+                            <img loading='lazy' src={Charte_prototypes} alt="" className="rounded-lg" />
                             <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">Prototypes</h3>
 
                         </div>

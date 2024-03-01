@@ -40,7 +40,7 @@ export default function Apropos () {
                 
                 {/* pc's picture  */}
                 <div className=' hidden md:flex justify-center isolate place-items-end px-6 bg-bgFormation  md:w-[40%]  '>
-                    <img src={moii_2} alt='moi' className='h-auto'/>
+                    <img loading='lazy' src={moii_2} alt='moi' className='h-auto'/>
                 </div>
 
                 <div className='md:w-[50%] md:mt-9'>
@@ -58,7 +58,7 @@ export default function Apropos () {
                     
                     {/* phone's image */}
                     <div className='bg-bgApropos flex justify-center items-center px-6 md:hidden'>
-                        <img src={moii_phone} className='h-auto' alt='moi phone'/>
+                        <img loading='lazy' src={moii_phone} className='h-auto' alt='moi phone'/>
                     </div>
                     
                     {/* proffession */}
@@ -67,7 +67,7 @@ export default function Apropos () {
 
                             <div className='flex items-start'>
                                 <div className='flex justify-center items-center'>
-                                    <img src={iconeprofession} className='h-6 lg:h-7  mr-1' alt='iconeprofession'/>
+                                    <img loading='lazy' src={iconeprofession} className='h-6 lg:h-7  mr-1' alt='iconeprofession'/>
                                     <h1 className=' mr-1 font-bold text-gray-700 text-[1rem] lg:text-[1.3rem] flex'> Profession </h1>
                                 </div>
                             </div>
@@ -98,12 +98,12 @@ export default function Apropos () {
 
                         <div className='px-8 flex gap-3 text-left pt-3 bg-bgFormation'>
                             <div className='flex justify-center items-center gap-2'>
-                                <img src={icone_experience_1} className='h-6 lg:h-7 mr-1' alt='iconeprofession'/>
+                                <img loading='lazy' src={icone_experience_1} className='h-6 lg:h-7 mr-1' alt='iconeprofession'/>
                                 <h1 className=' mr-1 font-bold text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] lg:leading-5 flex'>  ans d&apos;expérience professionnelle </h1>
                             </div>
 
                             <div className='flex justify-center items-center gap-2'>
-                                <img src={iconeetude} className='h-6 lg:h-7 mr-1' alt='iconeprofession'/> 
+                                <img loading='lazy' src={iconeetude} className='h-6 lg:h-7 mr-1' alt='iconeprofession'/> 
                                 <h1 className=' mr-1 font-bold text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] lg:leading-5 flex'> Académie de Beaux-arts Kinshasa </h1>
                             </div>
 
@@ -122,13 +122,13 @@ export default function Apropos () {
                 <div className='flex  w-full sm:w-[90%] md:w-[80%] lg:w-[75%] overflow-hidden rounded-3xl shadow-2xl  '>
 
                     <div className='slider flex items-center gap-8 py-4 w-full'>
-                        <div className={` min-w-[40%] lg:min-w-[30%] flex items-center`} > <img src={certifié_logo_1} alt='logo' className=' h-10' /></div> 
-                        <div className={` min-w-[34%] flex items-center`} > <img src={certifié_logo_2} alt='logo' className=' h-10' /></div> 
-                        <div className={` min-w-[20%] flex items-center`} > <img src={certifié_logo_3} alt='logo' className=' h-[50px]' /></div> 
-                        <div className={` min-w-[20%] flex items-center`} > <img src={certifié_logo_4} alt='logo' className=' h-10' /></div> 
-                        <div className={` min-w-[20%] flex items-center`} > <img src={certifié_Logo_5} alt='logo' className=' h-10' /></div> 
-                        <div className={` min-w-[33%] lg:min-w-[25%] flex items-center`} > <img src={certifié_Logo_6} alt='logo' className=' h-10' /></div> 
-                        <div className={` min-w-[20%] flex items-center`} > <img src={certifié_Logo_7} alt='logo' className=' h-[50px]' /></div> 
+                        <div className={` min-w-[40%] lg:min-w-[30%] flex items-center`} > <img loading='lazy' src={certifié_logo_1} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[34%] flex items-center`} > <img loading='lazy' src={certifié_logo_2} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[20%] flex items-center`} > <img loading='lazy' src={certifié_logo_3} alt='logo' className=' h-[50px]' /></div> 
+                        <div className={` min-w-[20%] flex items-center`} > <img loading='lazy' src={certifié_logo_4} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[20%] flex items-center`} > <img loading='lazy' src={certifié_Logo_5} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[33%] lg:min-w-[25%] flex items-center`} > <img loading='lazy' src={certifié_Logo_6} alt='logo' className=' h-10' /></div> 
+                        <div className={` min-w-[20%] flex items-center`} > <img loading='lazy' src={certifié_Logo_7} alt='logo' className=' h-[50px]' /></div> 
                     </div>
                 </div>
             </section>
@@ -144,7 +144,7 @@ export default function Apropos () {
                         {/* innovation  */}
                         <div className='text-left flex gap-3 md:gap-9 justify-normal w-full '>
                             <div className='w-[12%]  pt-1 md:pt-0 flex md:items-center'>
-                                <img src={icone_innovation} className='h-[32px] md:h-auto' alt='icone' />
+                                <img loading='lazy' src={icone_innovation} className='h-[32px] md:h-auto' alt='icone' />
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
@@ -156,7 +156,7 @@ export default function Apropos () {
                         {/* passion  */} 
                         <div className='text-left flex gap-3 md:gap-9 justify-normal w-full '>
                             <div className='w-[12%]  pt-1 md:pt-0 flex md:items-center'>
-                                <img src={icone_passion} className='h-[32px] md:h-auto' alt='icone' />
+                                <img loading='lazy' src={icone_passion} className='h-[32px] md:h-auto' alt='icone' />
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
@@ -168,7 +168,7 @@ export default function Apropos () {
                         {/* discipline  */}
                         <div className='text-left flex gap-3 md:gap-9 justify-normal w-full '>
                             <div className='w-[12%]  pt-1 md:pt-0 flex md:items-center'>
-                                <img src={icone_discipline} className='h-[32px] md:h-auto' alt='icone' />
+                                <img loading='lazy' src={icone_discipline} className='h-[32px] md:h-auto' alt='icone' />
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
@@ -186,9 +186,9 @@ export default function Apropos () {
                 <h3 className='text-3xl sm:text-4xl font-bold text-blue-100'>Prix <span className='text-remporter'>remportés</span></h3>
                 
                 <div className=' flex flex-col sm:flex-row justify-center items-center gap-10'>
-                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 lg:h-24' src={prix_ecicr_1} alt="prix_ecicr_1" /></div>
-                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 lg:h-24' src={prix_onu_femmes} alt="prix_onu_femmes" /></div>
-                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img className='h-20 lg:h-24' src={prix_apatridie} alt="prix_apatridie" /></div>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img loading='lazy' className='h-20 lg:h-24' src={prix_ecicr_1} alt="prix_ecicr_1" /></div>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img loading='lazy' className='h-20 lg:h-24' src={prix_onu_femmes} alt="prix_onu_femmes" /></div>
+                    <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img loading='lazy' className='h-20 lg:h-24' src={prix_apatridie} alt="prix_apatridie" /></div>
                 </div>
 
             </section>

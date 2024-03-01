@@ -18,7 +18,7 @@ export default function MotionDesign() {
             {/* welcom image  */}
             <section className='w-full flex flex-col items-center justify-center relative '>
             
-                <img src={width <= 640 ? Accueil_Animation_phone : Accueil_animation_accueil} alt=" print_accueil"/>
+                <img loading='lazy' src={width <= 640 ? Accueil_Animation_phone : Accueil_animation_accueil} alt=" print_accueil"/>
 
             </section>
 
@@ -40,7 +40,7 @@ export default function MotionDesign() {
 
                     {/* first image Spot publicitaire */}
                     <div className=' bg-bgAnnimation rounded-lg '>
-                        <img src={animation_service_2} alt="animation_service_3" />
+                        <img loading='lazy' src={animation_service_2} alt="animation_service_3" />
                         <div className='w-full text-left flex flex-col gap-2 md:gap-3 lg:gap-4  items-center pb-5'>
 
                             <div className='w-[80%] sm:w-[77%] md:w-[74%] lg:w-[71%] flex flex-col gap-2 md:gap-3 lg:gap-4 items-start pl-[5%] sm:pl-0'>
@@ -53,7 +53,7 @@ export default function MotionDesign() {
 
                     {/* second image Presentation  */}
                     <div className='bg-bgAnnimation rounded-lg'>
-                        <img src={animation_service_3} alt="animation_service_3" />
+                        <img loading='lazy' src={animation_service_3} alt="animation_service_3" />
 
                         <div className='w-full text-left flex flex-col gap-2 md:gap-3 lg:gap-4  items-center pb-5'>
 
@@ -89,8 +89,8 @@ export default function MotionDesign() {
                 {/* image's galery */}
                 <section className='w-full'>
 
-                    <img src={Illustration_concept_art_1} alt="Illustration_concept_art_1" className='sm:hidden' />
-                    <img src={animation_partner} alt="Illustration_concept_art_1" className='sm:block hidden' />
+                    <img loading='lazy' src={Illustration_concept_art_1} alt="Illustration_concept_art_1" className='sm:hidden' />
+                    <img loading='lazy' src={animation_partner} alt="Illustration_concept_art_1" className='sm:block hidden' />
                 </section>
 
                 {/* retrun to origin boutton  */}

@@ -69,19 +69,19 @@ export default function Contacts () {
             <section className='flex flex-col gap-3 items-start'>
                 <div className="flex gap-3 justify-center items-center">
                     <div className='w-[1.3rem]'>
-                        <img src={icone_contat_Mail}/>
+                        <img loading='lazy' src={icone_contat_Mail}/>
                     </div>
                     <p className=" font-bold text-[13px] text-gray-700"> barakalurhakwa@gmail.com</p>
                 </div>
                 <div className="flex gap-3 justify-center items-center">
                     <div className='w-[1.3rem]'>
-                        <img src={icone_contat_call_center}/>
+                        <img loading='lazy' src={icone_contat_call_center}/>
                     </div>
                     <p className=" font-bold text-[13px] text-gray-700">+243 976 458 461</p>
                 </div>
                 <div className="flex gap-3 justify-center items-center">
                     <div className='w-[1.3rem]'>
-                        <img src={icone_contat_Whatsapp}/>
+                        <img loading='lazy' src={icone_contat_Whatsapp}/>
                     </div>
                     <p className=" font-bold text-[13px] text-gray-700">+243 823 468 444</p>
                 </div>
@@ -89,14 +89,14 @@ export default function Contacts () {
 
             <section className='sm:grid grid-cols-4 gap-3 hidden absolute bottom-4'>
                 
-                <Link to={'https://www.behance.net/barakacreation'}> <img src={bcBehance} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://web.facebook.com/barakalurhakwa'}><img src={bcFb} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.instagram.com/barakacreation/'}><img src={bcInsta} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.linkedin.com/in/baraka-creation-a0a69321b/'}><img src={bclinkedin} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://twitter.com/BarakaLurhakwa'}><img src={bctwitter_2} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.pinterest.fr/barakalurhakwa/'}><img src={iconPinterest} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.tiktok.com/@barakacrea'}><img src={iconTiktok} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.youtube.com/channel/UCUIo11-hI77iG8CqH5DQScA'}><img src={iconyoutube} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.behance.net/barakacreation'}> <img loading='lazy' src={bcBehance} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://web.facebook.com/barakalurhakwa'}><img loading='lazy' src={bcFb} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.instagram.com/barakacreation/'}><img loading='lazy' src={bcInsta} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.linkedin.com/in/baraka-creation-a0a69321b/'}><img loading='lazy' src={bclinkedin} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://twitter.com/BarakaLurhakwa'}><img loading='lazy' src={bctwitter_2} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.pinterest.fr/barakalurhakwa/'}><img loading='lazy' src={iconPinterest} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.tiktok.com/@barakacrea'}><img loading='lazy' src={iconTiktok} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.youtube.com/channel/UCUIo11-hI77iG8CqH5DQScA'}><img loading='lazy' src={iconyoutube} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
             
             </section>
             
@@ -156,14 +156,14 @@ export default function Contacts () {
         {/* link section  */}
         <section className='sm:hidden grid grid-cols-4 gap-3 justify-center items-center'>
                 
-                <Link to={'https://www.behance.net/barakacreation'}> <img src={bcBehance} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://web.facebook.com/barakalurhakwa'}><img src={bcFb} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.instagram.com/barakacreation/'}><img src={bcInsta} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.linkedin.com/in/baraka-creation-a0a69321b/'}><img src={bclinkedin} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://twitter.com/BarakaLurhakwa'}><img src={bctwitter_2} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.pinterest.fr/barakalurhakwa/'}><img src={iconPinterest} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.tiktok.com/@barakacrea'}><img src={iconTiktok} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
-                <Link to={'https://www.youtube.com/channel/UCUIo11-hI77iG8CqH5DQScA'}><img src={iconyoutube} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.behance.net/barakacreation'}> <img loading='lazy' src={bcBehance} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://web.facebook.com/barakalurhakwa'}><img loading='lazy' src={bcFb} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.instagram.com/barakacreation/'}><img loading='lazy' src={bcInsta} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.linkedin.com/in/baraka-creation-a0a69321b/'}><img loading='lazy' src={bclinkedin} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://twitter.com/BarakaLurhakwa'}><img loading='lazy' src={bctwitter_2} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.pinterest.fr/barakalurhakwa/'}><img loading='lazy' src={iconPinterest} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.tiktok.com/@barakacrea'}><img loading='lazy' src={iconTiktok} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
+                <Link to={'https://www.youtube.com/channel/UCUIo11-hI77iG8CqH5DQScA'}><img loading='lazy' src={iconyoutube} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
             
         </section>
     </main>)

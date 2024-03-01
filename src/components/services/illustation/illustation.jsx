@@ -23,7 +23,7 @@ export default function Illustation () {
 
         {/* welcome image  */}
         <section>
-            <img src={width <= 640 ? Accueil_Illustration_phone1 : Accueil_illustration} alt="sm:hidden" />
+            <img loading='lazy' src={width <= 640 ? Accueil_Illustration_phone1 : Accueil_illustration} alt="sm:hidden" />
         </section>
 
         {/* first tetxt  */}
@@ -67,30 +67,31 @@ export default function Illustation () {
 
         {/* here section  manque d'image de meme ration  */}
         <section className='px-[10%] grid grid-cols-1 gap-3 justify-center bg-slate-100'>
-            <div className='w-full h-[300px] sm:h-[12.5rem] md:h-[15.625rem] lg:h-[270px] bg-black rounded-md overflow-hidden pt-[15%] pr-[20%] sm:pt-[0px] sm:pr-[15%] md:pr-[0]  relative'>
+
+            <figure className='w-full h-[12.5rem] md:h-[15.625rem] lg:h-[16.875rem] rounded-md overflow-hidden relative'>
 
                     <div className='w-full justify-center absolute items-center z-40 top-5'>
                         <h2 className='font-bold text-gray-100 text-[1.125rem]'>Plus d&apos;émotions</h2>
                     </div>
-                    <img src={illustration_emotion} alt="illustration_emotion" className=' scale-[3.4] sm:scale-[1.4] md:scale-[1.1] w-full md:pb-[600px] ' />
-            </div>
+                    <img loading='lazy' src={illustration_emotion} alt="illustration_emotion" className=' object-cover w-full h-full' />
+            </figure>
             
             <div className=' grid grid-cols-1 sm:grid-cols-2 gap-3'>
-                <div className='w-full h-[300px] rounded-md overflow-hidden  relative'>
+                <figure className='w-full h-0 rounded-md overflow-hidden  relative' style={{ paddingTop: 'calc(100% * (3/3))'}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
                             <h2 className='font-bold text-gray-700 text-[1.125rem]'>Plus <br /> de style</h2>
                         </div>
-                        <img src={Illustration_vectoriel} alt="illustration_emotion" className='scale-[1.2] ' />
-                </div>
+                        <img loading='lazy' src={Illustration_vectoriel} alt="illustration_emotion" className='absolute top-0 object-cover w-full h-full' />
+                </figure>
 
-                <div className='w-full h-[300px] rounded-md bg-fixed bg-no-repeat  overflow-hidden pr-[8%] pt-[5%]  relative' style={{backgroundImage: `url(${Illustration_excellence})`}}>
+                <figure className='w-full h-0 rounded-md  overflow-hidden relative' style={{ paddingTop: 'calc(100% * (3/3))'}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
                             <h2 className='font-bold text-gray-100 text-[1.125rem]'>Plus <br /> d&apos;excellence</h2>
                         </div>
-                        <img src={Illustration_excellence} alt="illustration_emotion" className='scale-[3.2] sm:scale-[3.4] md:scale-[3] ' />
-                </div>
+                        <img loading='lazy' src={Illustration_excellence} alt="illustration_emotion" className='absolute top-0 object-cover w-full h-full' />
+                </figure>
             </div>
         </section>
         
@@ -112,7 +113,7 @@ export default function Illustation () {
                     {/* Courverture  */}
                     <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg pb-5'>
                         <div className='w-[60%] '>
-                            <img src={illustration_couverture} alt="illustration_couverture" />
+                            <img loading='lazy' src={illustration_couverture} alt="illustration_couverture" />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center'>
                             <h1 className='font-bold text-gray-700'>Courverture</h1>
@@ -127,7 +128,7 @@ export default function Illustation () {
                     <div className='w-full justify-center items-center flex flex-col bg-[rgb(245,246,248)] rounded-lg pb-5'>
                         <div className='w-full flex items-start'>
                             <div className='w-[60%] justify-start items-start overflow-hidden '>
-                                <img src={illustratio_livre} alt="illustratio_livre" className='scale-[1.3]'/>
+                                <img loading='lazy' src={illustratio_livre} alt="illustratio_livre" className='scale-[1.3]'/>
                             </div>
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center z-40'>
@@ -141,7 +142,7 @@ export default function Illustation () {
                     {/* bande Desinnée  */}
                     <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg pb-5'>
                         <div className='w-[60%] '>
-                            <img src={illustration_bd_ok} alt="illustration_couverture" />
+                            <img loading='lazy' src={illustration_bd_ok} alt="illustration_couverture" />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center'>
                             <h1 className='font-bold text-gray-700'>Bande dessinée</h1>
@@ -158,7 +159,7 @@ export default function Illustation () {
                     {/* campagnes  */}
                     <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
                         <div className='w-full '>
-                            <img src={illustration_campagne} alt="illustration_couverture" className='rounded-lg' />
+                            <img loading='lazy' src={illustration_campagne} alt="illustration_couverture" className='rounded-lg' />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-5'>
                             <h1 className='font-bold text-gray-100'>Campagne</h1>
@@ -170,7 +171,7 @@ export default function Illustation () {
                     {/* MAscote  */}
                     <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg pb-5 relative'>
                         <div className='w-[60%] '>
-                            <img src={illustration_mascotte} alt="illustration_mascotte" className='rounded-lg' />
+                            <img loading='lazy' src={illustration_mascotte} alt="illustration_mascotte" className='rounded-lg' />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center'>
                             <h1 className='font-bold text-gray-700'>Mascotte</h1>
@@ -182,7 +183,7 @@ export default function Illustation () {
                     {/* campagnes  */}
                     <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
                         <div className='w-full '>
-                            <img src={illustration_web} alt="illustration_web" className='rounded-lg' />
+                            <img loading='lazy' src={illustration_web} alt="illustration_web" className='rounded-lg' />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-5'>
                             <h1 className='font-bold text-gray-100'>Web</h1>
@@ -200,7 +201,7 @@ export default function Illustation () {
         <section className='w-full bg-black py-10 flex flex-col gap-3'>
 
             <div className='px-[20%]'>
-                <img src={Illustration_concept_art_1} alt="Illustration_concept_art_1" />
+                <img loading='lazy' src={Illustration_concept_art_1} alt="Illustration_concept_art_1" />
             </div>
 
             {/* text  */}
@@ -222,7 +223,7 @@ export default function Illustation () {
 
                 {/* story bord  */}
                 <section className='relative items-center flex flex-col justify-center px-[2%]'>
-                    <img src={illustratration_concept_art_story_board} alt="illustratration_concept_art_story_board" className='rounded-lg' />
+                    <img loading='lazy' src={illustratration_concept_art_story_board} alt="illustratration_concept_art_story_board" className='rounded-lg' />
 
                     <div className='w-full relative'>
                         <div className='rounded-b-lg bottom-0 absolute pt-20 bg-gradient-to-t w-full from-bgCertifier from-20% h-[150px]'>
@@ -233,7 +234,7 @@ export default function Illustation () {
 
                 {/* Creation environement  */}
                 <section className='relative items-center flex flex-col justify-center px-[2%]'>
-                    <img src={Illustration_concept_art_3} alt="Illustration_concept_art_2" className='rounded-lg' />
+                    <img loading='lazy' src={Illustration_concept_art_3} alt="Illustration_concept_art_2" className='rounded-lg' />
 
                     <div className='w-full relative '>
                         <div className='rounded-b-lg bottom-0 absolute pt-14 bg-gradient-to-t w-full from-bgCertifier from-20% h-[150px]'>
@@ -248,7 +249,7 @@ export default function Illustation () {
 
                 <div className=' overflow-hidden w-full h-full pr-[20% pt-[5%]'>
 
-                    <img src={Illustration_concept_art_5} alt="Illustration_concept_art_2" className='rounded-lg scale-[3] mr-[6.25rem] md:mr-0 md:scale-[1]' />
+                    <img loading='lazy' src={Illustration_concept_art_5} alt="Illustration_concept_art_2" className='rounded-lg scale-[3] mr-[6.25rem] md:mr-0 md:scale-[1]' />
                 </div>
 
                 <div className='w-full relative md:hidden'>
@@ -268,7 +269,7 @@ export default function Illustation () {
             <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative p-5'>
 
                  <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
-                    <img src={design_entrons_en_contact} className='' alt='image accompagnement'/>
+                    <img loading='lazy' src={design_entrons_en_contact} className='' alt='image accompagnement'/>
                 </div>
 
                 <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>

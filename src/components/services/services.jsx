@@ -26,7 +26,7 @@ export default function Services () {
 
             {/* 1st part welcome picture  */}
             <section className="w-full flex flex-col justify-center items-center relative sm:-mt-20">
-                <img src={Ac_a_services} alt='Ac_a_services'/>
+                <img loading='lazy' src={Ac_a_services} alt='Ac_a_services'/>
                 <div className=' bg-white pb-8 sm:pb-4 lg:pb-14 sm:absolute sm:bottom-0 sm:bg-opacity-0'>
                     <h3 className='text-[0.9rem] sm:text-[0.82rem] md:text-[1.07rem] lg:text-[1.25rem] text-left  text-gray-500 font-bold '>En faisant <span className='text-gray-500'>la différence</span> nous vous <br/>aiderons à <span className='text-gray-500'>gagner le cœur de votre <br/>public cible</span></h3>
                 </div>
@@ -36,7 +36,7 @@ export default function Services () {
 
                 {/* 2nd part "identité" visuelle  */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={width <= 640 ? ac2P : ac2O} alt='ac2P' className='rounded-lg' />
+                    <img loading='lazy' src={width <= 640 ? ac2P : ac2O} alt='ac2P' className='rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold sm:hidden text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800'>Identité Visuelle</h1>
@@ -48,7 +48,7 @@ export default function Services () {
 
                 {/* 3rd part "design graohique" */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={width <= 640 ? ac3P : ac3O} alt='ac2P' className=' rounded-lg' />
+                    <img loading='lazy' src={width <= 640 ? ac3P : ac3O} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold sm:hidden text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'>Design Graphique</h1>
@@ -60,7 +60,7 @@ export default function Services () {
 
                 {/* illustration */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={width <= 640 ? ac1 : Acillustration} alt='ac2P' className=' rounded-lg' />
+                    <img loading='lazy' src={width <= 640 ? ac1 : Acillustration} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-end sm:right-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800 '>Illustration</h1>
@@ -72,7 +72,7 @@ export default function Services () {
 
                 {/* annimation  */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={width <= 640 ? ac5P : ac5O} alt='ac2P' className=' rounded-lg' />
+                    <img loading='lazy' src={width <= 640 ? ac5P : ac5O} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800 '>Annimation</h1>
@@ -83,7 +83,7 @@ export default function Services () {
                 
                 {/* consulting  */}
                 <section className='flex justify-center sm:items-center  '>
-                    <img src={width <= 640 ? ac4P : ac4O} alt='ac2P' className='rounded-lg' />
+                    <img loading='lazy' src={width <= 640 ? ac4P : ac4O} alt='ac2P' className='rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'> Consulting</h1>

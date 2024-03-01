@@ -29,7 +29,7 @@ export default function WebDesign() {
                 <div className='w-full pt-[1%] sm:pt-[0%] flex flex-col gap-4 md:gap-4'>
 
                     <div className=' flex flex-col justify-center items-center px-[5%]  sm:px-[10%] md:px-[13%] lg:px-[16%]  '>
-                        <img src={Web_design} alt="Web_design" />
+                        <img loading='lazy' src={Web_design} alt="Web_design" />
                     </div>
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full z-40 -mt-5 md:-mt-10  '>
@@ -43,7 +43,7 @@ export default function WebDesign() {
                 <div className=' justify-center items-center flex -mt-5 md:-mt-10  '>
                     <div className='w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%]'>
 
-                        <img src={web_design} alt="campagne"/>
+                        <img loading='lazy' src={web_design} alt="campagne"/>
                     </div>
                 </div>
             </section>
@@ -87,7 +87,7 @@ export default function WebDesign() {
                                 <div className='flex flex-col gap-5 justify-center items-center'>
                                     <div className='h-20 w-full flex justify-center items-center pt-9'>
 
-                                        <img src={web_fluide} alt="Mise_en_page_icone_1" className='md:h-[28px] h-[20px]'/>
+                                        <img loading='lazy' src={web_fluide} alt="Mise_en_page_icone_1" className='md:h-[28px] h-[20px]'/>
                                     </div>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <div className='h-20 w-full'>
@@ -99,7 +99,7 @@ export default function WebDesign() {
                                 <div className='flex flex-col gap-5 justify-center items-center'>
                                     <div className='h-20 w-full flex justify-center items-center pt-9'>
 
-                                        <img src={web_objectif} alt="web_objectif" className='md:h-[55px] h-[35px]'/>
+                                        <img loading='lazy' src={web_objectif} alt="web_objectif" className='md:h-[55px] h-[35px]'/>
                                     </div>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <div className='h-20 w-full'>
@@ -111,7 +111,7 @@ export default function WebDesign() {
                                 <div className='flex flex-col gap-5 justify-center items-center'>
                                     <div className='h-20 w-full flex justify-center items-center pt-9'>
 
-                                        <img src={web_positif} alt="web_positif" className='md:h-[55px] h-[35px]'/>
+                                        <img loading='lazy' src={web_positif} alt="web_positif" className='md:h-[55px] h-[35px]'/>
                                     </div>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <div className='h-20 w-full'>
@@ -123,7 +123,7 @@ export default function WebDesign() {
                                 <div className='flex flex-col gap-5 justify-center items-center'>
                                     <div className='h-20 w-full flex justify-center items-center pt-9'>
 
-                                        <img src={web_adapté} alt="Mise_en_page_icone_4" className='md:h-[55px] h-[35px]'/>
+                                        <img loading='lazy' src={web_adapté} alt="Mise_en_page_icone_4" className='md:h-[55px] h-[35px]'/>
                                     </div>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <div className='h-20 w-full'>

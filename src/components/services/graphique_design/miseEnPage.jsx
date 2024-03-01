@@ -43,7 +43,7 @@ export default function MiseEnPage() {
                 <div className=' justify-center items-center flex -mt-4  '>
                     <div className='w-[90%] sm:w-[80%] md:w-[70%] lg:w-[45%]'>
 
-                        <img src={mise_en_page_accueil} alt="campagne"/>
+                        <img loading='lazy' src={mise_en_page_accueil} alt="campagne"/>
                     </div>
                 </div>
             </section>
@@ -126,7 +126,7 @@ export default function MiseEnPage() {
                         </div>
                         
                         <section className=' flex justify-end items-end w-[full] absolute -bottom-8 right-0'>
-                            <img src={mise_en_page_service_design} alt="mise_en_page_service_design" className=' sm:h-[19rem] md:scale-125' />
+                            <img loading='lazy' src={mise_en_page_service_design} alt="mise_en_page_service_design" className=' sm:h-[19rem] md:scale-125' />
                         </section>
                     </section>
 
@@ -137,7 +137,7 @@ export default function MiseEnPage() {
                         </div>
                         
                         <section className=' flex justify-start items-start w-[full] absolute -bottom-8 left-0'>
-                            <img src={Mise_en_page_adapté} alt="mise_en_page_service_design" className=' sm:h-[16rem] ' />
+                            <img loading='lazy' src={Mise_en_page_adapté} alt="mise_en_page_service_design" className=' sm:h-[16rem] ' />
                         </section>
                     </section>
 
@@ -155,25 +155,25 @@ export default function MiseEnPage() {
                             <section className=' grid grid-cols-2 md:grid-cols-4 gap-5 justify-center items-center w-full'>
 
                                 <div className='flex flex-col gap-2 justify-center items-center'>
-                                        <img src={Mise_en_page_icone_1} alt="Mise_en_page_icone_1" className='h-10'/>
+                                        <img loading='lazy' src={Mise_en_page_icone_1} alt="Mise_en_page_icone_1" className='h-10'/>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <h1 className='font-bold text-gray-700 text-[0.875rem] leading-4'>Design épuré, <br />lisible et <br />attrayant</h1>
                                 </div>
 
                                 <div className='flex flex-col gap-2 justify-center items-center'>
-                                        <img src={Mise_en_page_icone3} alt="Mise_en_page_icone3" className='h-10'/>
+                                        <img loading='lazy' src={Mise_en_page_icone3} alt="Mise_en_page_icone3" className='h-10'/>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <h1 className='font-bold text-gray-700 text-[0.875rem] leading-4'>Graphiques <br />et icones <br />originales</h1>
                                 </div>
 
                                 <div className='flex flex-col gap-2 justify-center items-center'>
-                                        <img src={Mise_en_page_icone_2} alt="Mise_en_page_icone_2" className='h-10'/>
+                                        <img loading='lazy' src={Mise_en_page_icone_2} alt="Mise_en_page_icone_2" className='h-10'/>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <h1 className='font-bold text-gray-700 text-[0.875rem] leading-4'>Illustrations <br />personnalisées <br /> <Link className='text-[9px] text-blue-500' to='../' >Lire la suite</Link></h1>
                                 </div>
 
                                 <div className='flex flex-col gap-2 justify-center items-center'>
-                                        <img src={Mise_en_page_icone_4} alt="Mise_en_page_icone_4" className='h-10'/>
+                                        <img loading='lazy' src={Mise_en_page_icone_4} alt="Mise_en_page_icone_4" className='h-10'/>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
                                     <h1 className='font-bold text-gray-700 text-[0.875rem] leading-4'>Adaptée au <br />format print et <br />digital (e-book)</h1>
                                 </div>

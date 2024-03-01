@@ -54,10 +54,10 @@ export default function Publication () {
                 <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 flex overflow-hidden '>
 
                     {/* image   */}
-                    <img src={width <= 640 ? coover_phone_mamour : coover_ordi_mamour} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={width <= 640 ? defiTel : Accueil_Le_reve_et_le_defi} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={width <= 640 ? chuteTel : chute} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
-                    <img src={width <= 640 ? hautTel :Accueil_hautS} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
+                    <img loading='lazy' src={width <= 640 ? coover_phone_mamour : coover_ordi_mamour} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
+                    <img loading='lazy' src={width <= 640 ? defiTel : Accueil_Le_reve_et_le_defi} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
+                    <img loading='lazy' src={width <= 640 ? chuteTel : chute} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
+                    <img loading='lazy' src={width <= 640 ? hautTel :Accueil_hautS} alt='image' className=' duration-1000 delay-150 ' style={{transform: `translateX(${-index}%)`}} />
                     
                     {/* button suivre sur l'image  */}
                     {/* image's text and button 'fist image mamour' */}
@@ -68,7 +68,7 @@ export default function Publication () {
 
                             <div className='sm:w-[40%] w-[80%] '>
                                 <div className='w-full sm:items-end items-center sm:justify-end justify-center flex flex-col '>
-                                    <img src={titlemamour} alt='mamous' className='sm:h-[1.875rem] h-[27px] sm:items-end items-center' />
+                                    <img loading='lazy' src={titlemamour} alt='mamous' className='sm:h-[1.875rem] h-[27px] sm:items-end items-center' />
                                 </div>
 
                                 <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
@@ -77,8 +77,8 @@ export default function Publication () {
 
                                     <div className='flex gap-2 items-center'>
                                         <p className='text-gray-100 text-[0.625rem]'> Drame | 2022</p> 
-                                        <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
-                                        <img src={icon4} alt="icon" className='h-5'/>
+                                        <img loading='lazy' src={iconPhotoshop_2} alt="icon" className='h-5'/>
+                                        <img loading='lazy' src={icon4} alt="icon" className='h-5'/>
                                     </div>
                                     <Link to={'/publication/mamour'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
@@ -90,7 +90,7 @@ export default function Publication () {
 
                             <div className='sm:w-[40%] w-[80%] '>
                                 <div className='w-full sm:items-end items-center sm:justify-end justify-center sm:flex flex-col hidden '>
-                                    <img src={titlele_reve_et_le_defi} alt='mamous' className='sm:h-[6.25rem] md:h-[6.25rem] lg:h-[150px] h-[6.25rem] sm:items-end items-center' />
+                                    <img loading='lazy' src={titlele_reve_et_le_defi} alt='mamous' className='sm:h-[6.25rem] md:h-[6.25rem] lg:h-[150px] h-[6.25rem] sm:items-end items-center' />
                                 </div>
 
                                 <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2 sm:block hidden'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
@@ -99,8 +99,8 @@ export default function Publication () {
 
                                     <div className='sm:flex  hidden gap-2 items-center '>
                                         <p className='text-gray-100 text-[0.625rem]'> Drame | 2022</p> 
-                                        <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
-                                        <img src={icon4} alt="icon" className='h-5'/>
+                                        <img loading='lazy' src={iconPhotoshop_2} alt="icon" className='h-5'/>
+                                        <img loading='lazy' src={icon4} alt="icon" className='h-5'/>
                                     </div>
                                     <Link to={'/publication/defi'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
@@ -116,8 +116,8 @@ export default function Publication () {
 
                                     <div className='sm:flex  hidden gap-2 items-center '>
                                         <p className='text-gray-900 text-[0.625rem]'> Drame | 2022</p> 
-                                        <img src={iconPhotoshop} alt="icon" className='h-5'/>
-                                        <img src={icon4N} alt="icon" className='h-5'/>
+                                        <img loading='lazy' src={iconPhotoshop} alt="icon" className='h-5'/>
+                                        <img loading='lazy' src={icon4N} alt="icon" className='h-5'/>
                                     </div>
                                     <Link to={'/publication/chute'} className='px-5 bg-gray-700 text-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
@@ -135,8 +135,8 @@ export default function Publication () {
 
                                     <div className='sm:flex gap-2 items-center hidden'>
                                         <p className='text-gray-100 text-[0.625rem]'> Drame | 2022</p> 
-                                        <img src={iconPhotoshop_2} alt="icon" className='h-5'/>
-                                        <img src={icon4} alt="icon" className='h-5'/>
+                                        <img loading='lazy' src={iconPhotoshop_2} alt="icon" className='h-5'/>
+                                        <img loading='lazy' src={icon4} alt="icon" className='h-5'/>
                                     </div>
                                     <Link to={'/publication/haut'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
@@ -186,7 +186,7 @@ export default function Publication () {
 
                             <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>
                                 <Link to={'/publication/chute'}>
-                                    <img src={Publicationord1} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                                    <img loading='lazy' src={Publicationord1} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
                                 </Link>
 
                             </div>
@@ -198,7 +198,7 @@ export default function Publication () {
 
                             <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>
                                 <Link to={'/publication/defi'}>
-                                    <img src={Publication_ordi} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                                    <img loading='lazy' src={Publication_ordi} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
                                 </Link>
 
                             </div>
@@ -210,7 +210,7 @@ export default function Publication () {
                             <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>   
                                 <Link to={'/publication/mamour'}>
                                 
-                                    <img src={Publication_ordi_3} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
+                                    <img loading='lazy' src={Publication_ordi_3} alt='image' className='flex rounded-lg hover:scale-105 duration-150 hover:-translate-x-5 hover:-translate-y-2'/>
                                 </Link>     
             
                             </div>
@@ -222,7 +222,7 @@ export default function Publication () {
 
                             <div className='h-full w-full hover:backdrop-blur-sm duration-200 delay-150 relative'>  
                                 <Link to={'/publication/haut'}>
-                                    <img src={Publicationord2} alt='image' className='flex rounded-lg hover:scale-105 hover:-translate-x-5 hover:-translate-y-2 duration-150'/>
+                                    <img loading='lazy' src={Publicationord2} alt='image' className='flex rounded-lg hover:scale-105 hover:-translate-x-5 hover:-translate-y-2 duration-150'/>
                                 </Link>                              
 
                             </div>

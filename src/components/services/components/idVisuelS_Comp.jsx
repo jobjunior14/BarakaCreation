@@ -9,7 +9,7 @@ export default function IdVisuelleComp ({image, hImage, name, text, link, onclic
 
             {/* logo type Image  */}
             <div className="w-full justify-center items-center flex">
-                    <img src={image} alt="Id_Vieuellelogo" className={hImage} />
+                    <img loading='lazy' src={image} alt="Id_Vieuellelogo" className={hImage} />
             </div>
 
             <section className="w-full justify-center items-center flex flex-col gap-4">

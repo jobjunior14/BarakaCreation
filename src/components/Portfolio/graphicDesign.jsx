@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import a from '../../assets/Portofolio/Graphic design/a.jpg';
 import a1 from '../../assets/Portofolio/Graphic design/a1.jpg';
 import a2 from '../../assets/Portofolio/Graphic design/a2.jpg';
@@ -93,11 +94,108 @@ import a91 from '../../assets/Portofolio/Graphic design/a91.jpg';
 import a92 from '../../assets/Portofolio/Graphic design/a92.jpg';
 import a93 from '../../assets/Portofolio/Graphic design/a93.jpg';
 import a94 from '../../assets/Portofolio/Graphic design/a94.jpg';
+import { Link } from 'react-router-dom';
 
 import {OnTopBtn} from '../services/identite_visuel/comp/util';
 import { useState, useEffect } from 'react';
-import { LogoDetail } from './logofolio';
 
+// logo details component 
+function GrapicDesignDetails ({images, text, title, state, hideDetails }) {
+    
+    const [index, setIndex] = useState(0);
+
+      // slide the images automaticaly
+    useEffect(() => {
+
+        const interval = setInterval(() => {
+            
+            setIndex ( prev => prev === ((images.length -1) * 100) ? 0 : prev + 100);
+        }, 5000) ;
+
+        return () => {
+            clearInterval(interval);
+        }
+    }, [index]);
+
+    const nextImage = () =>  {
+        setIndex ( prev => prev === ((images.length -1) * 100) ? 0 : prev + 100);
+    };
+
+    const prevImage = () =>  {
+        setIndex ( prev => prev === 0 ? ((images.length -1) * 100) : prev - 100);
+    };
+    
+    //my images
+    const myImages = images.map( prev => {
+        return <img loading='lazy' key={prev + 'jello'} src={prev} alt="image" className=' rounded-xl' />
+    });
+
+    const myimageSmBreakPoint = images.map((prev, myIndex) => {
+
+        return <figure key={prev + 'oop'} className={` ${index === myIndex * 100 ? 'w-[40%]' : 'w-[30%]'} duration-200 hidden sm:flex`}  >
+                <img src={prev} alt="image" className=' rounded-xl' />
+            </figure>
+    })
+
+    //my circles div 
+    const myCircles = images.map ((prev, myIndex) => <div key={prev + 'circle'} onClick={() => setIndex(myIndex * 100)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === (myIndex * 100) ? 'bg-gray-400' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div>)
+
+    return (<div className={`${ state ? '' : 'hidden'} p-5 sm:p-7 md:px-10 lg:px-[7%] w-full sm:w-[80%] flex flex-col justify-center gap-5 bg-slate-200  bg-opacity-[0.9] relative rounded-xl`}>
+            
+
+        {/* button to hide the details  */}
+        <div className='w-full  flex justify-center items-center'>
+
+            <div onClick={() => hideDetails()} className={`p-1 border border-gray-700 rounded-full cursor-pointer` }>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                    <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                </svg>
+            </div>
+        </div>
+
+        {/* images slider */}
+        {state && <section className='w-full flex justify-center sm:gap-x-3 items-center overflow-hidden' >
+
+            <div className='w-full flex duration-200 sm:hidden'  style={{transform: `translateX(${-index}%)`}}>
+                {myImages}
+            </div>
+
+            {myimageSmBreakPoint}
+
+        </section>}
+
+        {/* circle div to show the image's number  */}
+        <section className=' flex items-center justify-center w-full px-5 gap-2'>
+           {myCircles}
+        </section>
+
+        {/* section texte  */}
+        <section className='text-left flex flex-col gap-3 '>
+            <h1 className='font-bold text-[1rem] sm:text-[1.3rem] md:text-[1.5rem] text-gray-700'>{title}</h1>
+            <p className='text-[0.75rem] sm:text-[0.8rem] md:text-[1rem] md:leading-6 text-gray-700 w-full sm:w-[80%]'> {text}</p>
+        </section>
+
+        {/* div to prev or next images  */}
+        <div className=' flex items-center justify-evenly  w-full px-5'>
+            
+            <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] items-center justify-center rounded-full sm:hover:bg-gray-300 duration-200 cursor-pointer pr-[4px] border border-gray-600 flex' onClick={prevImage}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-20 h-20 text-gray-600 sm:hover:text-gray-800 ">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+
+            </div>
+            
+            
+            <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] items-center justify-center rounded-full sm:hover:bg-gray-300 duration-200 cursor-pointer pl-[4px] border border-gray-600 flex' onClick={nextImage}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-20 h-20 text-gray-600 sm:hover:text-gray-800 ">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+
+        </div>
+
+    </div>)
+}
 
 export default function ImageGraphiqueDesign () {
 
@@ -165,163 +263,457 @@ export default function ImageGraphiqueDesign () {
 
     return (<main className=" flex flex-col gap-10 bg-black">
 
-            {/* section welcom image  */}
-            <section className="flex flex-col gap-5 bg-gradient-to-t from-black to-gray-800 pt-10">
-                
-                <h1 className="text-6xl text-gray-100 font-bold">Graphic Design</h1>
-                <p className="px-[10%] text-md text-gray-200 font-semibold "> Identié | Campagne | Event | Mise en page | Présentation</p>
-            </section>
+        {/* logo details displayed in absolute  */}
+        <div aria-hidden={true} className={` ${showDetails.hidden() ? 'sticky' : 'hidden'} top-5 bottom-5 z-40 backdrop-blur-md   w-full h-[100vh]  justify-center items-center flex px-[2%] sm:px-[5%] md:px-[5%] lg:px-[5%]`}>
+        
+            <GrapicDesignDetails 
+                images={[a78, a79, a80 ]} 
+                title={'Smart touch | Identité visuelle'} 
+                text={<span>Dans le but de renforcer son image de marque, nous avons accompagné l&apos;agence de
+                        production Smart touch RDC dans l&apos;élaboration de son identité visuelle, de la création du
+                        logotype, à la charte graphique passant par la conception des supports administratifs.
+                        <br/>
+                        Année | 2023  
+                        <br/>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187576357/Smart-touch'}> Behance {'>'}</Link>
+                        </span>
+                        
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a1}
+            />
 
-            <section className="grid grid-cols-1 gap-2  px-[10%] w-full py-10" >
+            <GrapicDesignDetails 
+                images={[a61, a62]} 
+                title={'Perse | identité visuelle'} 
+                text={<span>Dans le but de renouveler son image de marque, nous avons accompagné l&apos;institution
+                        congolaise PERSE dans la conception des supports de communication, dont les supports
+                        administratifs et les supports d&apos;habillages de ladite institution.
 
-                {/* first div */}
-               { loadPhotoState >= 1 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
+                        <br/>
+                        Année | 2022 
+                        <br/>
+                        </span>
+                        
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a2}
+            />
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage1'>
-                        <img src={a78} alt='a78' className='sm:hidden'/>
-                    </div>
+            <GrapicDesignDetails 
+                images={[a72, a73, a74 ]} 
+                title={'SJL Aeronautica | Campagne'} 
+                text={<span>Dans l&apos;objectif de concevoir des supports efficaces qui renforcent l'image de marque, nous
+                        avons accompagné la société d&apos;aviation SJL aeronautica RDC dans sa campagne digitale
+                        à l&apos;occasion de la reprise des vols au sein du territoire congolais. Nous avons élaboré et
+                        créé des supports pour les média sociaux partant de l&apos;habillage à l&apos;animation des pages.
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage2' >
-                        <img src={a61} alt='a78' className='sm:hidden'/>
-                    </div>
+                        <br/>
+                        Année | 2023  
+                        </span>
+                        
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a3}
+            />
 
-                    {/* i set bg-image here as a className because inline style dosen't work  */}
-                   <div className='row-span-2 bgImage3 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
-                        <img src={a73} alt="" className='sm:hidden' />
-                    </div>
+            <GrapicDesignDetails 
+                images={[a4, a5]} 
+                title={'Centenaire CEPAC | Event'} 
+                text={<span>Dans le cadre de la célébration de cent ans d&apos;existence de la Communauté des Eglises de
+                            Pentecôtes en Afrique Central, CEPAC en cigle ; nous avons assuré la conception des
+                            supports évènementiels. Le service a couvert la production d&apos;une large gamme des
+                            supports partant du logo aux supports print et digitaux avant, pendant et après
+                            l&apos;évènement.
+                        <br/>
+                        Année | 2022  
+                        <br/>
+                        <Link className=' text-blue-500' to={' https://www.behance.net/gallery/146328443/Centenaire-CEPAC'}> Behance {'>'}</Link>
+                        </span>
+                        
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a4}
+            />
+
+            <GrapicDesignDetails 
+                images={[a52, a53, a54]} 
+                title={'Nyota | Identité visuelle'} 
+                text={<span>Dans l&apos;objectif d&apos;innover son image de marque, nous avons accompagné la boutique
+                                Nyota présidentiel dans l&apos;élaboration de son identité visuelle, de la création du logotype, à
+                                la charte graphique passant par la conception du package complet des supports
+                                publicitaires.
+
+                        <br/>
+                        Année | 2021  
+                        <br/>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/148524221/NYOTA-branding'}> Behance {'>'}</Link>
+                        </span>
+                        
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a6}
+            />
+
+            <GrapicDesignDetails 
+                images={[a84, a85]} 
+                title={'Upgrade | Event'} 
+                text={<span>Dans l&apos;objectif d&apos;innover son image de marque, nous avons accompagné la boutique
+                                Nyota présidentiel dans l&apos;élaboration de son identité visuelle, de la création du logotype, à
+                                la charte graphique passant par la conception du package complet des supports
+                                publicitaires.
+
+                        <br/>
+                        Année | 2023  
+                        <br/>
+                        </span>
+                        
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a7}
+            />
+
+            <GrapicDesignDetails 
+                images={[a42, a43, a44]} 
+                title={'Malabar | Identité visuelle'} 
+                text={<span>Dans l&apos;objectif d&apos;innover son image de marque, nous avons accompagné l&apos;entreprise
+                        malabar dans l&apos;élaboration de son identité visuelle, de la création du logotype, à la charte
+                        graphique complète passant par la conception des supports internes et externes de ladite
+                        entreprise.
+                        <br/>
+                        Année | 2023  
+                        <br/>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187006411/Malabar-Branding'}> Behance {'>'}</Link>
+                        </span>
+                        
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a8}
+            />
+
+            <GrapicDesignDetails 
+                images={[a16, a17, a18]} 
+                title={'Eco building | Identité visuelle'} 
+                text={<span>Dans l&apos;objectif de renforcer son image de marque, nous avons accompagné la maison de
+                        construction Eco building dans l&apos;élaboration de son identité visuelle, de la création du
+                        logotype, à la conception des supports internes et externes.
+                        <br/>
+                        Année | 2023  
+                        <br/>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187618233/Eco-building'}> Behance {'>'}</Link>
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a9}
+            />
+
+            <GrapicDesignDetails 
+                images={[a59, a60]} 
+                title={'Parlons VIH Sans tabou | Presentation'} 
+                text={<span>Nous avons assumé la conception des supports de présentation du programme Parlons
+                            VIH sans tabou, un projet du FOJED+
+                        <br/>
+                        Année | 2023  
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a10}
+            />
+
+            <GrapicDesignDetails 
+                images={[a29, a30, a31]} 
+                title={'Idemboxes | Identité visuelle'} 
+                text={<span>Dans le but d&apos;innover son image de marque, nous avons accompagné l&apos;agence de
+                            communication digitale Idemboxes l&apos;élaboration de son identité visuelle, de la conception
+                            du logotype, à la charte graphique de ladite agence.
+                        <br/>
+                        Année | 2022  
+                        <br/>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/145692749/Idemboxes-branding'}> Behance {'>'}</Link>
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a11}
+            />
+
+            <GrapicDesignDetails 
+                images={[a49, a50, a51]} 
+                title={'Mon plongeur | Identité visuelle'} 
+                text={<span>Dans le but de renforcer son image de marque, nous avons accompagné l&apos;agence Mon
+                            Plongeur dans l&apos;élaboration de son identité visuelle, de la conception du logotype, aux
+                            supports publicitaires.
+                        <br/>
+                        Année | 2022  
+                        <br/>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/144789099/Mon-Plongeur-Log'}> Behance {'>'}</Link>
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a12}
+            />
+
+            <GrapicDesignDetails 
+                images={[a46, a45]} 
+                title={'Statut entreprise | Malabar | Mise en page'} 
+                text={<span>Nous avons assuré la mise en page de la brochure de présentation de l&apos;entreprise Malabar
+                        <br/>
+                        Année | 2023  
+                        <br/>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187006411/Malabar-Branding'}> Behance {'>'}</Link>
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a13}
+            />
+
+            <GrapicDesignDetails 
+                images={[a86, a87, a88]} 
+                title={'Topdoc | campagne'} 
+                text={<span>Dans l&apos;objectif d&apos;avoir des supports efficaces qui renforcent l&apos;image de marque, nous
+                            avons accompagné l&apos;entreprise Topdoc RDC dans la conception des visuels internes et
+                            externes.
+                        <br/>
+                        Année | 2023  
+                        <br/>
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a14}
+            />
+
+            <GrapicDesignDetails 
+                images={[a32, a33, a34]} 
+                title={"DRC's place in the green industrial revolution | Mise en page"} 
+                text={<span>Nous avons assuré la mise en page du livre « la place de la RDC dans la révolution
+                            industrielle verte et la transition énergétique » un livre de KNG strategy
+                        <br/>
+                        Année | 2023  
+                        <br/>
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a15}
+            />
+
+            <GrapicDesignDetails 
+                images={[a6, a7, a8, a9]} 
+                title={"Central House | Presentation"} 
+                text={<span>Dans le but de renforcer son image de marque, nous avons conçu des supports de
+                            présentation des services de ladite entreprise, des supports variés adaptés aux web et
+                            écrans internes.
+                        <br/>
+                        Année | 2023  
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a16}
+            />
+
+            <GrapicDesignDetails 
+                images={[a21, a22, a23]} 
+                title={"UK DRC Forum on energy transition and investments | Event"} 
+                text={<span>Dans le cadre de la communication du Forum UK RDC sur la transition énergétique et les
+                            investissements, nous avons assuré la conception des supports évènementiels. Le
+                            service a couvert la production d&apos;une large gamme des supports partant du logo aux
+                            supports print et digitaux avant et pendant l&apos;évènement.
+                        <br/>
+                        Année | 2023  
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a17}
+            />
+
+            <GrapicDesignDetails 
+                images={[a, a1]} 
+                title={"Salon du grand livre des grand lacs | Event"} 
+                text={<span>
+                        <br/>
+                        Année | 2023  
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a18}
+            />
+
+            <GrapicDesignDetails 
+                images={[a, a1]} 
+                title={"UK DRC Forum on energy transition and investments | Event"} 
+                text={<span>Dans le cadre de la communication du Forum UK RDC sur la transition énergétique et les
+                            investissements, nous avons assuré la conception des supports évènementiels. Le
+                            service a couvert la production d&apos;une large gamme des supports partant du logo aux
+                            supports print et digitaux avant et pendant l&apos;évènement.
+                        <br/>
+                        Année | 2023  
+                        <br/>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187006411/Malabar-Branding'}> Behance {'>'}</Link>
+                        </span> 
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a18}
+            />
+        </div>
+
+        {/* section welcom image  */}
+        <section className="flex flex-col gap-5 bg-gradient-to-t from-black to-gray-800 pt-10">
+            
+            <h1 className="text-6xl text-gray-100 font-bold">Graphic Design</h1>
+            <p className="px-[10%] text-md text-gray-200 font-semibold "> Identié | Campagne | Event | Mise en page | Présentation</p>
+        </section>
 
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage4' >
-                        <img src={a4} alt='a78' className='sm:hidden'/>
-                    </div>
+        {/* picture Graphic design  */}
+        <section className="grid grid-cols-1 gap-2  px-[10%] w-full py-10" >
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage5'  >
-                        <img src={a47} alt='a78' className='sm:hidden'/>
-                    </div>
-                </div>}
+            {/* first div */}
+            { loadPhotoState >= 1 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
 
-                {/* second div  */}
-                { loadPhotoState >= 2 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
+                <div onClick={() => handleDetails('a1')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage1'>
+                    <img loading='lazy' src={a78} alt='a78' className='sm:hidden'/>
+                </div>
 
-                    {/* i set bg-image here as a className because inline style dosen't work  */}
-                   <div className='row-span-2 bgImage6 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
-                        <img src={a52} alt="" className='sm:hidden' />
-                    </div>
+                <div onClick={() => handleDetails('a2')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage2' >
+                    <img loading='lazy' src={a61} alt='a78' className='sm:hidden'/>
+                </div>
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage7'>
-                        <img src={a84} alt='a78' className='sm:hidden'/>
-                    </div>
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage8' >
-                        <img src={a42} alt='a78' className='sm:hidden'/>
-                    </div>
+                {/* i set bg-image here as a className because inline style dosen't work  */}
+                <div onClick={() => handleDetails('a3')} className='row-span-2 bgImage3 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
+                    <img loading='lazy' src={a73} alt="" className='sm:hidden' />
+                </div>
 
 
+                <div onClick={() => handleDetails('a4')}  className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage4' >
+                    <img loading='lazy' src={a4} alt='a78' className='sm:hidden'/>
+                </div>
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage9' >
-                        <img src={a16} alt='a78' className='sm:hidden'/>
-                    </div>
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage5'  >
+                    <img loading='lazy' src={a47} alt='a78' className='sm:hidden'/>
+                </div>
+            </div>}
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage10'  >
-                        <img src={a59} alt='a78' className='sm:hidden'/>
-                    </div>
-                </div>}
-               {/* 3rd div  */}
-                { loadPhotoState >= 3 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
+            {/* second div  */}
+            { loadPhotoState >= 2 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage11'>
-                        <img src={a29} alt='a78' className='sm:hidden'/>
-                    </div>
+                {/* i set bg-image here as a className because inline style dosen't work  */}
+                <div onClick={() => handleDetails('a6')} className='row-span-2 bgImage6 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
+                    <img loading='lazy' src={a52} alt="" className='sm:hidden' />
+                </div>
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage12' >
-                        <img src={a49} alt='a78' className='sm:hidden'/>
-                    </div>
+                <div  onClick={() => handleDetails('a7')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage7'>
+                    <img loading='lazy' src={a84} alt='a78' className='sm:hidden'/>
+                </div>
 
-                    {/* i set bg-image here as a className because inline style dosen't work  */}
-                   <div className='row-span-2 bgImage13 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
-                        <img src={a45} alt="" className='sm:hidden' />
-                    </div>
-
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage14' >
-                        <img src={a86} alt='a78' className='sm:hidden'/>
-                    </div>
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage15'  >
-                        <img src={a32} alt='a78' className='sm:hidden'/>
-                    </div>
-                </div>}
-
-               {/* 4th div  */}
-                { loadPhotoState >= 4 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage16'>
-                        <img src={a6} alt='a78' className='sm:hidden'/>
-                    </div>
-
-                    {/* i set bg-image here as a className because inline style dosen't work  */}
-                   <div className='row-span-2 bgImage17 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
-                        <img src={a22} alt="" className='sm:hidden' />
-                    </div>
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage18' >
-                        <img src={a} alt='a78' className='sm:hidden'/>
-                    </div>
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage19' >
-                        <img src={a14} alt='a78' className='sm:hidden'/>
-                    </div>
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage20'  >
-                        <img src={a56} alt='a78' className='sm:hidden'/>
-                    </div>
-                </div>}
-
-                {/* 5rd div  */}
-               { loadPhotoState >= 5 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage21'>
-                        <img src={a10} alt='a78' className='sm:hidden'/>
-                    </div>
-
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage22' >
-                        <img src={a24} alt='a78' className='sm:hidden'/>
-                    </div>
-
-                    {/* i set bg-image here as a className because inline style dosen't work  */}
-                   <div className='row-span-2 bgImage23 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
-                        <img src={a19} alt="" className='sm:hidden' />
-                    </div>
+                <div onClick={() => handleDetails('a8')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage8' >
+                    <img loading='lazy' src={a42} alt='a78' className='sm:hidden'/>
+                </div>
 
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage24' >
-                        <img src={a38} alt='a78' className='sm:hidden'/>
-                    </div>
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage25'  >
-                        <img src={a12} alt='a78' className='sm:hidden'/>
-                    </div>
-                </div>}
+                <div onClick={() => handleDetails('a9')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage9' >
+                    <img loading='lazy' src={a16} alt='a78' className='sm:hidden'/>
+                </div>
 
-                {/* finally div  */}
-                { loadPhotoState >= 6 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
+                <div onClick={() => handleDetails('a10')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage10'  >
+                    <img loading='lazy' src={a59} alt='a78' className='sm:hidden'/>
+                </div>
+            </div>}
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage26'>
-                        <img src={a35} alt='a78' className='sm:hidden'/>
-                    </div>
+            {/* 3rd div  */}
+            { loadPhotoState >= 3 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage27' >
-                        <img src={a26} alt='a78' className='sm:hidden'/>
-                    </div>
+                <div onClick={() => handleDetails('a11')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage11'>
+                    <img loading='lazy' src={a29} alt='a78' className='sm:hidden'/>
+                </div>
 
-                    <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage28'  >
-                        <img src={a92} alt='a78' className='sm:hidden'/>
-                    </div>
-                </div>}
+                <div onClick={() => handleDetails('a12')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage12' >
+                    <img loading='lazy' src={a49} alt='a78' className='sm:hidden'/>
+                </div>
 
-            </section>
+                {/* i set bg-image here as a className because inline style dosen't work  */}
+                <div onClick={() => handleDetails('a13')} className='row-span-2 bgImage13 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
+                    <img loading='lazy' src={a45} alt="" className='sm:hidden' />
+                </div>
 
-            <OnTopBtn brdrColor='border-gray-100' textColor = ' text-white'/>
+
+                <div onClick={() => handleDetails('a14')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage14' >
+                    <img loading='lazy' src={a86} alt='a78' className='sm:hidden'/>
+                </div>
+
+                <div onClick={() => handleDetails('a15')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage15'  >
+                    <img loading='lazy' src={a32} alt='a78' className='sm:hidden'/>
+                </div>
+            </div>}
+
+            {/* 4th div  */}
+            { loadPhotoState >= 4 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
+
+                <div onClick={() => handleDetails('a16')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage16'>
+                    <img loading='lazy' src={a6} alt='a78' className='sm:hidden'/>
+                </div>
+
+                {/* i set bg-image here as a className because inline style dosen't work  */}
+                <div onClick={() => handleDetails('a17')} className='row-span-2 bgImage17 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
+                    <img loading='lazy' src={a22} alt="" className='sm:hidden' />
+                </div>
+
+                <div onClick={() => handleDetails('a18')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage18' >
+                    <img loading='lazy' src={a} alt='a78' className='sm:hidden'/>
+                </div>
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage19' >
+                    <img loading='lazy' src={a14} alt='a78' className='sm:hidden'/>
+                </div>
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage20'  >
+                    <img loading='lazy' src={a56} alt='a78' className='sm:hidden'/>
+                </div>
+            </div>}
+
+            {/* 5rd div  */}
+            { loadPhotoState >= 5 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage21'>
+                    <img loading='lazy' src={a10} alt='a78' className='sm:hidden'/>
+                </div>
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage22' >
+                    <img loading='lazy' src={a24} alt='a78' className='sm:hidden'/>
+                </div>
+
+                {/* i set bg-image here as a className because inline style dosen't work  */}
+                <div className='row-span-2 bgImage23 h-full bg-[length:auto_100%] bg-no-repeat bg-center cursor-pointer w-full'>
+                    <img loading='lazy' src={a19} alt="" className='sm:hidden' />
+                </div>
+
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage24' >
+                    <img loading='lazy' src={a38} alt='a78' className='sm:hidden'/>
+                </div>
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage25'  >
+                    <img loading='lazy' src={a12} alt='a78' className='sm:hidden'/>
+                </div>
+            </div>}
+
+            {/* finally div  */}
+            { loadPhotoState >= 6 && <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 w-full '>
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage26'>
+                    <img loading='lazy' src={a35} alt='a78' className='sm:hidden'/>
+                </div>
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage27' >
+                    <img loading='lazy' src={a26} alt='a78' className='sm:hidden'/>
+                </div>
+
+                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage28'  >
+                    <img loading='lazy' src={a92} alt='a78' className='sm:hidden'/>
+                </div>
+            </div>}
+
+        </section>
+
+        <OnTopBtn brdrColor='border-gray-100' textColor = ' text-white'/>
 
     </main>);
 }

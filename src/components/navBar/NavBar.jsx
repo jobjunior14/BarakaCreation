@@ -82,7 +82,7 @@ export default function NavBar ()
             
             <div className=''>
                 <NavLink 
-                    to = {`/`}> <img className='h-6' src = { changeLogo ? aBarakaCreationLogoBleu : abarakacreationLogophonebleu} alt='BarakaCreation Logo' /></NavLink>
+                    to = {`/`}> <img loading='lazy' className='h-6' src = { changeLogo ? aBarakaCreationLogoBleu : abarakacreationLogophonebleu} alt='BarakaCreation Logo' /></NavLink>
             </div>
             
             <div className={`pt-[10%] mainDiv lg:pt-0 flex flex-col lg:flex-row  text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[2.5rem] pt-5 pb-[100vh] top-[2.5rem] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
@@ -173,7 +173,7 @@ export default function NavBar ()
                 </ul>
 
                 <div className='  px-1 py-2 ml-[30%] hidden lg:flex justify-center items-center rounded-lg  '>
-                    <img className='h-4 absolute' src={bcconversation2_1} alt='messagerie' />
+                    <img loading='lazy' className='h-4 absolute' src={bcconversation2_1} alt='messagerie' />
                 </div>
             </div>
 

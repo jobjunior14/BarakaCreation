@@ -33,7 +33,7 @@ export default function IdentiteVisuel () {
             
             {/* welcom image  */}
             <section className="w-full">
-                <img src={ width <= 640 ? accueil_i_visuelle_phone : accueil_Id_visuelle} alt="image d'accueil"/>
+                <img loading='lazy' src={ width <= 640 ? accueil_i_visuelle_phone : accueil_Id_visuelle} alt="image d'accueil"/>
 
             </section>
             
@@ -63,7 +63,7 @@ export default function IdentiteVisuel () {
 
                         {/* Charte graphique image  */}
                         <div className="w-full justify-start items-start flex">
-                                <img src={Id_visuelle_Charte_graphique} alt="Id_Vieuellelogo" className="h-[12.5rem] sm:h-[15.625rem] md:h-[270px]" />
+                                <img loading='lazy' src={Id_visuelle_Charte_graphique} alt="Id_Vieuellelogo" className="h-[12.5rem] sm:h-[15.625rem] md:h-[270px]" />
                         </div>
 
                         <section className="w-full justify-center items-center flex flex-col gap-4">
@@ -111,7 +111,7 @@ export default function IdentiteVisuel () {
                             {/* presentation  */}
                             <div className="text-left flex w-full gap-3" >
                                 <div className="w-[10%]">
-                                    <img src={Digital_presentation} alt="Digital_presentation" />
+                                    <img loading='lazy' src={Digital_presentation} alt="Digital_presentation" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600">Présentation</h1>
@@ -122,7 +122,7 @@ export default function IdentiteVisuel () {
                             {/* reseaux sociaux  */}
                             <div className="text-left flex w-full gap-3" >
                                 <div className="w-[10%]">
-                                    <img src={Digital_supports_digitaux_Copie} alt="Digital_supports_digitaux_Copie" />
+                                    <img loading='lazy' src={Digital_supports_digitaux_Copie} alt="Digital_supports_digitaux_Copie" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600">Réseaux sociaux</h1>
@@ -133,7 +133,7 @@ export default function IdentiteVisuel () {
                             {/* web services  */}
                             <div className="text-left flex w-full gap-3" >
                                 <div className="w-[10%]">
-                                    <img src={Digital_site_web_icone} alt="Digital_site_web_icone" />
+                                    <img loading='lazy' src={Digital_site_web_icone} alt="Digital_site_web_icone" />
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600">Web design</h1>

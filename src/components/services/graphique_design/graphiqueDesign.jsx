@@ -22,7 +22,7 @@ export default function GraphiqueDesign () {
                 <h1 className='text-blue-100 font-bold text-2xl sm:hidden'>Des supports <br /> diversifiés et <br /> efficaces</h1>
 
                 <div className=' justify-between flex items-center'>
-                    <img src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' />
+                    <img loading='lazy' src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' />
 
                     <div className='flex flex-col items-center justify-center pr-[5%] gap-4'>
                         <h1 className='text-blue-100 font-bold text-2xl md:text-[1.625rem] lg:text-[28px] sm:flex hidden leading-[1.875rem]'>Des supports <br /> diversifiés et <br /> efficaces</h1>
@@ -34,11 +34,11 @@ export default function GraphiqueDesign () {
                         </p>
                     </div>
 
-                    <img src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem]' />
+                    <img loading='lazy' src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem]' />
                 </div>
 
                 <div className='px-[5%]'>
-                    <img src={Design_graphic_title} alt="" className='' />
+                    <img loading='lazy' src={Design_graphic_title} alt="" className='' />
                 </div>
 
                 <p className='text-blue-100 px-[10%] text-[0.75rem] sm:hidden'  >Nos services couvrent la conception de tous les 
@@ -110,7 +110,7 @@ export default function GraphiqueDesign () {
                         {/* text  */}
                         <div className="text-center flex flex-col items-center justify-center gap-3">
                             <div className='md:-mb-5'>
-                                <img src={Web_design} alt="" className='h-[50px] md:h-[60px]' />
+                                <img loading='lazy' src={Web_design} alt="" className='h-[50px] md:h-[60px]' />
                             </div>
                             <p className={`w-[75%] sm:w-[70%] md:w-[65%]  text-[0.69rem] sm:text-[0.875rem] md:text-[15px] text-gray-100`}> Spot publicitaire, Présentation, promotions en motion design </p>
                         </div>
@@ -123,7 +123,7 @@ export default function GraphiqueDesign () {
 
                         {/* Image  */}
                         <div className="w-full justify-center items-center flex">
-                                <img src={web_design} alt="Id_Vieuellelogo" className={'h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'} />
+                                <img loading='lazy' src={web_design} alt="Id_Vieuellelogo" className={'h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'} />
                         </div>
                     </section>
                 </div>

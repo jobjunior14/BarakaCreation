@@ -57,20 +57,20 @@ export default function GalleryArt() {
                 <div className='w-full h-full  sm:col-start-1 sm:col-span-3 sm:col-end-3 flex items-center justify-center '>
                     <div className='sm:w-[50%] '>
 
-                        <img  src={CICR_0} alt="" />
+                        <img loading='lazy'  src={CICR_0} alt="" />
                     </div>
                 </div>
 
                 <div className='w-full h-full sm:col-start-3 sm:row-start-1 sm:row-end-3 '>
-                    <img src={Le_retour_0} alt="" />
+                    <img loading='lazy' src={Le_retour_0} alt="" />
                 </div>
 
                 <div className='w-full h-full '>
-                    <img src={Envol_end_0} alt="" />
+                    <img loading='lazy' src={Envol_end_0} alt="" />
                 </div>
 
                 <div className='w-full h-full '>
-                    <img src={Ambouteillage_0} alt="" />
+                    <img loading='lazy' src={Ambouteillage_0} alt="" />
                 </div>
             </section>
 
@@ -78,11 +78,11 @@ export default function GalleryArt() {
             {/* second div  */}
             <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
                 <div className=''>
-                    <img src={ Mama_hero_0} alt="Mama_hero_0" />
+                    <img loading='lazy' src={ Mama_hero_0} alt="Mama_hero_0" />
                 </div>
                 
                 <div className='lg:w-[85%]'>
-                    <img src={Apatridie_0} alt="Apatridie_0" />
+                    <img loading='lazy' src={Apatridie_0} alt="Apatridie_0" />
                 </div>
             </section>
 
@@ -90,15 +90,15 @@ export default function GalleryArt() {
             { height >= 14  && <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
 
                 <div className='sm:w-[99%]'>
-                    <img src={bye_2022_0} alt="bye_2022_0" />
+                    <img loading='lazy' src={bye_2022_0} alt="bye_2022_0" />
                 </div>
 
                 <div>
-                    <img src={save_children_dreams_3_0} alt="save_children_dreams_3_0" />
+                    <img loading='lazy' src={save_children_dreams_3_0} alt="save_children_dreams_3_0" />
                 </div>
 
                 <div className='w-[99%]'>
-                    <img src={Au_controle_0} alt="Au_controle_0" />
+                    <img loading='lazy' src={Au_controle_0} alt="Au_controle_0" />
                 </div>
             </section>}
 
@@ -106,11 +106,11 @@ export default function GalleryArt() {
             { height >= 21 && <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
 
                 <div className='lg:w-[88%] '>
-                    <img src={Peintre_work_0} alt="Peintre_work_0" />
+                    <img loading='lazy' src={Peintre_work_0} alt="Peintre_work_0" />
                 </div>
 
                 <div>
-                    <img src={save_children_dreams_2_0} alt="Mama_hero_0" />
+                    <img loading='lazy' src={save_children_dreams_2_0} alt="Mama_hero_0" />
                 </div>
                 
             </section>}
@@ -118,11 +118,11 @@ export default function GalleryArt() {
             {/* 5th div  */}
             {height >= 28 && <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
                 <div>
-                    <img src={Aurevoir_0} alt="Aurevoir_0" />
+                    <img loading='lazy' src={Aurevoir_0} alt="Aurevoir_0" />
                 </div>
 
                 <div className='sm:w-full md:w-[90%] lg:w-[80%] xl:w-[65%]'>
-                    <img src={sav_children_dreams_1_0} alt="sav_children_dreams_1_0" />
+                    <img loading='lazy' src={sav_children_dreams_1_0} alt="sav_children_dreams_1_0" />
                 </div>
             </section>}
 
@@ -131,15 +131,15 @@ export default function GalleryArt() {
 
                 <div className='w-full  sm:row-span-2 h-full'>
 
-                    <img  src={yambala_oyo_0} alt="yambala_oyo_0" />
+                    <img loading='lazy'  src={yambala_oyo_0} alt="yambala_oyo_0" />
                 </div>
 
                 <div className='w-full h-full'>
-                    <img src={Mama_sacrifice_0} alt="Mama_sacrifice_0" />
+                    <img loading='lazy' src={Mama_sacrifice_0} alt="Mama_sacrifice_0" />
                 </div>
 
                 <div className='w-full h-full sm:row-start-2 sm:col-start-3'>
-                    <img src={Matadi_kibala_0} alt="" />
+                    <img loading='lazy' src={Matadi_kibala_0} alt="" />
                 </div>
             </section>}
 
@@ -147,11 +147,11 @@ export default function GalleryArt() {
             {  height >= 42  && <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] '>
 
                 <div className='w-full'>
-                    <img src={Apatridie_0_2} alt="Mama_hero_0" />
+                    <img loading='lazy' src={Apatridie_0_2} alt="Mama_hero_0" />
                 </div>
 
                 <div className='lg:w-[60%]  sm:w-[80%] '>
-                    <img src={Livre_monde_0} alt="Peintre_work_0" />
+                    <img loading='lazy' src={Livre_monde_0} alt="Peintre_work_0" />
                 </div>
             </section>}
 
@@ -159,13 +159,13 @@ export default function GalleryArt() {
             { height >= 49  && <section className=' grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-3 px-[10%]'>
 
                 <div className='w-full'>
-                    <img src={Woman_tech_0} alt="Woman_tech_0" />
+                    <img loading='lazy' src={Woman_tech_0} alt="Woman_tech_0" />
                 </div>
                 <div className=' row-start-2 col-start-1 '>
-                    <img src={Woman_warior_0} alt="Woman_warior_0" />
+                    <img loading='lazy' src={Woman_warior_0} alt="Woman_warior_0" />
                 </div>
                 <div  className='h-full w-full row-span-2 justify-center items-center flex'>
-                    <img src={Milele_africa_illustration_Square_0} alt="" />
+                    <img loading='lazy' src={Milele_africa_illustration_Square_0} alt="" />
                 </div>
             </section>}
 
@@ -173,11 +173,11 @@ export default function GalleryArt() {
             { height >= 56  && <section className='grid grid-cols-1 sm:grid-cols-3 sm:flex-row gap-3 px-[10%]'>
 
                 <div className=' sm:col-start-2'>
-                    <img src={Envol_0} alt="save_children_dreams_3_0" />
+                    <img loading='lazy' src={Envol_0} alt="save_children_dreams_3_0" />
                 </div>
 
                 <div className='w-[99%]'>
-                    <img src={Apatridie_0_1} alt="Au_controle_0" />
+                    <img loading='lazy' src={Apatridie_0_1} alt="Au_controle_0" />
                 </div>
             </section>}
 
@@ -185,17 +185,17 @@ export default function GalleryArt() {
             { height >= 63  && <section className=' w-full gap-3 grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 px-[10%] '>
 
                 <div className=' sm:row-span-2'>
-                    <img src={NAZA_MOLONGI_0} alt="NAZA_MOLONGI_0" />
+                    <img loading='lazy' src={NAZA_MOLONGI_0} alt="NAZA_MOLONGI_0" />
                 </div>
                 <div className='lg:w-[60%]  sm:w-[80%] sm:row-start-2 sm:col-start-2'>
-                    <img src={Diplome_0} alt="Diplome_0" />
+                    <img loading='lazy' src={Diplome_0} alt="Diplome_0" />
                 </div>
             </section>}
             
             {/* 11th div  */}
             { height >= 73  && <section className='w-full flex justify-center items-center px-[10%] '>
                 <div className='md:w-[70%] lg:w-[60%]'>
-                    <img src={Covid_atack_0} alt="" />
+                    <img loading='lazy' src={Covid_atack_0} alt="" />
                 </div>
             </section>}
 
@@ -203,11 +203,11 @@ export default function GalleryArt() {
             { height >= 73  && <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
 
                 <div className='lg:w-[88%] '>
-                    <img src={Aides_0} alt="Peintre_work_0" />
+                    <img loading='lazy' src={Aides_0} alt="Peintre_work_0" />
                 </div>
 
                 <div>
-                    <img src={Ungana_0} alt="Mama_hero_0" />
+                    <img loading='lazy' src={Ungana_0} alt="Mama_hero_0" />
                 </div>
                 
             </section>}
@@ -231,20 +231,20 @@ export default function GalleryArt() {
                 <div className='w-full h-full  sm:col-start-1 sm:col-span-3 sm:col-end-3 flex items-center justify-center '>
                     <div className='sm:w-[50%] '>
 
-                        <img  src={CICR_0} alt="" />
+                        <img loading='lazy'  src={CICR_0} alt="" />
                     </div>
                 </div>
 
                 <div className='w-full h-full sm:col-start-3 sm:row-start-1 sm:row-end-3 '>
-                    <img src={Le_retour_0} alt="" />
+                    <img loading='lazy' src={Le_retour_0} alt="" />
                 </div>
 
                 <div className='w-full h-full '>
-                    <img src={Envol_end_0} alt="" />
+                    <img loading='lazy' src={Envol_end_0} alt="" />
                 </div>
 
                 <div className='w-full h-full '>
-                    <img src={Ambouteillage_0} alt="" />
+                    <img loading='lazy' src={Ambouteillage_0} alt="" />
                 </div>
             </section>
 
@@ -252,11 +252,11 @@ export default function GalleryArt() {
             {/* second div  */}
             <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
                 <div className=''>
-                    <img src={ Mama_hero_0} alt="Mama_hero_0" />
+                    <img loading='lazy' src={ Mama_hero_0} alt="Mama_hero_0" />
                 </div>
                 
                 <div className='lg:w-[85%]'>
-                    <img src={Apatridie_0} alt="Apatridie_0" />
+                    <img loading='lazy' src={Apatridie_0} alt="Apatridie_0" />
                 </div>
             </section>
 
@@ -264,15 +264,15 @@ export default function GalleryArt() {
             <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
 
                 <div className='sm:w-[99%]'>
-                    <img src={bye_2022_0} alt="bye_2022_0" />
+                    <img loading='lazy' src={bye_2022_0} alt="bye_2022_0" />
                 </div>
 
                 <div>
-                    <img src={save_children_dreams_3_0} alt="save_children_dreams_3_0" />
+                    <img loading='lazy' src={save_children_dreams_3_0} alt="save_children_dreams_3_0" />
                 </div>
 
                 <div className='w-[99%]'>
-                    <img src={Au_controle_0} alt="Au_controle_0" />
+                    <img loading='lazy' src={Au_controle_0} alt="Au_controle_0" />
                 </div>
             </section>
 
@@ -280,11 +280,11 @@ export default function GalleryArt() {
             <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
 
                 <div className='lg:w-[88%] '>
-                    <img src={Peintre_work_0} alt="Peintre_work_0" />
+                    <img loading='lazy' src={Peintre_work_0} alt="Peintre_work_0" />
                 </div>
 
                 <div>
-                    <img src={save_children_dreams_2_0} alt="Mama_hero_0" />
+                    <img loading='lazy' src={save_children_dreams_2_0} alt="Mama_hero_0" />
                 </div>
                 
             </section>
@@ -292,11 +292,11 @@ export default function GalleryArt() {
             {/* 5th div  */}
             <section className='flex flex-col sm:flex-row gap-3 px-[10%]'>
                 <div>
-                    <img src={Aurevoir_0} alt="Aurevoir_0" />
+                    <img loading='lazy' src={Aurevoir_0} alt="Aurevoir_0" />
                 </div>
 
                 <div className='sm:w-full md:w-[90%] lg:w-[80%] xl:w-[65%]'>
-                    <img src={sav_children_dreams_1_0} alt="sav_children_dreams_1_0" />
+                    <img loading='lazy' src={sav_children_dreams_1_0} alt="sav_children_dreams_1_0" />
                 </div>
             </section>
 
@@ -305,15 +305,15 @@ export default function GalleryArt() {
 
                 <div className='w-full  sm:row-span-2 h-full'>
 
-                    <img  src={yambala_oyo_0} alt="yambala_oyo_0" />
+                    <img loading='lazy'  src={yambala_oyo_0} alt="yambala_oyo_0" />
                 </div>
 
                 <div className='w-full h-full'>
-                    <img src={Mama_sacrifice_0} alt="Mama_sacrifice_0" />
+                    <img loading='lazy' src={Mama_sacrifice_0} alt="Mama_sacrifice_0" />
                 </div>
 
                 <div className='w-full h-full sm:row-start-2 sm:col-start-3'>
-                    <img src={Matadi_kibala_0} alt="" />
+                    <img loading='lazy' src={Matadi_kibala_0} alt="" />
                 </div>
             </section>
 
@@ -321,11 +321,11 @@ export default function GalleryArt() {
              <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] '>
 
                 <div className='w-full'>
-                    <img src={Apatridie_0_2} alt="Mama_hero_0" />
+                    <img loading='lazy' src={Apatridie_0_2} alt="Mama_hero_0" />
                 </div>
 
                 <div className='lg:w-[60%]  sm:w-[80%] '>
-                    <img src={Livre_monde_0} alt="Peintre_work_0" />
+                    <img loading='lazy' src={Livre_monde_0} alt="Peintre_work_0" />
                 </div>
             </section>
 
@@ -333,13 +333,13 @@ export default function GalleryArt() {
             <section className=' grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-3 px-[10%]'>
 
                 <div className='w-full'>
-                    <img src={Woman_tech_0} alt="Woman_tech_0" />
+                    <img loading='lazy' src={Woman_tech_0} alt="Woman_tech_0" />
                 </div>
                 <div className=' row-start-2 col-start-1 '>
-                    <img src={Woman_warior_0} alt="Woman_warior_0" />
+                    <img loading='lazy' src={Woman_warior_0} alt="Woman_warior_0" />
                 </div>
                 <div  className='h-full w-full row-span-2 justify-center items-center flex'>
-                    <img src={Milele_africa_illustration_Square_0} alt="" />
+                    <img loading='lazy' src={Milele_africa_illustration_Square_0} alt="" />
                 </div>
             </section>
 
@@ -347,11 +347,11 @@ export default function GalleryArt() {
             <section className='grid grid-cols-1 sm:grid-cols-3 sm:flex-row gap-3 px-[10%]'>
 
                 <div className=' sm:col-start-2'>
-                    <img src={Envol_0} alt="save_children_dreams_3_0" />
+                    <img loading='lazy' src={Envol_0} alt="save_children_dreams_3_0" />
                 </div>
 
                 <div className='w-[99%]'>
-                    <img src={Apatridie_0_1} alt="Au_controle_0" />
+                    <img loading='lazy' src={Apatridie_0_1} alt="Au_controle_0" />
                 </div>
             </section>
 
@@ -359,17 +359,17 @@ export default function GalleryArt() {
             <section className=' w-full gap-3 grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 px-[10%] '>
 
                 <div className=' sm:row-span-2'>
-                    <img src={NAZA_MOLONGI_0} alt="NAZA_MOLONGI_0" />
+                    <img loading='lazy' src={NAZA_MOLONGI_0} alt="NAZA_MOLONGI_0" />
                 </div>
                 <div className='lg:w-[60%]  sm:w-[80%] sm:row-start-2 sm:col-start-2'>
-                    <img src={Diplome_0} alt="Diplome_0" />
+                    <img loading='lazy' src={Diplome_0} alt="Diplome_0" />
                 </div>
             </section>
             
             {/* 11th div  */}
             <section className='w-full flex justify-center items-center px-[10%] '>
                 <div className='md:w-[70%] lg:w-[60%]'>
-                    <img src={Covid_atack_0} alt="" />
+                    <img loading='lazy' src={Covid_atack_0} alt="" />
                 </div>
             </section>
 
@@ -377,11 +377,11 @@ export default function GalleryArt() {
             <section className=' w-full gap-3 flex flex-col sm:flex-row px-[10%] sm:px-[13%]'>
 
                 <div className='lg:w-[88%] '>
-                    <img src={Aides_0} alt="Peintre_work_0" />
+                    <img loading='lazy' src={Aides_0} alt="Peintre_work_0" />
                 </div>
 
                 <div>
-                    <img src={Ungana_0} alt="Mama_hero_0" />
+                    <img loading='lazy' src={Ungana_0} alt="Mama_hero_0" />
                 </div>
                 
             </section>

@@ -22,7 +22,7 @@ export default function DesignGraphiqueCom ({image, hImage, name, text, link, bg
 
         {/* Image  */}
         <div className="w-full justify-center items-center flex">
-                <img src={image} alt="Id_Vieuellelogo" className={hImage} />
+                <img loading='lazy' src={image} alt="Id_Vieuellelogo" className={hImage} />
         </div>
     </section>
     );
