@@ -187,7 +187,7 @@ function GrapicDesignDetails ({images, text, title, state, hideDetails }) {
             {/* section texte  */}
             <section className='w-full h-full flex items-center   '>
                 <section className='text-left flex flex-col gap-3 '>
-                    <h1 className='font-bold text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] leading-4 sm:leading-5 md:leading-6 text-[rgb(230,227,255)]'>{title}</h1>
+                    <h1 className='font-bold text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] leading-6 sm:leading-7 md:leading-8 lg:leading-9 text-[rgb(230,227,255)]'>{title}</h1>
                     <p className='text-[0.75rem] sm:text-[0.8rem] md:text-[1rem] md:leading-6 text-gray-100 w-full sm:w-[80%]'> {text}</p>
                 </section>
             </section>
