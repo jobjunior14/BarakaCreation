@@ -2,14 +2,15 @@ import Accueil_Illustration_phone1 from '../../../assets/Services/Illustration/A
 import illustration_emotion from '../../../assets/Services/Illustration/illustration_emotion.jpg';
 import Illustration_vectoriel from '../../../assets/Services/Illustration/Illustration_vectoriel.jpg';
 import Illustration_excellence from '../../../assets/Services/Illustration/Illustration_excellence.jpg';
-import illustration_couverture from '../../../assets/Services/Illustration/illustration_couverture.jpg';
-import illustratio_livre from '../../../assets/Services/Illustration/illustratio_livre.jpg';
-import illustration_bd_ok from '../../../assets/Services/Illustration/illustration_bd_ok.jpg';
+import illustration_couverture_new from '../../../assets/Services/Illustration/illustration_couverture_new.jpg';
+import illustration_livre_new from '../../../assets/Services/Illustration/illustration_livre_new.jpg';
+import illustration_bd_new from '../../../assets/Services/Illustration/illustration_bd_new.jpg';
+import Illustration_concept_art_new from '../../../assets/Services/Illustration/Illustration_concept_art_new.jpg';
 import illustration_campagne from '../../../assets/Services/Illustration/illustration_campagne.jpg';
-import illustration_mascotte from '../../../assets/Services/Illustration/illustration_mascotte.jpg';
-import illustration_web from '../../../assets/Services/Illustration/illustration_web.jpg';
+import illustration_mascotte_new from '../../../assets/Services/Illustration/illustration_mascotte_new.jpg';
+import illustration_web_new from '../../../assets/Services/Illustration/illustration_web_new.jpg';
 import Illustration_concept_art_1 from '../../../assets/Services/Illustration/Illustration_concept_art_1.png';
-import illustratration_concept_art_story_board from '../../../assets/Services/Illustration/illustratration_concept_art_story_board.jpg';
+import illustratration_concept_art_story_board_new from '../../../assets/Services/Illustration/illustratration_concept_art_story_board_new.jpg';
 import Illustration_concept_art_3 from '../../../assets/Services/Illustration/Illustration_concept_art_1.jpg';
 import Illustration_concept_art_5 from '../../../assets/Services/Illustration/Illustration_concept_art_5.jpg';
 import Accueil_illustration from '../../../assets/Services/Illustration/Accueil_illustration.jpg';
@@ -98,7 +99,7 @@ export default function Illustation () {
         {/* second text  */}
         <section className='w-full px-[10%] sm:justify-center sm:items-center flex flex-col gap-2 sm:gap-5 py-10 bg-slate-100'>
             <h1 className='text-left sm:text-center font-bold text-[1.25rem] sm:text-[1.38rem] md:text-[1.5rem] lg:text-[1.65rem] leading-5 text-gray-500'> Vous avez un <br className='sm:hidden'/> projet complexe ?</h1>
-            <p className=' w-[70%] sm:w-[50%] md:w-[40%]  text-left sm:text-center font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  '>Nous proposons un package complet des suppots : de l&apos;illustration éditoiale, aux campagnes passant par le web et <Link to='../' className='text-blue-500'> concept art {'>'}</Link></p>
+            <p className=' w-[70%] sm:w-[50%] md:w-[40%]  text-left sm:text-center font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  '>Nous proposons un package complet des suppots : de l&apos;illustration éditoiale, aux campagnes passant par le web et <Link to='/contacts' className='text-blue-500'> concept art {'>'}</Link></p>
         </section>
 
         {/* section illustration editorial  */}
@@ -111,43 +112,43 @@ export default function Illustation () {
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-3 w-full'>
 
                     {/* Courverture  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg pb-5'>
-                        <div className='w-[60%] '>
-                            <img loading='lazy' src={illustration_couverture} alt="illustration_couverture" />
+                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
+                        <div className='w-full '>
+                            <img loading='lazy' src={illustration_couverture_new} alt="illustration_couverture" className='rounded-lg' />
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center'>
+                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-700'>Courverture</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour démarquer et rendre captivant les livres, romans, magazines</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
                     
 
                     {/* Livre MAnuel  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-[rgb(245,246,248)] rounded-lg pb-5'>
-                        <div className='w-full flex items-start'>
-                            <div className='w-[60%] justify-start items-start overflow-hidden '>
-                                <img loading='lazy' src={illustratio_livre} alt="illustratio_livre" className='scale-[1.3]'/>
-                            </div>
+                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
+
+                        <div className='w-full '>
+                            <img loading='lazy' src={illustration_livre_new} alt="illustratio_livre" className='rounded-lg'/>
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center z-40'>
+
+                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-700'>Livre / manuel </h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour raconter les histoires et pour illustrer parfaitement votre contenu</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
 
                     {/* bande Desinnée  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg pb-5'>
-                        <div className='w-[60%] '>
-                            <img loading='lazy' src={illustration_bd_ok} alt="illustration_couverture" />
+                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
+                        <div className='w-full '>
+                            <img loading='lazy' src={illustration_bd_new} alt="illustration_couverture" className='rounded-lg' />
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center'>
+                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-700'>Bande dessinée</h1>
-                            <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Nous vous accompagnons durant tout le processus, du briefing à la réalisation passant par le storyboard</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <p className='w-[90%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Nous vous accompagnons durant tout le processus, du briefing à la réalisation passant par le storyboard</p>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
@@ -161,34 +162,34 @@ export default function Illustation () {
                         <div className='w-full '>
                             <img loading='lazy' src={illustration_campagne} alt="illustration_couverture" className='rounded-lg' />
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-5'>
+                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-100'>Campagne</h1>
                             <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Nous créons des images captivantes de haute résolution qui illustrent parfaitement votre message</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
 
                     {/* MAscote  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg pb-5 relative'>
-                        <div className='w-[60%] '>
-                            <img loading='lazy' src={illustration_mascotte} alt="illustration_mascotte" className='rounded-lg' />
+                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
+                        <div className='w-full '>
+                            <img loading='lazy' src={illustration_mascotte_new} alt="illustration_mascotte" className='rounded-lg' />
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center'>
+                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-700'>Mascotte</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour créer un lien affectif entre votre cible et votre marque ou évènement.</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
 
                     {/* campagnes  */}
                     <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
                         <div className='w-full '>
-                            <img loading='lazy' src={illustration_web} alt="illustration_web" className='rounded-lg' />
+                            <img loading='lazy' src={illustration_web_new} alt="illustration_web" className='rounded-lg' />
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-5'>
+                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-100'>Web</h1>
                             <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Illustrations simples et attrayante, création des icones personnalisées, gestion du design de site/ apps</p>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
                 </div>
@@ -219,11 +220,11 @@ export default function Illustation () {
                 </section>
             </section>
 
-            <div className='w-full  grid grid-cols-1 md:grid-cols-2 '>
+            <div className='w-full gap-3  grid grid-cols-1 md:grid-cols-2 '>
 
                 {/* story bord  */}
                 <section className='relative items-center flex flex-col justify-center px-[2%]'>
-                    <img loading='lazy' src={illustratration_concept_art_story_board} alt="illustratration_concept_art_story_board" className='rounded-lg' />
+                    <img loading='lazy' src={illustratration_concept_art_story_board_new} alt="illustratration_concept_art_story_board" className='rounded-lg' />
 
                     <div className='w-full relative'>
                         <div className='rounded-b-lg bottom-0 absolute pt-20 bg-gradient-to-t w-full from-bgCertifier from-20% h-[150px]'>
@@ -245,11 +246,11 @@ export default function Illustation () {
             </div>
 
             {/* Creation environement  */}
-            <section className='relative h-[300px] md:h-auto items-center flex flex-col justify-center px-[2%] overflow-hidden '>
+            <section className='relative items-center flex flex-col justify-center px-[2%] overflow-hidden '>
 
-                <div className=' overflow-hidden w-full h-full pr-[20% pt-[5%]'>
+                <div className=' overflow-hidden w-full h-full'>
 
-                    <img loading='lazy' src={Illustration_concept_art_5} alt="Illustration_concept_art_2" className='rounded-lg scale-[3] mr-[6.25rem] md:mr-0 md:scale-[1]' />
+                    <img loading='lazy' src={ width >= 640 ? Illustration_concept_art_5 : Illustration_concept_art_new} alt="Illustration_concept_art_2" className='rounded-lg' />
                 </div>
 
                 <div className='w-full relative md:hidden'>
@@ -273,8 +274,8 @@ export default function Illustation () {
                 </div>
 
                 <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>
-                    <Link to='../' className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</Link>
-                    <Link to='../' className=' py-1 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander&nbsp;un&nbsp;devis </Link>
+                    <Link to='/contacts' className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</Link>
+                    <Link to='/contacts' className=' py-1 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander&nbsp;un&nbsp;devis </Link>
                 </div>
             </section>
 

@@ -23,10 +23,16 @@ import Haut_21 from '../../assets/Publication/Haut/Haut_21.jpg';
 import Haut_22 from '../../assets/Publication/Haut/Haut_22.jpg';
 import Haut_23 from '../../assets/Publication/Haut/Haut_23.jpg';
 import Haut_24 from '../../assets/Publication/Haut/Haut_24.jpg';
-import ImageSlider from "./comp/imageSlider"
+import haut_Publication from '../../assets/Publication/Haut/haut_Publication.jpg';
+import Fin_slide_Publication from '../../assets/Publication/Fin_slide_Publication.jpg';
+import Fin_2_Publication from '../../assets/Publication/Fin_2_Publication.jpg';
+import ImageSlider from "./comp/imageSlider";
+import Haut_music from '../../assets/Musics/Haut_music.mp3'
 export default function Haut () {
 
     const images = [
+        Fin_slide_Publication,
+        haut_Publication,
         Haut_1,
         Haut_2,
         Haut_3,
@@ -52,11 +58,13 @@ export default function Haut () {
         Haut_22,
         Haut_23,
         Haut_24,
+        Fin_2_Publication
     ]
     return (<>
         <ImageSlider
         images={images}
         title={'Haut'}
+        audio={Haut_music}
     />
     </>)
 }

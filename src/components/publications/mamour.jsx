@@ -19,11 +19,17 @@ import mamour_14 from '../../assets/Publication/Mamour/mamour_14.jpg';
 import mamour_15 from '../../assets/Publication/Mamour/mamour_15.jpg';
 import mamour_15_2 from '../../assets/Publication/Mamour/mamour_15_2.jpg';
 import mamour_16 from '../../assets/Publication/Mamour/mamour_16.jpg';
-import m1 from '../../assets/Musics/m1.mp3';
+import Mamour_Publication from '../../assets/Publication/Mamour/Mamour_Publication.jpg';
+import Mamour_fin_Publication from '../../assets/Publication/Mamour/Mamour_fin_Publication.jpg';
+import Fin_slide_Publication from '../../assets/Publication/Fin_slide_Publication.jpg';
+
+import Mamour_music from '../../assets/Musics/Mamour_music.mp3';
 import ImageSlider from "./comp/imageSlider";
 export default function Mamour () {
 
     const images = [
+        Fin_slide_Publication,
+        Mamour_Publication,
         mamour_1,
         mamour_1_2,
         mamour_2,
@@ -44,7 +50,8 @@ export default function Mamour () {
         mamour_14,
         mamour_15,
         mamour_15_2,
-        mamour_16
+        mamour_16,
+        Mamour_fin_Publication,
     ]
 
     return (<>
@@ -52,7 +59,7 @@ export default function Mamour () {
         <ImageSlider
             images={images}
             title={'Mamour'}
-            audio={m1}
+            audio={Mamour_music}
         />
     </>)
 }

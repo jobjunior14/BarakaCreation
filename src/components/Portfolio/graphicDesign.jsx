@@ -277,7 +277,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2023  
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187576357/Smart-touch'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187576357/Smart-touch'}> Voir plus {'>'}</Link>
                         </span>
                         
                     } 
@@ -335,7 +335,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2022  
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={' https://www.behance.net/gallery/146328443/Centenaire-CEPAC'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={' https://www.behance.net/gallery/146328443/Centenaire-CEPAC'}> Voir plus {'>'}</Link>
                         </span>
                         
                     } 
@@ -356,7 +356,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2021  
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/148524221/NYOTA-branding'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/148524221/NYOTA-branding'}> Voir plus {'>'}</Link>
                         </span>
                         
                     } 
@@ -396,7 +396,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2023  
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187006411/Malabar-Branding'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187006411/Malabar-Branding'}> Voir plus {'>'}</Link>
                         </span>
                         
                     } 
@@ -415,7 +415,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2023  
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187618233/Eco-building'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187618233/Eco-building'}> Voir plus {'>'}</Link>
                         </span> 
                     } 
                 hideDetails={hideDetails} 
@@ -447,7 +447,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2022  
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/145692749/Idemboxes-branding'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/145692749/Idemboxes-branding'}> Voir plus {'>'}</Link>
                         </span> 
                     } 
                 hideDetails={hideDetails} 
@@ -465,7 +465,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2022  
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/144789099/Mon-Plongeur-Log'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/144789099/Mon-Plongeur-Log'}> Voir plus {'>'}</Link>
                         </span> 
                     } 
                 hideDetails={hideDetails} 
@@ -481,7 +481,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2023  
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187006411/Malabar-Branding'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/187006411/Malabar-Branding'}> Voir plus {'>'}</Link>
                         </span> 
                     } 
                 hideDetails={hideDetails} 
@@ -588,7 +588,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2021
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/142026037/ODEJ-identit-visuelle'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/142026037/ODEJ-identit-visuelle'}> Voir plus {'>'}</Link>
                         </span> 
                     } 
                 hideDetails={hideDetails} 
@@ -606,7 +606,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2021
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/137788319/DHAD-Logo-Identit-visuelle'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/137788319/DHAD-Logo-Identit-visuelle'}> Voir plus {'>'}</Link>
                         </span> 
                     } 
                 hideDetails={hideDetails} 
@@ -710,7 +710,7 @@ export default function ImageGraphiqueDesign () {
                         Année | 2022
                         <br/>
                         <br />
-                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/151139925/UIBEC-Logo-design'}> Behance {'>'}</Link>
+                        <Link className=' text-blue-500' to={'https://www.behance.net/gallery/151139925/UIBEC-Logo-design'}> Voir plus {'>'}</Link>
                         </span> 
                     } 
                 hideDetails={hideDetails} 

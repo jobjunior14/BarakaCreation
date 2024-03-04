@@ -1,7 +1,7 @@
 import DesignGraphiqueCom from './comp/util';
 import Accueildesigngr1 from '../../../assets/Accueil/Accueildesigngr1.jpg';
 import Accueildesigngr2 from '../../../assets/Accueil/Accueildesigngr2.jpg';
-import Design_graphic_title from  '../../../assets/Services/Design graphique/Design_graphic_title.png';
+import Design_graphic_title from  '../../../assets/Services/Design graphique/filecreative_3.jpg';
 import campagne from  '../../../assets/Services/Design graphique/campagne.jpg';
 import evenementiel from  '../../../assets/Services/Design graphique/evenementiel.jpg';
 import Presentation from  '../../../assets/Services/Design graphique/Presentation.jpg';
@@ -37,7 +37,7 @@ export default function GraphiqueDesign () {
                     <img loading='lazy' src={Accueildesigngr1} alt='Accueildesigngr1' className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem]' />
                 </div>
 
-                <div className='px-[5%]'>
+                <div className='px-[5%] md:px-[6%]'>
                     <img loading='lazy' src={Design_graphic_title} alt="" className='' />
                 </div>
 

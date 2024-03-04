@@ -43,6 +43,7 @@ export default function ImageSlider ({images, title, audio}) {
     const nextImage = () =>  {
         setIndex ( prev => {
             
+            // sync the audio and the image 
             audioRef.current.currentTime = ((prev === (images.length - 1 ) * 100 ? 0 : prev + 100) / 100) * 6;
             return prev === (images.length - 1 ) * 100 ? 0 : prev + 100;
         });
@@ -67,10 +68,7 @@ export default function ImageSlider ({images, title, audio}) {
     //set the orientation of the screen to landscape if we are under 640px
     const width = useWindowWidth();
 
-    //side effect to not re render all the image to improve performance
-    const myImages = useCallback(() => {
-        return images.map((prev, index) => <img loading='lazy' key={index} src={prev} alt="image"/>);
-    }, [images]);
+    
 
     //state to mute background music or not 
     const [mute, setMute] = useState(false);
@@ -97,7 +95,7 @@ export default function ImageSlider ({images, title, audio}) {
 
         if (canPlay === 1) {
 
-            setIndex( prev => prev = 0);
+            setIndex( prev => 0);
         }
     }, [canPlay])
 
@@ -132,6 +130,9 @@ export default function ImageSlider ({images, title, audio}) {
     };
 
     const circleDiv = images.map((prev, myIndex) => <div key={index + prev} onClick={() => {setIndex(myIndex * 100); audioRef.current.currentTime = myIndex * 6}} className={` w-[100%] h-[3px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === (myIndex * 100) ? 'bg-gray-50' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div> );
+
+    //side effect to not re render all the image to improve performance
+    const myImages = images.map((prev, myIndex) => <img loading='lazy' key={myIndex} src={prev} alt="image" className={` transition top-0 left-0 duration-[2500ms] delay-200 ease-in-out   ${index === (myIndex * 100) ? 'opacity-100' : ' opacity-0 absolute' }`}/>);
 
     /////////////set the image div to the full  screen //////////////////////////////////
     const [fullSreen, setFullScreen] = useState(false);
@@ -191,16 +192,16 @@ export default function ImageSlider ({images, title, audio}) {
             <p className="text-gray-200 text-xs font-semibold">Roter votre téléphone pour un meilleur visionnage  </p>
         </div>}
         {/* section image */}
-        <section  className="w-full relative flex justify-center overflow-hidden items-center gap-2">
+        <section  className="w-full relative flex overflow-hidden justify-center items-center gap-2">
 
-            <div onClick={ (e) => handleShowController (e)} className='w-full flex duration-[1000ms] delay-300' style={{transform: `translateX(${-index}%)`}} >
-               {myImages() }
+            <div onClick={ (e) => handleShowController (e)} className='w-full flex duration-[1000ms] delay-300 relative' >
+               {myImages}
             </div>
 
              {/* div to prev or next images  */}
             <div className=' absolute bottom-5 flex items-center duration-500 justify-evenly  w-full px-5' style={{transform: !hideVideoController ? `translateY(20vh)` : `translateY(0%)`}}>
                 
-                <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] bg-slate-100 bg-opacity-25 items-center justify-center rounded-full  duration-200 cursor-pointer pr-[4px] border border-gray-600 flex' onClick={() => {prevImage()}}>
+                <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] bg-gray-600 bg-opacity-45 items-center justify-center rounded-full  duration-200 cursor-pointer pr-[4px] border border-gray-600 flex' onClick={() => {prevImage()}}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-20 h-20 text-gray-200  ">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
@@ -208,7 +209,7 @@ export default function ImageSlider ({images, title, audio}) {
                 </div>
                 
                 
-                <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] bg-slate-100 bg-opacity-25 items-center justify-center rounded-full  duration-200 cursor-pointer pl-[4px] border border-gray-600 flex' onClick={ () => {nextImage()}}>
+                <div className='md:w-[35px] md:h-[35px] sm:w-[1.875rem] sm:h-[1.875rem] w-[25px] h-[25px] bg-gray-600 bg-opacity-45 items-center justify-center rounded-full  duration-200 cursor-pointer pl-[4px] border border-gray-600 flex' onClick={ () => {nextImage()}}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-20 h-20 text-gray-200 ">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
