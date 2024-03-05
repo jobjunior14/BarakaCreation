@@ -49,7 +49,7 @@ export default function GalleryArt() {
 
     if (width <= 640) {
 
-        return (<section className='pt-10 flex flex-col gap-3'>
+        return (<section className='pt-10 flex flex-col gap-3 bg-gray-100'>
             
             {/* first div  */}
             <section className='w-full  grid sm:grid-rows-2 grid-cols-1 sm:grid-cols-3 gap-3 px-[10%]'>
@@ -214,8 +214,8 @@ export default function GalleryArt() {
 
             <section className='w-full flex items-end justify-end sticky bottom-5 px-[2%] py-[3%]'>
 
-                <div onClick={() => document.documentElement.scrollTop = 0} className={`p-1 border border-gray-400 bg-gray-400 rounded-full cursor-pointer`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-5 h-5 white`}>
+                <div onClick={() => document.documentElement.scrollTop = 0} className={`p-1 border border-gray-400 bg-black shadow-2xl rounded-full cursor-pointer`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-5 h-5 text-white`}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
                     </svg>
@@ -223,7 +223,7 @@ export default function GalleryArt() {
             </section>
         </section>)
     } else {
-        return (<section className='pt-10 flex flex-col gap-3'>
+        return (<section className='pt-10 flex flex-col gap-3 bg-gray-100'>
             
             {/* first div  */}
             <section className='w-full  grid sm:grid-rows-2 grid-cols-1 sm:grid-cols-3 gap-3 px-[10%]'>
@@ -388,8 +388,8 @@ export default function GalleryArt() {
 
             <section className='w-full flex items-end justify-end sticky bottom-5 px-[2%] py-[3%]'>
 
-                <div onClick={() => document.documentElement.scrollTop = 0} className={`p-1 border border-gray-400 bg-gray-400 rounded-full cursor-pointer`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-5 h-5 white`}>
+                <div onClick={() => document.documentElement.scrollTop = 0} className={`p-1 border border-gray-400 bg-black shadow-2xl rounded-full cursor-pointer`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-5 h-5 text-white`}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
                     </svg>

@@ -1,6 +1,5 @@
 import SecondeNav, {OnTopBtn} from '../identite_visuel/comp/util';
 import { Link } from 'react-router-dom';
-import Mise_en_page_icone_4 from '../../../assets/Services/Design graphique/Mise_en_page_icone_4.png';
 import Web_design from '../../../assets/Services/Design graphique/Web_design.png';
 import web_design from '../../../assets/Services/Design graphique/web_design.jpg';
 import web_fluide from '../../../assets/Services/Design graphique/web_fluide.png';
@@ -34,9 +33,9 @@ export default function WebDesign() {
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full z-40 -mt-5 md:-mt-10  '>
                         
-                        <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                        <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-3 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'/portfolio'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 

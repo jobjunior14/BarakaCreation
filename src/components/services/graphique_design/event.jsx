@@ -47,9 +47,9 @@ export default function Event() {
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full  '>
                         
-                        <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                        <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-2  rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'/portfolio'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 
@@ -66,14 +66,14 @@ export default function Event() {
 
                 {/* first paragraph  */}
                 <section className='px-[10%] md:px-0 w-[90%] '>
-                    <p className='text-left font-[500] text-gray-700 text-[0.875rem] sm:text-[15px] md:text-[17px] lg:text-[24px] leading-5 lg:leading-7  sm:w-[65%] md:w-[90%]'>
+                    <p className='text-left font-[500] text-gray-700 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[65%] md:w-[90%]'>
                         Baraka creation s&apos;occupe de tous types d&apos;outils de communication dont vous pouiez avoir besoin pour la réussite de vos événements . Nous concevons des suppots avec rapidité, efficacité et un résultat impeccable
                     </p>
                 </section>
 
                 {/* second paragraph  */}
                 <section className='px-[10%] md:px-0 w-[90%] '>
-                    <p className='text-left font-[500] text-gray-400 text-[0.875rem] sm:text-[15px] md:text-[17px] lg:text-[24px] leading-5 lg:leading-7  sm:w-[75%] md:w-full '>
+                    <p className='text-left font-[500] text-gray-400 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[75%] md:w-full '>
                         Nous vous accompagnons durant tout le processus, de la définition de votre plan de communication à la réalisation de votre événement, passant par la conception des suppots, la création d&apos;une ligne graphique personnalisée et les impressions.
                     </p>
                 </section>

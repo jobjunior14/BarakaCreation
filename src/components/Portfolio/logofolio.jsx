@@ -241,8 +241,13 @@ export default function Logofolio () {
     };
     
     //all the static images
-    const images = [Logo_AED_2, 
-        Logo_Architectonic_2,
+    const images = [
+        Logo_Malabar_1,
+        Logo_Fojed_1,
+        Logo_Idemboxes_1,
+        Logo_ONT_1,
+        Logo_Nyota_1,
+        Logo_AED_2, 
         Logo_Zali_1,
         Logo_Transformation_church_1,
         Logo_Odej_1,
@@ -256,8 +261,6 @@ export default function Logofolio () {
         Logo_FPEF_1,
         Logo_Entreprenher_1,
         Logo_cepac_1,
-        Logo_ONT_1,
-        Logo_Nyota_1,
         logo_elenge_1,
         Logo_DHAD_1,
         Logo_Architectonic_1,
@@ -266,50 +269,74 @@ export default function Logofolio () {
         Logo_Santé_et_moi_1,
         Logo_SLIGRA_1,
         Logo_Impactpub_1,
-        Logo_Idemboxes_1,
         Logo_VMH_1,
         Logo_UK_DRC_Forum_1,
         Logo_Extreme_holding_1,
         Logo_Mobc_1,
-        Logo_Malabar_1,
         Logo_Lafamiliya_1,
-        Logo_Fojed_1,
         Logo_Ecobuilding_1,
         Logo_centenaire_cepac_1,
         Logo_Afrique_millenaire_1,
     ];
 
     // array to map returnung jsx element////////////
-    const [mainImages, setMainImages] = useState([Logo_AED_2,
-        Logo_Architectonic_2,
-        Logo_Zali_1,
-        Logo_Transformation_church_1,
-        Logo_Odej_1,
-        Logo_sos_libota_1
+    const [mainImages, setMainImages] = useState([
+        Logo_Malabar_1,
+        Logo_Fojed_1,
+        Logo_Idemboxes_1,
+        Logo_ONT_1,
     ]);
 
     // all logo details  
     const logoDetails = [
-        
+
         {
-            images: [Logo_AED_1, Logo_AED_3, Logo_AED_2],
-            title: 'AED',
-            text: <span>Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
-                    conception du logo. Nous vous avons créé le logo de l&apos;AED.
+            images: [Logo_Malabar_3, Logo_Malabar_2, Logo_Malabar_1],
+            title: 'Malabar',
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Malabar tout au long du processus du briefing à la création du logo officiel",
+        },
+        {
+            images: [Logo_Fojed_3, Logo_Fojed_2, Logo_Fojed_1],
+            title: 'FOJED+',
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation FOJED+ tout au long du processus du briefing à la création du logo officiel",
+        },
+
+        {
+            images: [Logo_Idemboxes_3, Logo_Idemboxes_2, Logo_Idemboxes_1],
+            title: 'Idemboxes',
+            text: <span>
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
+                conception du logo. Nous vous accompagné l&apos;agence de communication digitale
+                Idemboxes tout au long du processus, du briefing à la création du nouveau logo.
             </span>
         },
         {
-            images: [Logo_Architectonic_1, Logo_Architectonic_2, Logo_Architectonic_3],
-            title: 'Architectonic',
-            text: <span>Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
-            conception du logo. Nous vous accompagné la maison de construction Architectonic
-            tout au long du processus, du briefing à la création du logo. </span>
+            images: [Logo_ONT_3, Logo_ONT_2, Logo_ONT_1],
+            title: 'ONT RDC',
+            text: <span>Dans le cadre du renouvellement de son image de marque, Nous avons créé un
+                nouveau logo de l&apos;Office National de Tourisme RDC Se portant sur l&apos;analyse de son
+                cible et notre connaissance en communication visuelle.</span>
         },
+
+        {
+            images: [Logo_Nyota_3, Logo_Nyota_2, Logo_Nyota_1],
+            title: 'Nyota Presidential',
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
+        },
+
+        {
+            images: [Logo_AED_1, Logo_AED_3, Logo_AED_2],
+            title: 'AED',
+            text: <span>Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
+                    conception du logo. Nous vous avons créé le logo de l&apos;AED.
+            </span>
+        },
+      
         {
             images: [Logo_Zali_3, Logo_Zali_2, Logo_Zali_1],
             title: 'Zali',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné l&apos;entreprise Zali tout au long du
                 processus, du briefing à la création du logo officiel.
             </span>
@@ -318,46 +345,46 @@ export default function Logofolio () {
             images: [Logo_Transformation_church_3, Logo_Transformation_church_2, Logo_Transformation_church_1],
             title: 'Transformation church',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous vous accompagné l&apos;église britannique transformation
                 Church tout au long du processus, du briefing à la création du logo officiel.
             </span>
         },
         {
             images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
-            title: 'ODJ asbl',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
+            title: 'ODEJ asbl',
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation ODEJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_sos_libota_3, Logo_sos_libota_2, Logo_sos_libota_1],
             title: 'SoS Libota',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation SOS Libota  tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation SOS Libota  tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Smart_touch_1, Logo_Smart_touch_2, Logo_Smart_touch_3],
             title: 'Smart Touch',
-            text: "Le coeur de l'ide``nté visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'entreprise Smart Touch tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identinté visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Smart Touch tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_uibec_3, Logo_uibec_2, Logo_uibec_1],
             title: 'UIBEC',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'agence UIBEC tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'agence UIBEC tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_TF_School_3, Logo_TF_School_2, Logo_TF_School_1],
             title: 'Tout Facile Studio',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés la maison de production Tout Facile Studio tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné la maison de production Tout Facile Studio tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_synergy_3, Logo_synergy_2, Logo_synergy_1],
             title: 'Synergy',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'entreprise Synergy tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Synergy tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_SLIGRA_3, Logo_SLIGRA_1, Logo_SLIGRA_2],
             title: 'SLIGRA',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné la maison FILGO tout au long du
                 processus, du briefing à la création du logo officiel du salon du livre des grands-lacs
                 SLIGRA en cigle.
@@ -368,7 +395,7 @@ export default function Logofolio () {
             images: [Logo_plus_pres_de_moi_3, Logo_plus_pres_de_moi_2, Logo_plus_pres_de_moi_1],
             title: 'Plus près de moi',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné la FOJED tout au long du processus,
                 du briefing à la création du logo du programme Plus après de moi.
             </span>
@@ -376,7 +403,7 @@ export default function Logofolio () {
         {
             images: [Logo_FPEF_3, Logo_FPEF_2, Logo_FPEF_1],
             title: 'FPEF',
-            text: <span>Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+            text: <span>Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous vous avons créé le logo du FPEF RDC.
                 </span>
         },
@@ -384,7 +411,7 @@ export default function Logofolio () {
             images: [Logo_Entreprenher_3, Logo_Entreprenher_2, Logo_Entreprenher_1],
             title: 'EntreprenHer',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné l&apos;entreprise Entreprenher RDC tout au
                 long du processus, du briefing à la création du nouveau logo.
             </span>
@@ -393,30 +420,19 @@ export default function Logofolio () {
             images: [Logo_cepac_3, Logo_cepac_2, Logo_cepac_1],
             title: 'CEPAC',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné la Communauté des Eglises de
                 Pentecôtes en Afrique Central, CEPAC en cigle tout au long du processus, du
                 briefing à la création du nouveau logo.
             </span>
         },
-        {
-            images: [Logo_ONT_3, Logo_ONT_2, Logo_ONT_1],
-            title: 'ONT RDC',
-            text: <span>Dans le cadre du renouvellement de son image de marque, Nous avons créé un
-                nouveau logo de l&apos;Office National de Tourisme RDC Se portant sur l&apos;analyse de son
-                cible et notre connaissance en communication visuelle.</span>
-        },
-        {
-            images: [Logo_Nyota_3, Logo_Nyota_2, Logo_Nyota_1],
-            title: 'Nyota Presidential',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
-        },
+        
         {
             images: [logo_elenge_3, logo_elenge_2, logo_elenge_1],
-            title: 'ODJ asbl',
+            title: 'Elenga Mibatela',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
-                conception du logo. Nous vous accompagné la boutique Nyota presidential tout au
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
+                conception du logo. Nous vous accompagné l&apos;organisation Elenga Mibatela presidential tout au
                 long du processus, du briefing à la création du nouveau logo.
             </span>
         },
@@ -424,7 +440,7 @@ export default function Logofolio () {
             images: [Logo_DHAD_3, Logo_DHAD_2, Logo_DHAD_1],
             title: 'DHAD',
             text:<span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné l&apos;organisation de Développement
                 Humanitaire des Actions Durables, DHAD en cigle tout au long du processus, du
                 briefing à la création du logo officiel.
@@ -434,7 +450,7 @@ export default function Logofolio () {
             images: [Logo_Architectonic_3, Logo_Architectonic_2, Logo_Architectonic_1],
             title: 'Architectonic',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous vous accompagné la maison de construction Architectonic
                 tout au long du processus, du briefing à la création du logo.
             </span>
@@ -443,25 +459,25 @@ export default function Logofolio () {
             images: [Logo_Baraka_creation_3, Logo_Baraka_creation_2, Logo_Baraka_creation_1],
             title: 'Baraka creation',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logotype.
             </span>
         },
         {
             images: [Logo_Mon_plongeur_3, Logo_Mon_plongeur_2, Logo_Mon_plongeur_1],
             title: 'Mon plongeur',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'entreprise Mon plongeur tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Mon plongeur tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Santé_et_moi_3, Logo_Santé_et_moi_2, Logo_Santé_et_moi_1],
             title: 'Santé et moi',
-            text: "Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la conception du logo. Nous avons conçu le logo de la plateforme digitale Santé et moi",
+            text: "Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la conception du logo. Nous avons conçu le logo de la plateforme digitale Santé et moi",
         },
         {
             images: [Logo_SLIGRA_3, Logo_SLIGRA_2, Logo_SLIGRA_1],
             title: 'SLIGRA',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné la maison FILGO tout au long du
                 processus, du briefing à la création du logo officiel du salon du livre des grands-lacs
                 SLIGRA en cigle.
@@ -470,22 +486,14 @@ export default function Logofolio () {
         {
             images: [Logo_Impactpub_3, Logo_Impactpub_2, Logo_Impactpub_1],
             title: 'ImpactPub',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'agence marketing tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'agence marketing tout au long du processus du briefing à la création du logo officiel",
         },
-        {
-            images: [Logo_Idemboxes_3, Logo_Idemboxes_2, Logo_Idemboxes_1],
-            title: 'Idemboxes',
-            text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
-                conception du logo. Nous vous accompagné l&apos;agence de communication digitale
-                Idemboxes tout au long du processus, du briefing à la création du nouveau logo.
-            </span>
-        },
+        
         {
             images: [Logo_VMH_3, Logo_VMH_2, Logo_VMH_1],
             title: 'VMH',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné l&apos;église Vision Mondiale Hosanna,
                 VMH en cigle tout au long du processus, du briefing à la création du logo officiel.
             </span>
@@ -494,7 +502,7 @@ export default function Logofolio () {
             images: [Logo_UK_DRC_Forum_3, Logo_UK_DRC_Forum_2, Logo_UK_DRC_Forum_1],
             title: 'UK DRC Forum on Energy transition and investments',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous vous accompagné l&apos;entreprise KNG dans la conception du
                 logo du Forum UK DRC Forum on Energy transition and investments, du briefing à la
                 création du logo officiel de l&apos;évènement.
@@ -504,43 +512,33 @@ export default function Logofolio () {
         {
             images: [Logo_Extreme_holding_3, Logo_Extreme_holding_2, Logo_Extreme_holding_1],
             title: 'Extreme Holding',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'entreprise Extreme Holding tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Extreme Holding tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Mobc_3, Logo_Mobc_2, Logo_Mobc_1],
             title: 'Mobc',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
-                conception du logo. Nous vous accompagné l’entreprise modern business
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
+                conception du logo. Nous vous accompagné l&apos;entreprise modern business
                 compagny, MOBC en cigle tout au long du processus, du briefing à la création du
                 logo officiel
             </span>
         },
-        {
-            images: [Logo_Malabar_3, Logo_Malabar_2, Logo_Malabar_1],
-            title: 'Malabar',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'entreprise Malabar tout au long du processus du briefing à la création du logo officiel",
-        },
+       
         {
             images: [Logo_Lafamiliya_3, Logo_Lafamiliya_2, Logo_Lafamiliya_1],
             title: 'La familiya',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné la compagnie de transport La familiya
                 tout au long du processus, du briefing à la création du logo officiel.
             </span>
-        },
-
-        {
-            images: [Logo_Fojed_3, Logo_Fojed_2, Logo_Fojed_1],
-            title: 'FOJED+',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation FOJED+ tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Ecobuilding_3, Logo_Ecobuilding_2, Logo_Ecobuilding_1],
             title: 'Eco building',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné la maison de construction Eco building
                 tout au long du processus, du briefing à la création du logo officiel.
             </span>
@@ -549,7 +547,7 @@ export default function Logofolio () {
             images: [Logo_centenaire_cepac_3, Logo_centenaire_cepac_2, Logo_centenaire_cepac_1],
             title: 'CEPAC Centenaire',
             text: <span>
-                Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la
+                Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la
                 conception du logo. Nous avons accompagné la Communauté des Eglises de
                 Pentecôtes en Afrique Central, CEPAC en cigle tout au long du processus, du
                 briefing à la création du nouveau logo.
@@ -557,8 +555,8 @@ export default function Logofolio () {
         },
         {
             images: [Logo_Afrique_millenaire_3, Logo_Afrique_millenaire_2, Logo_Afrique_millenaire_1],
-            title: 'Afrique Millehaire',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagnés l'organisation Afrique Millehaire tout au long du processus du briefing à la création du logo officiel",
+            title: 'Afrique Millénaire',
+            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation Afrique Millénaire tout au long du processus du briefing à la création du logo officiel",
         },
     ];
 

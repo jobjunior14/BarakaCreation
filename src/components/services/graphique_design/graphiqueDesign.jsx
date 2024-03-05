@@ -19,13 +19,13 @@ export default function GraphiqueDesign () {
             {/* welcom image and text  */}
             <section className='w-full flex flex-col gap-5  justify-center pt-10' >
                 
-                <h1 className='text-blue-100 font-bold text-2xl sm:hidden'>Des supports <br /> diversifiés et <br /> efficaces</h1>
+                <h1 className='text-blue-100 font-bold text-3xl sm:hidden'>Des supports <br /> diversifiés et <br /> efficaces</h1>
 
                 <div className=' justify-between flex items-center'>
                     <img loading='lazy' src={Accueildesigngr2} alt='Accueildesigngr2' className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' />
 
                     <div className='flex flex-col items-center justify-center pr-[5%] gap-4'>
-                        <h1 className='text-blue-100 font-bold text-2xl md:text-[1.625rem] lg:text-[28px] sm:flex hidden leading-[1.875rem]'>Des supports <br /> diversifiés et <br /> efficaces</h1>
+                        <h1 className='text-blue-100 font-bold text-3xl md:text-4xl xl:text-5xl  sm:flex hidden leading-[2.3rem] xl:leading-[3.3rem]'>Des supports <br /> diversifiés et <br /> efficaces</h1>
                         <p className='text-blue-100 text-[0.75rem] md:text-[0.875rem] lg:text-[1rem] sm:flex hidden '>Nos services couvrent la conception de tous les 
                             supports de communication print ou digitaux. 
                             Nous menons à bien les projets les plus variés et 
@@ -118,7 +118,7 @@ export default function GraphiqueDesign () {
                         {/* button  */}
                         <div className="flex justify-evenly gap-10">
                             <Link to={'/services/graphiqueDesign/webDesign'} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex items-center "> Voir plus <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
-                            <Link to='../' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-1  rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-3  rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
 
                         {/* Image  */}

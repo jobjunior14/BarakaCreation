@@ -20,6 +20,7 @@ import { Link } from 'react-router-dom'
 export default function Illustation () {
 
     const width = useWindowWidth();
+
     return (<main>
 
         {/* welcome image  */}
@@ -33,14 +34,14 @@ export default function Illustation () {
 
             <section className='pt-10 w-full flex flex-col sm:px-[10%]'>
 
-                <h1 className='text-left px-[10%] text-[1.625rem] leading-7 font-bold text-gray-700 '>Des solutions <br />créatives <br />illimitées </h1>
+                <h1 className='text-left px-[10%] text-[2rem] leading-10 font-bold text-gray-700 '>Des solutions <br />créatives <br />illimitées </h1>
 
                 <section className=' gap-5   flex flex-col sm:flex-row py-10 w-full '>
 
                     {/* first paragraph  */}
                     <section className='px-[10%] w-[90%] sm:w-full  '>
 
-                        <p className=' text-left font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  '> 
+                        <p className=' text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7  '> 
                             L&apos;illustration est un outil puissant qui
                             permet de capter l&apos;attention, transmettre
                             un message et créer des émotions. <br /> <span className='text-gray-500' >Nous créons des visuels personnalisés et
@@ -52,12 +53,12 @@ export default function Illustation () {
                     {/* second paragraph  */}
                     <section className='px-[10%] sm:px-0  w-[90%] sm:w-full  '>
 
-                        <p className='text-left font-[500] text-gray-500 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6 '> Nous vous aidons ainsi à :</p>
+                        <p className='text-left font-[500] text-gray-500 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7 '> Nous vous aidons ainsi à :</p>
                         <ul className=' list-disc'>
-                            <li className='text-left font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6   '> développer votre identité visuelle,</li>
-                            <li className='text-left font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6   '>créer des supports impactant,</li>
-                            <li className='text-left font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6   '>concrétiser des sujets abstraits &</li>
-                            <li className='text-left font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6   '>raconter votre histoire</li>
+                            <li className='text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7   '> développer votre identité visuelle,</li>
+                            <li className='text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7   '>créer des supports impactant,</li>
+                            <li className='text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7   '>concrétiser des sujets abstraits &</li>
+                            <li className='text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7   '>raconter votre histoire</li>
                         </ul>
 
                     </section>
@@ -66,7 +67,7 @@ export default function Illustation () {
             </section>
         </section>
 
-        {/* here section  manque d'image de meme ration  */}
+        {/* here section    */}
         <section className='px-[10%] grid grid-cols-1 gap-3 justify-center bg-slate-100'>
 
             <figure className='w-full h-[12.5rem] md:h-[15.625rem] lg:h-[16.875rem] rounded-md overflow-hidden relative'>
@@ -78,7 +79,7 @@ export default function Illustation () {
             </figure>
             
             <div className=' grid grid-cols-1 sm:grid-cols-2 gap-3'>
-                <figure className='w-full h-0 rounded-md overflow-hidden  relative' style={{ paddingTop: 'calc(100% * (3/3))'}}>
+                <figure className='w-full h-0 rounded-md overflow-hidden  relative' style={{ paddingTop: 'calc(100% * (4/3.5))'}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
                             <h2 className='font-bold text-gray-700 text-[1.125rem]'>Plus <br /> de style</h2>
@@ -86,7 +87,7 @@ export default function Illustation () {
                         <img loading='lazy' src={Illustration_vectoriel} alt="illustration_emotion" className='absolute top-0 object-cover w-full h-full' />
                 </figure>
 
-                <figure className='w-full h-0 rounded-md  overflow-hidden relative' style={{ paddingTop: 'calc(100% * (3/3))'}}>
+                <figure className='w-full h-0 rounded-md  overflow-hidden relative' style={{ paddingTop: 'calc(100% * (4/3.5))'}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
                             <h2 className='font-bold text-gray-100 text-[1.125rem]'>Plus <br /> d&apos;excellence</h2>
@@ -99,7 +100,7 @@ export default function Illustation () {
         {/* second text  */}
         <section className='w-full px-[10%] sm:justify-center sm:items-center flex flex-col gap-2 sm:gap-5 py-10 bg-slate-100'>
             <h1 className='text-left sm:text-center font-bold text-[1.25rem] sm:text-[1.38rem] md:text-[1.5rem] lg:text-[1.65rem] leading-5 text-gray-500'> Vous avez un <br className='sm:hidden'/> projet complexe ?</h1>
-            <p className=' w-[70%] sm:w-[50%] md:w-[40%]  text-left sm:text-center font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  '>Nous proposons un package complet des suppots : de l&apos;illustration éditoiale, aux campagnes passant par le web et <Link to='/contacts' className='text-blue-500'> concept art {'>'}</Link></p>
+            <p className=' w-[75%] sm:w-[55%] md:w-[45%]  text-left sm:text-center font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7 '>Nous proposons un package complet des suppots : de l&apos;illustration éditoiale, aux campagnes passant par le web et <Link to='/contacts' className='text-blue-500'> concept art {'>'}</Link></p>
         </section>
 
         {/* section illustration editorial  */}
@@ -119,7 +120,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-700'>Courverture</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour démarquer et rendre captivant les livres, romans, magazines</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
@@ -135,7 +136,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-700'>Livre / manuel </h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour raconter les histoires et pour illustrer parfaitement votre contenu</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
@@ -148,7 +149,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-700'>Bande dessinée</h1>
                             <p className='w-[90%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Nous vous accompagnons durant tout le processus, du briefing à la réalisation passant par le storyboard</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
@@ -165,7 +166,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-100'>Campagne</h1>
                             <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Nous créons des images captivantes de haute résolution qui illustrent parfaitement votre message</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
 
@@ -177,7 +178,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-700'>Mascotte</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour créer un lien affectif entre votre cible et votre marque ou évènement.</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
 
@@ -189,7 +190,7 @@ export default function Illustation () {
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
                             <h1 className='font-bold text-gray-100'>Web</h1>
                             <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Illustrations simples et attrayante, création des icones personnalisées, gestion du design de site/ apps</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-1  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
                 </div>
@@ -255,7 +256,7 @@ export default function Illustation () {
 
                 <div className='w-full relative md:hidden'>
                     <div className='rounded-b-lg md:bg-none bottom-0 absolute pt-14 bg-gradient-to-t w-full from-bgCertifier from-20% h-[150px]'>
-                        <h1 className='font-bold  text-center text-gray-100 text-[25px] leading-6'>Création <br /> Environnement</h1>
+                        <h1 className='font-bold  text-center text-gray-100 text-[25px] leading-6'>Création <br /> des personnages</h1>
                     </div>
                 </div>
 

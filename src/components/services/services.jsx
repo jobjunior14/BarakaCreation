@@ -9,6 +9,7 @@ import ac5O from '../../assets/Services/ac5O.jpg';
 import ac1 from '../../assets/Services/ac1.jpg';
 import Acillustration from '../../assets/Services/Acillustration.jpg';
 import Ac_a_services from '../../assets/Services/Ac_a_services.jpg';
+import Ac_a_services_phone from '../../assets/Services/Ac_a_services_phone.jpg';
 import icone4 from '../../assets/Services/icone4.png';
 import icone1 from '../../assets/Services/icone1.png';
 import icone2 from '../../assets/Services/icone2.png';
@@ -26,7 +27,7 @@ export default function Services () {
 
             {/* 1st part welcome picture  */}
             <section className="w-full flex flex-col justify-center items-center relative sm:-mt-20">
-                <img loading='lazy' src={Ac_a_services} alt='Ac_a_services'/>
+                <img loading='lazy' src={width >= 640 ? Ac_a_services : Ac_a_services_phone} alt='Ac_a_services'/>
                 <div className=' bg-white pb-8 sm:pb-4 lg:pb-14 sm:absolute sm:bottom-0 sm:bg-opacity-0'>
                     <h3 className='text-[0.9rem] sm:text-[0.82rem] md:text-[1.07rem] lg:text-[1.25rem] text-left  text-gray-500 font-bold '>En faisant <span className='text-gray-500'>la différence</span> nous vous <br/>aiderons à <span className='text-gray-500'>gagner le cœur de votre <br/>public cible</span></h3>
                 </div>
@@ -35,7 +36,7 @@ export default function Services () {
             <section className='w-full flex flex-col justify-center relative gap-5'>
 
                 {/* 2nd part "identité" visuelle  */}
-                <section className='flex justify-center sm:items-center  '>
+                <figure className='flex justify-center sm:items-center  '>
                     <img loading='lazy' src={width <= 640 ? ac2P : ac2O} alt='ac2P' className='rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
@@ -44,10 +45,10 @@ export default function Services () {
                         <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl  sm:text-left text-gray-700'>LOGO, Charte graphique <br/> Supports print & Digital <br/> Packaging</p>
                         <Link to={'/services/idVisuelle'} className='bg-blue-500 px-4 py-[0.23rem]  text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200 ' > Plus </Link>
                     </div>
-                </section>
+                </figure>
 
                 {/* 3rd part "design graohique" */}
-                <section className='flex justify-center sm:items-center  '>
+                <figure className='flex justify-center sm:items-center  '>
                     <img loading='lazy' src={width <= 640 ? ac3P : ac3O} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
@@ -56,10 +57,10 @@ export default function Services () {
                         <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left text-gray-100'>Campagne de comm. <span className='text-gray-500'>&</span> Evènementiels<br/> Mise en page <span className='text-gray-500'>&</span> Présentation <br/> Web design</p>
                         <Link to={'/services/graphiqueDesign'} className='bg-blue-500 px-4 py-[0.23rem] text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </Link>
                     </div>
-                </section>
+                </figure>
 
                 {/* illustration */}
-                <section className='flex justify-center sm:items-center  '>
+                <figure className='flex justify-center sm:items-center  '>
                     <img loading='lazy' src={width <= 640 ? ac1 : Acillustration} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-end sm:right-20 sm:gap-3 md:gap-5 lg:gap-6'>
@@ -68,10 +69,10 @@ export default function Services () {
                         <p className='text-[0.69rem] hidden sm:block sm:text-[1.125rem] md:text-xl sm:text-right text-gray-800 '>Livre  <span className='text-gray-500'>&</span> Couverture <br/>Bande dessinée <br/> Campagne <span className='text-gray-500'>&</span> web</p>
                         <Link to={'/services/illustration'} className='bg-blue-500 px-4 py-[0.23rem] text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </Link>
                     </div>
-                </section>
+                </figure>
 
                 {/* annimation  */}
-                <section className='flex justify-center sm:items-center  '>
+                <figure className='flex justify-center sm:items-center  '>
                     <img loading='lazy' src={width <= 640 ? ac5P : ac5O} alt='ac2P' className=' rounded-lg' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
@@ -79,7 +80,7 @@ export default function Services () {
                         <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left text-gray-800 '>Spot publicitaire<br/>Présentation <span className='text-gray-500'>&</span> <br/> Conténu</p>
                         <Link to={'/services/motionDesign'} className='bg-blue-500 px-4 py-[0.23rem] text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </Link>
                     </div>
-                </section>
+                </figure>
                 
                 {/* consulting  */}
                 <section className='flex justify-center sm:items-center  '>
@@ -88,7 +89,7 @@ export default function Services () {
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-[3.75rem] md:left-20 sm:gap-3 md:gap-5 lg:gap-6'>
                         <h1 className='font-bold text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'> Consulting</h1>
                         <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left text-gray-100'>Nous vous accompagnons dans la <br/> définition de votre stratégie de<br/>communication, la mise en place de vos<br/>outils et la mesure de vos résultats</p>
-                        <button to={'/services/consultance'} className='bg-gray-50 px-4 py-[0.23rem] text-blue-500 text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </button>
+                        <Link to={'/services/consultance'} className='bg-gray-50 px-4 py-[0.23rem] text-blue-500 text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </Link>
                     </div>
                 </section>
             </section>
@@ -96,8 +97,8 @@ export default function Services () {
             {/* engagement  */}
             <section className='w-full flex flex-col justify-center gap-5 md:gap-8 px-7 md:px-20 sm:items-center'>
                
-               <p className='text-left text-[0.75rem] leading-4 font-bold w-[70%] sm:w-[80%] sm:text-center sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] text-gray-700 md:leading-6  '>Nous nous engageons à comprendre vos besoins , et vous proposons des solutions qui répondent à vos attentes afin d'atteindre vos objectifs.</p>
-               <h3 className='text-gray-600 leading-5 text-left w-[50%] font-bold text-xl sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] sm:text-center'>Nos services sont basés sur :</h3>
+                <p className='text-left text-[0.9rem] leading-5 font-bold w-[75%] sm:w-[60%] sm:text-center sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] text-gray-700 md:leading-6  '>Nous nous engageons à comprendre vos besoins , et vous proposons des solutions qui répondent à vos attentes afin d'atteindre vos objectifs.</p>
+                <h3 className='text-gray-600 leading-6 text-left w-[50%] font-bold text-xl  sm:text-center'>Nos services sont basés sur :</h3>
 
                 {/* nos service sont basée sur  */}
                <section className='grid grid-cols-2 lg:grid-cols-4 gap-7'>

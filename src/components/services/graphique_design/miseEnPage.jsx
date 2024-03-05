@@ -13,7 +13,7 @@ export default function MiseEnPage() {
 
     return (
 
-        <main>
+        <main className='bg-gray-50 pb-8'>
 
             <SecondeNav
                 title={' Design Graphique'} 
@@ -34,9 +34,9 @@ export default function MiseEnPage() {
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full z-40  '>
                         
-                        <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                        <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-3 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'/portfolio'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@ export default function MiseEnPage() {
                 </div>
             </section>
             
-            <section className='bg-gray-50'>
+            <section className=' mb-10'>
 
                 {/* section text  */}
                 <div className='w-full  flex  justify-center items-center'>
@@ -62,8 +62,8 @@ export default function MiseEnPage() {
                             {/* first paragraph  */}
                             <section className='px-[10%] md:px-0 w-[90%] md:w-[80%] '>
 
-                                <p className=' text-left font-[500] text-gray-700 text-[0.75rem] md:text-[13px] lg:text-[15px] leading-5 lg:leading-6  '> 
-                                    Nous faisons la mise en page des suppots pour l&apos;impression & le Web. Nous proposons une gamme complète de sevices en matière de conception de publications : de la recherche d&apos;images, à la création d'illustrations et infographies passant par la conception de la chate éditoiale
+                                <p className=' text-left font-[500] text-gray-700 text-[1rem]  leading-5 lg:leading-6  '> 
+                                    Nous faisons la mise en page des supports pour l&apos;impression & le Web. Nous proposons une gamme complète de sevices en matière de conception de publications : de la recherche d&apos;images, à la création d&apos;illustrations et infographies passant par la conception de la charte éditoiale
                                 </p>
 
                             </section>
@@ -71,7 +71,7 @@ export default function MiseEnPage() {
                             {/* second paragraph  */}
                             <section className='px-[10%] md:px-0 w-[90%] md:w-[50%] '>
 
-                                <p className='text-left font-[500] text-gray-500 text-[0.75rem] md:text-[13px] lg:text-[15px] leading-5 lg:leading-6   '>
+                                <p className='text-left font-[500] text-gray-500 text-[1rem]  leading-5 lg:leading-6    '>
                                 Nous gérons l&apos;ensemble du flux de travail de conception des suppots, du biefing à la livraison
                                 </p>
 
@@ -87,7 +87,7 @@ export default function MiseEnPage() {
                     
                     <div className='md:w-[75%] w-full flex flex-col gap-5'>
                         <div>
-                            <p className='text-left text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] text-gray-700 flex items-start w-[90%]'>Les projets de conception de publications les plus courants que nous traitons sont: </p>
+                            <p className='text-left text-[0.8rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.125rem] text-gray-700 flex items-start w-[90%]'>Les projets de conception de publications les plus courants que nous traitons sont: </p>
                             <div className='w-full h-px bg-gray-500'> </div>
 
                         </div>
@@ -169,7 +169,7 @@ export default function MiseEnPage() {
                                 <div className='flex flex-col gap-2 justify-center items-center'>
                                         <img loading='lazy' src={Mise_en_page_icone_2} alt="Mise_en_page_icone_2" className='h-10'/>
                                     <div className='w-[90%] sm:w-[80%] md:w-[70%] h-px bg-gray-500'> </div>
-                                    <h1 className='font-bold text-gray-700 text-[0.875rem] leading-4'>Illustrations <br />personnalisées <br /> <Link className='text-[9px] text-blue-500' to='../' >Lire la suite</Link></h1>
+                                    <h1 className='font-bold text-gray-700 text-[0.875rem] leading-4'>Illustrations <br />personnalisées <br /></h1>
                                 </div>
 
                                 <div className='flex flex-col gap-2 justify-center items-center'>
@@ -183,9 +183,9 @@ export default function MiseEnPage() {
                     </div>
                 </div>
                 
-                    <OnTopBtn brdrColor='border-gray-700' textColor = ' text-black'/>
             </section>
             
+            <OnTopBtn brdrColor='border-gray-700' textColor = ' text-black'/>
            
         </main>
     )

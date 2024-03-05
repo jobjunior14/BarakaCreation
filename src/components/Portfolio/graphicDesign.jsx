@@ -94,12 +94,16 @@ import a91 from '../../assets/Portofolio/Graphic design/a91.jpg';
 import a92 from '../../assets/Portofolio/Graphic design/a92.jpg';
 import a93 from '../../assets/Portofolio/Graphic design/a93.jpg';
 import a94 from '../../assets/Portofolio/Graphic design/a94.jpg';
+import Sligra_event_1 from '../../assets/Portofolio/Graphic design/Sligra_event_1.jpg';
+import Sligra_event_2 from '../../assets/Portofolio/Graphic design/Sligra_event_2.jpg';
+import Sligra_event_3 from '../../assets/Portofolio/Graphic design/Sligra_event_3.jpg';
 import { Link } from 'react-router-dom';
 
 import {OnTopBtn} from '../services/identite_visuel/comp/util';
 import { useState, useEffect } from 'react';
 
-// logo details component 
+// logo details component /////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 function GrapicDesignDetails ({images, text, title, state, hideDetails }) {
     
     const [index, setIndex] = useState(0);
@@ -722,7 +726,7 @@ export default function ImageGraphiqueDesign () {
         <section className="flex flex-col gap-5 bg-gradient-to-t from-black to-gray-800 pt-10">
             
             <h1 className="text-6xl text-gray-100 font-bold">Graphic Design</h1>
-            <p className="px-[10%] text-md text-gray-200 font-semibold "> Identié | Campagne | Event | Mise en page | Présentation</p>
+            <p className="px-[10%] text-md text-gray-200 font-semibold "> Identité | Campagne | Event | Mise en page | Présentation</p>
         </section>
 
 

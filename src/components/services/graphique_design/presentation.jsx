@@ -30,9 +30,9 @@ export default function Presentation() {
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full z-40  '>
                         
-                        <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                        <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-3 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'/portfolio'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 
@@ -56,13 +56,13 @@ export default function Presentation() {
                         {/* first paragraph  */}
                         <section className='px-[10%] md:px-0 w-[90%] '>
 
-                            <p className=' text-left font-[500] text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] lg:text-[20px] leading-5 lg:leading-7  sm:w-[65%] md:w-[90%]'> Grâce à l&apos;infographie vous pouvez désomais transmettre vos infomations de la manière visuelle la plus efficace et convaincante. <span className='hidden md:flex'>Nous sommes votre patenaire de confiance pour la création des suppots de présentation professionnels et percutants.</span> </p>
+                            <p className=' text-left font-[500] text-gray-100 text-[1rem] sm:text-[1.2rem] leading-5 sm:leading-6  sm:w-[65%] md:w-[90%]'> Grâce à l&apos;infographie vous pouvez désomais transmettre vos infomations de la manière visuelle la plus efficace et convaincante. <span className='hidden md:flex'>Nous sommes votre patenaire de confiance pour la création des suppots de présentation professionnels et percutants.</span> </p>
 
                         </section>
 
                         {/* second paragraph  */}
                         <section className='px-[10%] md:px-0 w-[90%] '>
-                            <p className='text-left font-[500] text-gray-400 text-[0.875rem] sm:text-[15px] md:text-[17px] lg:text-[20px] leading-5 lg:leading-7  sm:w-[75%] md:w-full '>
+                            <p className='text-left font-[500] text-gray-400 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[75%] md:w-full '>
                                 <span className='md:hidden'>Nous sommes votre patenaire de confiance pour la création des suppots de présentation professionnels et percutants. </span>
                                
                                 <span className='hidden md:block w-[70%]'>  Nous proposons un package complète des suppots : de power point, à l&apos;animation passant par les brochures ou le PDF. Nous gérons l&apos;ensemble du flux de travail, du biefing au rendu final </span>
@@ -86,7 +86,7 @@ export default function Presentation() {
                                 <div className='w-[30%]'>
                                     <img loading='lazy' src={Presentation_icone1} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
                                 </div>
-                                <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-5'>Design épuré, <br /> Animation & simulation</h3>
+                                <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-6'>Design épuré, <br /> Animation & simulation</h3>
                             </div>
                             
                             <div className='w-full h-px bg-bgPlay'></div>
@@ -97,7 +97,7 @@ export default function Presentation() {
                                 <div className='w-[30%]'>
                                     <img loading='lazy' src={Presentation_icone3} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
                                 </div>
-                                <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-5'>Support divérsifiés <br /> <span className=' text-bgPlay'>{'(print & digital)'}</span></h3>
+                                <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-6'>Support divérsifiés <br /> <span className=' text-bgPlay'>{'(print & digital)'}</span></h3>
                             </div>
                             
                             <div className='w-full h-px bg-bgPlay'></div>
@@ -108,7 +108,7 @@ export default function Presentation() {
                                 <div className='w-[30%]'>
                                     <img loading='lazy' src={Presentation_icone_2} alt="Presentation_icone_2" className='h-[45px] md:h-[55px]' />
                                 </div>
-                                <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-5'>Graphique <br /> et illustrations <span className=' text-bgPlay'>personnalisés</span></h3>
+                                <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-6'>Graphique <br /> et illustrations <span className=' text-bgPlay'>personnalisés</span></h3>
                             </div>
                             
                             <div className='w-full h-px bg-bgPlay'></div>
@@ -119,7 +119,7 @@ export default function Presentation() {
                                 <div className='w-[30%]'>
                                     <img loading='lazy' src={Presentation_icone1} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
                                 </div>
-                                <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-5'>Design épuré, <br /> Animation & simulation</h3>
+                                <h3 className=' text-gray-200 font-bold w-[85%]  text-[15px] md:text-[1.125rem] text-left leading-6'>Design épuré, <br /> Animation & simulation</h3>
                             </div>
                             
                             <div className='w-full h-px bg-bgPlay'></div>
@@ -134,13 +134,13 @@ export default function Presentation() {
                         {/* first paragraph  */}
                         <section className='px-[10%] md:px-0 w-[90%] '>
 
-                            <p className=' text-left font-[500] text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] lg:text-[20px] leading-5 lg:leading-7  sm:w-[65%] md:w-[90%]'> Nous proposons un package complète des suppots : de power point, à l'animation passant par les brochures ou le PDF. </p>
+                            <p className=' text-left font-[500] text-gray-100 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[65%] md:w-[90%]'> Nous proposons un package complète des suppots : de power point, à l'animation passant par les brochures ou le PDF. </p>
 
                         </section>
 
                         {/* second paragraph  */}
                         <section className='px-[10%] md:px-0 w-[90%] '>
-                            <p className='text-left font-[500] text-gray-400 text-[0.875rem] sm:text-[15px] md:text-[17px] lg:text-[20px] leading-5 lg:leading-7  sm:w-[75%] md:w-full '> Nous gérons l&apos;ensemble du flux de travail, du biefing au rendu final</p>
+                            <p className='text-left font-[500] text-gray-400 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[75%] md:w-full '> Nous gérons l&apos;ensemble du flux de travail, du biefing au rendu final</p>
                         </section>
 
 

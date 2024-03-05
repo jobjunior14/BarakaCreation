@@ -52,7 +52,7 @@ export default function CharteGraphique () {
                             
                             <div className=" h-fit w-fit flex flex-col text-center items-center gap-2">
 
-                                <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-2  md:px-4 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                                <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-3  md:px-4 rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                                 
                                 <Link to={'/portfolio/graphicDesign'} className=" text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Nos créations <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
                             </div>
@@ -101,34 +101,34 @@ export default function CharteGraphique () {
                     <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div className="w-full">
                             <img loading='lazy' src={charte_logoFichier_3} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4 "> Logotype <span className="text-blue-100">&  règle <br  className="hidden md:block"/>d&apos;usage</span></h3>
+                            <h3 className="text-[0.8125] md:text-[1rem] font-bold text-gray-100 m-1 leading-4 "> Logotype <span className="text-blue-100">&  règle <br  className="hidden md:block"/>d&apos;usage</span></h3>
                         </div>
 
                         <div className="w-full">
                             <img loading='lazy' src={Charte_couleurs} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">La charte des <br  className="hidden md:block"/>couleurs</h3>
+                            <h3 className="text-[0.8125] md:text-[1rem] font-bold text-gray-100 m-1 leading-4">La charte des <br  className="hidden md:block"/>couleurs</h3>
                         </div>
 
                         <div className="w-full">
                             <img loading='lazy' src={Chartmotif} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4"> Iconographie <span className="text-blue-100">& <br className="hidden md:block"/> Motifs</span></h3>
+                            <h3 className="text-[0.8125] md:text-[1rem] font-bold text-gray-100 m-1 leading-4"> Iconographie <span className="text-blue-100">& <br className="hidden md:block"/> Motifs</span></h3>
                         </div>
 
 
                         <div className="w-full">
                             <img loading='lazy' src={Charte_typo} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">Polices de <br className="hidden md:block" />caractère</h3>
+                            <h3 className="text-[0.8125] md:text-[1rem] font-bold text-gray-100 m-1 leading-4">Polices de <br className="hidden md:block" />caractère</h3>
 
                         </div>
 
                         <div className="w-full">
                             <img loading='lazy' src={Charte_prototypes} alt="" className="rounded-lg" />
-                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">Prototypes</h3>
+                            <h3 className="text-[0.8125] md:text-[1rem] font-bold text-gray-100 m-1 leading-4">Prototypes</h3>
 
                         </div>
-                        <div className="w-full h-full hidden md:block">
-                            <div className="w-full h-full bg-white rounded-lg border-red-600 border-4 flex justify-center items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-14 h-14 text-red-500"> <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" /></svg></div>
-                            <h3 className="text-[13px] md:text-[15px] font-bold text-gray-100 m-1 leading-4">Iterdit</h3>
+                        <div className="w-full h-auto hidden md:flex flex-col">
+                            <div className="w-full lg:h-[88%] md:h-[82%] bg-white rounded-lg border-red-600 border-4 flex justify-center items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-14 h-14 text-red-500"> <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" /></svg></div>
+                            <h3 className="text-[0.8125] md:text-[1rem] font-bold text-gray-100 m-1 leading-4">Iterdit</h3>
 
                         </div>
                     </div>

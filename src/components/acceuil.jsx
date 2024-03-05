@@ -35,11 +35,11 @@ export default function Acceuil () {
             </section>
 
             {/* seconde part "C'que nous faisons" */}
-            <section className='w-full bg-black flex flex-col text-center '>
+            <section className='w-full bg-black flex flex-col text-center py-7'>
 
-                <div className=' w-full justify-center items-center text-center flex flex-col sm:absolute left-4 ml-2'>
+                <article className=' w-full justify-center items-center text-center flex flex-col sm:absolute left-4 ml-2'>
 
-                    <h2 className=' text-blue-200 font-semibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 '>Ce que nous faisons</h2>
+                    <h2 className=' text-bgcqnoufaisons font-semibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 '>Ce que nous faisons</h2>
 
                     <div className=' w-[12.5rem]  sm:w-[15.625rem]  items-center flex flex-col gap-y-3 sm:gap-y-5 mt-[25px] sm:mt-[2.5rem] md:mt-[6.25rem] lg:mt-[7.5rem]'>
 
@@ -47,7 +47,7 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-gray-200 font-normal'>Nous apportons des solutions innovantes, originales et efficaces en communication visuelle</p>
 
-                        <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-blue-200 flex gap-3 justify-center items-center  pl-5 hover:bg-gray-500 duration-200'> 
+                        <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-bgcqnoufaisons flex gap-3 justify-center items-center  pl-5 hover:bg-gray-500 duration-200'> 
                             <div>
                                 <p className='text-gray-300 text-[0.7rem] sm:text-xs '> Nos réalisations </p>
                             </div>
@@ -61,18 +61,18 @@ export default function Acceuil () {
                         </div>
                     </div>
 
-                </div>
+                </article>
                 
-                <div className='flex justify-between mt-4 sm:mt-7'>
+                <picture className='flex justify-between mt-4 sm:mt-7'>
                     <img loading='lazy' src={Accueildesigngr2} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 1'/>
                     <img loading='lazy' src={Accueildesigngr1} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 2'/>
-                </div>
+                </picture>
             </section>
             
             {/* third part "accompagnement" */}
-            <section className='w-full bg-white flex flex-col text-center justify-center relative pt-5 -pb-2'>
+            <section className='w-full bg-white flex flex-col text-center justify-center relative pt-7 gap-4'>
 
-                <div className=' w-full justify-center items-center text-center flex flex-col left-4 ml-2'>
+                <article className=' w-full justify-center items-center text-center flex flex-col left-4 ml-2'>
 
                     <div className=' w-[12.5rem]  sm:w-[25rem]  items-center flex flex-col gap-y-2 sm:gap-y-5 '>
 
@@ -80,7 +80,7 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-gray-800 font-normal'>De la stratégie à la mise en œuvre, nous aidons les entreprises à créer une image de marque forte et durable</p>
                         
-                        <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-slate-500 flex justify-center items-center pl-5 gap-3 hover:bg-myBlue duration-200'> 
+                        <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-bgcqnoufaisons flex justify-center items-center pl-5 gap-3 hover:bg-myBlue duration-200'> 
                             <p className='text-white text-[0.7rem] sm:text-xs '>Voir nos services </p>
 
                             <div className='p-[0.1875rem] rounded-full justify-center items-center  border border-blue-200 flex '>
@@ -90,11 +90,11 @@ export default function Acceuil () {
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
               
-                <div className='h-[95%] w-[80%] sm:h-[80%] sm:w-[65%] ml-[10%] sm:ml-[18%]  '>
-                    <img loading='lazy' src={accueil_accompagnons} className='' alt='image accompagnement'/>
-                </div>
+                <picture className='flex flex-col justify-center items-center  '>
+                    <img loading='lazy' src={accueil_accompagnons} className='w-[80%] md:w-[70%] lg:w-[65%]' alt='image accompagnement'/>
+                </picture>
 
                 
             </section>
@@ -122,17 +122,17 @@ export default function Acceuil () {
 
             </section>
             {/* 5th part "entron en contact" */}
-            <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative bg-gray-50 p-5'>
+            <figure className='w-full flex flex-col gap-2 text-center justify-center items-center relative bg-gray-50 p-5'>
 
-                 <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
+                <picture className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
                     <img loading='lazy' src={design_entrons_en_contact} className='' alt='image accompagnement'/>
-                </div>
+                </picture>
 
                 <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>
                     <Link to={'/contacts'} className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</Link>
                     <Link to={'/contacts'} className=' py-2 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander un devis </Link>
                 </div>
-            </section>
+            </figure>
             
             {/* 6th part "ils nous ont fait confiance"  */}
             <section className='w-full bg-bgCertifier flex flex-col justify-center items-center pt-8 pb-5 gap-10 px-3'>
@@ -142,17 +142,17 @@ export default function Acceuil () {
                 <div className=' flex  w-full sm:w-[90%] md:w-[80%] lg:w-[75%] overflow-hidden rounded-3xl shadow-2xl '>
 
                     <div className='slider flex items-center gap-5 py-4'>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo1} alt='logo' className=' h-10'  /></div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo2} alt='logo' className=' h-10' /></div>
-                        <div className='min-w-[25%] flex justify-center items-center'> <img loading='lazy' src={Logo3} alt='logo' className=' h-14' /> </div>
-                        <div className='min-w-[20%] flex justify-center items-center'> <img loading='lazy' src={Logo4} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[20%] flex justify-center items-center'> <img loading='lazy' src={Logo5} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo6} alt='logo' className=' h-10' /></div>
-                        <div className='min-w-[30%] flex justify-center items-center'> <img loading='lazy' src={Logo7} alt='logo' className=' h-14' /></div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo8} alt='logo' className=' h-10' /> </div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo9} alt='logo' className=' h-10' /> </div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo10} alt='logo' className='h-10' /></div>
-                        <div className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo1} alt='logo' className=' h-10' /></div>
+                        <picture className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo1} alt='logo' className=' h-10'  /></picture>
+                        <picture className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo2} alt='logo' className=' h-10' /></picture>
+                        <picture className='min-w-[25%] flex justify-center items-center'> <img loading='lazy' src={Logo3} alt='logo' className=' h-10' /> </picture>
+                        <picture className='min-w-[20%] flex justify-center items-center'> <img loading='lazy' src={Logo4} alt='logo' className=' h-14' /></picture>
+                        <picture className='min-w-[20%] flex justify-center items-center'> <img loading='lazy' src={Logo5} alt='logo' className=' h-14' /></picture>
+                        <picture className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo6} alt='logo' className=' h-6' /></picture>
+                        <picture className='min-w-[30%] flex justify-center items-center'> <img loading='lazy' src={Logo7} alt='logo' className=' h-14' /></picture>
+                        <picture className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo8} alt='logo' className=' h-10' /> </picture>
+                        <picture className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo9} alt='logo' className=' h-10' /> </picture>
+                        <picture className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo10} alt='logo' className='h-10' /></picture>
+                        <picture className='min-w-[40%] flex justify-center items-center'> <img loading='lazy' src={Logo1} alt='logo' className=' h-10' /></picture>
                     </div>
                 </div>
             </section>

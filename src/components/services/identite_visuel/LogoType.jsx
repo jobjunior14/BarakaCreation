@@ -27,7 +27,7 @@ export default function Logotype () {
                     
 
                     <div className='absolute flex sm:flex-row justify-center items-center flex-col gap-2 sm:gap-x-[5%] bottom-5 w-full'>
-                        <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem]  md:text-[1rem] px-2  rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                        <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem]  md:text-[1rem] px-3  rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
                         <Link to={'/portfolio/logofolio'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] smd:text-[1rem] flex items-center justify-center "> Notre Logofolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
 

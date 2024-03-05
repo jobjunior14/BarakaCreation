@@ -38,17 +38,17 @@ export default function CampagneDeComm () {
             <section className="w-full flex flex-col justify-center bg-white">
 
                 <div className='w-full pt-[6%] sm:pt-[3%] flex flex-col gap-4 z-40'>
-                    <h1 className='text-gray-700 text-[1.875rem] sm:text-[2.5rem] md:text-[2.75rem] lg:text-[3.375rem] font-bold leading-8 sm:leading-[2.5rem] md:leading-[2.75rem] lg:leading-[56px]'>Camapagne de <br /> Communication</h1>
+                    <h1 className='text-gray-700 text-[1.875rem] sm:text-[2.5rem] md:text-[2.75rem] lg:text-[3.375rem] font-bold leading-8 sm:leading-[2.5rem] md:leading-[2.75rem] lg:leading-[56px]'>Campagne de <br /> Communication</h1>
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full  '>
                         
-                        <Link to='../' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-1  rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
+                        <Link to='/contacts' className=" duration-200  text-gray-100 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] px-3  rounded-full bg-blue-500 hover:text-blue-500 hover:bg-bgIdVisuel border-blue-500 border">Interessé</Link>
                         
-                        <Link to={'../'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-14 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                        <Link to={'/portfolio'} className=" text-blue-500 text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] flex items-center "> Notre portfolio <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
                     </div>
                 </div>
 
-                <div className=' justify-center items-center flex -mt-[13%] sm:-mt-[8%] md:-mt-[5%] '>
-                    <div className='w-full sm:w-[60%] md:w-[40%] lg:w-[35%]'>
+                <div className=' justify-center items-center flex  sm:-mt-[2%] md:-mt-[1%] '>
+                    <div className='w-[70%] sm:w-[60%] md:w-[40%] lg:w-[35%]'>
 
                         <img loading='lazy' src={campagne} alt="campagne"/>
                     </div>
@@ -57,11 +57,11 @@ export default function CampagneDeComm () {
 
             <div className=' bg-bgCampagnCom flex flex-col justify-center'>
 
-                <section className='  w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 md:gap-7 px-[4%] sm:px-[5%] md:px-[10%] lg:px-[15%] py-9'>
+                <section className='  w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 md:gap-7 px-[4%] sm:px-[5%] md:px-[10%] lg:px-[15%] py-10'>
                     
                     {/* first paragraph  */}
                     <section className='px-[5%] md:px-0 w-[70%] md:w-[80%]'>
-                        <p className='text-left font-[500] text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[75%] md:w-full'>
+                        <p className='text-left font-[500] text-gray-100 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[75%] md:w-full'>
                             <span className='text-blue-100 md:text-gray-100'>
 
                                 Vous avez une cause que vous souhaiteiez
@@ -78,7 +78,7 @@ export default function CampagneDeComm () {
 
                     {/* second paragraph  */}
                     <section className='px-[5%] md:px-0 w-[70%] '>
-                        <p className='text-left font-[500] text-blue-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[75%] md:w-[70%] lg:w-[65%] '>
+                        <p className='text-left font-[500] text-blue-100 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[75%] md:w-[70%] lg:w-[65%] '>
                             Nous vous proposons une large gamme de solutions, de l&apos;élaboration du plan de communication aux conceptions.
                         </p>
                     </section>
@@ -131,7 +131,7 @@ export default function CampagneDeComm () {
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600"> Modalités d&apos;action </h1>
                                     <p className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-gray-600"> le choix des canaux de communication. Le Budget alloué à votre action & le pilotage de l&apos;action</p>
-                                    <button className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-blue-500 mt-2 text-left flex items-center "  onClick={() => handleToggled('a')}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                    <button className="text-[0.69rem] sm:text-[13px] md:text-[0.69rem] lg:text-[0.75rem] text-blue-500 mt-2 text-left flex items-center "  onClick={() => handleToggled('a')}>Voir moins <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
                                         </svg>
                                         </span>
@@ -218,7 +218,9 @@ export default function CampagneDeComm () {
                                 </div>
                             </div>
 
-                            <button onClick={() => handleToggled('b')} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[13px] flex items-center "> Voir moins <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 "><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></button>
+                            <button onClick={() => handleToggled('b')} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[13px] flex items-center "> Voir moins <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                                        </svg></span></button>
 
                         </div>
 

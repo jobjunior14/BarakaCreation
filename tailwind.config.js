@@ -26,7 +26,8 @@ export default {
         'bgMiseEnpage' : 'rgba(232, 240, 251)',
         'bgCampagnCom' : 'rgba(107, 107, 131)',
         'bgConception': 'rgba(69, 73, 111)',
-        'bgConceptionGrid': 'rgba(83, 86, 129)'
+        'bgConceptionGrid': 'rgba(83, 86, 129)',
+        "bgcqnoufaisons": 'rgba(134, 139, 169)'
       },
 
       keyframes:{
