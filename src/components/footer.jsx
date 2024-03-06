@@ -9,7 +9,7 @@ import bclinkedin from '../assets/Icones/bclinkedin.png';
 export function Footer ()
 {
     return (
-        <footer className='w-full bg-gray-50 flex flex-col sm:flex-row sm:gap-10 justify-center  items-center sm:justify-normal  py-8 sm:px-20 px-10'>
+        <footer className='w-full bg-gray-50 flex flex-col sm:flex-row sm:gap-10 justify-center  items-center sm:justify-between  py-8 px-[5%] lg:px-[10%]'>
             
             {/* baraka creation logo and texts */}
             <div className='flex justify-center  '>
@@ -17,7 +17,7 @@ export function Footer ()
                 <div className='sm:block flex items-center gap-x-5 w-[90%]'>
                     <img loading='lazy' className='h-20 mb-1' src={logo_pictogrammFichier_1} alt="pictogram" />
                     <div className='text-left'>
-                        <p className='text-[0.6rem] text-semibold text-gray-800'>Kinshasa, RDC <br/> Baraka creation, votre partenaire <br/> idéal en communication visuelle<br/> <b>Ensemble innovons </b></p>
+                        <p className='text-[0.6rem] text-semibold text-gray-800'>Kinshasa, RDC <br className='sm:hidden'/> Baraka creation, votre partenaire <br/> idéal en communication visuelle<br/> <b>Ensemble innovons </b></p>
                     </div>
                 </div>
             </div>

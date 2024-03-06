@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import a from '../../assets/Portofolio/Graphic design/a.jpg';
 import a1 from '../../assets/Portofolio/Graphic design/a1.jpg';
 import a2 from '../../assets/Portofolio/Graphic design/a2.jpg';
 import a3 from '../../assets/Portofolio/Graphic design/a3.jpg';
@@ -39,22 +38,18 @@ import a36 from '../../assets/Portofolio/Graphic design/a36.jpg';
 import a37 from '../../assets/Portofolio/Graphic design/a37.jpg';
 import a38 from '../../assets/Portofolio/Graphic design/a38.jpg';
 import a39 from '../../assets/Portofolio/Graphic design/a39.jpg';
-import a40 from '../../assets/Portofolio/Graphic design/a40.jpg';
-import a41 from '../../assets/Portofolio/Graphic design/a41.jpg';
 import a42 from '../../assets/Portofolio/Graphic design/a42.jpg';
 import a43 from '../../assets/Portofolio/Graphic design/a43.jpg';
 import a44 from '../../assets/Portofolio/Graphic design/a44.jpg';
 import a45 from '../../assets/Portofolio/Graphic design/a45.jpg';
 import a46 from '../../assets/Portofolio/Graphic design/a46.jpg';
 import a47 from '../../assets/Portofolio/Graphic design/a47.jpg';
-import a48 from '../../assets/Portofolio/Graphic design/a48.jpg';
 import a49 from '../../assets/Portofolio/Graphic design/a49.jpg';
 import a50 from '../../assets/Portofolio/Graphic design/a50.jpg';
 import a51 from '../../assets/Portofolio/Graphic design/a51.jpg';
 import a52 from '../../assets/Portofolio/Graphic design/a52.jpg';
 import a53 from '../../assets/Portofolio/Graphic design/a53.jpg';
 import a54 from '../../assets/Portofolio/Graphic design/a54.jpg';
-import a55 from '../../assets/Portofolio/Graphic design/a55.jpg';
 import a56 from '../../assets/Portofolio/Graphic design/a56.jpg';
 import a57 from '../../assets/Portofolio/Graphic design/a57.jpg';
 import a58 from '../../assets/Portofolio/Graphic design/a58.jpg';
@@ -62,27 +57,12 @@ import a59 from '../../assets/Portofolio/Graphic design/a59.jpg';
 import a60 from '../../assets/Portofolio/Graphic design/a60.jpg';
 import a61 from '../../assets/Portofolio/Graphic design/a61.jpg';
 import a62 from '../../assets/Portofolio/Graphic design/a62.jpg';
-import a63 from '../../assets/Portofolio/Graphic design/a63.jpg';
-import a64 from '../../assets/Portofolio/Graphic design/a64.jpg';
-import a65 from '../../assets/Portofolio/Graphic design/a65.jpg';
-import a66 from '../../assets/Portofolio/Graphic design/a66.jpg';
-import a67 from '../../assets/Portofolio/Graphic design/a67.jpg';
-import a68 from '../../assets/Portofolio/Graphic design/a68.jpg';
-import a69 from '../../assets/Portofolio/Graphic design/a69.jpg';
-import a70 from '../../assets/Portofolio/Graphic design/a70.jpg';
-import a71 from '../../assets/Portofolio/Graphic design/a71.jpg';
 import a72 from '../../assets/Portofolio/Graphic design/a72.jpg';
 import a73 from '../../assets/Portofolio/Graphic design/a73.jpg';
 import a74 from '../../assets/Portofolio/Graphic design/a74.jpg';
-import a75 from '../../assets/Portofolio/Graphic design/a75.jpg';
-import a76 from '../../assets/Portofolio/Graphic design/a76.jpg';
-import a77 from '../../assets/Portofolio/Graphic design/a77.jpg';
 import a78 from '../../assets/Portofolio/Graphic design/a78.jpg';
 import a79 from '../../assets/Portofolio/Graphic design/a79.jpg';
 import a80 from '../../assets/Portofolio/Graphic design/a80.jpg';
-import a81 from '../../assets/Portofolio/Graphic design/a81.jpg';
-import a82 from '../../assets/Portofolio/Graphic design/a82.jpg';
-import a83 from '../../assets/Portofolio/Graphic design/a83.jpg';
 import a84 from '../../assets/Portofolio/Graphic design/a84.jpg';
 import a85 from '../../assets/Portofolio/Graphic design/a85.jpg';
 import a86 from '../../assets/Portofolio/Graphic design/a86.jpg';
@@ -97,6 +77,7 @@ import a94 from '../../assets/Portofolio/Graphic design/a94.jpg';
 import Sligra_event_1 from '../../assets/Portofolio/Graphic design/Sligra_event_1.jpg';
 import Sligra_event_2 from '../../assets/Portofolio/Graphic design/Sligra_event_2.jpg';
 import Sligra_event_3 from '../../assets/Portofolio/Graphic design/Sligra_event_3.jpg';
+import Mema_group_2 from '../../assets/Portofolio/Graphic design/Mema_group_2.jpg';
 import { Link } from 'react-router-dom';
 
 import {OnTopBtn} from '../services/identite_visuel/comp/util';
@@ -348,6 +329,22 @@ export default function ImageGraphiqueDesign () {
             />
 
             <GrapicDesignDetails 
+                images={[a47, Mema_group_2]} 
+                title={<span>Mema groupe  <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>présentation projet </span></span>} 
+                text={<span> Nous avons assumé la conception des supports de présentation print et digitaux du projet de gestion intégrée après la réhabilitation des homes
+                            des étudiants de l&apos;université de Kinshasa, un projet Mega Group.
+                        <br/>
+                        <br/>
+                        Année | 2023 
+                        <br/>
+                        </span>
+                        
+                    } 
+                hideDetails={hideDetails} 
+                state={showDetails.a5}
+            />
+
+            <GrapicDesignDetails 
                 images={[a52, a53, a54]} 
                 title={<span>Nyota <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Identité visuelle </span></span>} 
                 text={<span>Dans l&apos;objectif d&apos;innover son image de marque, nous avons accompagné la boutique
@@ -555,10 +552,11 @@ export default function ImageGraphiqueDesign () {
             />
 
             <GrapicDesignDetails 
-                images={[a, a1]} 
-                title={<span> Salon du grand livre des grand lacs <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Event </span></span>} 
-                text={<span>
-                        <br/>
+                images={[Sligra_event_1, Sligra_event_2, Sligra_event_3]} 
+                title={<span> SLIGRA <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Event </span></span>} 
+                text={<span> Dans le cadre de la célébration du salon du livre des grands-lacs SLIGRA en cigle; nous avons assuré la conception
+                            des supports évènementiels. Le service a couvert la production d&apos;une large gamme des supports partant du logo aux supports print et digitaux avant et pendant l&apos;évènement.
+
                         <br/>
                         Année | 2023  
                         </span> 
@@ -568,8 +566,8 @@ export default function ImageGraphiqueDesign () {
             />
 
             <GrapicDesignDetails 
-                images={[a12, a13, a14, a15]} 
-                title={"Diaspora publications 2023 | Mise en page"}
+                images={[a14, a15]} 
+                title={<span> Diaspora publication <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Mise en page</span></span>}
                 text={<span>Nous avons assumé la mise en page du magazine diaspora publications du briefing à la publication passant par la suivie.
                         <br/>
                         <br/>
@@ -663,12 +661,12 @@ export default function ImageGraphiqueDesign () {
             />
 
             <GrapicDesignDetails 
-                images={[a12, a13, a14, a15]} 
-                title={<span> Diaspora publication 2022 <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Mise en page</span></span>}
+                images={[a12, a13]} 
+                title={<span> Diaspora publication <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Mise en page</span></span>}
                 text={<span>Nous avons assumé la mise en page du magazine diaspora publications du briefing à la publication passant par la suivie.
                         <br/>
                         <br/>
-                        Année | 2023  
+                        Année | 2022 
                         <br/>
                         </span> 
                     } 
@@ -754,7 +752,7 @@ export default function ImageGraphiqueDesign () {
                     <img loading='lazy' src={a4} alt='a78' className='sm:hidden'/>
                 </div>
 
-                <div className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage5'  >
+                <div onClick={() => handleDetails('a5')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage5'  >
                     <img loading='lazy' src={a47} alt='a78' className='sm:hidden'/>
                 </div>
             </div>}
@@ -825,7 +823,7 @@ export default function ImageGraphiqueDesign () {
                 </div>
 
                 <div onClick={() => handleDetails('a18')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage18' >
-                    <img loading='lazy' src={a} alt='a78' className='sm:hidden'/>
+                    <img loading='lazy' src={Sligra_event_1} alt='a78' className='sm:hidden'/>
                 </div>
 
                 <div onClick={() => handleDetails('a19')} className=' w-full sm:h-[12.5rem] cursor-pointer md:h-[14rem] bg-center bg-cover bgImage19' >

@@ -30,6 +30,12 @@ export default {
         "bgcqnoufaisons": 'rgba(134, 139, 169)'
       },
 
+      fontFamily: {
+        interBold: ["interBold", "bold"],
+        interRegular: ["interRegular", "normal"],
+        interSemibold: ["interSemibold", "semibold"],
+      },
+
       keyframes:{
         sliderInfinite: {
           '0%' : {transform: 'translateX(0)'},

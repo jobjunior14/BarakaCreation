@@ -68,7 +68,7 @@ export default function Publication () {
 
                             <div className='sm:w-[40%] w-[80%] '>
                                 <div className='w-full sm:items-end items-center sm:justify-end justify-center flex flex-col '>
-                                    <img loading='lazy' src={titlemamour} alt='mamous' className='sm:h-[1.875rem] h-[27px] sm:items-end items-center' />
+                                    <img loading='lazy' src={titlemamour} alt='mamous' className='h-[1.875rem] sm:items-end items-center' />
                                 </div>
 
                                 <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>

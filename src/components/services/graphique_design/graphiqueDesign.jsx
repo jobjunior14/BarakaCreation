@@ -14,7 +14,7 @@ import { OnTopBtn } from '../identite_visuel/comp/util';
 
 export default function GraphiqueDesign () {
 
-    return (<main className=' flex flex-col gap-5 bg-black'>
+    return (<main className=' flex flex-col gap-5 bg-b'>
  
             {/* welcom image and text  */}
             <section className='w-full flex flex-col gap-5  justify-center pt-10' >
@@ -75,7 +75,7 @@ export default function GraphiqueDesign () {
                 <DesignGraphiqueCom 
                     hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[270px]'
                     image={mise_en_page_accueil}
-                    name={'Mise enpage'}
+                    name={'Mise en page'}
                     text={"Livres, magazines, brochures, documents administratifs, institutionnels… "}
                     link={'/services/graphiqueDesign/miseEnPage'}
                     bg={'bg-bgMiseEnpage'}
@@ -137,5 +137,5 @@ export default function GraphiqueDesign () {
 
                 <OnTopBtn brdrColor='border-gray-700' textColor = ' text-white'/>
             </div>
-    </main>)
+    </main>);
 }

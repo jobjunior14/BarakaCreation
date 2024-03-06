@@ -176,9 +176,9 @@ export default function ImageSlider ({images, title, audio}) {
         };
     }
 
-    return (<main className="w-full h-[100vh] relative flex flex-col justify-center items-center bg-gray-900">
+    return (<main className="w-full h-[100vh] relative flex flex-col justify-center items-center  bg-bgRemporter1 ">
         
-          {/* audio  ambiance in background   */}
+        {/* audio  ambiance in background   */}
         {/* onCanPlay function are here to begin the slider if the background song can play ////////////////////////////////////// */}
         <audio onCanPlay={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay={true} type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
 
@@ -189,7 +189,7 @@ export default function ImageSlider ({images, title, audio}) {
             </svg>
 
             
-            <p className="text-gray-200 text-xs font-semibold">Roter votre téléphone pour un meilleur visionnage  </p>
+            <p className={`text-gray-200 text-xs font-semibold`}>Roter votre téléphone pour un meilleur visionnage  </p>
         </div>}
         {/* section image */}
         <section  className="w-full relative flex overflow-hidden justify-center items-center gap-2">

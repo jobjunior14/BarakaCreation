@@ -20,7 +20,7 @@ import prix_ecicr_1 from '../assets/A propos/prix_ecicr_1.png';
 import './an.css'
 export default function Apropos () {
 
-     const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(0);
 
     useEffect(() => {
 
@@ -115,7 +115,7 @@ export default function Apropos () {
             {/* certifier par  */}
             <section className='w-full bg-bgCertifier flex flex-col justify-center items-center py-5 gap-7 px-3'>
                 <div className='w-full justify-center items-center flex flex-col gap-5'>
-                    <h1 className='md:text-3xl text-xl text-blue-50 font-normal'>Cetifié <span className='text-gray-200'>par</span></h1>
+                    <h1 className='md:text-3xl text-xl text-blue-50 font-interSemibold'>Certifié <span className='text-gray-200'>par</span></h1>
                     <div className='sm:w-[90%] md:w-[80%] lg:w-[75%] w-full h-px bg-slate-300'></div>
                 </div>
 
@@ -139,7 +139,7 @@ export default function Apropos () {
                 <article className='flex flex-col gap-y-5 md:max-w-[60%] '>
                     <h1 className='text-4xl sm:text-6xl md:text-7xl text-left text-nos font-bold '>Nos <span className='text-nosVal'>valeurs</span></h1>
 
-                    <div className='flex flex-col gap-3 md:items-center md:justify-center'>
+                    <div className='flex flex-col gap-6 md:gap-10 md:items-center md:justify-center'>
                         
                         {/* innovation  */}
                         <div className='text-left flex gap-3 md:gap-9 justify-normal w-full '>
@@ -182,7 +182,7 @@ export default function Apropos () {
             </section>
 
             {/* prix remporté  */} 
-            <section className='w-full bg-gradient-to-r from-bgRemporter1  to-bgRemporter3 px-7 py-10 flex flex-col gap-8 sm:gap-10'>
+            <section className='w-full bg-gradient-to-r from-bgRemporter1  to-bgRemporter3 px-7 py-14 flex flex-col gap-8 sm:gap-10'>
                 <h3 className='text-3xl sm:text-4xl font-bold text-blue-100'>Prix <span className='text-remporter'>remportés</span></h3>
                 
                 <div className=' flex flex-col sm:flex-row justify-center items-center gap-10'>

@@ -4,7 +4,6 @@ import aBarakaCreationLogoBleu from '../../assets/Icones/aBarakaCreationLogoBleu
 import abarakacreationLogophonebleu from '../../assets/Icones/abarakacreationLogophonebleu.png';
 import bcconversation2_1 from '../../assets/Icones/bcconversation2_1.png';
 import { useMatch } from 'react-router-dom';
-import { click } from '@testing-library/user-event/dist/click';
 export default function NavBar ()
 {
 
@@ -74,32 +73,29 @@ export default function NavBar ()
     }, []);
 
 
-    const activeLink = `duration-300 flex transition easy-in-out delay-400 text-gray-700 text-xs lg:my-0 block lg:flex hover:text-teal-400 font-bold underline `;
-
-    const inactiveLink = 'duration-300 flex transition easy-in-out delay-400 text-gray-700 text-xs lg:my-0 hover:underline block font-medium';
     return (
-        <nav className={`justify-between ${  hideNave ? 'hidden' : 'flex'} sticky w-full py-2 lg:px-28 md:px-20 sm:px-10 px-7 z-50 bg-white shadow-lg items-center -top-0 duration-300 transition easy-in-out delay-400`}>
+        <nav className={`justify-between ${  hideNave ? 'hidden' : 'flex'} sticky w-full py-2 px-[6%] lg:px-[10%] z-50 bg-white shadow-lg items-center -top-0 duration-300 transition easy-in-out delay-400`}>
             
-            <div className=''>
+            <figure>
                 <NavLink 
                     to = {`/`}> <img loading='lazy' className='h-6' src = { changeLogo ? aBarakaCreationLogoBleu : abarakacreationLogophonebleu} alt='BarakaCreation Logo' /></NavLink>
-            </div>
+            </figure>
             
-            <div className={`pt-[10%] mainDiv lg:pt-0 flex flex-col lg:flex-row  text-left lg:pl-9  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out   lg:text-center pl-[9%] lg:pt-0 lg:pb-0 lg:top-0 lg:-left-[2.5rem] pt-5 pb-[100vh] top-[2.5rem] -left-0 absolute w-[70%] lg:relative bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
+            <div className={`pt-[10%] mainDiv flex flex-col lg:flex-row text-left  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out lg:text-center pl-[9%] lg:items-center lg:justify-center lg:p-0 lg:top-0 pt-5 pb-[100vh] top-[2.5rem] -left-0  max-lg:absolute w-[70%] bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
                 
-                <ul className='flex flex-col lg:flex-row lg:items-center justify-between gap-10 mainDiv'>
+                <ul className='flex flex-col lg:flex-row lg:items-center gap-10 justify-evenly mainDiv'>
 
                     <li>
                         <NavLink 
                             onClick={toggle}
-                            className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
                             to = {`/`}> Accueil </NavLink>
                     </li>
 
                     <li>
                         <NavLink 
                             onClick={toggle}
-                            className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
                             to = {`/aPropos`}>  A&nbsp;propos </NavLink>
                     </li>
                     
@@ -108,7 +104,7 @@ export default function NavBar ()
                         <div className=' flex gap-3'>
                             <NavLink 
                                 onClick={toggle}
-                                className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                                className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
                                 to = {`/services`}> Services 
                             </NavLink>
 
@@ -119,7 +115,7 @@ export default function NavBar ()
                             }
                         </div>
 
-                        <div className={`w-fit overflow-hidden ${toggleNav.services ? 'h-[6.25rem]' : 'h-0'} transition-all `}>
+                        <div className={`w-fit lg:hidden overflow-hidden ${toggleNav.services ? 'h-[6.25rem]' : 'h-0'} transition-all `}>
                             <ul className='pl-2 list-none flex flex-col gap-2 pt-3'>
                                 <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/services/idVisuelle'}>Identité Visuelle</NavLink></li>
                                 <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/services/graphiqueDesign'}> Design Graphique</NavLink></li>
@@ -136,7 +132,7 @@ export default function NavBar ()
                         <div className=' flex gap-3'>
                             <NavLink 
                                 onClick={toggle}
-                                className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                                className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
                                 to = {`/portfolio`}> Portfolio 
                             </NavLink>
 
@@ -147,7 +143,7 @@ export default function NavBar ()
                             }
                         </div>
 
-                        <div className={`w-fit overflow-hidden ${toggleNav.portfolio ? 'h-[6.25rem]' : 'h-0'} transition-all `}>
+                        <div className={`w-fit lg:hidden overflow-hidden ${toggleNav.portfolio ? 'h-[6.25rem]' : 'h-0'} transition-all `}>
                             <ul className='pl-2 list-none flex flex-col gap-2 pt-3'>
                                 <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/galleryArt'}> Gallerie d&apos;art</NavLink></li>
                                 <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/logofolio'}>Logofolio</NavLink></li>
@@ -160,27 +156,28 @@ export default function NavBar ()
                     <li>
                         <NavLink 
                             onClick={toggle}
-                            className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
                             to = {`/publication`}> Publications </NavLink>
                     </li>
 
                     <li>
                         <NavLink 
                             onClick={toggle}
-                            className={ ({isActive}) => isActive ? activeLink : inactiveLink}
+                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
                             to = {`/contacts`}> Contacts </NavLink>
                     </li>
                 </ul>
 
-                <div className='  px-1 py-2 ml-[30%] hidden lg:flex justify-center items-center rounded-lg  '>
-                    <img loading='lazy' className='h-4 absolute' src={bcconversation2_1} alt='messagerie' />
-                </div>
+            </div>
+
+            <div className='  px-1 py-2 hidden lg:flex justify-center items-center'>
+                <img loading='lazy' className='h-5' src={bcconversation2_1} alt='messagerie' />
             </div>
 
             {/* when it's become to phone  */}
-            <div className='flex lg:hidden justify-center items-center'>
+            <div onClick={toggle} className='flex lg:hidden justify-center items-center'>
                 
-                    <i onClick={toggle} className="  scale-150 hover:bg-gray-100  rounded-xl px-2 duration-300 transition easy-in-out delay-400 hover:cursor-pointer "> 
+                    <i  className=" scale-150 hover:bg-gray-100  rounded-xl px-2 duration-300 transition easy-in-out delay-400 hover:cursor-pointer "> 
 
                        { 
                             toggleBtn ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 mainDiv">

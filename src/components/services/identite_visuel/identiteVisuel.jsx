@@ -39,20 +39,19 @@ export default function IdentiteVisuel () {
             </section>
             
             {/* demarquez vous  */}
-            <section className="px-3 flex flex-col justify-center bg-gradient-to-r to-bgIdVisuel from-slate-100 w-full pb-5">
+            <section className="px-[6%] lg:px-[12%] flex flex-col gap-10 justify-center bg-gradient-to-r to-bgIdVisuel from-slate-100 w-full py-10 ">
 
                 {/* welcom text  */}
-                <section className="text-left p-7 sm:px-20 md:px-28 w-full flex flex-col md:justify-center md:items-center">
+                <section className="text-left w-full flex flex-col md:justify-start md:items-start gap-7 md:px-[14%]">
                         
-                        <h1 className="text-2xl sm:text-3xl text-gray-600 w-[80%] sm:w-[70%] md:w-[80%] lg:w-[70%]  font-bold mb-7 leading-6"> Démarquez-vous <span className=" text-bgPlay">par une identité visuelle qui</span> marque les esprits</h1>
-                        <p className=" text-md sm:text-[1.125rem]  text-gray-600 w-[80%] sm:w-[70%] md:w-[80%] lg:w-[70%]  font-bold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoriété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] text-gray-700 w-[80%] sm:w-[65%] md:w-[75%] lg:w-[70%]  font-interBold leading-6"> Démarquez-vous <span className=" text-bgPlay">par une identité visuelle qui</span> marque les esprits</h1>
+                        <p className=" text-md sm:text-[1.125rem]  text-gray-700 w-[80%] sm:w-[90%] lg:w-[80%] font-interSemibold leading-5 md:leading-7"> Nous vous aidons à créer une identité visuelle qui soit à la fois unique et efficace pour développer votre notoriété, augmenter votre crédibilité, communiquer efficacement et <span className=" text-bgPlay">vous démarquer en créant une relation durable avec votre public.</span> </p>
                 </section>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:px-5 md:px-8 lg:px-14">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-between">
 
                     {/* logo type  */}
                     <IdVisuelleComp 
-                        hImage='h-[12.5rem] sm:h-[15.625rem]  md:h-[16.875rem]'
                         image={Id_Vieuellelogo}
                         name={'Logotype'}
                         text={"Il s'agit du cœur de votre identité visuelle. Nous créons un logo qui vous distingue"}
@@ -60,33 +59,32 @@ export default function IdentiteVisuel () {
                     />
 
                     {/* charte graphique  */}
-                    <section className="w-full bg-white rounded-lg py-5"> 
+                    <section className="w-full  bg-white rounded-lg relative flex flex-col gap-5 py-10"> 
 
                         {/* Charte graphique image  */}
-                        <div className="w-full justify-start items-start flex">
-                                <img loading='lazy' src={Id_visuelle_Charte_graphique} alt="Id_Vieuellelogo" className="h-[12.5rem] sm:h-[15.625rem] md:h-[16.875rem]" />
-                        </div>
+                        <figure className="w-full h-0 relative" style={{paddingTop: 'calc(100% * (1/2))'}}>
+                                <img loading='lazy' src={Id_visuelle_Charte_graphique} alt="Id_Vieuellelogo" className="h-full w-full object-cover absolute top-0" />
+                        </figure>
 
-                        <section className="w-full justify-center items-center flex flex-col gap-4">
+                        <figcaption className="w-full justify-center items-center flex flex-col gap-4">
                             
                             {/* charte Graphique logoType  */}
                             <div className="text-center flex flex-col items-center justify-center gap-3">
 
                                 <h1 className="text-2xl md:text-3xl text-gray-600 font-bold  ">Charte Graphique</h1>
-                                <p className="w-[75%] sm:w-[70%] md:w-[65%]  text-[0.69rem] sm:text-[0.875rem] lg:text-[15px] text-gray-600">Pour maintenir votre identité visuelle, unifiée, forte et cohérente</p>
+                                <p className="w-[75%] sm:w-[70%] md:w-[70%]  text-[0.69rem] sm:text-[0.875rem] md:text-[1rem] font-interRegular text-gray-600">Pour maintenir votre identité visuelle, unifiée, forte et cohérente</p>
                             </div>
 
                             {/* Charte Graphique button  */}
                             <div className="flex justify-evenly gap-10">
-                                <Link to={'/services/idVisuelle/charteGraphique'} className=" text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] flex items-center"> Voir plus <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
-                                <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[15px] md:text-[1rem] px-2  rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                                <Link to={'/services/idVisuelle/charteGraphique'} className=" text-blue-500 text-[0.69rem] font-interRegular sm:text-[0.875rem] md:text-[1rem] flex items-center justify-center"> Voir plus <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" /></svg></span></Link>
+                                <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.69rem] sm:text-[0.875rem] font-interRegular md:text-[1rem] px-2  rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                             </div>
-                        </section>
+                        </figcaption>
                     </section>
                     
                     {/* support Print  */}
                     <IdVisuelleComp 
-                        hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[16.875rem]'
                         image={Id_visuelle_print}
                         name={'Support Print'}
                         text={"Supports de présentation, affichages, supports administratifs et habillages"}
@@ -98,7 +96,6 @@ export default function IdentiteVisuel () {
 
                         <div className="w-full ">
                             <IdVisuelleComp 
-                                hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[16.875rem]'
                                 image={id_visuel_digital}
                                 name={'Digital'}
                                 text={"Connectez-vous avec votre public grâce à une stratégie et des supports digitaux efficaces"}
@@ -116,7 +113,7 @@ export default function IdentiteVisuel () {
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600">Présentation</h1>
-                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Nous sommes à vos cotés pour élaborer et créer des supports de présentation de votre entreprise adaptés les aux écrans </p>
+                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600">Nous sommes à vos cotés pour élaborer et créer des supports de présentation de votre entreprise adaptés les aux écrans </p>
                                 </div>
                             </div>
 
@@ -127,7 +124,7 @@ export default function IdentiteVisuel () {
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600">Réseaux sociaux</h1>
-                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Nous élaborons et nous concevons des supports efficaces pour créer un lien affectif avec votre public ciblé. </p>
+                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600">Nous élaborons et nous concevons des supports efficaces pour créer un lien affectif avec votre public ciblé. </p>
                                 </div>
                             </div>
 
@@ -138,8 +135,8 @@ export default function IdentiteVisuel () {
                                 </div>
                                 <div className="w-[90%] flex flex-col  gap-1">
                                     <h1 className="md:text-[1.125rem] font-bold text-gray-600">Web design</h1>
-                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600"> Conception graphique des sites web & applications mobile</p>
-                                    <button className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center "  onClick={() => digitalClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                    <p className="text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600"> Conception graphique des sites web & applications mobile</p>
+                                    <button className="text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-blue-500 mt-2 text-left flex items-center "  onClick={() => digitalClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
                                         </svg>
                                         </span>
@@ -156,7 +153,6 @@ export default function IdentiteVisuel () {
 
                         <div className="w-full ">
                             <IdVisuelleComp 
-                                hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[16.875rem]'
                                 image={Id_visuelle_packaging}
                                 name={'Packaging'}
                                 text={"Faites concevoir un packaging attractif et informatif avec nous"}
@@ -169,22 +165,22 @@ export default function IdentiteVisuel () {
 
                             <h1 className="text-left md:text-[1.125rem] font-bold text-gray-600">Un atout marketing incontournable</h1>
 
-                            <p className="text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Le packaging est le premier contact que vos clients ont avec votre produit. <br /> 
+                            <p className="text-left text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600">Le packaging est le premier contact que vos clients ont avec votre produit. <br /> 
                                 Nous créons un packaging qui vous permettra d&apos;atteindre vos objectifs marketing.
                             </p>
 
-                            <p className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600"> Le packaging vous aidera à:</p>
+                            <p className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600"> Le packaging vous aidera à:</p>
 
                             <div className="w-full text-left px-4">
                                <ul className="list-disc ">
-                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Augmenter la notoriété de votre marque</li>
-                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Développer votre imaege de marque</li>
-                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Améliorer la perception de votre produit</li>
-                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Faciliter la vente de votre produit</li>
-                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[15px] text-gray-600">Démarquer votre produit</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600">Augmenter la notoriété de votre marque</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600">Développer votre imaege de marque</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600">Améliorer la perception de votre produit</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600">Faciliter la vente de votre produit</li>
+                                    <li className=" text-left text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-gray-600">Démarquer votre produit</li>
                                 </ul>     
                             </div>
-                            <button className="text-[0.69rem] sm:text-[13px] lg:text-[15px] text-blue-500 mt-2 text-left flex items-center " onClick={() => packegingClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                            <button className="text-[0.69rem] sm:text-[13px] lg:text-[1rem] text-blue-500 mt-2 text-left flex items-center " onClick={() => packegingClickHandler()}>Voir moins <span className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
                                 </svg>
                                 </span>
@@ -196,7 +192,6 @@ export default function IdentiteVisuel () {
 
                     {/*Video  */}
                     <IdVisuelleComp 
-                        hImage='h-[12.5rem] sm:h-[15.625rem] md:h-[16.875rem]'
                         image={id_visuelle_video}
                         name={'Vidéo'}
                         text={"Spot publicitaire, Présentation, promotions en motion design"}

@@ -61,7 +61,7 @@ export default function Contacts () {
         }
     } 
 
-    return (<main className='px-[10%] justify-center items-center py-10 bg-slate-100 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-5'>
+    return (<main className='px-[10%] justify-center items-center py-10 bg-slate-100 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-10'>
         
         {/* Baraka information  */}
         <section className='flex flex-col gap-3 items-start sm:w-[35%] relative sm:h-[20rem] w-full '> 
@@ -71,19 +71,19 @@ export default function Contacts () {
                     <div className='w-[1.3rem]'>
                         <img loading='lazy' src={icone_contat_Mail}/>
                     </div>
-                    <p className=" font-bold text-[13px] text-gray-700"> barakalurhakwa@gmail.com</p>
+                    <p className="font-bold text-[0.8125rem] text-gray-700"> barakalurhakwa@gmail.com</p>
                 </div>
                 <div className="flex gap-3 justify-center items-center">
                     <div className='w-[1.3rem]'>
                         <img loading='lazy' src={icone_contat_call_center}/>
                     </div>
-                    <p className=" font-bold text-[13px] text-gray-700">+243 976 458 461</p>
+                    <p className=" font-bold text-[0.8125rem] text-gray-700">+243 976 458 461</p>
                 </div>
                 <div className="flex gap-3 justify-center items-center">
                     <div className='w-[1.3rem]'>
                         <img loading='lazy' src={icone_contat_Whatsapp}/>
                     </div>
-                    <p className=" font-bold text-[13px] text-gray-700">+243 823 468 444</p>
+                    <p className=" font-bold text-[0.8125rem] text-gray-700">+243 823 468 444</p>
                 </div>
             </section>
 
@@ -154,7 +154,7 @@ export default function Contacts () {
         </section>
 
         {/* link section  */}
-        <section className='sm:hidden grid grid-cols-4 gap-3 justify-center items-center'>
+        <section className='sm:hidden grid grid-cols-4 gap-3 justify-center items-center mt-1'>
                 
                 <Link to={'https://www.behance.net/barakacreation'}> <img loading='lazy' src={bcBehance} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
                 <Link to={'https://web.facebook.com/barakalurhakwa'}><img loading='lazy' src={bcFb} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
@@ -166,5 +166,5 @@ export default function Contacts () {
                 <Link to={'https://www.youtube.com/channel/UCUIo11-hI77iG8CqH5DQScA'}><img loading='lazy' src={iconyoutube} alt='image' className='w-[1.5rem] hover:scale-110 duration-200'/></Link>
             
         </section>
-    </main>)
+    </main>);
 }

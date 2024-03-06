@@ -6,9 +6,9 @@ export default function SecondeNav ({link, bgColor, titleColor, brdrColor, textC
     const navigate = useNavigate();
 
     return (
-        <div className={`py-1 px-[5%] sticky top-0 ${bgColor} z-50 overflow-hidden`}>
+        <div className={`py-1 sticky top-0 ${bgColor} z-50 overflow-hidden`}>
             <section className='w-full flex justify-between item-center'>
-                <h1 className={`font-bold ${titleColor}`}> {title} </h1>
+                <h1 className={`font-interSemibold ${titleColor}`}> {title} </h1>
 
                 <div onClick={() => navigate(link)} className={`p-1 border ${brdrColor} rounded-full cursor-pointer`}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 h-4 ${textColor}`}>

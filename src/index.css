@@ -1,6 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "interBold";
+    src: url("../src/assets/Polices/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "interRegular";
+    src: url("../src/assets/Polices/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "interSemibold";
+    src: url("../src/assets/Polices/Inter-SemiBold.ttf");
+}
 /* ----- SMOOTH SCROLL ----- */
 html{
     scroll-behavior: smooth;

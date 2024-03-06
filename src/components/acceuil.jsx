@@ -39,11 +39,11 @@ export default function Acceuil () {
 
                 <article className=' w-full justify-center items-center text-center flex flex-col sm:absolute left-4 ml-2'>
 
-                    <h2 className=' text-bgcqnoufaisons font-semibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 '>Ce que nous faisons</h2>
+                    <h2 className=' text-bgcqnoufaisons font-interSemibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 '>Ce que nous faisons</h2>
 
                     <div className=' w-[12.5rem]  sm:w-[15.625rem]  items-center flex flex-col gap-y-3 sm:gap-y-5 mt-[25px] sm:mt-[2.5rem] md:mt-[6.25rem] lg:mt-[7.5rem]'>
 
-                        <h3 className=' text-blue-100 text-center text-3xl md:text-4xl lg:text-6xl font-bold'>Innover</h3>
+                        <h3 className=' text-blue-100 text-center text-3xl md:text-4xl lg:text-6xl font-interBold'>Innover</h3>
 
                         <p className='text-center text-xs sm:text-base text-gray-200 font-normal'>Nous apportons des solutions innovantes, originales et efficaces en communication visuelle</p>
 
@@ -70,13 +70,13 @@ export default function Acceuil () {
             </section>
             
             {/* third part "accompagnement" */}
-            <section className='w-full bg-white flex flex-col text-center justify-center relative pt-7 gap-4'>
+            <section className='w-full bg-white flex flex-col text-center justify-center relative pt-7 md:gap-4'>
 
-                <article className=' w-full justify-center items-center text-center flex flex-col left-4 ml-2'>
+                <article className=' w-full justify-center items-center text-center flex flex-col left-4 ml-2 md:pt-3 z-40'>
 
                     <div className=' w-[12.5rem]  sm:w-[25rem]  items-center flex flex-col gap-y-2 sm:gap-y-5 '>
 
-                        <h3 className=' text-black text-center text-3xl md:text-4xl lg:text-6xl font-bold'>Accompagner</h3>
+                        <h3 className=' text-gray-800 text-center text-3xl md:text-4xl lg:text-6xl font-interBold'>Accompagner</h3>
 
                         <p className='text-center text-xs sm:text-base text-gray-800 font-normal'>De la stratégie à la mise en œuvre, nous aidons les entreprises à créer une image de marque forte et durable</p>
                         
@@ -92,8 +92,8 @@ export default function Acceuil () {
                     </div>
                 </article>
               
-                <picture className='flex flex-col justify-center items-center  '>
-                    <img loading='lazy' src={accueil_accompagnons} className='w-[80%] md:w-[70%] lg:w-[65%]' alt='image accompagnement'/>
+                <picture className='flex flex-col justify-center items-center  md:-mt-10'>
+                    <img loading='lazy' src={accueil_accompagnons} className='w-[80%] md:w-[70%] lg:w-[60%]' alt='image accompagnement'/>
                 </picture>
 
                 
@@ -104,15 +104,17 @@ export default function Acceuil () {
 
                 <div className=' w-full items-center text-center flex flex-col left-4 ml-2'>
 
-                    <div className=' w-[12.5rem]  sm:w-[25rem]  items-center flex flex-col gap-y-2 sm:gap-y-5 absolute bottom-3 '>
+                    <div className=' w-[12.5rem]  sm:w-[25rem]  items-center flex flex-col gap-y-1 sm:gap-y-1 absolute bottom-6 '>
 
-                        <h3 className=' text-blue-100 text-center text-3xl md:text-4xl lg:text-6xl font-bold'>Créer</h3>
+                        <h3 className=' text-blue-100 text-center text-3xl md:text-4xl lg:text-6xl font-interBold'>Créer</h3>
 
-                        <p className='text-center text-xs sm:text-base text-white font-normal'>Découvrez nos histoires inspirantes</p>
-                        
-                        <div onClick={() => navigate('/publication')} className=' rounded-full cursor-pointer py-1 px-6 border flex relative  hover:bg-myBlue duration-200'> 
-                            <p className='text-white text-[0.625rem] sm:text-sm text-center'>Voir plus </p>
-                        </div>
+                        <caption className='flex flex-col justify-center items-center gap-2'>
+                            <p className='text-center text-xs sm:text-base text-white font-normal'>Découvrez nos histoires inspirantes</p>
+                            
+                            <div onClick={() => navigate('/publication')} className=' rounded-full cursor-pointer py-1 px-6 border flex relative  hover:bg-myBlue duration-200'> 
+                                <p className='text-white text-[0.625rem] sm:text-sm text-center'>Voir plus </p>
+                            </div>
+                        </caption>
                     </div>
                 </div>
               
@@ -122,7 +124,7 @@ export default function Acceuil () {
 
             </section>
             {/* 5th part "entron en contact" */}
-            <figure className='w-full flex flex-col gap-2 text-center justify-center items-center relative bg-gray-50 p-5'>
+            <figure className='w-full flex flex-col gap-5 text-center justify-center items-center relative bg-gray-50 px-5 py-10'>
 
                 <picture className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
                     <img loading='lazy' src={design_entrons_en_contact} className='' alt='image accompagnement'/>
