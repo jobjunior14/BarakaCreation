@@ -64,14 +64,14 @@ export default function Publication () {
                     <div className='h-full w-full duration-200 delay-150 flex absolute overflow-hidden'> 
                         
                         {/* mamour texte  */}
-                        <div className={`w-full absolute flex sm:justify-end justify-center items-center bottom-[60px] sm: text-center sm:right-[2.5rem] duration-1000 delay-150 `} style={{transform: `translateX(${-index}%)`}}>
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center bottom-[60px] sm: text-center sm:right-[12%] duration-1000 delay-150 `} style={{transform: `translateX(${-index}%)`}}>
 
                             <div className='sm:w-[40%] w-[80%] '>
                                 <div className='w-full sm:items-end items-center sm:justify-end justify-center flex flex-col '>
-                                    <img loading='lazy' src={titlemamour} alt='mamous' className='h-[1.875rem] sm:items-end items-center' />
+                                    <img loading='lazy' src={titlemamour} alt='mamous' className='w-[40%] sm:items-end items-center' />
                                 </div>
 
-                                <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+                                <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2 font-interRegular'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
 
                                 <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
 
@@ -80,20 +80,20 @@ export default function Publication () {
                                         <img loading='lazy' src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img loading='lazy' src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <Link to={'/publication/mamour'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
+                                    <Link to={'/publication/mamour'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-interBold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
                             </div>
                         </div>
                         
                         {/* le defi text  */}
-                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[60px] bottom-[48px] text-center sm:right-[2.5rem] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 100}%)`}}>
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[60px] bottom-[48px] text-center sm:right-[12%] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 100}%)`}}>
 
                             <div className='sm:w-[40%] w-[80%] '>
                                 <div className='w-full sm:items-end items-center sm:justify-end justify-center sm:flex flex-col hidden '>
-                                    <img loading='lazy' src={titlele_reve_et_le_defi} alt='mamous' className='sm:h-[6.25rem] md:h-[6.25rem] lg:h-[150px] h-[6.25rem] sm:items-end items-center' />
+                                    <img loading='lazy' src={titlele_reve_et_le_defi} alt='mamous' className='w-[50%] sm:items-end items-center' />
                                 </div>
 
-                                <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2 sm:block hidden'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+                                <p className='sm:text-[13px] text-[0.625rem] text-gray-300 sm:text-right text-center mt-2 font-interRegular sm:block hidden'> C&apos;est l&apos;histoire de milliers des jeunes qui ont cru et continuent à croire à leurs rêves. Qui se battent pour dépasser les obstacles et réalités de la vie. Qui malgré les tress et la dépression continent de se battre pour un avenir meilleur</p>
 
                                 <div className='flex sm:flex-row flex-col gap-4 sm:justify-end justify-center items-center mt-2'>
 
@@ -102,7 +102,7 @@ export default function Publication () {
                                         <img loading='lazy' src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img loading='lazy' src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <Link to={'/publication/defi'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
+                                    <Link to={'/publication/defi'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-interBold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
                             </div>
                         </div>
@@ -119,17 +119,17 @@ export default function Publication () {
                                         <img loading='lazy' src={iconPhotoshop} alt="icon" className='h-5'/>
                                         <img loading='lazy' src={icon4N} alt="icon" className='h-5'/>
                                     </div>
-                                    <Link to={'/publication/chute'} className='px-5 bg-gray-700 text-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
+                                    <Link to={'/publication/chute'} className='px-5 bg-gray-700 text-gray-200 rounded-lg text-[0.875rem] font-interBold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
                             </div>
                         </div>
 
                         {/* Haut text  */}
-                        <div className={`w-full absolute flex sm:justify-start justify-center items-center lg:bottom-[60px] md:bottom-[2.5rem] sm:bottom-[1.875rem] bottom-[48px] sm:text-center sm:left-[5rem] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 300}%)`}}>
+                        <div className={` w-full absolute flex sm:justify-start justify-center items-center lg:bottom-[60px] md:bottom-[2.5rem] sm:bottom-[1.875rem] bottom-[48px] sm:text-center sm:left-[8%] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 300}%)`}}>
 
                             <div className='sm:w-[60%] md:w-[50%] lg:w-[40%] w-[80%] '>
                                 
-                                <p className='sm:text-[13px] text-[0.625rem] text-gray-50 sm:text-left text-center mt-2 hidden sm:block'> Un amour Eternel. L&apos;amour d&apos;une mère est un cadeau inestimable, qui éclaire notre vie et nous rappelle l'importance de la compassion, et de la bienveillance. Mamour est une histoire sur le parcours d'une mère avec son son enfant.</p>
+                                <p className='sm:text-[13px] text-[0.625rem] text-gray-50 sm:text-left text-center mt-2 font-interRegular hidden sm:block'> Pendant que les autres enfants du village hissaient leurs cerfs-volants, le petit Mukulu échouait à chaque fois à réaliser cet exploit. Il se trouvait face à un dilemme : abandonner ou puiser dans ses dernières forces. Haut est une histoire inspirante de ceux qui continuent d&apos;avancer malgré les échecs.</p>
 
                                 <div className='flex sm:flex-row flex-col gap-4 sm:justify-start justify-center items-center mt-2'>
 
@@ -138,7 +138,7 @@ export default function Publication () {
                                         <img loading='lazy' src={iconPhotoshop_2} alt="icon" className='h-5'/>
                                         <img loading='lazy' src={icon4} alt="icon" className='h-5'/>
                                     </div>
-                                    <Link to={'/publication/haut'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-bold hover:bg-slate-400 duration-200'>Suivre</Link>
+                                    <Link to={'/publication/haut'} className='px-5 bg-gray-200 rounded-lg text-[0.875rem] font-interBold hover:bg-slate-400 duration-200'>Suivre</Link>
                                 </div>
                             </div>
                         </div>
@@ -176,8 +176,8 @@ export default function Publication () {
             </section>
             
             {/* seconde party gallery */}
-            <div className='w-full bg-bgRemporter1 pt-10 flex flex-col gap-14 pb-10'>
-                <h1 className='font-bold md:text-5xl text-3xl text-blue-100'> Découvrez nos <br/> histoires inspirantes</h1>
+            <div className='w-full bg-bgRemporter1 py-20 flex flex-col gap-14'>
+                <h1 className='font-interBold md:text-5xl text-3xl text-blue-100'> Découvrez nos <br/> histoires inspirantes</h1>
 
                 <div className=' grid grid-cols-1 sm:grid-cols-2 gap-3 px-2 sm:px-[10%] '>
                         

@@ -6,7 +6,7 @@ export default function SecondeNav ({link, bgColor, titleColor, brdrColor, textC
     const navigate = useNavigate();
 
     return (
-        <div className={`py-1 sticky top-0 ${bgColor} z-50 overflow-hidden`}>
+        <div className={`py-1 sticky top-0 ${bgColor} z-50 overflow-hidden px-[6%] lg:px-[10%]`}>
             <section className='w-full flex justify-between item-center'>
                 <h1 className={`font-interSemibold ${titleColor}`}> {title} </h1>
 

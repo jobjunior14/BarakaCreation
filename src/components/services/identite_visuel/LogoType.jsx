@@ -8,7 +8,7 @@ export default function Logotype () {
 
     const width = useWindowWidth();
     return (
-        <div className='w-full bg-slate-100 px-[6%] lg:px-[10%]'>
+        <div className='w-full bg-slate-100 '>
             
             <SecondeNav 
                 link={'/services/idVisuelle'} 
@@ -18,7 +18,7 @@ export default function Logotype () {
                 brdrColor='border-gray-600' textColor = ' text-black'
             />
             
-            <div className='sm:pt-24 lg:px-[12%]'>
+            <div className='sm:pt-24 px-[6%] lg:px-[20%]'>
                 
                 {/* welcom image  */}
                 <section className='w-full flex flex-col gap-5 items-center justify-center pb-[25%] sm:pb-[15%] md:pb-[10%] relative'>

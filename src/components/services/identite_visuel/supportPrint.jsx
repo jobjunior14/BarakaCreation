@@ -34,17 +34,17 @@ export default function SupportPrint() {
     const width = useWindowWidth();
     return (
         <div className='w-full bg-white'>
-            
-            <SecondeNav 
-                link={'/services/idVisuelle'} 
-                bgColor={'bg-white'} 
-                titleColor='text-gray-600'
-                title={'Identité visuelle'}
-                brdrColor='border-gray-600' textColor = ' text-black'
-            />
+
+                <SecondeNav 
+                    link={'/services/idVisuelle'} 
+                    bgColor={'bg-white'} 
+                    titleColor='text-gray-600'
+                    title={'Identité visuelle'}
+                    brdrColor='border-gray-600' textColor = ' text-black'
+                />
             
             {/* welcom image  */}
-            <section className='w-full px-[5%] flex flex-col items-center justify-center relative '>
+            <section className='w-full flex flex-col items-center justify-center relative '>
             
                 <img loading='lazy' src={width >= 640 ? print_accueil : print_accueil_phone} alt=" print_accueil" className=''/>
                 
@@ -56,7 +56,7 @@ export default function SupportPrint() {
                 </div>
             </section>
 
-            <div className=' sm:px-[5rem] md:px-[6.25rem] lg:px-[7.5rem] bg-slate-50 w-full flex flex-col gap-14'>
+            <div className=' px-[6%] lg:px-[20%] bg-slate-50 w-full flex flex-col gap-14'>
                 
                 {/* Supports de présentation  */}
                 <section className='flex flex-col gap-3  bg-white w-full p-5 mt-5 rounded-lg'>

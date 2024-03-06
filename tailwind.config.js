@@ -27,7 +27,8 @@ export default {
         'bgCampagnCom' : 'rgba(107, 107, 131)',
         'bgConception': 'rgba(69, 73, 111)',
         'bgConceptionGrid': 'rgba(83, 86, 129)',
-        "bgcqnoufaisons": 'rgba(134, 139, 169)'
+        "bgcqnoufaisons": 'rgba(134, 139, 169)',
+        "bgIllustration": 'rgba(244, 243, 251)'
       },
 
       fontFamily: {

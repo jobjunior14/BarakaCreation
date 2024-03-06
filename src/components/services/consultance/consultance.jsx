@@ -14,7 +14,7 @@ export default function Consultance () {
         <section className="w-full flex   relative">
 
             <div className="flex w-full top-10 absolute  justify-center gap-4 items-center flex-col sm:hidden">
-                <h1 className="text-6xl text-gray-100 font-bold">Consulting</h1>
+                <h1 className="text-6xl text-gray-100 font-interBold">Consulting</h1>
                 <Link to={'../'} className=" hover:bg-gray-100 hover:text-blue-600 duration-200 text-sm text-gray-100 border border-gray-50 rounded-full px-[0.25rem] py-[0.125rem]"> Nous contacter</Link>
             </div>
             <img loading='lazy' src={width <= 640 ? Accueil_Consulting_services_phone : Accueil_consulting_accueil} alt="width <= 640 ? " />
@@ -26,14 +26,14 @@ export default function Consultance () {
 
             <section className='pt-10 w-full flex flex-col sm:px-[10%]'>
 
-                <h1 className='text-left px-[10%] text-[1.624rem] leading-7 font-bold text-gray-700 '>Conseil et <br /> stratégies <br /> <span className="text-gray-500">pour votre</span> <br />Communication</h1>
+                <h1 className='text-left px-[10%] text-[1.624rem] leading-7 font-interBold text-gray-700 '>Conseil et <br /> stratégies <br /> <span className="text-gray-500">pour votre</span> <br />Communication</h1>
 
-                <section className=' gap-5   flex flex-col sm:flex-row py-5 w-full '>
+                <section className=' gap-5   flex flex-col sm:flex-row py-10 w-full '>
 
                     {/* first paragraph  */}
                     <section className='px-[10%] w-[90%] sm:w-full  '>
 
-                        <p className=' text-left font-[500] text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  '> 
+                        <p className=' text-left font-interSemibold text-gray-700 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  '> 
                           Baraka creation vous accompagne
                             dans l&apos;élaboration de la stratégie de
                             communication dans l&apos;objectif de
@@ -48,7 +48,7 @@ export default function Consultance () {
                     {/* second paragraph  */}
                     <section className='px-[10%] sm:px-0  w-[90%] sm:w-full hidden sm:flex '>
 
-                        <p className='text-left font-[500] text-gray-500 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6 '> 
+                        <p className='text-left font-interSemibold text-gray-500 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6 '> 
                             Nous intervenons dans ce
                             processus afin de vous
                             accompagner dans la réalisation
@@ -67,7 +67,7 @@ export default function Consultance () {
         <section className=" bg-[rgb(132,130,255)] flex flex-col sm:flex-row lg:pr-[10%] lg:pl-[6%] gap-5 sm:justify-between">
 
             <div className="flex flex-col gap-2 px-[5%] pt-5 sm:items-center sm:justify-center  ">
-                <p className='text-center font-[500] text-blue-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[75%] md:w-full sm:hidden'> 
+                <p className='text-center font-interSemibold text-blue-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[75%] md:w-full sm:hidden'> 
                     Nous intervenons dans ce
                     processus afin de vous
                     accompagner dans la réalisation
@@ -76,14 +76,14 @@ export default function Consultance () {
                     vous convient.
                 </p>
 
-                <p className=' font-[500] sm:text-left text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[70%] md:w-[60%]'> 
+                <p className=' font-interSemibold sm:text-left text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[70%] md:w-[60%]'> 
                     Sous fome de réunions en ligne ou dans
                     vos locaux, nous vous proposons de
                     travailler ensemble sur votre stratégie,
                     sous fome de conseils en communication.
                 </p>
 
-                <p className=' font-[500] sm:text-left text-blue-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[70%] md:w-[60%]'> 
+                <p className=' font-interSemibold sm:text-left text-blue-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[70%] md:w-[60%]'> 
                     Nous saurons analyser l&apos;ensemble de vos
                     données sectoielles pour dégager une
                     tendance vers laquelle diiger votre
@@ -100,7 +100,7 @@ export default function Consultance () {
         </section>
 
         {/* section entron en contact  */}
-        <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative p-5'>
+        <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative py-20'>
 
                 <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
                 <img loading='lazy' src={design_entrons_en_contact} className='' alt='image accompagnement'/>

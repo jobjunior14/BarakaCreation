@@ -21,7 +21,7 @@ export default function Illustation () {
 
     const width = useWindowWidth();
 
-    return (<main>
+    return (<main className='bg-bgIllustration'>
 
         {/* welcome image  */}
         <section>
@@ -30,18 +30,18 @@ export default function Illustation () {
 
         {/* first tetxt  */}
         {/* section text  */}
-        <section className='w-full  flex bg-slate-100'>
+        <section className='w-full  flex '>
 
-            <section className='pt-10 w-full flex flex-col sm:px-[10%]'>
+            <section className='py-10 w-full flex flex-col sm:px-[10%]'>
 
-                <h1 className='text-left px-[10%] text-[2rem] leading-10 font-bold text-gray-700 '>Des solutions <br />créatives <br />illimitées </h1>
+                <h1 className='text-left px-[10%] text-[2rem] md:text-[2.5rem] leading-10 font-interBold text-gray-700 '>Des solutions <br className='sm:hidden'/>créatives <br />illimitées </h1>
 
                 <section className=' gap-5   flex flex-col sm:flex-row py-10 w-full '>
 
                     {/* first paragraph  */}
                     <section className='px-[10%] w-[90%] sm:w-full  '>
 
-                        <p className=' text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7  '> 
+                        <p className=' text-left font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7  '> 
                             L&apos;illustration est un outil puissant qui
                             permet de capter l&apos;attention, transmettre
                             un message et créer des émotions. <br /> <span className='text-gray-500' >Nous créons des visuels personnalisés et
@@ -51,14 +51,14 @@ export default function Illustation () {
                     </section>
 
                     {/* second paragraph  */}
-                    <section className='px-[10%] sm:px-0  w-[90%] sm:w-full  '>
+                    <section className='px-[10%] sm:px-0  gap-5 flex flex-col w-[90%] sm:w-full  '>
 
-                        <p className='text-left font-[500] text-gray-500 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7 '> Nous vous aidons ainsi à :</p>
+                        <p className='text-left font-interSemibold text-gray-500 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7 '> Nous vous aidons ainsi à :</p>
                         <ul className=' list-disc'>
-                            <li className='text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7   '> développer votre identité visuelle,</li>
-                            <li className='text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7   '>créer des supports impactant,</li>
-                            <li className='text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7   '>concrétiser des sujets abstraits &</li>
-                            <li className='text-left font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7   '>raconter votre histoire</li>
+                            <li className='text-left font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7   '> développer votre identité visuelle,</li>
+                            <li className='text-left font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7   '>créer des supports impactant,</li>
+                            <li className='text-left font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7   '>concrétiser des sujets abstraits &</li>
+                            <li className='text-left font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7   '>raconter votre histoire</li>
                         </ul>
 
                     </section>
@@ -68,12 +68,12 @@ export default function Illustation () {
         </section>
 
         {/* here section    */}
-        <section className='px-[10%] grid grid-cols-1 gap-3 justify-center bg-slate-100'>
+        <section className='px-[12%] grid grid-cols-1 gap-3 justify-center '>
 
             <figure className='w-full h-[12.5rem] md:h-[15.625rem] lg:h-[16.875rem] rounded-md overflow-hidden relative'>
 
                     <div className='w-full justify-center absolute items-center z-40 top-5'>
-                        <h2 className='font-bold text-gray-100 text-[1.125rem]'>Plus d&apos;émotions</h2>
+                        <h2 className='font-bold text-gray-100 text-[1.125rem] md:text-[2rem]'>Plus d&apos;émotions</h2>
                     </div>
                     <img loading='lazy' src={illustration_emotion} alt="illustration_emotion" className=' object-cover w-full h-full' />
             </figure>
@@ -82,7 +82,7 @@ export default function Illustation () {
                 <figure className='w-full h-0 rounded-md overflow-hidden  relative' style={{ paddingTop: 'calc(100% * (4/3.5))'}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
-                            <h2 className='font-bold text-gray-700 text-[1.125rem]'>Plus <br /> de style</h2>
+                            <h2 className='font-bold text-gray-700 text-[1.125rem] md:text-[2rem] md:leading-8 leading-5'>Plus <br /> de style</h2>
                         </div>
                         <img loading='lazy' src={Illustration_vectoriel} alt="illustration_emotion" className='absolute top-0 object-cover w-full h-full' />
                 </figure>
@@ -90,7 +90,7 @@ export default function Illustation () {
                 <figure className='w-full h-0 rounded-md  overflow-hidden relative' style={{ paddingTop: 'calc(100% * (4/3.5))'}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
-                            <h2 className='font-bold text-gray-100 text-[1.125rem]'>Plus <br /> d&apos;excellence</h2>
+                            <h2 className='font-bold text-gray-100 text-[1.125rem] md:text-[2rem] md:leading-8 leading-5'>Plus <br /> d&apos;excellence</h2>
                         </div>
                         <img loading='lazy' src={Illustration_excellence} alt="illustration_emotion" className='absolute top-0 object-cover w-full h-full' />
                 </figure>
@@ -98,13 +98,13 @@ export default function Illustation () {
         </section>
         
         {/* second text  */}
-        <section className='w-full px-[10%] sm:justify-center sm:items-center flex flex-col gap-2 sm:gap-5 py-10 bg-slate-100'>
-            <h1 className='text-left sm:text-center font-bold text-[1.25rem] sm:text-[1.38rem] md:text-[1.5rem] lg:text-[1.65rem] leading-5 text-gray-500'> Vous avez un <br className='sm:hidden'/> projet complexe ?</h1>
-            <p className=' w-[75%] sm:w-[55%] md:w-[45%]  text-left sm:text-center font-[500] text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] leading-6 lg:leading-7 '>Nous proposons un package complet des suppots : de l&apos;illustration éditoiale, aux campagnes passant par le web et <Link to='/contacts' className='text-blue-500'> concept art {'>'}</Link></p>
+        <section className='w-full px-[10%]  sm:justify-center sm:items-center flex flex-col gap-2 sm:gap-5 py-14 bg-slate-100'>
+            <h1 className='text-left sm:text-center font-interBold text-[1.25rem] sm:text-[1.38rem] md:text-[1.5rem] lg:text-[1.65rem] leading-5 text-gray-500'> Vous avez un <br className='sm:hidden'/> projet complexe ?</h1>
+            <p className=' w-[75%] sm:w-[55%] md:w-[55%]  text-left sm:text-center font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7 '>Nous proposons un package complet des suppots de l&apos;illustration éditoiale, aux campagnes passant par le web et <Link to='/portfolio' className='text-blue-500'> concept art {'>'}</Link></p>
         </section>
 
         {/* section illustration editorial  */}
-        <section className='bg-slate-200 px-[5%] py-10 flex flex-col gap-5 '>
+        <section className='bg-slate-200 px-[5%] lg:px-[12%] py-10 flex flex-col gap-5 '>
 
             <h1 className='text-center px-[10%] text-[1.25rem] sm:text-[1.5rem] md:text-[1.625rem] lg:text-[2.125rem] leading-6 lg:leading-9 font-bold text-gray-700 '>Illustration <br /> Editoriale </h1>
 
@@ -200,7 +200,7 @@ export default function Illustation () {
         </section>
 
         {/* concept d'art  */}
-        <section className='w-full bg-black py-10 flex flex-col gap-3'>
+        <section className='w-full bg-black py-14 flex flex-col gap-3'>
 
             <div className='px-[20%]'>
                 <img loading='lazy' src={Illustration_concept_art_1} alt="Illustration_concept_art_1" />
@@ -208,16 +208,16 @@ export default function Illustation () {
 
             {/* text  */}
             {/* first and second paragraph  */}
-            <section className=' px-[2%] gap-5 sm:px-[10%] flex flex-col md:flex-row py-10 md:justify-center w-full md:px-[10%]'>
+            <section className=' px-[2%] gap-5 sm:px-[10%] flex flex-col md:flex-row py-10 md:justify-center w-full md:px-[12%]'>
 
                 {/* first paragraph  */}
                 <section className='px-[10%] md:px-0 w-[90%] '>
-                    <p className='text-left font-[500] text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] lg:text-[1.5rem] leading-5 lg:leading-7  sm:w-[65%] md:w-[90%]'> <span className=' text-bgPlay'>Vous avez un projet d&apos;animation, cinématographique ou jeux vidéo ?</span> Nous offrons des solutions créatives pour les projets complexes.</p>
+                    <p className='text-left font-interSemibold text-gray-100 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7  sm:w-[65%] md:w-[90%]'> <span className=' text-bgPlay'>Vous avez un projet d&apos;animation, cinématographique ou jeux vidéo ?</span> Nous offrons des solutions créatives pour les projets complexes.</p>
                 </section>
 
                 {/* second paragraph  */}
                 <section className='px-[10%] md:px-0 w-[90%] '>
-                    <p className='text-left font-[500] text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] lg:text-[1.5rem] leading-5 lg:leading-7  sm:w-[75%] md:w-full '> Nous vous accompagnons durant tout le processus, du biefing à la post-production, passant par le développement de votre univers visuel <span className='text-bgPlay'>et la ligne graphique  </span></p>
+                    <p className='text-left font-interSemibold text-gray-100 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7  sm:w-[75%] md:w-full '> Nous vous accompagnons durant tout le processus, du biefing à la post-production, passant par le développement de votre univers visuel <span className='text-bgPlay'>et la ligne graphique  </span></p>
                 </section>
             </section>
 
@@ -228,8 +228,8 @@ export default function Illustation () {
                     <img loading='lazy' src={illustratration_concept_art_story_board_new} alt="illustratration_concept_art_story_board" className='rounded-lg' />
 
                     <div className='w-full relative'>
-                        <div className='rounded-b-lg bottom-0 absolute pt-20 bg-gradient-to-t w-full from-bgCertifier from-20% h-[150px]'>
-                            <h1 className='font-bold  text-center text-gray-100 text-[25px]'>Storyboard</h1>
+                        <div className='rounded-b-lg bottom-0 absolute pt-20 bg-gradient-to-t w-full from-bgCertifier from-20% h-[9.375rem]'>
+                            <h1 className='font-interBold  text-center text-gray-100 text-[1.5rem]'>Storyboard</h1>
                         </div>
                     </div>
                 </section>
@@ -239,15 +239,15 @@ export default function Illustation () {
                     <img loading='lazy' src={Illustration_concept_art_3} alt="Illustration_concept_art_2" className='rounded-lg' />
 
                     <div className='w-full relative '>
-                        <div className='rounded-b-lg bottom-0 absolute pt-14 bg-gradient-to-t w-full from-bgCertifier from-20% h-[150px]'>
-                            <h1 className='font-bold  text-center text-gray-100 text-[25px] leading-6'>Création <br /> Environnement</h1>
+                        <div className='rounded-b-lg bottom-0 absolute pt-14 bg-gradient-to-t w-full from-bgCertifier from-20% h-[9.375rem]'>
+                            <h1 className='font-interBold  text-center text-gray-100 text-[1.5rem] leading-6'>Création <br /> Environnement</h1>
                         </div>
                     </div>
                 </section>
             </div>
 
             {/* Creation environement  */}
-            <section className='relative items-center flex flex-col justify-center px-[2%] overflow-hidden '>
+            <section className='relative items-center flex flex-col justify-center sm:px-[1%] px-[2%]  overflow-hidden '>
 
                 <div className=' overflow-hidden w-full h-full'>
 
@@ -255,20 +255,20 @@ export default function Illustation () {
                 </div>
 
                 <div className='w-full relative md:hidden'>
-                    <div className='rounded-b-lg md:bg-none bottom-0 absolute pt-14 bg-gradient-to-t w-full from-bgCertifier from-20% h-[150px]'>
-                        <h1 className='font-bold  text-center text-gray-100 text-[25px] leading-6'>Création <br /> des personnages</h1>
+                    <div className='rounded-b-lg md:bg-none bottom-0 absolute pt-14 bg-gradient-to-t w-full from-bgCertifier from-20% h-[9.375rem]'>
+                        <h1 className='font-bold  text-center text-gray-100 text-[1.5rem] leading-6'>Création <br /> des personnages</h1>
                     </div>
                 </div>
 
-                <div className='w-full absolute left-5 hidden md:flex'>
+                <div className='w-full absolute left-5 hidden items-center md:flex'>
                     <div className='rounded-b-lg absolute pl-[3%] lg:pl-[8%]'>
-                        <h1 className='font-bold  text-left text-gray-100 text-[1.8rem] lg:text-[2.5rem] leading-8'>Création <br /> des personnages</h1>
+                        <h1 className='font-bold  text-left text-gray-100 text-[1.5rem]'>Création <br /> des personnages</h1>
                     </div>
                 </div>
             </section> 
 
             {/* section entron en contact  */}
-            <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative p-5'>
+            <section className='w-full flex flex-col gap-2 text-center justify-center items-center relative px-5 pt-20 pb-10'>
 
                  <div className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
                     <img loading='lazy' src={design_entrons_en_contact} className='' alt='image accompagnement'/>
@@ -282,10 +282,10 @@ export default function Illustation () {
 
         </section>
         
-        <section className='w-full flex items-end justify-end sticky bottom-5 px-[2%] py-[3%]'>
+        <section className='w-full flex items-end justify-end sticky bottom-5 px-[2%] '>
 
-            <div onClick={() => document.documentElement.scrollTop = 0} className={`p-1 border border-gray-400 bg-gray-400 rounded-full cursor-pointer`}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-5 h-5 white`}>
+            <div onClick={() => document.documentElement.scrollTop = 0} className={`p-1 border border-gray-400 bg-black rounded-full cursor-pointer`}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-5 h-5 text-white`}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
                     <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
                 </svg>

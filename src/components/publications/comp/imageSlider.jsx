@@ -132,7 +132,7 @@ export default function ImageSlider ({images, title, audio}) {
     const circleDiv = images.map((prev, myIndex) => <div key={index + prev} onClick={() => {setIndex(myIndex * 100); audioRef.current.currentTime = myIndex * 6}} className={` w-[100%] h-[3px] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${index === (myIndex * 100) ? 'bg-gray-50' : ''} duration-300 delay-200 hover:cursor-pointer`}> </div> );
 
     //side effect to not re render all the image to improve performance
-    const myImages = images.map((prev, myIndex) => <img loading='lazy' key={myIndex} src={prev} alt="image" className={` transition top-0 left-0 duration-[2500ms] delay-200 ease-in-out   ${index === (myIndex * 100) ? 'opacity-100' : ' opacity-0 absolute' }`}/>);
+    const myImages = images.map((prev, myIndex) => <img loading='lazy' key={myIndex} src={prev} alt="image" className={` w-full transition top-0 left-0 duration-[2500ms] delay-200 ease-in-out   ${index === (myIndex * 100) ? 'opacity-100' : ' opacity-0 absolute' }`}/>);
 
     /////////////set the image div to the full  screen //////////////////////////////////
     const [fullSreen, setFullScreen] = useState(false);
@@ -180,7 +180,7 @@ export default function ImageSlider ({images, title, audio}) {
         
         {/* audio  ambiance in background   */}
         {/* onCanPlay function are here to begin the slider if the background song can play ////////////////////////////////////// */}
-        <audio onCanPlay={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay={true} type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
+        <audio onCanPlayThrough={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
 
         {/* message to rotate the screen  */}
         {width <=640 && <div className="absolute top-[20vh] flex flex-col gap-3 justify-center items-center">

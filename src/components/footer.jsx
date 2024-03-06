@@ -5,11 +5,19 @@ import bcFb from '../assets/Icones/bcFb.png';
 import bctwitter_2 from '../assets/Icones/bctwitter_2.png';
 import bcInsta from '../assets/Icones/bcInsta.png';
 import bclinkedin from '../assets/Icones/bclinkedin.png';
-
+import { useMatch } from 'react-router-dom';
 export function Footer ()
 {
+
+    const hideNave10 = useMatch('/publication/mamour');
+    const hideNave11 = useMatch('/publication/chute');
+    const hideNave12 = useMatch('/publication/defi');
+    const hideNave13 = useMatch('/publication/haut');
+
+    const myHidding = hideNave10 || hideNave11 || hideNave12 || hideNave13 
+
     return (
-        <footer className='w-full bg-gray-50 flex flex-col sm:flex-row sm:gap-10 justify-center  items-center sm:justify-between  py-8 px-[5%] lg:px-[10%]'>
+        <footer className={`w-full bg-gray-50 ${myHidding ? 'hidden' : 'flex'} flex-col sm:flex-row sm:gap-10 justify-center  items-center sm:justify-between  py-8 px-[5%] lg:px-[10%]`}>
             
             {/* baraka creation logo and texts */}
             <div className='flex justify-center  '>

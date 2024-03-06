@@ -14,7 +14,6 @@ export default function CharteGraphique () {
     const width = useWindowWidth();
     return (
         <div className="w-full bg-bgCharteGraphique">
-            <div className="w-full sticky top-0 z-50 overflow-hidden px-[6%] lg:px-[7%] bg-bgCharteGraphique">
 
                 <SecondeNav
                     title={' Identité visuelle'} 
@@ -23,7 +22,6 @@ export default function CharteGraphique () {
                     titleColor='text-gray-100'
                     brdrColor='border-gray-100' textColor = ' text-white'
                 />
-            </div>
 
             <div className=' sm:px-[5rem] md:px-[6.25rem] lg:px-[7.5rem] md:pt-10'> 
 
