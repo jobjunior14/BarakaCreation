@@ -184,6 +184,11 @@ function GrapicDesignDetails ({images, text, title, state, hideDetails }) {
 
 export default function ImageGraphiqueDesign () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [showDetails, setShowDetails] = useState({
     a1: false, a2: false, a3: false, a4: false, a5: false, a6: false, a7: false, a8: false, a9: false,
     a10: false, a11: false, a12: false, a13: false, a14: false, a15: false, a16: false, a17: false,
@@ -367,15 +372,12 @@ export default function ImageGraphiqueDesign () {
 
             <GrapicDesignDetails 
                 images={[a84, a85]} 
-                title={<span>Upgrade <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Event </span></span>} 
-                text={<span>Dans l&apos;objectif d&apos;innover son image de marque, nous avons accompagné la boutique
-                                Nyota présidentiel dans l&apos;élaboration de son identité visuelle, de la création du logotype, à
-                                la charte graphique passant par la conception du package complet des supports
-                                publicitaires.
+                title={<span>Sovereign church <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Présentation </span></span>} 
+                text={<span>Nous avons assuré la conception des supports de péresentation print et digitaux de l&apos;église britanique Sovereign church.
 
                         <br/>
                         <br/>
-                        Année | 2023  
+                        Année | 2022  
                         <br/>
                         <br />
                         </span>
@@ -522,7 +524,7 @@ export default function ImageGraphiqueDesign () {
 
             <GrapicDesignDetails 
                 images={[a6, a7, a8, a9]} 
-                title={<span>Central House <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Presentation </span></span>} 
+                title={<span>Central media <br /> <span className='text-[0.8rem] sm:text-[1rem] md:text-[1.3rem] font-normal'>Presentation </span></span>} 
                 text={<span>Dans le but de renforcer son image de marque, nous avons conçu des supports de
                             présentation des services de ladite entreprise, des supports variés adaptés aux web et
                             écrans internes.

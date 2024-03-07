@@ -7,8 +7,14 @@ import animation_service_3 from '../../../assets/Services/Animation/animation_se
 import Illustration_concept_art_1 from '../../../assets/Services/Illustration/Illustration_concept_art_1.jpg'; 
 import animation_partner from '../../../assets/Services/Animation/animation_partner.jpg';
 import useWindowWidth from '../../windowWidth';
+import { useEffect } from 'react';
 export default function MotionDesign() {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const width = useWindowWidth();
 
     return (

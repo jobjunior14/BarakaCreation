@@ -11,9 +11,15 @@ import web_design from  '../../../assets/Services/Design graphique/web_design.jp
 import Web_design from  '../../../assets/Services/Design graphique/Web_design.png';
 import { Link } from 'react-router-dom';
 import { OnTopBtn } from '../identite_visuel/comp/util';
+import { useEffect } from 'react';
 
 export default function GraphiqueDesign () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (<main className=' flex flex-col gap-5 bg-black'>
  
             {/* welcom image and text  */}

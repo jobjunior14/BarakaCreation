@@ -200,6 +200,10 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
 
 export default function Logofolio () {
     
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     //all the stastes tot handle the showen details logo or note
     const [showDetails, setShowDetails] = useState({

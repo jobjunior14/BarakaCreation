@@ -30,6 +30,11 @@ import useWindowWidth from '../windowWidth';
 import { useEffect, useState } from 'react';
 
 export default function GalleryArt() {
+
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     const [height, setHeight] = useState(0);
     const width = useWindowWidth();

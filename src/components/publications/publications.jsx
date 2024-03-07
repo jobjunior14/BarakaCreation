@@ -19,8 +19,14 @@ import Publicationord2 from '../../assets/Publication/Publicationord2.jpg';
 import Publicationord1 from '../../assets/Publication/Publicationord1.jpg';
 import { Link } from 'react-router-dom';
 import useWindowWidth from '../windowWidth';
+
 export default function Publication () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const [index, setIndex] = useState(0);
     const width = useWindowWidth();
     // slide the images automaticaly

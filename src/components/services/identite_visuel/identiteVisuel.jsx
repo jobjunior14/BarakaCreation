@@ -13,9 +13,15 @@ import Digital_site_web_icone from '../../../assets/Services/Id visuelle/Digital
 import IdVisuelleComp from "../components/idVisuelS_Comp";
 import useWindowWidth from "../../windowWidth";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function IdentiteVisuel () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const [digitalClick, setDigitalClick] = useState(true);
     const [packegingClick, setPackegingClick] = useState(true);
     
@@ -27,7 +33,7 @@ export default function IdentiteVisuel () {
     
     const packegingClickHandler  = () => {
         setPackegingClick(prev => prev ? false : true);
-    }
+    };
 
     return (
         <>
@@ -63,7 +69,7 @@ export default function IdentiteVisuel () {
 
                         {/* Charte graphique image  */}
                         <figure className="w-full h-0 relative" style={{paddingTop: 'calc(100% * (1/2))'}}>
-                                <img loading='lazy' src={Id_visuelle_Charte_graphique} alt="Id_Vieuellelogo" className="h-full w-full object-cover absolute top-0" />
+                                <img loading='lazy' src={Id_visuelle_Charte_graphique} alt="Id_Vieuellelogo" className=" w-full object-center h-full object-cover absolute top-0" style={{objectPosition: '50% 38%'}} />
                         </figure>
 
                         <figcaption className="w-full justify-center items-center flex flex-col gap-4">

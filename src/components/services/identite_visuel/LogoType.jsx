@@ -4,8 +4,15 @@ import Logo_accueil from '../../../assets/Services/Id visuelle/Logo_accueil.png'
 import Accueil_Logofolio from '../../../assets/Portofolio/Logofolio/Accueil_Logofolio.jpg';
 import SecondeNav, {OnTopBtn} from './comp/util';
 import useWindowWidth from '../../windowWidth';
+import { useEffect } from 'react';
+
 export default function Logotype () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const width = useWindowWidth();
     return (
         <div className='w-full bg-slate-100 '>

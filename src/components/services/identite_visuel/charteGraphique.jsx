@@ -9,7 +9,14 @@ import Chartmotif from '../../../assets/Services/Id visuelle/Chartmotif.jpg';
 import Charte_typo from '../../../assets/Services/Id visuelle/Charte_typo.jpg';
 import Charte_prototypes from '../../../assets/Services/Id visuelle/Charte_prototypes.jpg';
 import useWindowWidth from "../../windowWidth";
+import { useEffect } from "react";
+
 export default function CharteGraphique () {
+    
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     const width = useWindowWidth();
     return (

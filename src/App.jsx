@@ -32,9 +32,13 @@ import Contacts from './components/contact';
 import { Outlet } from 'react-router-dom';
 
 function App() {
+
+ 
   
   return ( 
+
     <Router>
+      
       <Routes>
         <Route path='/' element = {<SharedNav/>}>
             <Route index element={<Acceuil/>} />

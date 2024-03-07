@@ -6,10 +6,15 @@ import web_fluide from '../../../assets/Services/Design graphique/web_fluide.png
 import web_objectif from '../../../assets/Services/Design graphique/web_objectif.png';
 import web_positif from '../../../assets/Services/Design graphique/web_positif.png';
 import web_adapté from '../../../assets/Services/Design graphique/web_adapté.png';
-
+import { useEffect } from 'react';
 
 export default function WebDesign() {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
 
         <main>
@@ -62,6 +67,7 @@ export default function WebDesign() {
                                 <p className=' text-left font-interSemibold mx-[10%] md:mx-0 text-blue-200 text-[0.875rem] md:text-[15px] lg:text-[1rem] lg:leading-6  '> 
                                     Vous souhaitez créer un site web qui reflète votre image de marque ?
                                     Nous sommes à vos cotés pour la création de sites web professionnels et performants.
+                                    <br />
                                     Notre réseau de designers et de développeurs expérimentés vous accompagnent de la
                                     conception à la mise en ligne de votre site, en passant par la création de contenu.          
                                 </p>

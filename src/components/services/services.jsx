@@ -18,7 +18,14 @@ import NosServices from './components/nosServices';
 import ToggleText from './components/toggleText';
 import { Link } from 'react-router-dom';
 import useWindowWidth from '../windowWidth';
+import { useEffect } from 'react';
+
 export default function Services () {
+
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const width = useWindowWidth();
 
@@ -51,7 +58,7 @@ export default function Services () {
                     <img loading='lazy' src={width <= 640 ? ac3P : ac3O} alt='ac2P' className=' rounded-lg' />
 
                     <figcaption className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-0 sm:gap-3 md:gap-5 lg:gap-6 lg:px-[12%] px-[6%]'>
-                        <h1 className='font-interBold tracking-tight text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100 text-left'>Design<br className='hidden sm:flex'/>Graphique</h1>
+                        <h1 className='font-interBold tracking-tight text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100 text-left'>Design <br className='hidden sm:flex'/>Graphique</h1>
                         <p className='text-[0.69rem] sm:text-[1.125rem] md:text-xl sm:text-left text-gray-100 font-interRegular tracking-tight'>Campagne de comm. <span className='text-gray-500'>&</span> Evènementiels<br/> Mise en page <span className='text-gray-500'>&</span> Présentation <br/> Web design</p>
                         <Link to={'/services/graphiqueDesign'} className='bg-blue-500 px-4 py-[0.23rem] text-white text-xs rounded-full font-interRegular sm:text-[1rem] hover:bg-myBlue duration-200' > Plus </Link>
                     </figcaption>
@@ -103,7 +110,7 @@ export default function Services () {
                     
                     <NosServices iconeSrc={icone4} title={'Originalité'} texte={'Par notre créativité, nousconcevons des visuels uniques et personnalisés pour vous demarquer'} />
 
-                    <NosServices iconeSrc={icone1} title={'Efficacité Suivie'} texte={'Nous élaborons des stratégies et visuels basés sur le résultat visés en respectant les délais fixés'} />
+                    <NosServices iconeSrc={icone1} title={'Efficacité'} texte={'Nous élaborons des stratégies et visuels basés sur le résultat visés en respectant les délais fixés'} />
 
                     <NosServices iconeSrc={icone3} title={'Suivie'} texte={"Nous assistons nos clients pendant et après l'exécution des projets."} />
 

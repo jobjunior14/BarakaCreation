@@ -17,11 +17,17 @@ import campagne_conception_illustration from '../../../assets/Services/Design gr
 import Digital_site_web_icone from '../../../assets/Services/Id visuelle/Digital_site_web_icone.png';
 import Digital_supports_digitaux_Copie from '../../../assets/Services/Id visuelle/Digital_supports_digitaux_Copie.png';
 import SecondeNav, {OnTopBtn} from '../identite_visuel/comp/util';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useWindowWidth from '../../windowWidth';
+
 export default function CampagneDeComm () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const [toggled, setToggled] = useState({a: true, b: true, c: true});
 
     const width = useWindowWidth()

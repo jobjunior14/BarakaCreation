@@ -20,8 +20,15 @@ import { Link } from 'react-router-dom';
 import './an.css';
 import useWindowWidth from './windowWidth';
 import { useNavigate } from 'react-router-dom';
-
+import { useEffect } from 'react';
 export default function Acceuil () {
+
+    
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
 
     const navigate = useNavigate();
 

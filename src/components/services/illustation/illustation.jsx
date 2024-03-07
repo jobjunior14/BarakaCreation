@@ -16,9 +16,16 @@ import Illustration_concept_art_5 from '../../../assets/Services/Illustration/Il
 import Accueil_illustration from '../../../assets/Services/Illustration/Accueil_illustration.jpg';
 import design_entrons_en_contact from '../../../assets/Accueil/design_entrons_en_contact.png';
 import useWindowWidth from '../../windowWidth';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
 export default function Illustation () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const width = useWindowWidth();
 
     return (<main className='bg-bgIllustration'>

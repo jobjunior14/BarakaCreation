@@ -4,8 +4,15 @@ import Accueil_consulting_accueil from '../../../assets/Services/Consulting/Accu
 import Consulting_service_pics from '../../../assets/Services/Consulting/Consulting_service_pics.jpg';
 import design_entrons_en_contact from '../../../assets/Accueil/design_entrons_en_contact.png';
 import useWindowWidth from "../../windowWidth";
+import { useEffect } from "react";
+
 export default function Consultance () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const width = useWindowWidth();
 
     return ( <section className="w-full">
@@ -67,7 +74,7 @@ export default function Consultance () {
         <section className=" bg-[rgb(132,130,255)] flex flex-col sm:flex-row lg:pr-[10%] lg:pl-[6%] gap-5 sm:justify-between">
 
             <div className="flex flex-col gap-2 px-[5%] pt-5 sm:items-center sm:justify-center  ">
-                <p className='text-center font-interSemibold text-blue-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[75%] md:w-full sm:hidden'> 
+                <p className='text-center font-interSemibold text-blue-100 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  sm:w-[75%] md:w-full sm:hidden'> 
                     Nous intervenons dans ce
                     processus afin de vous
                     accompagner dans la réalisation
@@ -76,14 +83,14 @@ export default function Consultance () {
                     vous convient.
                 </p>
 
-                <p className=' font-interSemibold sm:text-left text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[70%] md:w-[60%]'> 
+                <p className=' font-interSemibold sm:text-left text-gray-100 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  sm:w-[70%] md:w-[60%]'> 
                     Sous fome de réunions en ligne ou dans
                     vos locaux, nous vous proposons de
                     travailler ensemble sur votre stratégie,
                     sous fome de conseils en communication.
                 </p>
 
-                <p className=' font-interSemibold sm:text-left text-blue-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-5  sm:w-[70%] md:w-[60%]'> 
+                <p className=' font-interSemibold sm:text-left text-blue-100 text-[0.75rem] md:text-[0.813rem] lg:text-[0.94rem] leading-5 lg:leading-6  sm:w-[70%] md:w-[60%]'> 
                     Nous saurons analyser l&apos;ensemble de vos
                     données sectoielles pour dégager une
                     tendance vers laquelle diiger votre

@@ -10,9 +10,14 @@ import Mise_en_page_icone_4 from '../../../assets/Services/Design graphique/Mise
 import mise_enpage_service_design_2__ordi from '../../../assets/Services/Design graphique/mise_enpage_service_design_2__ordi.jpg';
 import mise_en_page_service_design_ordi from '../../../assets/Services/Design graphique/mise_en_page_service_design_ordi.jpg';
 import useWindowWidth from '../../windowWidth';
-
+import { useEffect } from 'react';
 export default function MiseEnPage() {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const width = useWindowWidth()
     return (
 
@@ -32,7 +37,7 @@ export default function MiseEnPage() {
                 <div className='w-full pt-[6%] sm:pt-[1%] flex flex-col gap-4 md:gap-4'>
 
                     <div className=' flex flex-col justify-center items-center  '>
-                        <h1 className=' text-5xl sm:text-[68px] md:text-[74px] lg:text-[90px] font-bold text-gray-700'>Mise en page</h1>
+                        <h1 className=' text-5xl sm:text-[4.25rem] md:text-[4.625rem] lg:text-[5.625rem] font-interBold text-gray-700'>Mise en page</h1>
                     </div>
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full z-40  '>
@@ -129,7 +134,7 @@ export default function MiseEnPage() {
                         </div>
                         
                         <section className=' flex justify-start items-start w-[full] absolute -bottom-5 right-0'>
-                            <img loading='lazy' src={ width >= 640 ? mise_en_page_service_design_ordi : mise_en_page_service_design} alt="mise_en_page_service_design" className='sm:scale-120 ' />
+                            <img loading='lazy' src={ width <= 640 ? mise_en_page_service_design : mise_en_page_service_design_ordi} alt="mise_en_page_sevice_design" className='sm:scale-120 ' />
                         </section>
                     </section>
 
@@ -140,7 +145,7 @@ export default function MiseEnPage() {
                         </div>
                         
                         <section className=' flex justify-start items-start w-[full] absolute -bottom-8 left-0'>
-                            <img loading='lazy' src={width <= 640 ? Mise_en_page_adapté : mise_enpage_service_design_2__ordi} alt="mise_en_page_service_design" className='  ' />
+                            <img loading='lazy' src={width <= 640 ? Mise_en_page_adapté : mise_enpage_service_design_2__ordi} alt="mise_en_page_service_desig" className='  ' />
                         </section>
                     </section>
 

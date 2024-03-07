@@ -4,9 +4,16 @@ import presentation from '../../../assets/Services/Design graphique/Presentation
 import Presentation_icone1 from '../../../assets/Services/Design graphique/Presentation_icone1.png';
 import Presentation_icone3 from '../../../assets/Services/Design graphique/Presentation_icone3.png';
 import Presentation_icone_2 from '../../../assets/Services/Design graphique/Presentation_icone_2.png';
-
+import { useEffect } from 'react';
 
 export default function Presentation() {
+
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    
     return (
 
         <main>

@@ -22,9 +22,15 @@ import event_invitatations from '../../../assets/Services/Design graphique/event
 import event_digital from '../../../assets/Services/Design graphique/event_digital.png';
 import event_package from '../../../assets/Services/Design graphique/event_package.png';
 import event_plus from '../../../assets/Services/Design graphique/event_plus.png';
-
+import { useEffect } from 'react';
 
 export default function Event() {
+
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <main>
 

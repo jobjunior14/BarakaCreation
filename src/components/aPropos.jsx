@@ -17,8 +17,14 @@ import icone_discipline from '../assets/A propos/icone_discipline.png';
 import prix_apatridie from '../assets/A propos/prix_apatridie.png';
 import prix_onu_femmes from '../assets/A propos/prix_onu_femmes.png';
 import prix_ecicr_1 from '../assets/A propos/prix_ecicr_1.png';
-import './an.css'
+import './an.css';
+
 export default function Apropos () {
+
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const [index, setIndex] = useState(0);
 
@@ -47,11 +53,11 @@ export default function Apropos () {
 
                     <article className='w-full bg-bgApropos md:bg-bgFormation flex flex-col justify-center  gap-y-5 md:gap-y-2 py-7 px-8'>
                             
-                        <h1 className='text-5xl md:text-3xl md:text-left text-gray-100 md:text-gray-700 font-bold '>Hello ! </h1>
+                        <h1 className='text-5xl md:text-3xl md:text-left text-gray-100 md:text-gray-700 font-interBold '>Hello ! </h1>
                         
                         <div className='w-full flex flex-col justify-center items-center md:justify-start md:items-start gap-2'>
                             <div className='w-[70%] md:w-[100%] '>
-                                <p className='text-gray-200 md:text-left md:text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] font-normal text-center '>Je suis Baraka LURHAKWA, un artiste communicateur visuel. <br/>Je suis passionné par la production d&apos;œuvres artistiques innovantes et j&apos;accompagne les entreprises dans la réussite de leurs objectifs dans lesecteur de la communication</p>
+                                <p className='text-gray-200 md:text-left md:text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] font-normal text-center '>Je suis Baraka LURHAKWA, un artiste communicateur visuel. <br/>Je suis passionné par la production d&apos;œuvres artistiques innovantes et j&apos;accompagne les entreprises dans la réussite de leurs objectifs dans le secteur de la communication</p>
                             </div>
                        </div>
                     </article>
@@ -77,7 +83,7 @@ export default function Apropos () {
                         <figure className='px-8 bg-bgFormation '> 
                             <div className='text-left grid grid-cols-2 gap-y-5 gap-x-2'>
                                 <article>
-                                    <h3 className='font-bold text-[0.9rem] text-gray-700'> Comminicateur </h3>
+                                    <h3 className='font-bold text-[0.9rem] text-gray-700'> Comminication </h3>
                                     <p className='text-[0.8rem]'>Conseiller en communication</p>
                                 </article>
                                 <article className='ml-8'>

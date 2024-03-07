@@ -2,7 +2,7 @@
 import icone_contat_Whatsapp from '../assets/Contact/icone_contat_Whatsapp.png';
 import icone_contat_call_center from '../assets/Contact/icone_contat_call_center.png';
 import icone_contat_Mail from '../assets/Contact/icone_contat_Mail.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import bcBehance from '../assets/Icones/bcBehance.png';
 import bcFb from '../assets/Icones/bcFb.png';
@@ -14,6 +14,11 @@ import iconTiktok from '../assets/Icones/iconTiktok.png';
 import iconyoutube from '../assets/Icones/iconyoutube.png';
 import axios from 'axios';
 export default function Contacts () {
+
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     const [data, setData] = useState({
         nom: '',

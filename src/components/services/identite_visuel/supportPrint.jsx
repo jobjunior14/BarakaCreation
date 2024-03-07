@@ -29,8 +29,14 @@ import print_tenu from '../../../assets/Services/Id visuelle/print_tenu.png';
 import print_vehicule from '../../../assets/Services/Id visuelle/print_vehicule.png';
 import print_veteùent from '../../../assets/Services/Id visuelle/print_veteùent.png';
 import useWindowWidth from '../../windowWidth';
+import { useEffect } from 'react';
 export default function SupportPrint() {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const width = useWindowWidth();
     return (
         <div className='w-full bg-white'>

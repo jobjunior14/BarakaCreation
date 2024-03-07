@@ -21,7 +21,7 @@ export default function DesignGraphiqueCom ({image, name, text, link, bg, colorT
         </div>
 
         {/* Image  */}
-        <div className="w-full justify-center items-center flex relative h-0" style={{ paddingTop: 'calc(100% * (1/2))'}} >
+        <div className="w-full justify-center rounded-lg  overflow-hidden items-center flex relative h-0" style={{ paddingTop: 'calc(100% * (1/2))'}} >
                 <img loading='lazy' src={image} alt="Id_Vieuellelogo" className=" object-contain h-full w-full absolute top-0" />
         </div>
     </section>

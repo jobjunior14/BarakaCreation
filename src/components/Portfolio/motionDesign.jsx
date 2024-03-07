@@ -2,10 +2,14 @@ import SecondeNav, {OnTopBtn} from '../services/identite_visuel/comp/util';
 import Motion_1 from '../../assets/Portofolio/Motion design/Motion_1.jpg';
 import Motion_2 from '../../assets/Portofolio/Motion design/Motion_2.jpg';
 import Motion_3 from '../../assets/Portofolio/Motion design/Motion_3.jpg';
-
+import { useEffect } from 'react';
 
 export default function MotionDesignPortofolio () {
 
+    // scroll to top 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <main className='bg-black'>
 
