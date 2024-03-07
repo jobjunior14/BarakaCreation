@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import useWindowWidth from "../../windowWidth";
-
+import { useMatch } from "react-router-dom";
 export default function ImageSlider ({images, title, audio}) {
 
     const [index, setIndex] = useState(0);
@@ -10,6 +10,11 @@ export default function ImageSlider ({images, title, audio}) {
     const [currentTime, setCurrentTime] = useState(audioRef.current.currentTime);
     const minutes = Math.floor((images.length * 6) / 60);
     const seconds = Math.floor((images.length * 6) % 60);
+
+    //check if the browser support an auto play attribute on  VIDEO OR AUDIO    
+    const isAutoplaySupported = audioRef.current.autoplay;
+
+
     // useEffect to update time //////////////////////////////////
     useEffect(() => {
 
@@ -30,10 +35,13 @@ export default function ImageSlider ({images, title, audio}) {
             });
         }, 6000) ;
 
+
         return () => {
             clearInterval(interval);
         }
     }, [index]);
+
+
 
     // check if the audio background reach the end to restart it //////////////////////////////////////
     if (audioRef.current.currentTime >= (images.length * 6)) {
@@ -175,14 +183,25 @@ export default function ImageSlider ({images, title, audio}) {
             document.msExitFullScreen();
         };
     };
+    
 
+    useEffect(() => {
+
+        const myF = () => {
+            audioRef.current.pause();
+        }
+
+        window.addEventListener('beforeunload', myF);
+
+        return window.removeEventListener('beforeunload', myF);
+    }, []);
     
 
     return (<main className="w-full h-[100vh] relative flex flex-col justify-center items-center  bg-bgRemporter1 ">
         
         {/* audio  ambiance in background   */}
         {/* onCanPlay function are here to begin the slider if the background song can play ////////////////////////////////////// */}
-        <audio onCanPlayThrough={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
+        <audio controls = {audioRef.current.paused} controlsList="play" onCanPlayThrough={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
 
 
         {/* //////////////////////just put the half of images  on the dom to load it at the same time with the audio//////////////////////////////////// */}
@@ -199,7 +218,8 @@ export default function ImageSlider ({images, title, audio}) {
 
 
                 {/* message to rotate the screen  */}
-                {width <=640 && <div className="absolute top-[20vh] flex flex-col gap-3 justify-center items-center">
+                {width <=640 && <div className="absolute top-[10vh] flex flex-col gap-3 justify-center items-center">
+                    { audioRef.current.paused && <p className={`text-gray-200 text-xs font-semibold `}>Votre Navigateur ne peut jouer de la musique automatiquement, S&apos;il vous plait veillez appuiyer sur <b>Play</b></p>}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-gray-100">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
