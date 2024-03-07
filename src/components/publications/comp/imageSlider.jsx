@@ -201,7 +201,7 @@ export default function ImageSlider ({images, title, audio}) {
         
         {/* audio  ambiance in background   */}
         {/* onCanPlay function are here to begin the slider if the background song can play ////////////////////////////////////// */}
-        <audio controls = {audioRef.current.paused} controlsList="play" onCanPlayThrough={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
+        <audio controls = {audioRef.current.paused && canPlay >= 1} controlsList="play" onCanPlayThrough={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
 
 
         {/* //////////////////////just put the half of images  on the dom to load it at the same time with the audio//////////////////////////////////// */}
