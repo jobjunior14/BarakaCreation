@@ -56,7 +56,7 @@ export default function Acceuil () {
 
                         <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-bgcqnoufaisons flex gap-3 justify-center items-center  pl-5 hover:bg-gray-500 duration-200'> 
                             <div>
-                                <p className='text-gray-300 text-[0.7rem] sm:text-xs '> Nos réalisations </p>
+                                <p className='text-gray-300 text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem]  '> Nos réalisations </p>
                             </div>
 
                             <div className='p-[0.1875rem] border border-blue-100 rounded-full flex justify-center items-center'>
@@ -77,7 +77,7 @@ export default function Acceuil () {
             </section>
             
             {/* third part "accompagnement" */}
-            <section className='w-full bg-white flex flex-col text-center justify-center relative pt-7 md:gap-4'>
+            <section className='w-full bg-white flex flex-col text-center justify-center relative gap-7 pt-7 md:gap-4'>
 
                 <article className=' w-full justify-center items-center text-center flex flex-col left-4 ml-2 md:pt-3 z-40'>
 
@@ -88,7 +88,7 @@ export default function Acceuil () {
                         <p className='text-center text-xs sm:text-base text-gray-800 font-normal'>De la stratégie à la mise en œuvre, nous aidons les entreprises à créer une image de marque forte et durable</p>
                         
                         <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-bgcqnoufaisons flex justify-center items-center pl-5 gap-3 hover:bg-myBlue duration-200'> 
-                            <p className='text-white text-[0.7rem] sm:text-xs '>Voir nos services </p>
+                            <p className='text-white text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem] '>Voir nos services </p>
 
                             <div className='p-[0.1875rem] rounded-full justify-center items-center  border border-blue-200 flex '>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-3 h-3 text-gray-100">
@@ -100,7 +100,7 @@ export default function Acceuil () {
                 </article>
               
                 <picture className='flex flex-col justify-center items-center  md:-mt-10'>
-                    <img loading='lazy' src={accueil_accompagnons} className='w-[80%] md:w-[70%] lg:w-[60%]' alt='image accompagnement'/>
+                    <img loading='lazy' src={accueil_accompagnons} className='w-[90%] md:w-[70%] lg:w-[60%]' alt='image accompagnement'/>
                 </picture>
 
                 

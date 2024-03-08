@@ -88,14 +88,14 @@ export default function NavBar ()
                     <li>
                         <NavLink 
                             onClick={toggle}
-                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
+                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                             to = {`/`}> Accueil </NavLink>
                     </li>
 
                     <li>
                         <NavLink 
                             onClick={toggle}
-                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
+                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                             to = {`/aPropos`}>  A&nbsp;propos </NavLink>
                     </li>
                     
@@ -104,7 +104,7 @@ export default function NavBar ()
                         <div className=' flex gap-3'>
                             <NavLink 
                                 onClick={toggle}
-                                className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
+                                className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                                 to = {`/services`}> Services 
                             </NavLink>
 
@@ -132,7 +132,7 @@ export default function NavBar ()
                         <div className=' flex gap-3'>
                             <NavLink 
                                 onClick={toggle}
-                                className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
+                                className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                                 to = {`/portfolio`}> Portfolio 
                             </NavLink>
 
@@ -156,14 +156,14 @@ export default function NavBar ()
                     <li>
                         <NavLink 
                             onClick={toggle}
-                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
+                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                             to = {`/publication`}> Publications </NavLink>
                     </li>
 
                     <li>
                         <NavLink 
                             onClick={toggle}
-                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-bold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-medium'}
+                            className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                             to = {`/contacts`}> Contacts </NavLink>
                     </li>
                 </ul>

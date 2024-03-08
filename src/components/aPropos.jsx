@@ -57,7 +57,7 @@ export default function Apropos () {
                         
                         <div className='w-full flex flex-col justify-center items-center md:justify-start md:items-start gap-2'>
                             <div className='w-[70%] md:w-[100%] '>
-                                <p className='text-gray-200 md:text-left md:text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] font-normal text-center '>Je suis Baraka LURHAKWA, un artiste communicateur visuel. <br/>Je suis passionné par la production d&apos;œuvres artistiques innovantes et j&apos;accompagne les entreprises dans la réussite de leurs objectifs dans le secteur de la communication</p>
+                                <p className='text-gray-200 md:text-left md:text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] font-interRegular text-center '>Je suis Baraka LURHAKWA, un artiste communicateur visuel. <br/>Je suis passionné par la production d&apos;œuvres artistiques innovantes et j&apos;accompagne les entreprises dans la réussite de leurs objectifs dans le secteur de la communication</p>
                             </div>
                        </div>
                     </article>
@@ -74,7 +74,7 @@ export default function Apropos () {
                             <div className='flex items-start'>
                                 <div className='flex justify-center items-center gap-1'>
                                     <img loading='lazy' src={iconeprofession} className='h-6 lg:h-7 ' alt='iconeprofession'/>
-                                    <title className=' mr-1 font-bold text-gray-700 text-[1rem] lg:text-[1.3rem] flex'> Profession </title>
+                                    <title className=' mr-1 font-interBold text-gray-700 text-[1rem] lg:text-[1.3rem] flex'> Profession </title>
                                 </div>
                             </div>
                             <div className='h-px w-full bg-gray-600 mt-1'></div>
@@ -83,20 +83,20 @@ export default function Apropos () {
                         <figure className='px-8 bg-bgFormation '> 
                             <div className='text-left grid grid-cols-2 gap-y-5 gap-x-2'>
                                 <article>
-                                    <h3 className='font-bold text-[0.9rem] text-gray-700'> Comminication </h3>
-                                    <p className='text-[0.8rem]'>Conseiller en communication</p>
+                                    <h3 className='font-interBold text-[0.9rem] text-gray-700'> Comminication </h3>
+                                    <p className='text-[0.8rem] font-interRegular'>Conseiller en communication</p>
                                 </article>
                                 <article className='ml-8'>
-                                    <h3 className='font-bold text-[0.9rem] text-gray-700'> Graphiste </h3>
-                                    <p className='text-[0.8rem]'>Spécialiste d&apos;identité visuelle</p>
+                                    <h3 className='font-interBold text-[0.9rem] text-gray-700'> Graphiste </h3>
+                                    <p className='text-[0.8rem] font-interRegular'>Spécialiste d&apos;identité visuelle</p>
                                 </article>
                                 <article >
-                                    <h3 className='font-bold text-[0.9rem] text-gray-700'> Directeur artistique </h3>
-                                    <p className='text-[0.8rem]'>D&apos;animation | de campagne | Comm</p>
+                                    <h3 className='font-interBold text-[0.9rem] text-gray-700'> Directeur artistique </h3>
+                                    <p className='text-[0.8rem] font-interRegular'>D&apos;animation | de campagne | Comm</p>
                                 </article>
                                 <article className='ml-8'>
-                                    <h3 className='font-bold text-[0.9rem] text-gray-700'> Illustrateur </h3>
-                                    <p className='text-[0.8rem]'>3 fois Lauréat</p>
+                                    <h3 className='font-interBold text-[0.9rem] text-gray-700'> Illustrateur </h3>
+                                    <p className='text-[0.8rem] font-interRegular'>3 fois Lauréat</p>
                                 </article>
                             </div>
                             <div className='h-px w-full bg-gray-600 mt-1'></div>
@@ -105,12 +105,12 @@ export default function Apropos () {
                         <div className='px-8 flex gap-3 text-left pt-3 bg-bgFormation'>
                             <article className='flex justify-center items-center gap-2'>
                                 <img loading='lazy' src={icone_experience_1} className='h-6 lg:h-7' alt='iconeprofession'/>
-                                <h1 className=' font-bold text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] lg:leading-5 flex'>  ans d&apos;expérience professionnelle </h1>
+                                <h1 className=' font-interBold text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] lg:leading-5 flex'>  ans d&apos;expérience professionnelle </h1>
                             </article>
 
                             <article className='flex justify-center items-center gap-2'>
                                 <img loading='lazy' src={iconeetude} className='h-6 lg:h-7' alt='iconeprofession'/> 
-                                <h1 className=' font-bold text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] lg:leading-5 flex'> Académie de Beaux-arts Kinshasa </h1>
+                                <h1 className=' font-interBold text-gray-700 text-[0.69rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[1rem] lg:leading-5 flex'> Académie de Beaux-arts Kinshasa </h1>
                             </article>
 
                         </div>
@@ -143,7 +143,7 @@ export default function Apropos () {
             <section className=' bg-bgFormation w-full px-5 py-7 sm:p-7 md:p-9 lg:p-14 flex flex-col gap-y-5 md:items-center md:justify-center'>
 
                 <article className='flex flex-col gap-y-5 md:max-w-[60%] '>
-                    <h1 className='text-4xl sm:text-6xl md:text-7xl text-left text-nos font-bold '>Nos <span className='text-nosVal'>valeurs</span></h1>
+                    <h1 className='text-4xl sm:text-6xl md:text-7xl text-left text-nos font-interBold '>Nos <span className='text-nosVal'>valeurs</span></h1>
 
                     <div className='flex flex-col gap-6 md:gap-10 md:items-center md:justify-center'>
                         
@@ -154,8 +154,8 @@ export default function Apropos () {
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
-                                <h2 className='text-gray-700 text-xl sm:text-2xlmd:text-3xl font-bold'>Innovation</h2>
-                                <p className='text-gray-700 text-[0.8rem] sm:text-[0.75rem] md:text-[0.875rem]'>  Nous nous engageons à apporter de la valeur et vous faire vivre une expérience mémorable. Chaque nouveau projet est pour nous un défi à relever; une occasion de repousser nos limites et celles de nos clients. <br/> C&apos;est ce qui nous a permis de satisfaire plus de 90% des projets réalisés</p>
+                                <h2 className='text-gray-700 text-xl sm:text-2xlmd:text-3xl font-interBold'>Innovation</h2>
+                                <p className='text-gray-700 text-[0.8rem] sm:text-[0.75rem] md:text-[0.875rem] font-interRegular'>  Nous nous engageons à apporter de la valeur et vous faire vivre une expérience mémorable. Chaque nouveau projet est pour nous un défi à relever; une occasion de repousser nos limites et celles de nos clients. <br/> C&apos;est ce qui nous a permis de satisfaire plus de 90% des projets réalisés</p>
                             </div>
                         </div>
 
@@ -166,8 +166,8 @@ export default function Apropos () {
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
-                                <h2 className='text-gray-700 text-xl sm:text-2xlmd:text-3xl font-bold'>Passion</h2>
-                                <p className='text-gray-700 text-[0.8rem] sm:text-[0.75rem] md:text-[0.875rem]'>  Nous sommes animés par la passion de créer des œuvres d&apos;art à la fois belles et significatives. Elle nous permet de partager nos idées avec le monde entier et nous pousse donner une grande considération à chaque projet et chaque client</p>
+                                <h2 className='text-gray-700 text-xl sm:text-2xlmd:text-3xl font-interBold'>Passion</h2>
+                                <p className='text-gray-700 text-[0.8rem] sm:text-[0.75rem] md:text-[0.875rem] font-interRegular'>  Nous sommes animés par la passion de créer des œuvres d&apos;art à la fois belles et significatives. Elle nous permet de partager nos idées avec le monde entier et nous pousse donner une grande considération à chaque projet et chaque client</p>
                             </div>
                         </div>
 
@@ -178,8 +178,8 @@ export default function Apropos () {
                             </div>
 
                             <div className='w-[80%] flex flex-col md:justify-center '>
-                                <h2 className='text-gray-700 text-xl sm:text-2xlmd:text-3xl font-bold'>Discipline</h2>
-                                <p className='text-gray-700 text-[0.8rem] sm:text-[0.75rem] md:text-[0.875rem]'>  Nous nous engageons à comprendre les besoins de nos clients, à leur proposer des solutions qui répondent à leurs attentes et à respecter les délais fixés. Nous travaillons de manière organisée et nous sécurisons les projets de nos clients pendant et après le contrat</p>
+                                <h2 className='text-gray-700 text-xl sm:text-2xlmd:text-3xl font-interBold'>Discipline</h2>
+                                <p className='text-gray-700 text-[0.8rem] sm:text-[0.75rem] md:text-[0.875rem] font-interRegular'>  Nous nous engageons à comprendre les besoins de nos clients, à leur proposer des solutions qui répondent à leurs attentes et à respecter les délais fixés. Nous travaillons de manière organisée et nous sécurisons les projets de nos clients pendant et après le contrat</p>
                             </div>
                         </div>
                     </div>
@@ -189,7 +189,7 @@ export default function Apropos () {
 
             {/* prix remporté  */} 
             <section className='w-full bg-gradient-to-r from-bgRemporter1  to-bgRemporter3 px-7 py-14 flex flex-col gap-8 sm:gap-10'>
-                <h3 className='text-3xl sm:text-4xl font-bold text-blue-100'>Prix <span className='text-remporter'>remportés</span></h3>
+                <h3 className='text-3xl sm:text-4xl font-interBold text-blue-100'>Prix <span className='text-remporter'>remportés</span></h3>
                 
                 <div className=' flex flex-col sm:flex-row justify-center items-center gap-10'>
                     <div className='flex justify-center items-center w-[70%] sm:w-[60%]'> <img loading='lazy' className='h-20 lg:h-24' src={prix_ecicr_1} alt="prix_ecicr_1" /></div>

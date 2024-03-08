@@ -114,7 +114,7 @@ export default function Publication () {
                         </div>
 
                         {/* apres la chute  */}
-                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[1.875rem] md:bottom-[2.5rem] bottom-[48px] text-center sm:right-[2.5rem] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 200}%)`}}>
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[1.875rem] md:bottom-[2.5rem] bottom-[48px] text-center sm:right-[12%] duration-1000 delay-150 `} style={{transform: `translateX(${-index + 200}%)`}}>
 
                             <div className='sm:w-[40%] w-[80%] '>
 

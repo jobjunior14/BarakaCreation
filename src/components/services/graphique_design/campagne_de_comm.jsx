@@ -61,7 +61,7 @@ export default function CampagneDeComm () {
                 </div>
 
                 <div className=' justify-center items-center flex  sm:-mt-[2%] md:-mt-[1%] '>
-                    <div className='w-[70%] sm:w-[60%] md:w-[40%] lg:w-[35%]'>
+                    <div className='w-[70%] sm:w-[60%] md:w-[40%] lg:w-[45%]'>
 
                         <img loading='lazy' src={ width >= 640 ? campagne_ordi : campagne} alt="campagne"/>
                     </div>

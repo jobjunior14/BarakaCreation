@@ -80,7 +80,7 @@ export default function Illustation () {
             <figure className='w-full h-[12.5rem] md:h-[15.625rem] lg:h-[16.875rem] rounded-md overflow-hidden relative'>
 
                     <div className='w-full justify-center absolute items-center z-40 top-5'>
-                        <h2 className='font-bold text-gray-100 text-[1.125rem] md:text-[2rem]'>Plus d&apos;émotions</h2>
+                        <h2 className='font-interBold text-gray-100 text-[1.125rem] md:text-[2rem]'>Plus d&apos;émotions</h2>
                     </div>
                     <img loading='lazy' src={illustration_emotion} alt="illustration_emotion" className=' object-cover w-full h-full' />
             </figure>
@@ -89,7 +89,7 @@ export default function Illustation () {
                 <figure className='w-full h-0 rounded-md overflow-hidden  relative' style={{ paddingTop: 'calc(100% * (4/3.5))'}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
-                            <h2 className='font-bold text-gray-700 text-[1.125rem] md:text-[2rem] md:leading-8 leading-5'>Plus <br /> de style</h2>
+                            <h2 className='font-interBold text-gray-700 text-[1.125rem] md:text-[2rem] md:leading-8 leading-5'>Plus <br /> de style</h2>
                         </div>
                         <img loading='lazy' src={Illustration_vectoriel} alt="illustration_emotion" className='absolute top-0 object-cover w-full h-full' />
                 </figure>
@@ -97,7 +97,7 @@ export default function Illustation () {
                 <figure className='w-full h-0 rounded-md  overflow-hidden relative' style={{ paddingTop: 'calc(100% * (4/3.5))'}}>
 
                         <div className='w-full justify-center absolute items-center z-40 top-5'>
-                            <h2 className='font-bold text-gray-100 text-[1.125rem] md:text-[2rem] md:leading-8 leading-5'>Plus <br /> d&apos;excellence</h2>
+                            <h2 className='font-interBold text-gray-100 text-[1.125rem] md:text-[2rem] md:leading-8 leading-5'>Plus <br /> d&apos;excellence</h2>
                         </div>
                         <img loading='lazy' src={Illustration_excellence} alt="illustration_emotion" className='absolute top-0 object-cover w-full h-full' />
                 </figure>
@@ -113,7 +113,7 @@ export default function Illustation () {
         {/* section illustration editorial  */}
         <section className='bg-slate-200 px-[5%] lg:px-[12%] py-10 flex flex-col gap-5 '>
 
-            <h1 className='text-center px-[10%] text-[1.25rem] sm:text-[1.5rem] md:text-[1.625rem] lg:text-[2.125rem] leading-6 lg:leading-9 font-bold text-gray-700 '>Illustration <br /> Editoriale </h1>
+            <h1 className='text-center px-[10%] text-[1.25rem] sm:text-[1.5rem] md:text-[1.625rem] lg:text-[2.125rem] leading-6 lg:leading-9 font-interBold text-gray-700 '>Illustration <br /> Editoriale </h1>
 
             <div className='grid grid-cols-1 justify-center items-center w-full gap-3'>
                 
@@ -125,7 +125,7 @@ export default function Illustation () {
                             <img loading='lazy' src={illustration_couverture_new} alt="illustration_couverture" className='rounded-lg' />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-bold text-gray-700'>Courverture</h1>
+                            <h1 className='font-interBold text-gray-700'>Courverture</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour démarquer et rendre captivant les livres, romans, magazines</p>
                             <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
@@ -141,7 +141,7 @@ export default function Illustation () {
                         </div>
 
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-bold text-gray-700'>Livre / manuel </h1>
+                            <h1 className='font-interBold text-gray-700'>Livre / manuel </h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour raconter les histoires et pour illustrer parfaitement votre contenu</p>
                             <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
@@ -154,7 +154,7 @@ export default function Illustation () {
                             <img loading='lazy' src={illustration_bd_new} alt="illustration_couverture" className='rounded-lg' />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-bold text-gray-700'>Bande dessinée</h1>
+                            <h1 className='font-interBold text-gray-700'>Bande dessinée</h1>
                             <p className='w-[90%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Nous vous accompagnons durant tout le processus, du briefing à la réalisation passant par le storyboard</p>
                             <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
@@ -171,7 +171,7 @@ export default function Illustation () {
                             <img loading='lazy' src={illustration_campagne} alt="illustration_couverture" className='rounded-lg' />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-bold text-gray-100'>Campagne</h1>
+                            <h1 className='font-interBold text-gray-100'>Campagne</h1>
                             <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Nous créons des images captivantes de haute résolution qui illustrent parfaitement votre message</p>
                             <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
@@ -183,7 +183,7 @@ export default function Illustation () {
                             <img loading='lazy' src={illustration_mascotte_new} alt="illustration_mascotte" className='rounded-lg' />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-bold text-gray-700'>Mascotte</h1>
+                            <h1 className='font-interBold text-gray-700'>Mascotte</h1>
                             <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour créer un lien affectif entre votre cible et votre marque ou évènement.</p>
                             <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
@@ -195,7 +195,7 @@ export default function Illustation () {
                             <img loading='lazy' src={illustration_web_new} alt="illustration_web" className='rounded-lg' />
                         </div>
                         <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-bold text-gray-100'>Web</h1>
+                            <h1 className='font-interBold text-gray-100'>Web</h1>
                             <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Illustrations simples et attrayante, création des icones personnalisées, gestion du design de site/ apps</p>
                             <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
@@ -263,13 +263,13 @@ export default function Illustation () {
 
                 <div className='w-full relative md:hidden'>
                     <div className='rounded-b-lg md:bg-none bottom-0 absolute pt-14 bg-gradient-to-t w-full from-bgCertifier from-20% h-[9.375rem]'>
-                        <h1 className='font-bold  text-center text-gray-100 text-[1.5rem] leading-6'>Création <br /> des personnages</h1>
+                        <h1 className='font-interBold  text-center text-gray-100 text-[1.5rem] leading-6'>Création <br /> des personnages</h1>
                     </div>
                 </div>
 
                 <div className='w-full absolute left-5 hidden items-center md:flex'>
                     <div className='rounded-b-lg absolute pl-[3%] lg:pl-[8%]'>
-                        <h1 className='font-bold  text-left text-gray-100 text-[1.5rem]'>Création <br /> des personnages</h1>
+                        <h1 className='font-interBold  text-left text-gray-100 text-[1.5rem]'>Création <br /> des personnages</h1>
                     </div>
                 </div>
             </section> 
@@ -282,8 +282,8 @@ export default function Illustation () {
                 </div>
 
                 <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>
-                    <Link to='/contacts' className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</Link>
-                    <Link to='/contacts' className=' py-1 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander&nbsp;un&nbsp;devis </Link>
+                    <Link to='/contacts' className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white font-interRegular duration-200'> Contactez-nous</Link>
+                    <Link to='/contacts' className=' py-1 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white font-interRegular text-blue-600 border-blue-600 duration-200'> Demander&nbsp;un&nbsp;devis </Link>
                 </div>
             </section>
 

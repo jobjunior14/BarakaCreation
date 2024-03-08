@@ -48,7 +48,7 @@ export default function Event() {
                 <div className='w-full pt-[6%] sm:pt-[1%] flex flex-col gap-4 md:gap-0 z-40'>
 
                     <div className=' flex flex-col justify-center items-center  '>
-                        <img loading='lazy' src={evenementielT} alt="evenementielT" />
+                        <img loading='lazy' src={evenementielT} alt="evenementielT" className='lg:w-[90%]' />
                     </div>
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full  '>
@@ -60,7 +60,7 @@ export default function Event() {
                 </div>
 
                 <div className=' justify-center items-center flex  '>
-                    <div className='w-full sm:w-[60%] md:w-[60%] lg:w-[45%]'>
+                    <div className='w-full sm:w-[60%] md:w-[65%] lg:w-[60%]'>
 
                         <img loading='lazy' src={evenementiel} alt="campagne"/>
                     </div>

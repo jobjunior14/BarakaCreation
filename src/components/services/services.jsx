@@ -30,7 +30,7 @@ export default function Services () {
     const width = useWindowWidth();
 
     return (
-        <main className="w-full flex flex-col gap-5">
+        <main className="w-full flex flex-col gap-5 ">
 
             {/* 1st part welcome picture  */}
             <section className="w-full flex flex-col justify-center items-center relative sm:-mt-20">
@@ -102,8 +102,8 @@ export default function Services () {
             {/* engagement  */}
             <section className='w-full flex flex-col justify-center gap-5 md:gap-8 px-[6%] lg:px-[12%] sm:items-center py-10'>
                
-                <p className='text-left text-[0.9rem] leading-5 font-interBold w-[75%] sm:w-[80%] sm:text-center sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] text-gray-700 md:leading-7  '>Nous nous engageons à comprendre vos besoins , et vous proposons des solutions qui répondent à vos attentes afin d&apos;atteindre vos objectifs.</p>
-                <h3 className='sm:text-gray-400 text-gray-600 leading-6 text-left w-[50%] font-bold text-xl  sm:text-center'>Nos services sont basés sur :</h3>
+                <p className='text-left text-[0.9rem] leading-5 font-interBold w-[75%] sm:w-[80%] sm:text-center sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] text-gray-700 md:leading-7  '>Nous nous engageons à comprendre vos besoins , et vous proposez des solutions qui répondent à vos attentes afin d&apos;atteindre vos objectifs.</p>
+                <h3 className='sm:text-gray-400 text-gray-600 leading-6 text-left w-[50%] font-interBold text-xl  sm:text-center'>Nos services sont basés sur :</h3>
 
                 {/* nos service sont basée sur  */}
                <figure className='grid grid-cols-2 lg:grid-cols-4 gap-7 w-[90%] sm:w-[75%]'>

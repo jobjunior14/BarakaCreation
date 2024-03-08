@@ -172,8 +172,8 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
 
         {/* section texte  */}
         <section className='text-left flex flex-col gap-3 '>
-            <h1 className='font-bold text-[1rem] sm:text-[1.3rem] md:text-[1.5rem] text-gray-700'>{title}</h1>
-            <p className='text-[0.75rem] sm:text-[0.8rem] md:text-[1rem] md:leading-6 text-gray-700 w-full sm:w-[80%]'> {text}</p>
+            <h1 className='font-interBold text-[1rem] sm:text-[1.3rem] md:text-[1.5rem] text-gray-700'>{title}</h1>
+            <p className='text-[0.75rem] sm:text-[0.8rem] font-interRegular md:text-[1rem] md:leading-6 text-gray-700 w-full sm:w-[80%]'> {text}</p>
         </section>
 
         {/* div to prev or next images  */}
@@ -200,7 +200,7 @@ export function LogoDetail ({images,text, title, state, hideDetails }) {
 
 export default function Logofolio () {
     
-    // scroll to top 
+    // scroll to top  when we open a page 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);

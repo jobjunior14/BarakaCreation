@@ -76,19 +76,19 @@ export default function Contacts () {
                     <div className='w-[1.3rem]'>
                         <img loading='lazy' src={icone_contat_Mail}/>
                     </div>
-                    <p className="font-bold text-[0.8125rem] text-gray-700"> barakalurhakwa@gmail.com</p>
+                    <p className="font-interBold text-[0.8125rem] text-gray-700"> barakalurhakwa@gmail.com</p>
                 </div>
                 <div className="flex gap-3 justify-center items-center">
                     <div className='w-[1.3rem]'>
                         <img loading='lazy' src={icone_contat_call_center}/>
                     </div>
-                    <p className=" font-bold text-[0.8125rem] text-gray-700">+243 976 458 461</p>
+                    <p className=" font-interBold text-[0.8125rem] text-gray-700">+243 976 458 461</p>
                 </div>
                 <div className="flex gap-3 justify-center items-center">
                     <div className='w-[1.3rem]'>
                         <img loading='lazy' src={icone_contat_Whatsapp}/>
                     </div>
-                    <p className=" font-bold text-[0.8125rem] text-gray-700">+243 823 468 444</p>
+                    <p className=" font-interBold text-[0.8125rem] text-gray-700">+243 823 468 444</p>
                 </div>
             </section>
 
@@ -110,19 +110,19 @@ export default function Contacts () {
         {/* clients info  */}
         <section className='flex flex-col gap-3 sm:w-[55%] '>
 
-            <h1 className='text-blue-500 text-2xl text-left font-bold'>Entrons en contact</h1>
+            <h1 className='text-blue-500 text-2xl text-left font-interBold'>Entrons en contact</h1>
             <div className='flex flex-col gap-1'> 
-                <label className='text-left text-[12px] text-gray-700 ' htmlFor="nom">Votre nom</label>
+                <label className='text-left text-[12px] text-gray-700 font-interRegular ' htmlFor="nom">Votre nom</label>
                 <input onChange={(e) => {
                     const {name, value} = e.target;
                     if (value !== '') setDataMessage(prev => ({...prev, nom: false}))
                     return handleData(name, value);
                 }}  value={data.nom} placeholder='Votre Nom' type="text" id='nom' name='nom' className={` rounded-lg focus:border-blue-200 focus:outline border-2 ${dataMessage.nom ? 'border-red-500' : ""}  outline-none px-2 py-1 text-gray-700`}/>
-                {dataMessage.nom && <p className='text-[11px] text-red-500'>veillez donner votre nom s&apos;il vous plait</p>}
+                {dataMessage.nom && <p className='text-[11px] text-red-500 font-interRegular'>veillez donner votre nom s&apos;il vous plait</p>}
              </div>
 
             <div className='flex flex-col gap-1'> 
-                <label className='text-left text-[12px] text-gray-700 ' htmlFor="email">Votre mail</label>
+                <label className='text-left text-[12px] text-gray-700 font-interRegular ' htmlFor="email">Votre mail</label>
                 <input onChange={(e) => {
                     const {name, value} = e.target;
 
@@ -132,23 +132,23 @@ export default function Contacts () {
             </div>
 
             <div className='flex flex-col gap-1'> 
-                <label className='text-left text-[12px] text-gray-700 ' htmlFor="tel">Num Tel</label>
+                <label className='text-left text-[12px] text-gray-700 font-interRegular ' htmlFor="tel">Num Tel</label>
                 <input onChange={(e) => {
                     const {name, value} = e.target;
                     if (value) setDataMessage (prev => ({...prev, email: false, tel: false}));
                     return handleData(name, value);
                 }}  value={data.tel} placeholder='Votre numero téléphone' type="text" id='tel' name='tel' className={` rounded-lg focus:border-blue-200 focus:outline border-2 ${dataMessage.email ? 'border-red-500' : ""}  outline-none px-2 py-1 text-gray-700`}/>
-                {dataMessage.email && <p className='text-[11px] text-red-500'>Fournissez soit votre numero ou email</p>}
+                {dataMessage.email && <p className='text-[11px] text-red-500 font-interRegular'>Fournissez soit votre numero ou email</p>}
             </div>
 
             <div className='flex flex-col gap-1'> 
-                <label className='text-left text-[12px] text-gray-700 ' htmlFor="message">Message </label>
+                <label className='text-left text-[12px] text-gray-700 font-interRegular ' htmlFor="message">Message </label>
                 <textarea onChange={(e) => {
                     const {name, value} = e.target;
                     if (value !== '') setDataMessage(prev => ({...prev, message: false}));
                     return handleData(name, value);
                 }}  value={data.message} placeholder='Votre message' className={` rounded-lg focus:border-blue-200 focus:outline border-2 ${dataMessage.message ? 'border-red-500' : ""}  outline-none px-2 py-1 text-gray-700`} name="message" id="message" cols="30" rows="5"></textarea>
-                {dataMessage.message && <p className='text-[11px] text-red-500'>Veillez ne pas envoyer un message vide</p>}
+                {dataMessage.message && <p className='text-[11px] text-red-500 font-interRegular'>Veillez ne pas envoyer un message vide</p>}
 
             </div>
             

@@ -32,7 +32,7 @@ export default function Presentation() {
                 <div className='w-full pt-[6%] sm:pt-[1%] flex flex-col gap-4 md:gap-4'>
 
                     <div className=' flex flex-col justify-center items-center px-[10%]  sm:px-[10%] md:px-[13%] lg:px-[16%]  '>
-                        <h1 className=' text-5xl sm:text-[4.25rem] md:text-[4.625rem] lg:text-[5.625rem] font-interBold text-gray-100'>Présentation</h1>
+                        <h1 className=' text-5xl sm:text-[4.25rem] md:text-[4.625rem] lg:text-[6rem] font-interBold text-gray-100'>Présentation</h1>
                     </div>
 
                     <div className=' flex justify-center items-center gap-2 flex-col  w-full z-40  '>
@@ -44,7 +44,7 @@ export default function Presentation() {
                 </div>
 
                 <div className=' justify-center items-center flex -mt-4  '>
-                    <div className='w-[90%] sm:w-[50%] md:w-[40%] lg:w-[30%]'>
+                    <div className='w-[90%] sm:w-[50%] md:w-[45%] lg:w-[35%]'>
 
                         <img loading='lazy' src={presentation} alt="campagne"/>
                     </div>
