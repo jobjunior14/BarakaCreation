@@ -107,7 +107,7 @@ export default function Illustation () {
         {/* second text  */}
         <section className='w-full px-[10%]  sm:justify-center sm:items-center flex flex-col gap-2 sm:gap-5 py-14 bg-slate-100'>
             <h1 className='text-left sm:text-center font-interBold text-[1.25rem] sm:text-[1.38rem] md:text-[1.5rem] lg:text-[1.65rem] leading-5 text-gray-500'> Vous avez un <br className='sm:hidden'/> projet complexe ?</h1>
-            <p className=' w-[75%] sm:w-[55%] md:w-[55%]  text-left sm:text-center font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7 '>Nous proposons un package complet des suppots de l&apos;illustration éditoiale, aux campagnes passant par le web et <Link to='/portfolio' className='text-blue-500'> concept art {'>'}</Link></p>
+            <p className=' w-[75%] sm:w-[55%] md:w-[55%]  text-left sm:text-center font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7 '>Nous proposons un package complet des supports de l&apos;illustration éditoriale, aux campagnes passant par le web et <Link to='/portfolio' className='text-blue-500'> concept art {'>'}</Link></p>
         </section>
 
         {/* section illustration editorial  */}
@@ -224,11 +224,11 @@ export default function Illustation () {
 
                 {/* second paragraph  */}
                 <section className='px-[10%] md:px-0 w-[90%] '>
-                    <p className='text-left font-interSemibold text-gray-100 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7  sm:w-[75%] md:w-full '> Nous vous accompagnons durant tout le processus, du biefing à la post-production, passant par le développement de votre univers visuel <span className='text-bgPlay'>et la ligne graphique  </span></p>
+                    <p className='text-left font-interSemibold text-gray-100 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7  sm:w-[75%] md:w-full '> Nous vous accompagnons durant tout le processus, du briefing à la post-production, passant par le développement de votre univers visuel <span className='text-bgPlay'>et la ligne graphique  </span></p>
                 </section>
             </section>
 
-            <div className='w-full gap-3  grid grid-cols-1 md:grid-cols-2 '>
+            <section className='w-full gap-3  grid grid-cols-1 md:grid-cols-2 '>
 
                 {/* story bord  */}
                 <section className='relative items-center flex flex-col justify-center px-[2%]'>
@@ -251,7 +251,7 @@ export default function Illustation () {
                         </div>
                     </div>
                 </section>
-            </div>
+            </section>
 
             {/* Creation environement  */}
             <section className='relative items-center flex flex-col justify-center sm:px-[1%] px-[2%]  overflow-hidden '>

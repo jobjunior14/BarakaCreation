@@ -46,9 +46,9 @@ export default function Logotype () {
                 <section className='text-left flex flex-col gap-4 pb-[8%] sm:hidden'>
                     <h1 className='text-2xl sm:text-3xl text-gray-700 font-interBold w-[60%]'> Unique,attrayant <span className='text-gray-500'>et</span> mémorable </h1>
                     
-                    <p className='text-[0.875rem] sm:text-[1rem] font-interSemibold text-gray-700'>Le cœur de votre identité visuelle est votre logo. Il est la première impression que les gens ont de votre entrepise . Nous sommes spécialisée dans la conception de logos.</p>
+                    <p className='text-[0.875rem] sm:text-[1rem] font-interSemibold text-gray-700'>Le cœur de votre identité visuelle est votre logo. Il est la première impression que les gens ont de votre entrepise . Nous sommes spécialisés dans la conception des logos.</p>
 
-                    <p className='text-[0.875rem] sm:text-[1rem]  font-interSemibold text-gray-500 s'>Nous vous accompagnons tout au long du processus, du biefing à la création de votre logo officiel.</p>
+                    <p className='text-[0.875rem] sm:text-[1rem]  font-interSemibold text-gray-500 s'>Nous vous accompagnons tout au long du processus, du briefing à la création de votre logo officiel.</p>
                 </section>
 
                 <section className='text-left hidden flex-col gap-4 pb-[8%] sm:flex'>
@@ -57,7 +57,7 @@ export default function Logotype () {
                     <p className='text-[0.875rem] sm:text-[1rem] sm:w-[70%] lg:w-[65%] font-interSemibold text-gray-700'>
                         Le cœur de votre identité visuelle est votre logo. Il est la première impression que les
                         gens ont de votre entrepise . Nous sommes spécialisée dans la conception de logos.
-                        Nous vous accompagnons tout au long du processus, du biefing à la création de
+                        Nous vous accompagnons tout au long du processus, du briefing à la création de
                         votre logo officiel.
 
                     </p>
@@ -98,7 +98,7 @@ export default function Logotype () {
                 {/* ended text  */}
                 <section className='text-left  flex-col gap-3 pb-[8%] flex sm:hidden'>
 
-                    <p className='text-[0.875rem] sm:text-[1rem] font-interSemibold text-gray-700'>Nous guidons nos clients dans les processus complexe et paticipons activement à l&apos;élaboration d&apos;un biefing clair et pratique.</p>
+                    <p className='text-[0.875rem] sm:text-[1rem] font-interSemibold text-gray-700'>Nous guidons nos clients dans les processus complexes et paticipons activement à l&apos;élaboration d&apos;un briefing clair et pratique.</p>
 
                     <p className='text-[0.875rem] sm:text-[1rem] font-interSemibold text-gray-500'>En fonction des besoins et du budget, nous vous proposons 2 à 6 logotypes dans un large éventail de styles et d&apos;ambiances. Ainsi, ensemble nous pavenons à un logo durable et authentique.</p>
 
@@ -108,7 +108,7 @@ export default function Logotype () {
 
                     <p className='text-[0.875rem] sm:text-[1rem] font-interSemibold text-gray-700'>
                         Nous guidons nos clients dans les processus complexe et paticipons activement à
-                        l&apos;élaboration d&apos;un biefing clair et pratique. En fonction des besoins et du budget, nous
+                        l&apos;élaboration d&apos;un briefing clair et pratique. En fonction des besoins et du budget, nous
                         vous proposons 2 à 6 logotypes dans un large éventail de styles et d&apos;ambiances. Ainsi,
                         ensemble nous pavenons à un logo durable et authentique.
                     </p>

@@ -73,14 +73,14 @@ export default function Event() {
                 {/* first paragraph  */}
                 <section className=' w-[90%] '>
                     <p className='text-left font-interSemibold text-gray-700 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[65%] md:w-[90%]'>
-                        Baraka creation s&apos;occupe de tous types d&apos;outils de communication dont vous pouiez avoir besoin pour la réussite de vos événements . Nous concevons des suppots avec rapidité, efficacité et un résultat impeccable
+                        Baraka creation s&apos;occupe de tous types d&apos;outils de communication dont vous pouvez avoir besoin pour la réussite de vos événements . Nous concevons des supports avec rapidité, efficacité et un résultat impeccable
                     </p>
                 </section>
 
                 {/* second paragraph  */}
                 <section className=' w-[90%] '>
                     <p className='text-left font-interSemibold text-gray-400 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[75%] md:w-full '>
-                        Nous vous accompagnons durant tout le processus, de la définition de votre plan de communication à la réalisation de votre événement, passant par la conception des suppots, la création d&apos;une ligne graphique personnalisée et les impressions.
+                        Nous vous accompagnons durant tout le processus, de la définition de votre plan de communication à la réalisation de votre événement, passant par la conception des supports, la création d&apos;une ligne graphique personnalisée et les impressions.
                     </p>
                 </section>
             </section>

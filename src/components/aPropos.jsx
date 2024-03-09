@@ -83,7 +83,7 @@ export default function Apropos () {
                         <figure className='px-8 bg-bgFormation '> 
                             <div className='text-left grid grid-cols-2 gap-y-5 gap-x-2'>
                                 <article>
-                                    <h3 className='font-interBold text-[0.9rem] text-gray-700'> Comminication </h3>
+                                    <h3 className='font-interBold text-[0.9rem] text-gray-700'> Communication </h3>
                                     <p className='text-[0.8rem] font-interRegular'>Conseiller en communication</p>
                                 </article>
                                 <article className='ml-8'>

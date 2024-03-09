@@ -77,11 +77,11 @@ export default function CampagneDeComm () {
                         <p className='text-left font-interSemibold text-gray-100 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-7  sm:w-[100%] md:w-full'>
                             <span className='text-blue-100 md:text-gray-100'>
 
-                                Vous avez une cause que vous souhaiteiez
+                                Avez vous une cause que vous souhaiteriez
                                 poter à l&apos;attention du grand public ? </span>
                             <br  className='md:hidden'/>
                             <br className='md:hidden' />
-                             Nous créons votre campagne du biefing au
+                             Nous créons votre campagne du briefing au
                             lancement. La clé du succès est un visuel
                             percutant qui transmet votre message de
                             manière claire et concise

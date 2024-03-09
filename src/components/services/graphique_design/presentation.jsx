@@ -4,6 +4,7 @@ import presentation from '../../../assets/Services/Design graphique/Presentation
 import Presentation_icone1 from '../../../assets/Services/Design graphique/Presentation_icone1.png';
 import Presentation_icone3 from '../../../assets/Services/Design graphique/Presentation_icone3.png';
 import Presentation_icone_2 from '../../../assets/Services/Design graphique/Presentation_icone_2.png';
+import Presentation_icone_4 from '../../../assets/Services/Design graphique/Presentation_icone_4.png';
 import { useEffect } from 'react';
 
 export default function Presentation() {
@@ -63,16 +64,16 @@ export default function Presentation() {
                         {/* first paragraph  */}
                         <section className='w-full '>
 
-                            <p className=' text-left font-interSemibold text-gray-100 text-[1rem] leading-5   w-full'> Grâce à l&apos;infographie vous pouvez désomais transmettre vos infomations de la manière visuelle la plus efficace et convaincante. <span className='hidden md:flex'>Nous sommes votre patenaire de confiance pour la création des suppots de présentation professionnels et percutants.</span> </p>
+                            <p className=' text-left font-interSemibold text-gray-100 text-[1rem] leading-5   w-full'> Grâce à l&apos;infographie vous pouvez désormais transmettre vos infomations de la manière visuelle la plus efficace et convaincante. <span className='hidden md:flex'>Nous sommes votre patenaire de confiance pour la création des supports de présentation professionnels et percutants.</span> </p>
 
                         </section>
 
                         {/* second paragraph  */}
                         <section className='w-[90%] '>
                             <p className='text-left font-interSemibold text-gray-400 text-[1rem] leading-5 w-full '>
-                                <span className='md:hidden'>Nous sommes votre patenaire de confiance pour la création des suppots de présentation professionnels et percutants. </span>
+                                <span className='md:hidden'>Nous sommes votre partenaire de confiance pour la création des supports de présentation professionnels et percutants. </span>
                                
-                                <span className='hidden md:block w-[70%]'>  Nous proposons un package complète des suppots : de power point, à l&apos;animation passant par les brochures ou le PDF. Nous gérons l&apos;ensemble du flux de travail, du biefing au rendu final </span>
+                                <span className='hidden md:block w-[70%]'>  Nous proposons un package complète des supports : de power point, à l&apos;animation passant par les brochures ou le PDF. Nous gérons l&apos;ensemble du flux de travail, du briefing au rendu final </span>
                             </p>
                         </section>
 
@@ -104,7 +105,7 @@ export default function Presentation() {
                                 <div className='w-[30%]'>
                                     <img loading='lazy' src={Presentation_icone3} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
                                 </div>
-                                <h3 className=' text-gray-200 font-interSemibold w-[70%]  text-[15px] md:text-[1rem] text-left leading-6'>Support divérsifiés <br /> <span className=' text-bgPlay'>{'(print & digital)'}</span></h3>
+                                <h3 className=' text-gray-200 font-interSemibold w-[70%]  text-[15px] md:text-[1rem] text-left leading-6'>Supports diversifiés <br /> <span className=' text-bgPlay'>{'(print & digital)'}</span></h3>
                             </div>
                             
                             <div className='w-full h-px bg-bgPlay'></div>
@@ -124,9 +125,9 @@ export default function Presentation() {
                         <li className='w-full flex flex-col gap-2'>
                             <div className='flex justify-between items-center md:gap-x-4 w-full'>
                                 <div className='w-[30%]'>
-                                    <img loading='lazy' src={Presentation_icone1} alt="Presentation_icone1" className='h-[45px] md:h-[55px]' />
+                                    <img loading='lazy' src={Presentation_icone_4} alt="Presentation_icone_4" className='h-[45px] md:h-[55px]' />
                                 </div>
-                                <h3 className=' text-gray-200 font-interSemibold w-[70%]  text-[15px] md:text-[1rem] text-left leading-6'>Design épuré, <br /> Animation & simulation</h3>
+                                <h3 className=' text-gray-200 font-interSemibold w-[70%]  text-[15px] md:text-[1rem] text-left leading-6'>Fichier source <br /> de modification</h3>
                             </div>
                             
                             <div className='w-full h-px bg-bgPlay'></div>
@@ -141,13 +142,13 @@ export default function Presentation() {
                         {/* first paragraph  */}
                         <section className=' md:px-0 w-[90%] '>
 
-                            <p className=' text-left font-interSemibold text-gray-100 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[65%] md:w-[90%]'> Nous proposons un package complète des suppots : de power point, à l'animation passant par les brochures ou le PDF. </p>
+                            <p className=' text-left font-interSemibold text-gray-100 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[65%] md:w-[90%]'> Nous proposons un package complet des supports : de power point, à l&apos;animation passant par les brochures ou le PDF. </p>
 
                         </section>
 
                         {/* second paragraph  */}
                         <section className=' md:px-0 w-[90%] '>
-                            <p className='text-left font-interSemibold text-gray-400 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[75%] md:w-full '> Nous gérons l&apos;ensemble du flux de travail, du biefing au rendu final</p>
+                            <p className='text-left font-interSemibold text-gray-400 text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-5 sm:leading-6  sm:w-[75%] md:w-full '> Nous gérons l&apos;ensemble du flux de travail, du briefing au rendu final</p>
                         </section>
 
 

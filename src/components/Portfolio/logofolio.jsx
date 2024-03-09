@@ -297,12 +297,12 @@ export default function Logofolio () {
         {
             images: [Logo_Malabar_3, Logo_Malabar_2, Logo_Malabar_1],
             title: 'Malabar',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Malabar tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Malabar tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Fojed_3, Logo_Fojed_2, Logo_Fojed_1],
             title: 'FOJED+',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation FOJED+ tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation FOJED+ tout au long du processus du briefing à la création du logo officiel",
         },
 
         {
@@ -325,7 +325,7 @@ export default function Logofolio () {
         {
             images: [Logo_Nyota_3, Logo_Nyota_2, Logo_Nyota_1],
             title: 'Nyota Presidential',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation ODJ tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné la boutique Nyota tout au long du processus du briefing à la création du logo officiel",
         },
 
         {
@@ -357,32 +357,32 @@ export default function Logofolio () {
         {
             images: [Logo_Odej_2, Logo_Odej_3, Logo_Odej_1],
             title: 'ODEJ asbl',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation ODEJ tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation ODEJ tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_sos_libota_3, Logo_sos_libota_2, Logo_sos_libota_1],
             title: 'SoS Libota',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation SOS Libota  tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation SOS Libota  tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Smart_touch_1, Logo_Smart_touch_2, Logo_Smart_touch_3],
             title: 'Smart Touch',
-            text: "Le coeur de l'identinté visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Smart Touch tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Smart Touch tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_uibec_3, Logo_uibec_2, Logo_uibec_1],
             title: 'UIBEC',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'agence UIBEC tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'agence UIBEC tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_TF_School_3, Logo_TF_School_2, Logo_TF_School_1],
             title: 'Tout Facile Studio',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné la maison de production Tout Facile Studio tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné la maison de production Tout Facile Studio tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_synergy_3, Logo_synergy_2, Logo_synergy_1],
             title: 'Synergy',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Synergy tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Synergy tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_SLIGRA_3, Logo_SLIGRA_1, Logo_SLIGRA_2],
@@ -470,12 +470,12 @@ export default function Logofolio () {
         {
             images: [Logo_Mon_plongeur_3, Logo_Mon_plongeur_2, Logo_Mon_plongeur_1],
             title: 'Mon plongeur',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Mon plongeur tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Mon plongeur tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Santé_et_moi_3, Logo_Santé_et_moi_2, Logo_Santé_et_moi_1],
             title: 'Santé et moi',
-            text: "Le cœur de l&apos;identité visuelle est le logo. Nous sommes spécialisés dans la conception du logo. Nous avons conçu le logo de la plateforme digitale Santé et moi",
+            text: "Le cœur de l'identité visuelle est le logo. Nous sommes spécialisés dans la conception du logo. Nous avons conçu le logo de la plateforme digitale Santé et moi",
         },
         {
             images: [Logo_SLIGRA_3, Logo_SLIGRA_2, Logo_SLIGRA_1],
@@ -490,7 +490,7 @@ export default function Logofolio () {
         {
             images: [Logo_Impactpub_3, Logo_Impactpub_2, Logo_Impactpub_1],
             title: 'ImpactPub',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'agence marketing tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'agence marketing tout au long du processus du briefing à la création du logo officiel",
         },
         
         {
@@ -516,7 +516,7 @@ export default function Logofolio () {
         {
             images: [Logo_Extreme_holding_3, Logo_Extreme_holding_2, Logo_Extreme_holding_1],
             title: 'Extreme Holding',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Extreme Holding tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'entreprise Extreme Holding tout au long du processus du briefing à la création du logo officiel",
         },
         {
             images: [Logo_Mobc_3, Logo_Mobc_2, Logo_Mobc_1],
@@ -560,7 +560,7 @@ export default function Logofolio () {
         {
             images: [Logo_Afrique_millenaire_3, Logo_Afrique_millenaire_2, Logo_Afrique_millenaire_1],
             title: 'Afrique Millénaire',
-            text: "Le coeur de l'identé visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation Afrique Millénaire tout au long du processus du briefing à la création du logo officiel",
+            text: "Le coeur de l'identité visuelle est le Logo. Il est la premiere impression que les gens ont d'une entreprise, nous sommes spécialisés dans la conception des logos. Nous avons accompagné l'organisation Afrique Millénaire tout au long du processus du briefing à la création du logo officiel",
         },
     ];
 

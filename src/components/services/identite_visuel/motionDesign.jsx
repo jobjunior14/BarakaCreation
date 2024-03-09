@@ -36,7 +36,7 @@ export default function MotionDesign() {
                 <section className='w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10'>
                     {/* first paraagraph  */}
                     <div className='w-full  sm:px-0'>
-                        <p className='text-left font-interSemibold text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-7  sm:w-[75%] md:w-[70%] lg:w-[65%] '>Un puissant message qui permet de capter l&apos;attention de votre public et transmettre des messages de maniere claire et concise.</p>
+                        <p className='text-left font-interSemibold text-gray-100 text-[0.875rem] sm:text-[15px] md:text-[17px] leading-7  sm:w-[75%] md:w-[70%] lg:w-[65%] '>Un puissant moyen de capter l&apos;attention de votre public et transmettre des messages de maniere claire et concise.</p>
                     </div>
                     
                     {/* second paragraph  */}
@@ -79,13 +79,13 @@ export default function MotionDesign() {
                     </div>
                    
                     <div className='sm:hidden'>
-                        <p className='font-interSemibold text-blue-50 text-[0.93rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.25rem] leading-7'>Nous vous accompagnons durant tout le processus, du biefing à la post-production, passant par le développement de votre univers visuel et la ligne graphique</p>
+                        <p className='font-interSemibold text-blue-50 text-[0.93rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.25rem] leading-7'>Nous vous accompagnons durant tout le processus, du briefing à la post-production, passant par le développement de votre univers visuel et la ligne graphique</p>
                     </div>
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 flex-col gap-5 sm:gap-20'>
 
                         <section className='hidden sm:flex'>
-                            <p className='font-interSemibold text-blue-50 text-[0.93rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.25rem] leading-7'>Nous vous accompagnons durant tout le processus, du biefing à la post-production, passant par le développement de votre univers visuel et la ligne graphique</p>
+                            <p className='font-interSemibold text-blue-50 text-[0.93rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.25rem] leading-7'>Nous vous accompagnons durant tout le processus, du briefing à la post-production, passant par le développement de votre univers visuel et la ligne graphique</p>
                         </section>
                         <section className='flex flex-col  gap-5 sm:gap-0'>
                             <h4 className='font-interSemibold text-bgPlay text-[0.93rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.25rem]'> Nous assurons la gestion de:</h4>

@@ -71,7 +71,7 @@ export default function MiseEnPage() {
                             <section className=' md:px-0 w-[90%] md:w-[80%] '>
 
                                 <p className=' text-left font-interSemibold text-gray-700 text-[1rem]  leading-5 lg:leading-6  '> 
-                                    Nous faisons la mise en page des supports pour l&apos;impression & le Web. Nous proposons une gamme complète de sevices en matière de conception de publications : de la recherche d&apos;images, à la création d&apos;illustrations et infographies passant par la conception de la charte éditoiale
+                                    Nous faisons la mise en page des supports pour l&apos;impression & le Web. Nous proposons une gamme complète de sevices en matière de conception de publications : de la recherche d&apos;images, à la création d&apos;illustrations et infographies passant par la conception de la charte éditoriale
                                 </p>
 
                             </section>
@@ -80,7 +80,7 @@ export default function MiseEnPage() {
                             <section className=' md:px-0 w-[90%] md:w-[50%] '>
 
                                 <p className='text-left font-interSemibold text-gray-500 text-[1rem]  leading-5 lg:leading-6    '>
-                                Nous gérons l&apos;ensemble du flux de travail de conception des supports, du biefing à la livraison
+                                Nous gérons l&apos;ensemble du flux de travail de conception des supports, du briefing à la livraison
                                 </p>
 
                             </section>
