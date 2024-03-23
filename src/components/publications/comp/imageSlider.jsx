@@ -181,7 +181,7 @@ export default function ImageSlider ({images, title, audio}) {
             document.mozCancelFullScreen();
         } else if (document.msExitFullScreen) {
             document.msExitFullScreen();
-        };
+        }
     };
     
 
@@ -231,7 +231,7 @@ export default function ImageSlider ({images, title, audio}) {
                 <section  className="w-full relative flex overflow-hidden justify-center items-center gap-2">
 
                     <div onClick={ (e) => handleShowController (e)} className='w-full flex duration-[1000ms] delay-300 relative' >
-                    {myImages}
+                        {myImages}
                     </div>
 
                     {/* div to prev or next images  */}
@@ -306,10 +306,6 @@ export default function ImageSlider ({images, title, audio}) {
             </div>
         
         }
-
-        
-      
-
-        
+  
     </main>)
 }
