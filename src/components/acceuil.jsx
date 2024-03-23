@@ -35,7 +35,7 @@ export default function Acceuil () {
     const width = useWindowWidth();
     return (
 
-        <div className="flex w-full gap-0 flex-col justify-center items-center first-letter bg-contain bg-no-repeat bg-fixed " >
+        <main className="flex w-full gap-0 flex-col justify-center items-center overflow-x-hidden " >
             {/* first part "Principal picture" */}
             <section className='-mb-5' >
                 <img loading='lazy' src={ width >= 640 ? accueil_ok : accueil_phone} className='' alt='Baraka image' />
@@ -166,6 +166,6 @@ export default function Acceuil () {
                 </div>
             </section>
 
-        </div>
+        </main>
     )
 }
