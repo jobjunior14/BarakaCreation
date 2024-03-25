@@ -69,7 +69,7 @@ function Illuatrations ({images, text, title, state, hideDetails }) {
         window.scrollTo(0, 0);
     }, []);
 
-    return (<div className={`${ state ? '' : 'hidden'} px-5  md:px-10 lg:px-[8%] w-full h-full cursor-pointer flex flex-col items-center gap-3 overflow-y-scroll `}>
+    return (<div className={`${ state ? '' : 'hidden'} px-5  md:px-10 lg:px-[8%] w-full h-full flex flex-col items-center gap-3 overflow-y-scroll `}>
             
 
         {/* button to hide the details  */}
@@ -82,27 +82,32 @@ function Illuatrations ({images, text, title, state, hideDetails }) {
             </div>
         </div>
 
-        <article className='grid grid-cols-1 items-center gap-10 '>
+        <article className='flex flex-col items-center justify-center gap-10 sm:w-[70%]'>
 
-            <figure className='w-full flex flex-col justify-center items-center'> 
+            <div className=' w-full flex flex-col justify-center items-center gap-10'>
 
-                {/* images slider */}
-                {state && <section className='w-full flex justify-center items-center overflow-hidden' >
+                <figure className='w-full flex flex-col justify-center items-center'> 
 
-                    <div className='w-full flex duration-200'>
-                        <img src={images} alt="Image story" />
-                    </div>
+                    {/* images slider */}
+                    {state && <section className='w-full flex justify-center items-center' >
 
-                </section>}
-            </figure>
+                        <div className='w-full flex duration-200 h-auto'>
+                            <img src={images} alt="Image story" />
+                        </div>
 
-            {/* section texte  */}
-            <section className='w-full flex items-center   '>
-                <section className='text-left flex flex-col gap-3 '>
-                    <h1 className='font-interBold text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] leading-6 sm:leading-7 md:leading-8 lg:leading-9 text-[rgb(31,31,32)]'>{title}</h1>
-                    <p className='text-[0.75rem] sm:text-[0.8rem] md:text-[1rem] md:leading-6 text-gray-800 w-full sm:w-[80%]'> {text}</p>
+                    </section>}
+                </figure>
+
+                {/* section texte  */}
+                <section className='w-full flex items-start   '>
+                    <section className='text-left flex flex-col gap-3 '>
+                        <h1 className='font-interBold text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] leading-6 sm:leading-7 md:leading-8 lg:leading-9 text-[rgb(31,31,32)]'>{title}</h1>
+                        <p className='text-[0.75rem] sm:text-[0.8rem] md:text-[1rem] md:leading-6 text-gray-800 w-full sm:w-[80%]'> {text}</p>
+                    </section>
                 </section>
-            </section>
+
+            </div>
+
 
         </article>
 

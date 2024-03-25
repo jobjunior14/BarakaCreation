@@ -103,3 +103,16 @@
   box-shadow: inset 0px 0px 0px 1px  rgba(134, 139, 169);
  
 }
+
+.publication {
+  scrollbar-width: none !important;
+  scroll-snap-type: x mandatory;
+}
+
+.publication::-webkit-scrollbar {
+  display: none !important;
+}
+
+.publication div {
+  scroll-snap-align: start;
+}
