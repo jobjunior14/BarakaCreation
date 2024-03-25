@@ -932,7 +932,7 @@ export default function GalleryArt() {
 
             <section className=' w-full gap-3 flex flex-col px-[10%] sm:px-[13%]'>
 
-                <div onClick={() => handleDetails('a29')} className=' cursor-pointer w-[50%]'>
+                <div onClick={() => handleDetails('a29')} className=' cursor-pointer w-full sm:w-[50%]'>
                     <img loading='lazy' src={BD_concour_ONUfemmes_0} alt="Mama_hero_0" />
                 </div>
                 
