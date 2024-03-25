@@ -33,7 +33,8 @@ export default function NavBar ()
     // }
 
     function toggle () {
-        if (window.innerWidth <= 1024)  setToggleBtn(prev => {
+
+        setToggleBtn(prev => {
             setToggleNav({services: false, portfolio: false});
 
             return prev === true ? false : true
@@ -83,23 +84,23 @@ export default function NavBar ()
             
             <div className={`pt-[10%] mainDiv flex flex-col lg:flex-row text-left  ${toggleBtn ? 'translate-x-[0%]' : '-translate-x-[100%]'} lg:transform-none  delay-200 ease-in-out lg:text-center pl-[9%] lg:items-center lg:justify-center lg:p-0 lg:top-0 pt-5 pb-[100vh] top-[2.5rem] -left-0  max-lg:absolute w-[70%] bg-gray-200 lg:bg-white duration-300 transition easy-in-out delay-400 `}>
                 
-                <ul className='flex flex-col lg:flex-row lg:items-center gap-10 justify-evenly mainDiv'>
+                <ul className='flex flex-col lg:flex-row lg:items-center justify-evenly mainDiv'>
 
-                    <li>
+                    <li className='mb-10 lg:mb-0 lg:mx-5'>
                         <NavLink 
                             onClick={toggle}
                             className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                             to = {`/`}> Accueil </NavLink>
                     </li>
 
-                    <li>
+                    <li className='mb-10 lg:mb-0 lg:mx-5'>
                         <NavLink 
                             onClick={toggle}
                             className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                             to = {`/aPropos`}>  A&nbsp;propos </NavLink>
                     </li>
                     
-                    <li className='flex justify-start flex-col'>
+                    <li className='flex justify-start flex-col mb-10 lg:mb-0 lg:mx-5'>
 
                         <div className=' flex gap-3'>
                             <NavLink 
@@ -127,7 +128,7 @@ export default function NavBar ()
                     </li>
 
 
-                    <li className='flex justify-start flex-col'>
+                    <li className='flex justify-start flex-col mb-10 lg:mb-0 lg:mx-5'>
 
                         <div className=' flex gap-3'>
                             <NavLink 
@@ -145,7 +146,7 @@ export default function NavBar ()
 
                         <div className={`w-fit lg:hidden overflow-hidden ${toggleNav.portfolio ? 'h-[6.25rem]' : 'h-0'} transition-all `}>
                             <ul className='pl-2 list-none flex flex-col gap-2 pt-3'>
-                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/galleryArt'}> Gallerie d&apos;art</NavLink></li>
+                                <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/galleryArt'}>Illustrations <span className=' text-myBlue'>&</span> Dessin</NavLink></li>
                                 <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/logofolio'}>Logofolio</NavLink></li>
                                 <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'/portfolio/graphicDesign'}>Design graphique</NavLink></li>
                                 <li onClick={toggle} className='text-gray-700 text-xs hover:list-disc font-semibold'> <NavLink className={({isActive}) => !isActive ? ' opacity-45 hover:opacity-100 duration-200' : 'bg-none hover:opacity-45' } to={'portfolio/motionDesign'}>Motion design</NavLink></li>
@@ -153,14 +154,14 @@ export default function NavBar ()
                         </div>
                     </li>
 
-                    <li>
+                    <li className='mb-10 lg:mb-0 lg:mx-5'>
                         <NavLink 
                             onClick={toggle}
                             className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
                             to = {`/publication`}> Publications </NavLink>
                     </li>
 
-                    <li>
+                    <li className='mb-10 lg:mb-0 lg:mx-5'>
                         <NavLink 
                             onClick={toggle}
                             className={ ({isActive}) => isActive ? 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs block lg:flex hover:text-teal-400 font-interSemibold underline' : 'duration-300 transition easy-in-out delay-400 text-gray-700 text-xs hover:underline block font-interRegular'}
@@ -174,13 +175,13 @@ export default function NavBar ()
                 <img loading='lazy' className='h-5' src={bcconversation2_1} alt='messagerie' />
             </div>
 
-            {/* when it's become to phone  */}
+            {/* when it come to phone  */}
             <div onClick={toggle} className='flex lg:hidden justify-center items-center'>
                 
-                    <i  className=" scale-150 hover:bg-gray-100  rounded-xl px-2 duration-300 transition easy-in-out delay-400 hover:cursor-pointer "> 
+                    <i    className=" scale-150 hover:bg-gray-100  rounded-xl px-2 duration-300 transition easy-in-out delay-400 hover:cursor-pointer "> 
 
                        { 
-                            toggleBtn ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 mainDiv">
+                            toggleBtn ? <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 mainDiv">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
                             </svg>:
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className= 'text-black w-5 h-5 mainDiv '>

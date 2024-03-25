@@ -15,6 +15,7 @@ export default function Portfolio() {
     }, []);
     
     const width = useWindowWidth();
+    
     return (
         <div>
 
@@ -26,46 +27,26 @@ export default function Portfolio() {
 
                 <section className=' grid grid-cols-1 sm:grid-cols-2 gap-3 px-2 sm:px-[10%]'>
                     
-                    {/* Gallerie  */}
-                    <section className={`w-full relative h-[32.5rem] sm:h-auto rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center`} style={{backgroundImage: `url(${Save_children_dreams_illustration_4okey})`}}>
-                        <Link to={'/portfolio/galleryArt'}>
-                            <div className='h-full w-full duration-200 delay-150 relative'>
-                                <img loading='lazy' src={Save_children_dreams_illustration_4okey} alt='image' className='sm:flex hidden rounded-lg duration-150  hover:-translate-y-2'/>
+                    {/* Illustration et dessin*/}
+                    <section className={`w-full relative h-[32.5rem] sm:h-auto rounded-lg flex flex-col items-center justify-center`} >
+                        <Link className=' w-full h-full ' to={'/portfolio/galleryArt'}>
+                                <img loading='lazy' src={Save_children_dreams_illustration_4okey} alt='image' className=' object-cover w-full h-full rounded-lg duration-150  hover:-translate-y-2'/>
 
-                            </div>
                         </Link>
 
                         
                         <div className='absolute flex flex-col items-center justify-center top-0 pt-4  gap-2 sm:bg-none bg-gradient-to-b rounded-t-lg from-white w-full'>
-                            <h1 className=' text-3xl sm:text-xl md:text-2xl  font-interBold text-gray-800 sm:text-gray-100'>Gallerie <br/>d&apos;art</h1>
+                            <h1 className=' text-3xl sm:text-xl md:text-2xl  font-interBold text-gray-800 sm:text-gray-100'>Illustration <br /> <spa className='text-blue-400 text-opacity-60'>& </spa> Dessin</h1>
                             <Link to={'/portfolio/galleryArt'} className='bg-blue-500 px-4 py-[0.23rem]  text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200 ' > Voir </Link>
-                        </div>
-                    </section>
-                    
-                    {/* logofolio  */}
-                    <section className='w-full relative h-[32.5rem] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${logofolio_collectionC})`}}>
-                        
-                        <Link to={'/portfolio/logofolio'}>
-                            <div className='h-full w-full duration-200 delay-150 relative'>        
-                                <img loading='lazy' src={logofolio_collectionC} alt='image' className='sm:flex hidden rounded-lg duration-150  hover:-translate-y-2'/>
-
-                            </div>
-                        </Link>
-
-                        <div className='absolute flex flex-col items-center justify-center top-0 pt-4  gap-2 sm:bg-none bg-gradient-to-b rounded-t-lg from-gray-100 w-full'>
-                            <h1 className=' text-3xl sm:text-xl md:text-2xl  font-interBold text-gray-800'>Logofolio</h1>
-                            <Link to={'/portfolio/logofolio'} className='bg-blue-500 px-4 py-[0.23rem]  text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200 ' > Voir </Link>
                         </div>
                     </section>
 
                     {/* design graphique  */}
-                    <section className='w-full relative h-[32.5rem] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${docs_mocks_mC})`}}>
+                    <section className='w-full backGroundPortofolio relative h-[32.5rem] sm:h-auto rounded-lg  flex flex-col items-center justify-center'>
                         
-                        <Link to={'/portfolio/graphicDesign'}>
-                            <div className='h-full w-full duration-200 delay-150 relative'>        
-                                <img loading='lazy' src={docs_mocks_mC} alt='image' className='sm:flex hidden rounded-lg duration-150  hover:-translate-y-2'/>
+                        <Link className='w-full h-full' to={'/portfolio/graphicDesign'}>
+                                <img loading='lazy' src={docs_mocks_mC} alt='image' className='object-cover w-full h-full rounded-lg duration-150  hover:-translate-y-2'/>
             
-                            </div>
                         </Link>
 
                         <div className='absolute flex flex-col items-center justify-center top-0 pt-4  gap-2 sm:bg-none bg-gradient-to-b rounded-t-lg from-black w-full'>
@@ -74,14 +55,29 @@ export default function Portfolio() {
                         </div>
                     </section>
 
+                  
+                    
+                    {/* logofolio  */}
+                    <section className='w-full relative h-[32.5rem] sm:h-auto rounded-lg  flex flex-col items-center justify-center' >
+                        
+                        <Link className='w-full h-full' to={'/portfolio/logofolio'}>
+                                <img loading='lazy' src={logofolio_collectionC} alt='image' className='object-cover w-full h-full rounded-lg  hover:-translate-y-2'/>
+
+                        </Link>
+
+                        <div className='absolute flex flex-col items-center justify-center top-0 pt-4  gap-2 sm:bg-none bg-gradient-to-b rounded-t-lg from-gray-100 w-full'>
+                            <h1 className=' text-3xl sm:text-xl md:text-2xl  font-interBold text-gray-800'>Logofolio</h1>
+                            <Link to={'/portfolio/logofolio'} className='bg-blue-500 px-4 py-[0.23rem]  text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200 ' > Voir </Link>
+                        </div>
+                    </section>
+
+                   
+
                     {/* motion design  */}
-                    <section className='w-full relative h-[32.5rem] sm:h-auto bg-blue-400 rounded-lg bg-cover sm:bg-none bg-fixed bg-center bg-no-repeat flex flex-col items-center justify-center' style={{backgroundImage: `url(${animation_service_2C})`}}>
+                    <section className='w-full relative h-[32.5rem] sm:h-auto rounded-lg flex flex-col items-center justify-center'>
 
-                        <Link to={'/portfolio/motionDesign'}>
-                            <div className='h-full w-full duration-200 delay-150 relative'>        
-                                <img loading='lazy' src={animation_service_2C} alt='image' className='sm:flex hidden rounded-lg  hover:-translate-y-2 duration-150'/>
-
-                            </div>
+                        <Link className='w-full h-full' to={'/portfolio/motionDesign'}>
+                                <img loading='lazy' src={animation_service_2C} alt='image' className='object-cover w-full h-full rounded-lg hover:-translate-y-2 duration-150'/>
                         </Link>
 
                         <div className='absolute flex flex-col items-center justify-center top-0 pt-4  gap-2 sm:bg-none bg-gradient-to-b rounded-t-lg from-black w-full'>

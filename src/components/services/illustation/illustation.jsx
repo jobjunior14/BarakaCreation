@@ -22,9 +22,9 @@ import { useEffect } from 'react';
 export default function Illustation () {
 
     // scroll to top 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
     
     const width = useWindowWidth();
 
@@ -107,7 +107,7 @@ export default function Illustation () {
         {/* second text  */}
         <section className='w-full px-[10%]  sm:justify-center sm:items-center flex flex-col gap-2 sm:gap-5 py-14 bg-slate-100'>
             <h1 className='text-left sm:text-center font-interBold text-[1.25rem] sm:text-[1.38rem] md:text-[1.5rem] lg:text-[1.65rem] leading-5 text-gray-500'> Vous avez un <br className='sm:hidden'/> projet complexe ?</h1>
-            <p className=' w-[75%] sm:w-[55%] md:w-[55%]  text-left sm:text-center font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7 '>Nous proposons un package complet des supports de l&apos;illustration éditoriale, aux campagnes passant par le web et <Link to='/portfolio' className='text-blue-500'> concept art {'>'}</Link></p>
+            <p className=' w-[80%] sm:w-[55%] md:w-[55%]  text-left sm:text-center font-interSemibold text-gray-700 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7 '>Nous proposons un package complet des supports de l&apos;illustration éditoriale, aux campagnes passant par le web et <Link to='/portfolio' className='text-blue-500'> concept art {'>'}</Link></p>
         </section>
 
         {/* section illustration editorial  */}
@@ -120,84 +120,90 @@ export default function Illustation () {
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-3 w-full'>
 
                     {/* Courverture  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
-                        <div className='w-full '>
-                            <img loading='lazy' src={illustration_couverture_new} alt="illustration_couverture" className='rounded-lg' />
+                    <div className='w-full justify-center items-center flex flex-col bg-whte rounded-lg bg-white overflow-hidden'>
+
+                        <div className='w-full  h-0 pt-[80%] relative overflow-hidden'>
+                            <img loading='lazy' src={illustration_couverture_new} alt="illustratio_livre" className='rounded-lg object-contain w-full h-full absolute top-0'/>
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-interBold text-gray-700'>Courverture</h1>
-                            <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour démarquer et rendre captivant les livres, romans, magazines</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+
+                        <div className='flex flex-col gap-2 justify-center items-center pb-4 z-40'>
+                            <h1 className='font-interBold text-gray-700'>Courverture </h1>
+                            <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.7rem] '> Pour démarquer et rendre captivant les livres, romans, magazines</p>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] px-3 flex items-center mt-2  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
-                    
 
                     {/* Livre MAnuel  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
+                    <div className='w-full justify-center items-center flex flex-col bg-whte rounded-lg bg-white overflow-hidden'>
 
-                        <div className='w-full '>
-                            <img loading='lazy' src={illustration_livre_new} alt="illustratio_livre" className='rounded-lg'/>
+                        <div className='w-full  h-0 pt-[80%] relative'>
+                            <img loading='lazy' src={illustration_livre_new} alt="illustratio_livre" className='rounded-lg w-full object-cover absolute -top-10'/>
                         </div>
 
-                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
+                        <div className='flex flex-col gap-2 justify-center items-center pb-4 z-40'>
                             <h1 className='font-interBold text-gray-700'>Livre / manuel </h1>
-                            <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour raconter les histoires et pour illustrer parfaitement votre contenu</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.7rem] '> Pour raconter les histoires et pour illustrer parfaitement votre contenu</p>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] px-3 flex items-center mt-2  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
 
                     {/* bande Desinnée  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
-                        <div className='w-full '>
-                            <img loading='lazy' src={illustration_bd_new} alt="illustration_couverture" className='rounded-lg' />
+                    <div className='w-full justify-center items-center flex flex-col bg-whte rounded-lg bg-white overflow-hidden'>
+
+                        <div className='w-full  h-0 pt-[80%] relative overflow-hidden'>
+                            <img loading='lazy' src={illustration_bd_new} alt="illustration_bd_new" className='rounded-lg object-contain w-full h-full absolute scale-[1.4] top-0'/>
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-interBold text-gray-700'>Bande dessinée</h1>
-                            <p className='w-[90%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Nous vous accompagnons durant tout le processus, du briefing à la réalisation passant par le storyboard</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+
+                        <div className='flex flex-col gap-2 justify-center items-center pb-4 z-40'>
+                            <h1 className='font-interBold text-gray-700'>Bande dessinée </h1>
+                            <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.7rem] line-clamp-2 '> Nous vous accompagnons durant tout le processus, du briefing à la réalisation passant par le storyboard</p>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] px-3 flex items-center mt-2  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
 
                         </div>
                     </div>
-
-                </div>
-
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-3 w-full'>
 
                     {/* campagnes  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
-                        <div className='w-full '>
-                            <img loading='lazy' src={illustration_campagne} alt="illustration_couverture" className='rounded-lg' />
+                    <div className='w-full justify-center items-center flex flex-col bg-whte rounded-lg bg-white overflow-hidden relative'>
+
+                        <div className='w-full'>
+                            <img loading='lazy' src={illustration_campagne} alt="illustration_bd_new" className='rounded-lg w-full'/>
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
+
+                        <div className='flex flex-col gap-2 justify-center items-center z-40 absolute bottom-4' >
                             <h1 className='font-interBold text-gray-100'>Campagne</h1>
-                            <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Nous créons des images captivantes de haute résolution qui illustrent parfaitement votre message</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.7rem] line-clamp-2 '> Nous créons des images captivantes de haute résolution qui illustrent parfaitement votre message</p>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] px-3 flex items-center mt-2  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+
                         </div>
                     </div>
+
 
                     {/* MAscote  */}
-                    <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
-                        <div className='w-full '>
-                            <img loading='lazy' src={illustration_mascotte_new} alt="illustration_mascotte" className='rounded-lg' />
+                    <div className='w-full justify-center items-center flex flex-col bg-whte rounded-lg bg-white overflow-hidden'>
+
+                        <div className='w-full  h-0 pt-[80%] relative overflow-hidden'>
+                            <img loading='lazy' src={illustration_mascotte_new} alt="illustration_bd_new" className='rounded-lg object-contain w-full h-full absolute scale-[1.2] top-6'/>
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
-                            <h1 className='font-interBold text-gray-700'>Mascotte</h1>
-                            <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.812rem] '> Pour créer un lien affectif entre votre cible et votre marque ou évènement.</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+
+                        <div className='flex flex-col gap-2 justify-center items-center pb-4 z-40'>
+                            <h1 className='font-interBold text-gray-700'>Mascotte </h1>
+                            <p className='w-[70%] text-gray-700 text-[0.69rem] sm:text-[0.7rem] line-clamp-2 '>  Pour créer un lien affectif entre votre cible et votre marque ou évènement.</p>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] px-3 flex items-center mt-2  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+
                         </div>
                     </div>
 
-                    {/* campagnes  */}
+                    {/* web  */}
                     <div className='w-full justify-center items-center flex flex-col bg-white rounded-lg relative'>
                         <div className='w-full '>
                             <img loading='lazy' src={illustration_web_new} alt="illustration_web" className='rounded-lg' />
                         </div>
-                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-3'>
+                        <div className='flex flex-col gap-2 justify-center items-center absolute bottom-4'>
                             <h1 className='font-interBold text-gray-100'>Web</h1>
-                            <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] '> Illustrations simples et attrayante, création des icones personnalisées, gestion du design de site/ apps</p>
-                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] sm:text-[0.875rem] px-3  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
+                            <p className='w-[70%] text-gray-100 text-[0.69rem] sm:text-[0.812rem] line-clamp-2 '> Illustrations simples et attrayante, création des icones personnalisées, gestion du design de site/ apps</p>
+                            <Link to='/contacts' className=" duration-200  text-blue-500 text-[0.75rem] px-3 flex items-center  md:px-4 rounded-full hover:text-gray-100 hover:bg-blue-500 border-blue-500 border">Interessé</Link>
                         </div>
                     </div>
                 </div>
@@ -224,7 +230,7 @@ export default function Illustation () {
 
                 {/* second paragraph  */}
                 <section className='px-[10%] md:px-0 w-[90%] '>
-                    <p className='text-left font-interSemibold text-gray-100 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7  sm:w-[75%] md:w-full '> Nous vous accompagnons durant tout le processus, du briefing à la post-production, passant par le développement de votre univers visuel <span className='text-bgPlay'>et la ligne graphique  </span></p>
+                    <p className='text-left font-interSemibold text-gray-100 text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] leading-6 lg:leading-7  sm:w-[80%] md:w-full '> Nous vous accompagnons durant tout le processus, du briefing à la post-production, passant par le développement de votre univers visuel <span className='text-bgPlay'>et la ligne graphique  </span></p>
                 </section>
             </section>
 

@@ -25,9 +25,9 @@ export default function Acceuil () {
 
     
     // scroll to top 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
 
 
     const navigate = useNavigate();
@@ -35,7 +35,7 @@ export default function Acceuil () {
     const width = useWindowWidth();
     return (
 
-        <main className="flex w-full gap-0 flex-col justify-center items-center overflow-x-hidden " >
+        <div className="flex w-full gap-0 flex-col justify-center items-center overflow-hidden" >
             {/* first part "Principal picture" */}
             <section className='-mb-5' >
                 <img loading='lazy' src={ width >= 640 ? accueil_ok : accueil_phone} className='' alt='Baraka image' />
@@ -54,14 +54,14 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-gray-200 font-normal'>Nous apportons des solutions innovantes, originales et efficaces en communication visuelle</p>
 
-                        <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1 border border-bgcqnoufaisons flex gap-3 justify-center items-center  pl-5 hover:bg-gray-500 duration-200'> 
-                            <div>
-                                <p className='text-gray-300 text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem]  '> Nos réalisations </p>
+                        <div onClick={() => navigate('/portfolio')} className=' rounded-full cursor-pointer p-1  boxShadow1 w-36 md:w-44 md:py-[0.375rem] flex  justify-center items-center hover:bg-gray-500 duration-200'> 
+                            <div className='w-full flex justify-center items-center'>
+                                <p className='text-gray-300 text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem]  '> Nos&nbsp;réalisations </p>
                             </div>
 
                             <div className='p-[0.1875rem] border border-blue-100 rounded-full flex justify-center items-center'>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-3 h-3  text-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-3 md:w-4 h-3 md:h-4  text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
                             </div>
@@ -87,11 +87,14 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-gray-800 font-normal'>De la stratégie à la mise en œuvre, nous aidons les entreprises à créer une image de marque forte et durable</p>
                         
-                        <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-bgcqnoufaisons flex justify-center items-center pl-5 gap-3 hover:bg-myBlue duration-200'> 
-                            <p className='text-white text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem] '>Voir nos services </p>
+                        <div onClick={() => navigate('/services')} className=' rounded-full cursor-pointer p-1 border bg-bgcqnoufaisons w-36 md:w-44 md:py-[0.375rem] flex justify-between items-center hover:bg-myBlue duration-200'> 
+                            <div className='w-full  flex justify-center items-center'>
+
+                                <p className='text-white text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem] '>Voir&nbsp;nos&nbsp;services </p>
+                            </div>
 
                             <div className='p-[0.1875rem] rounded-full justify-center items-center  border border-blue-200 flex '>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-3 h-3 text-gray-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-3 md:w-4 h-3 md:h-4 text-gray-100">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
                             </div>
@@ -119,7 +122,7 @@ export default function Acceuil () {
                             <p className='text-center text-xs sm:text-base text-white font-normal'>Découvrez nos histoires inspirantes</p>
                             
                             <div onClick={() => navigate('/publication')} className=' rounded-full cursor-pointer py-1 px-6 border flex relative  hover:bg-myBlue duration-200'> 
-                                <p className='text-white text-[0.625rem] sm:text-sm text-center'>Voir plus </p>
+                                <p className='text-white text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem] text-center'>Voir plus </p>
                             </div>
                         </caption>
                     </div>
@@ -136,10 +139,13 @@ export default function Acceuil () {
                 <picture className='h-[95%] sm:h-[80%] w-full  flex justify-center items-center'>
                     <img loading='lazy' src={design_entrons_en_contact} className='' alt='image accompagnement'/>
                 </picture>
+                
+                <div>
 
-                <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0 w-[60%] sm:w-full sm:justify-evenly'>
-                    <Link to={'/contacts'} className='py-2 px-4 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</Link>
-                    <Link to={'/contacts'} className=' py-2 px-4 border rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 border-blue-600 duration-200'> Demander un devis </Link>
+                </div>
+                <div className='flex sm:flex-row flex-col gap-y-4 sm:gap-0  justify-center items-center w-full sm:justify-evenly'>
+                    <Link to={'/contacts'} className='py-2 w-44 hover:bg-blue-400 sm:text-base text-sm  bg-blue-600 rounded-full text-white duration-200'> Contactez-nous</Link>
+                    <Link to={'/contacts'} className=' py-2 w-44 boxShadow rounded-full sm:text-base text-sm hover:bg-blue-600 hover:text-white text-blue-600 duration-200'> Demander un devis </Link>
                 </div>
             </figure>
             
@@ -166,6 +172,6 @@ export default function Acceuil () {
                 </div>
             </section>
 
-        </main>
+        </div>
     )
 }

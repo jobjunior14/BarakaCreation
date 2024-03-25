@@ -93,3 +93,13 @@
 .bgImage28 {
   background-image: url("/src/assets/Portofolio/Graphic design/a92.jpg");
 }
+
+.boxShadow{
+  box-shadow: inset 0px 0px 0px 1px rgb(37, 95, 237);
+}
+
+.boxShadow1 {
+  
+  box-shadow: inset 0px 0px 0px 1px  rgba(134, 139, 169);
+ 
+}
