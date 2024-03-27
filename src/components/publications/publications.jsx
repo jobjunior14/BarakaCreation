@@ -31,13 +31,22 @@ export default function Publication () {
     const width = useWindowWidth();
     var publication  = document.getElementById('ll') ;
 
-    if (publication) {
+    // if (publication) {
         
-        publication.scrollLeft = publication.offsetWidth * indexOnScroll;
-        publication.style.scrollBehavior = 'smooth';
+    //     publication.scrollLeft = publication.offsetWidth * indexOnScroll;
+    //     publication.style.scrollBehavior = 'smooth';
+        
+    // }
     
-    }
+    useEffect (() => {
+        if (publication) {
+            publication.scrollLeft = publication.offsetWidth * indexOnScroll;
+            publication.style.scrollBehavior = 'smooth';
+            
+        }
+    }, [indexOnScroll]);
 
+    //function to update cicle div in the slider
     useEffect (() => {
         
         const myFunction = () => {

@@ -1,8 +1,8 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0px;
   text-align: center;
+  padding: 0px;
 }
 
 .logo.react:hover {
@@ -104,15 +104,15 @@
  
 }
 
-.publication {
+/* you will found this class in publication part  */
+#ll {
   scrollbar-width: none !important;
   scroll-snap-type: x mandatory;
 }
 
-.publication::-webkit-scrollbar {
+#ll::-webkit-scrollbar {
   display: none !important;
 }
-
-.publication div {
+#ll div {
   scroll-snap-align: start;
 }
