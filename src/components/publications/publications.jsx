@@ -29,6 +29,7 @@ export default function Publication () {
     
     const [indexOnScroll, setIndexOnScroll] = useState(0);
     const width = useWindowWidth();
+    // snaped div 
     var publication  = document.getElementById('scrollSnap') ;
 
 
@@ -37,8 +38,8 @@ export default function Publication () {
         
         //update the scrollLeft of the div to show the next image
         // it take the offsetWidth and multiply it by the indexSroll 
-        publication.scrollLeft = publication.offsetWidth * indexOnScroll;
         publication.style.scrollBehavior = 'smooth';
+        publication.scrollLeft = publication.offsetWidth * indexOnScroll;
     
     }
 
@@ -60,18 +61,18 @@ export default function Publication () {
     }, [indexOnScroll, publication?.scrollLeft]);
 
     // slide the images automaticaly
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     const interval = setInterval(() => {
+        const interval = setInterval(() => {
             
-    //         setIndexOnScroll ( prev => prev === 3 ? 0 : prev + 1);
+            setIndexOnScroll ( prev => prev === 3 ? 0 : prev + 1);
 
-    //     }, 4000) ;
+        }, 4000) ;
 
-    //     return () => {
-    //         clearInterval(interval);
-    //     }
-    // }, [indexOnScroll]);
+        return () => {
+            clearInterval(interval);
+        }
+    }, [indexOnScroll]);
 
     const nextImage = () =>  {
         setIndexOnScroll ( prev => prev === 3 ? 0 : prev + 1);
