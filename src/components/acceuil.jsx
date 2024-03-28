@@ -25,9 +25,9 @@ export default function Acceuil () {
 
     
     // scroll to top 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
 
     const width = useWindowWidth();

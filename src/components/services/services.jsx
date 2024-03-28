@@ -23,9 +23,9 @@ import { useEffect } from 'react';
 export default function Services () {
 
     // scroll to top 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
 
     const width = useWindowWidth();
 
@@ -43,7 +43,7 @@ export default function Services () {
             <section className='w-full flex flex-col justify-center relative gap-5'>
 
                 {/* 2nd part "identité" visuelle  */}
-                <figure className='flex justify-center sm:items-center  '>
+                <figure className='flex w-full justify-center sm:items-center relative  '>
                     <img loading='lazy' src={width <= 640 ? ac2P : ac2O} alt='ac2P' className='rounded-lg' />
 
                     <figcaption className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-0 sm:gap-3 md:gap-5 lg:gap-6 lg:px-[12%] px-[6%]'>
@@ -54,8 +54,8 @@ export default function Services () {
                 </figure>
 
                 {/* 3rd part "design graohique" */}
-                <figure className='flex justify-center sm:items-center  '>
-                    <img loading='lazy' src={width <= 640 ? ac3P : ac3O} alt='ac2P' className=' rounded-lg' />
+                <figure className='flex w-full justify-center sm:items-center relative '>
+                    <img loading='lazy' src={width <= 640 ? ac3P : ac3O} alt='ac2P' className=' rounded-lg w-full' />
 
                     <figcaption className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-0 sm:gap-3 md:gap-5 lg:gap-6 lg:px-[12%] px-[6%]'>
                         <h1 className='font-interBold tracking-tight text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100 text-left'>Design <br className='hidden sm:flex'/>Graphique</h1>
@@ -65,8 +65,8 @@ export default function Services () {
                 </figure>
 
                 {/* illustration */}
-                <figure className='flex justify-center sm:items-center  '>
-                    <img loading='lazy' src={width <= 640 ? ac1 : Acillustration} alt='ac2P' className=' rounded-lg' />
+                <figure className='flex w-full justify-center sm:items-center realtive  '>
+                    <img loading='lazy' src={width <= 640 ? ac1 : Acillustration} alt='ac2P' className=' rounded-lg w-full' />
 
                     <figcaption className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-end sm:right-0 sm:gap-3 md:gap-5 lg:gap-6 px-[6%] lg:px-[12%]'>
                         <h1 className='font-interBold tracking-tight text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800 '>Illustration</h1>
@@ -77,8 +77,8 @@ export default function Services () {
                 </figure>
 
                 {/* annimation  */}
-                <figure className='flex justify-center sm:items-center  '>
-                    <img loading='lazy' src={width <= 640 ? ac5P : ac5O} alt='ac2P' className=' rounded-lg' />
+                <figure className='flex w-full justify-center sm:items-center relative  '>
+                    <img loading='lazy' src={width <= 640 ? ac5P : ac5O} alt='ac2P' className=' rounded-lg w-full' />
 
                     <figcaption className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-0 sm:gap-3 md:gap-5 lg:gap-6 lg:px-[12%] px-[6%]'>
                         <h1 className='font-interBold tracking-tight text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-800 '>Animation</h1>
@@ -88,8 +88,8 @@ export default function Services () {
                 </figure>
                 
                 {/* consulting  */}
-                <section className='flex justify-center sm:items-center  '>
-                    <img loading='lazy' src={width <= 640 ? ac4P : ac4O} alt='ac2P' className='rounded-lg' />
+                <section className='flex w-full justify-center sm:items-center  relative '>
+                    <img loading='lazy' src={width <= 640 ? ac4P : ac4O} alt='ac2P' className='rounded-lg w-full' />
 
                     <div className='flex flex-col absolute justify-center items-center  gap-1 mt-2 sm:items-start sm:left-0 sm:gap-3 md:gap-5 lg:gap-6 lg:px-[12%] px-[6%]'>
                         <h1 className='font-interBold tracking-tight text-[1.4375rem] sm:text-3xl md:text-4xl lg:text-6xl text-gray-100'> Consulting</h1>

@@ -24,7 +24,7 @@ export default function MotionDesign() {
             {/* welcom image  */}
             <section className='w-full flex flex-col items-center justify-center '>
             
-                <img loading='lazy' src={width <= 640 ? Accueil_Animation_phone : Accueil_animation_accueil} alt=" print_accueil"/>
+                <img loading='lazy' src={width <= 640 ? Accueil_Animation_phone : Accueil_animation_accueil} className='w-full' alt=" print_accueil"/>
 
             </section>
 

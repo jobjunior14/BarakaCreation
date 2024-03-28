@@ -19,18 +19,19 @@ export default function Portfolio() {
     return (
         <div>
 
-            <section className='flex flex-col justify-center bg-black pb-5 gap-14'>
+            <section className='flex flex-col justify-center sm:gap-10 bg-black pb-5'>
 
                 <section className='w-full '>
-                    <img loading='lazy' src={width <= 640 ? portfolio_accueil_phone : portfolio_accueilC} alt='image acceuil'/>
+                    <img loading='lazy' src={width <= 640 ? portfolio_accueil_phone : portfolio_accueilC} className='w-full' alt='image acceuil'/>
                 </section>
 
                 <section className=' grid grid-cols-1 sm:grid-cols-2 gap-3 px-2 sm:px-[10%]'>
                     
                     {/* Illustration et dessin*/}
-                    <section className={`w-full relative h-[32.5rem] sm:h-auto rounded-lg flex flex-col items-center justify-center`} >
+                    <section className={`w-full relative h-auto rounded-lg flex flex-col items-center justify-center`} >
+
                         <Link className=' w-full h-full ' to={'/portfolio/galleryArt'}>
-                                <img loading='lazy' src={Save_children_dreams_illustration_4okey} alt='image' className=' object-cover w-full h-full rounded-lg duration-150  hover:-translate-y-2'/>
+                                <img loading='lazy' src={Save_children_dreams_illustration_4okey} alt='image' className=' w-full h-auto rounded-lg duration-150  hover:-translate-y-2'/>
 
                         </Link>
 
@@ -42,10 +43,10 @@ export default function Portfolio() {
                     </section>
 
                     {/* design graphique  */}
-                    <section className='w-full backGroundPortofolio relative h-[32.5rem] sm:h-auto rounded-lg  flex flex-col items-center justify-center'>
+                    <section className='w-full backGroundPortofolio relative h-auto rounded-lg  flex flex-col items-center justify-center'>
                         
                         <Link className='w-full h-full' to={'/portfolio/graphicDesign'}>
-                                <img loading='lazy' src={docs_mocks_mC} alt='image' className='object-cover w-full h-full rounded-lg duration-150  hover:-translate-y-2'/>
+                                <img loading='lazy' src={docs_mocks_mC} alt='image' className='w-full h-auto rounded-lg duration-150  hover:-translate-y-2'/>
             
                         </Link>
 
@@ -58,10 +59,10 @@ export default function Portfolio() {
                   
                     
                     {/* logofolio  */}
-                    <section className='w-full relative h-[32.5rem] sm:h-auto rounded-lg  flex flex-col items-center justify-center' >
+                    <section className='w-full relative h-auto rounded-lg  flex flex-col items-center justify-center' >
                         
                         <Link className='w-full h-full' to={'/portfolio/logofolio'}>
-                                <img loading='lazy' src={logofolio_collectionC} alt='image' className='object-cover w-full h-full rounded-lg  hover:-translate-y-2'/>
+                                <img loading='lazy' src={logofolio_collectionC} alt='image' className='w-full h-auto rounded-lg  hover:-translate-y-2'/>
 
                         </Link>
 
@@ -74,10 +75,10 @@ export default function Portfolio() {
                    
 
                     {/* motion design  */}
-                    <section className='w-full relative h-[32.5rem] sm:h-auto rounded-lg flex flex-col items-center justify-center'>
+                    <section className='w-full relative h-auto rounded-lg flex flex-col items-center justify-center'>
 
                         <Link className='w-full h-full' to={'/portfolio/motionDesign'}>
-                                <img loading='lazy' src={animation_service_2C} alt='image' className='object-cover w-full h-full rounded-lg hover:-translate-y-2 duration-150'/>
+                                <img loading='lazy' src={animation_service_2C} alt='image' className='w-full h-auto rounded-lg hover:-translate-y-2 duration-150'/>
                         </Link>
 
                         <div className='absolute flex flex-col items-center justify-center top-0 pt-4  gap-2 sm:bg-none bg-gradient-to-b rounded-t-lg from-black w-full'>
