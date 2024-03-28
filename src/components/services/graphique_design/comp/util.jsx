@@ -11,7 +11,7 @@ export default function DesignGraphiqueCom ({image, name, text, link, bg, colorT
         <div className="text-center flex flex-col items-center justify-center gap-3">
 
             <h1 className={`text-2xl md:text-3xl ${colorText} font-interBold `}>{name}</h1>
-            <p className={`w-[75%] sm:w-[80%] md:w-[60%] font-interRegular  text-[0.69rem] sm:text-[0.875rem] md:text-[15px] ${colorText}`}>{text}</p>
+            <p className={`w-[75%] sm:w-[80%] md:w-[70%] font-interRegular  text-[0.69rem] sm:text-[0.875rem] md:text-[15px] ${colorText}`}>{text}</p>
         </div>
 
         {/* button  */}
