@@ -23,9 +23,9 @@ import { useEffect } from 'react';
 export default function Services () {
 
     // scroll to top 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const width = useWindowWidth();
 

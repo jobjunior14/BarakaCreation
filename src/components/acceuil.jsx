@@ -105,7 +105,7 @@ export default function Acceuil () {
 
                         <p className='text-center text-xs sm:text-base text-gray-800 font-normal'>De la stratégie à la mise en œuvre, nous aidons les entreprises à créer une image de marque forte et durable</p>
                         
-                        <div to='/services' className=' rounded-full cursor-pointer p-1 border bg-bgcqnoufaisons w-36 md:w-44 md:py-[0.375rem] flex justify-between items-center hover:bg-myBlue duration-200'> 
+                        <Link to='/services' className=' rounded-full cursor-pointer p-1 border bg-bgcqnoufaisons w-36 md:w-44 md:py-[0.375rem] flex justify-between items-center hover:bg-myBlue duration-200'> 
                             <div className='w-full  flex justify-center items-center'>
 
                                 <p className='text-white text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem] '>Voir&nbsp;nos&nbsp;services </p>
@@ -116,7 +116,7 @@ export default function Acceuil () {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </article>
               
@@ -138,9 +138,9 @@ export default function Acceuil () {
                     <caption className='flex flex-col justify-center items-center gap-2'>
                         <p className='text-center text-xs sm:text-base text-white font-normal'>Découvrez nos histoires inspirantes</p>
                         
-                        <div to='/publication' className=' rounded-full cursor-pointer py-1 px-6 border flex relative  hover:bg-myBlue duration-200'> 
+                        <Link to='/publication' className=' rounded-full cursor-pointer py-1 px-6 border flex relative  hover:bg-myBlue duration-200'> 
                             <p className='text-white text-[0.8rem] sm:text-xs md:text-[0.9rem] lg:text-[1rem] text-center'>Voir plus </p>
-                        </div>
+                        </Link>
                     </caption>
                 </div>
               
