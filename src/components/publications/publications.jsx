@@ -60,18 +60,18 @@ export default function Publication () {
     }, [indexOnScroll, publication?.scrollLeft]);
 
     // slide the images automaticaly
-    useEffect(() => {
+    // useEffect(() => {
 
-        const interval = setInterval(() => {
+    //     const interval = setInterval(() => {
             
-            setIndexOnScroll ( prev => prev === 3 ? 0 : prev + 1);
+    //         setIndexOnScroll ( prev => prev === 3 ? 0 : prev + 1);
 
-        }, 4000) ;
+    //     }, 4000) ;
 
-        return () => {
-            clearInterval(interval);
-        }
-    }, [indexOnScroll]);
+    //     return () => {
+    //         clearInterval(interval);
+    //     }
+    // }, [indexOnScroll]);
 
     const nextImage = () =>  {
         setIndexOnScroll ( prev => prev === 3 ? 0 : prev + 1);
@@ -94,7 +94,7 @@ export default function Publication () {
 
                         <img loading='lazy' src={width <= 640 ? coover_phone_mamour : coover_ordi_mamour} alt='image' className=' duration-500 delay-150 '  />
 
-                        <div className={`w-full absolute flex sm:justify-end justify-center items-center bottom-[60px] sm: text-center sm:right-[12%] duration-500 delay-150 `}>
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center bottom-[60px] lg:bottom-[90px] text-center sm:right-[12%] duration-500 delay-150 `}>
 
                             <div className='sm:w-[40%] w-[80%] '>
                                 <div className='w-full sm:items-end items-center sm:justify-end justify-center flex flex-col '>
@@ -119,7 +119,7 @@ export default function Publication () {
                     <div className='w-full flex relative duration-500' style={{ flex: 'inherit'}} >
                         <img loading='lazy' src={width <= 640 ? defiTel : Accueil_Le_reve_et_le_defi} alt='image' className=' duration-500 delay-150 '  />
 
-                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[60px] bottom-[48px] text-center sm:right-[12%] duration-500 delay-150 `}>
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[60px] lg:bottom-[90px] bottom-[48px] text-center sm:right-[12%] duration-500 delay-150 `}>
 
                             <div className='sm:w-[40%] w-[80%] '>
                                 <div className='w-full sm:items-end items-center sm:justify-end justify-center sm:flex flex-col hidden '>
@@ -144,7 +144,7 @@ export default function Publication () {
                     <div className=' w-full flex relative duration-500' style={{ flex: 'inherit'}}>
 
                         <img loading='lazy' src={width <= 640 ? chuteTel : chute} alt='image' className=' duration-500 delay-150 '  />
-                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[1.875rem] md:bottom-[2.5rem] bottom-[48px] text-center sm:right-[12%] duration-500 delay-150 `}>
+                        <div className={`w-full absolute flex sm:justify-end justify-center items-center sm:bottom-[1.875rem] lg:bottom-[90px] md:bottom-[2.5rem] bottom-[48px] text-center sm:right-[12%] duration-500 delay-150 `}>
 
                             <div className='sm:w-[40%] w-[80%] '>
 
@@ -164,7 +164,7 @@ export default function Publication () {
                     <div className=' w-full flex relative duration-500 ' style={{ flex: 'inherit'}}>
 
                         <img loading='lazy' src={width <= 640 ? hautTel :Accueil_hautS} alt='image' className=' duration-500 delay-150 '  />
-                        <div className={` w-full absolute flex sm:justify-start justify-center items-center lg:bottom-[60px] md:bottom-[2.5rem] sm:bottom-[1.875rem] bottom-[48px] sm:text-center sm:left-[8%] duration-500 delay-150 `} >
+                        <div className={` w-full absolute flex sm:justify-start justify-center items-center lg:bottom-[90px] md:bottom-[2.5rem] sm:bottom-[1.875rem] bottom-[48px] sm:text-center sm:left-[8%] duration-500 delay-150 `} >
 
                             <div className='sm:w-[60%] md:w-[50%] lg:w-[40%] w-[80%] '>
                                 
@@ -206,7 +206,7 @@ export default function Publication () {
                 </div>
 
                 {/* circle div to show the image's number  */}
-                <div className='absolute flex items-center justify-center bottom-5  w-full px-5 gap-2'>
+                <div className='absolute flex items-center justify-center bottom-10  w-full px-5 gap-2'>
 
                     <div onClick={() => setIndexOnScroll(0)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${indexOnScroll === 0 ? 'bg-gray-400' : ''} duration-200 hover:cursor-pointer`}> </div>
                     <div onClick={() => setIndexOnScroll(1)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${indexOnScroll === 1 ? 'bg-gray-400' : ''} duration-200 hover:cursor-pointer`}> </div>

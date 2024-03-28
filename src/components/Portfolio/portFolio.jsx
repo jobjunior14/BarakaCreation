@@ -21,7 +21,7 @@ export default function Portfolio() {
 
             <section className='flex flex-col justify-center sm:gap-10 bg-black pb-5'>
 
-                <section className='w-full '>
+                <section className='w-full sm:-mt-14 '>
                     <img loading='lazy' src={width <= 640 ? portfolio_accueil_phone : portfolio_accueilC} className='w-full' alt='image acceuil'/>
                 </section>
 
