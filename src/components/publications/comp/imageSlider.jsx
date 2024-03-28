@@ -8,6 +8,7 @@ export default function ImageSlider ({images, title, audio}) {
     const [index, setIndex] = useState(0);
     const audioRef = useRef (new Audio(audio));
     const [currentTime, setCurrentTime] = useState(audioRef.current.currentTime);
+    //6 is a second duration per image
     const minutes = Math.floor((images.length * 6) / 60);
     const seconds = Math.floor((images.length * 6) % 60);
 
@@ -80,25 +81,29 @@ export default function ImageSlider ({images, title, audio}) {
 
     //state to mute background music or not 
     const [mute, setMute] = useState(false);
-
+    
+    // display time playing slider 
     const formatTime = (time) => {
         const minutes = Math.floor(time / 60);
         const seconds = Math.floor(time % 60);
         return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     };
+
     const handleMuted = () => {
         setMute(prev => prev ? false : true);
     };
 
-    //initialize the controller tio true 
+    //initialize the controller to true 
     const [hideVideoController, setHideVideoController] = useState (true);
-    //help us to store the setTimeoutID
+
+    //help us to store the setTimeoutID this help us to display and hide controllers
     const timeoutRef = useRef(null);
 
     //check if the audio is ready to player than restart the slider
     const [canPlay, setCanPlay] = useState(0);
 
     //restart the slider if the canPlay number === 1
+    //if the audio can be played the slider has to restart to have a good experience
     useEffect(() => {
 
         if (canPlay === 1) {
@@ -123,7 +128,8 @@ export default function ImageSlider ({images, title, audio}) {
     }, []);
 
     const handleShowController = (e) => {
-        // Toggle hide/show controller state based on 'e'
+
+        // Toggle hide/show controllers state based on 'e'
         setHideVideoController(prev => e ? !prev : true);
 
         // Clear the previous timeout if it exists
@@ -204,7 +210,7 @@ export default function ImageSlider ({images, title, audio}) {
         <audio controls = {audioRef.current.paused && canPlay >= 1} controlsList="play" onCanPlayThrough={() => setCanPlay(prev => prev + 1)} ref={audioRef} loop muted={mute}  autoPlay type='audio/mp3' src={audio}> your browser can&apos;t support this audio music </audio>
 
 
-        {/* //////////////////////just put the half of images  on the dom to load it at the same time with the audio//////////////////////////////////// */}
+        {/* //////////////////////just put the half of images  on the dom to load it first at the same time with the audio//////////////////////////////////// */}
         { canPlay === 0 && <div className="hidden">
             <img src={images[0]} alt="image"/>
             <img src={images[1]} alt="image"/>
@@ -213,6 +219,7 @@ export default function ImageSlider ({images, title, audio}) {
             <img src={images[4]} alt="image"/>
         </div>}
 
+        {/* the slider begin if the audio can be played  */}
         {canPlay >= 1 ? 
             <div className="w-full h-full relative flex flex-col justify-center items-center  bg-bgRemporter1 ">
 
@@ -299,6 +306,7 @@ export default function ImageSlider ({images, title, audio}) {
 
             </div>: 
 
+            // else the audio can't be played there is a chargement state  
             <div className="h-full w-full flex flex-col gap-5 justify-center items-center">
 
                 <h3 className="font-interSemibold text-gray-100 animate-pulse"> Veuillez patienter </h3>

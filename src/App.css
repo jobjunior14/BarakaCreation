@@ -105,14 +105,14 @@
 }
 
 /* you will found this class in publication part  */
-#ll {
+#scrollSnap {
   scrollbar-width: none !important;
   scroll-snap-type: x mandatory;
 }
 
-#ll::-webkit-scrollbar {
+#scrollSnap::-webkit-scrollbar {
   display: none !important;
 }
-#ll div {
+#scrollSnap > div {
   scroll-snap-align: start;
 }

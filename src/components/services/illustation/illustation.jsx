@@ -22,9 +22,9 @@ import { useEffect } from 'react';
 export default function Illustation () {
 
     // scroll to top 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     const width = useWindowWidth();
 
@@ -74,7 +74,7 @@ export default function Illustation () {
             </section>
         </section>
 
-        {/* here section    */}
+        {/* hero section    */}
         <section className='px-[12%] grid grid-cols-1 gap-3 justify-center '>
 
             <figure className='w-full h-[12.5rem] md:h-[15.625rem] lg:h-[16.875rem] rounded-md overflow-hidden relative'>
@@ -152,8 +152,8 @@ export default function Illustation () {
                     {/* bande Desinnée  */}
                     <div className='w-full justify-center items-center flex flex-col bg-whte rounded-lg bg-white overflow-hidden'>
 
-                        <div className='w-full  h-0 pt-[80%] relative overflow-hidden'>
-                            <img loading='lazy' src={illustration_bd_new} alt="illustration_bd_new" className='rounded-lg object-contain w-full h-full absolute scale-[1.4] top-0'/>
+                        <div className='w-full flex justify-center items-center  h-0 pt-[80%] relative overflow-hidden'>
+                            <img loading='lazy' src={illustration_bd_new} alt="illustration_bd_new" className='rounded-lg object-contain w-[70%] h-full absolute scale-[1.4] top-0'/>
                         </div>
 
                         <div className='flex flex-col gap-2 justify-center items-center pb-4 z-40'>

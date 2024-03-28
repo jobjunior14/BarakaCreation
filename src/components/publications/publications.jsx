@@ -29,29 +29,26 @@ export default function Publication () {
     
     const [indexOnScroll, setIndexOnScroll] = useState(0);
     const width = useWindowWidth();
-    var publication  = document.getElementById('ll') ;
+    var publication  = document.getElementById('scrollSnap') ;
 
-    // if (publication) {
+
+    // this state is set every time the indexOnScroll is updated 
+    if (publication) {
         
-    //     publication.scrollLeft = publication.offsetWidth * indexOnScroll;
-    //     publication.style.scrollBehavior = 'smooth';
-        
-    // }
+        //update the scrollLeft of the div to show the next image
+        // it take the offsetWidth and multiply it by the indexSroll 
+        publication.scrollLeft = publication.offsetWidth * indexOnScroll;
+        publication.style.scrollBehavior = 'smooth';
     
-    useEffect (() => {
-        if (publication) {
-            publication.scrollLeft = publication.offsetWidth * indexOnScroll;
-            publication.style.scrollBehavior = 'smooth';
-            
-        }
-    }, [indexOnScroll]);
+    }
 
-    //function to update cicle div in the slider
+    //function to update cicle div in the slider and index onscrolling the div 
     useEffect (() => {
         
+        // it's take the width of the container and scroll it by the number of elements to scroll 
         const myFunction = () => {
             
-            if (Number(Number(((publication?.scrollLeft / publication?.offsetWidth))).toFixed(3)) === 0.000 || Number(Number(((publication?.scrollLeft / publication?.offsetWidth))).toFixed(3)) === 1.000 || Number(Number(((publication?.scrollLeft / publication?.offsetWidth))).toFixed(3)) === 1.999 || Number(Number(((publication?.scrollLeft / publication?.offsetWidth))).toFixed(3)) === 2.999 ){
+            if (Number((((publication?.scrollLeft / publication?.offsetWidth)))) === 0 || Number(Number(((publication?.scrollLeft / publication?.offsetWidth)))) === 1 || Number(Number(((publication?.scrollLeft / publication?.offsetWidth)))) === 2 || Number(Number(((publication?.scrollLeft / publication?.offsetWidth)))) === 3 ){
 
                 setIndexOnScroll(Number(Number(((publication?.scrollLeft / publication?.offsetWidth))).toFixed(0)))
             }
@@ -91,7 +88,7 @@ export default function Publication () {
             <section className={`w-full relative h-auto rounded-lg flex flex-col items-center justify-center`}>
 
                  {/* images to slideShow  */}
-                <div id='ll' className=' publication  w-full duration-200 flex flex-row overflow-x-scroll ' style={{flex: '1 0 auto'}}>
+                <section id='scrollSnap' className=' publication  w-full duration-200 flex flex-row overflow-x-scroll ' style={{flex: '1 0 auto'}}>
 
                     <div className=' w-full flex relative duration-500' style={{ flex: 'inherit'}}>
 
@@ -187,7 +184,7 @@ export default function Publication () {
                     </div>
                     
                     
-                </div>
+                </section>
 
                  {/* div to prev or next images  */}
                 <div className='absolute flex items-center justify-between  w-full px-5'>

@@ -19,7 +19,7 @@ export default function Portfolio() {
     return (
         <div>
 
-            <section className='flex flex-col justify-center bg-black pb-5'>
+            <section className='flex flex-col justify-center bg-black pb-5 gap-14'>
 
                 <section className='w-full '>
                     <img loading='lazy' src={width <= 640 ? portfolio_accueil_phone : portfolio_accueilC} alt='image acceuil'/>
@@ -36,7 +36,7 @@ export default function Portfolio() {
 
                         
                         <div className='absolute flex flex-col items-center justify-center top-0 pt-4  gap-2 sm:bg-none bg-gradient-to-b rounded-t-lg from-white w-full'>
-                            <h1 className=' text-3xl sm:text-xl md:text-2xl  font-interBold text-gray-800 sm:text-gray-100'>Illustration <br /> <spa className='text-blue-400 text-opacity-60'>& </spa> Dessin</h1>
+                            <h1 className=' text-3xl sm:text-xl md:text-2xl  font-interBold text-gray-800 sm:text-gray-100'>Illustration <br /> <span className='text-blue-400 text-opacity-60'>& </span> Dessin</h1>
                             <Link to={'/portfolio/galleryArt'} className='bg-blue-500 px-4 py-[0.23rem]  text-white text-xs rounded-full sm:text-[1rem] hover:bg-myBlue duration-200 ' > Voir </Link>
                         </div>
                     </section>

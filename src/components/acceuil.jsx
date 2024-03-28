@@ -37,7 +37,7 @@ export default function Acceuil () {
         <section className="flex w-full flex-col justify-center items-center overflow-x-hidden" >
 
             {/* first part "Principal picture" */}
-            <section className='-mb-5' >
+            <section >
                 <img loading='lazy' src={ width >= 640 ? accueil_ok : accueil_phone} alt='Baraka image' />
             </section>
 
