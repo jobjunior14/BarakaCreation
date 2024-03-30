@@ -207,7 +207,7 @@ export default function Publication () {
                 </div>
 
                 {/* circle div to show the image's number  */}
-                <div className='absolute flex items-center justify-center bottom-10  w-full px-5 gap-2'>
+                <div className='absolute flex items-center justify-center sm:bottom-10 bottom-4  w-full px-5 gap-2'>
 
                     <div onClick={() => setIndexOnScroll(0)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${indexOnScroll === 0 ? 'bg-gray-400' : ''} duration-200 hover:cursor-pointer`}> </div>
                     <div onClick={() => setIndexOnScroll(1)} className={`w-[0.625rem] h-[0.625rem] rounded-full border border-blue-200 transition-[background-color]  flex hover:bg-gray-400 ${indexOnScroll === 1 ? 'bg-gray-400' : ''} duration-200 hover:cursor-pointer`}> </div>

@@ -29,6 +29,7 @@ import Haut from './components/publications/haut';
 import Defi from './components/publications/defi';
 import Chute from './components/publications/chute';
 import Contacts from './components/contact';
+import NotFound from './components/notFound';
 import { Outlet } from 'react-router-dom';
 
 function App() {
@@ -40,7 +41,9 @@ function App() {
     <Router>
       
       <Routes>
+        <Route path='*' element={<NotFound/>}/>
         <Route path='/' element = {<SharedNav/>}>
+
             <Route index element={<Acceuil/>} />
             <Route path='aPropos' element= {<Apropos/>}/>
             <Route path='contacts' element= {<Contacts/>}/>
