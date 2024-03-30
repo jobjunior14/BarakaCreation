@@ -1,6 +1,6 @@
 import accueil_ok from '../assets/Accueil/accueil_ok.jpg';
 import accueil_phone from '../assets/Accueil/accueil_phone.jpg';
-import Accueildesigngr1 from '../assets/Accueil/Accueildesigngr1.jpg';
+import Accueildesigngr1 from '../assets/Accueil/Accueildesigngr3.jpg';
 import Accueildesigngr2 from '../assets/Accueil/Accueildesigngr2.jpg';
 import accueil_accompagnons from '../assets/Accueil/accueil_accompagnons.jpg';
 import Mamour_phone from '../assets/Accueil/Mamour_phone.jpg';
