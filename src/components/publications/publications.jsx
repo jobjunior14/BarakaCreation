@@ -43,7 +43,7 @@ export default function Publication () {
     
     }
 
-    //function to update cicle div in the slider and index onscrolling the div 
+    //function to know where the index is onScrolling
     useEffect (() => {
         
         // it's take the width of the container and scroll it by the number of elements to scroll 

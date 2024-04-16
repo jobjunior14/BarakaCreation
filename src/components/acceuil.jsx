@@ -45,7 +45,7 @@ export default function Acceuil () {
             <section className='w-full bg-black flex flex-col text-center justify-center py-7'>
 
 
-                    <h2 className=' text-bgcqnoufaisons font-interSemibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 sm:pl-[4%] '>Ce que nous faisons</h2>
+                    <h2 className=' text-bgcqnoufaisons font-interSemibold md:text-2xl text-xl  lg:text-3xl bg-opacity-10 pr-[2.15%] '>Ce que nous faisons</h2>
 
                     <div className=' sm:hidden w-full  items-center flex flex-col gap-y-4 mt-8 '>
 
@@ -68,7 +68,7 @@ export default function Acceuil () {
                     </div>
                 
                 <picture className=' justify-between flex mt-4 sm:mt-7'>
-                    <img loading='lazy' src={Accueildesigngr2} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 1'/>
+                    <img loading='lazy' src={Accueildesigngr2} className='h-[10.625rem] lg:h-[20rem] xl:h-[25rem] 2xl:h-[28rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 1'/>
 
                     <div className='pr-[4%] hidden sm:flex items-center justify-center flex-col  sm:gap-y-5 '>
 
@@ -90,7 +90,7 @@ export default function Acceuil () {
                         </Link>
                     </div>
 
-                    <img loading='lazy' src={Accueildesigngr1} className='h-[10.625rem] lg:h-[29.375rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 2'/>
+                    <img loading='lazy' src={Accueildesigngr1} className='h-[10.625rem] lg:h-[20rem] xl:h-[25rem] 2xl:h-[28rem] md:h-[20rem] sm:h-[15.625rem] ' alt='design 2'/>
                 </picture>
             </section>
             
