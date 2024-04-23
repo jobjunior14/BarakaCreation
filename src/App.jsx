@@ -1,12 +1,15 @@
 import './App.css';
+import { lazy, Suspense } from 'react';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SharedNav from './components/navBar/Oulet';
-import Acceuil from './components/acceuil';
 import { Footer } from './components/footer';
-import Apropos from './components/aPropos';
-import Portfolio from './components/Portfolio/portFolio';
-import Publication from './components/publications/publications';
-import Services from './components/services/services';
+const Acceuil = lazy(() => import ('./components/acceuil'));
+const Apropos = lazy(() => import ('./components/aPropos'));
+const Portfolio = lazy(() => import ('./components/Portfolio/portFolio'));
+const Contacts = lazy (() => import ('./components/contact'));
+const Publication = lazy (() => import ('./components/publications/publications'));
+const Services = lazy (() => import ('./components/services/services'));
+
 import IdentiteVisuel from './components/services/identite_visuel/identiteVisuel';
 import Logotype from './components/services/identite_visuel/LogoType';
 import CharteGraphique from './components/services/identite_visuel/charteGraphique';
@@ -28,9 +31,10 @@ import Mamour from './components/publications/mamour';
 import Haut from './components/publications/haut';
 import Defi from './components/publications/defi';
 import Chute from './components/publications/chute';
-import Contacts from './components/contact';
 import NotFound from './components/notFound';
 import { Outlet } from 'react-router-dom';
+import FallBack from './components/fallBack';
+
 
 function App() {
 
@@ -44,12 +48,12 @@ function App() {
         <Route path='*' element={<NotFound/>}/>
         <Route path='/' element = {<SharedNav/>}>
 
-            <Route index element={<Acceuil/>} />
-            <Route path='aPropos' element= {<Apropos/>}/>
-            <Route path='contacts' element= {<Contacts/>}/>
+            <Route index element={<Suspense fallback={<FallBack/>}> <Acceuil/> </Suspense>} />
+            <Route path='aPropos' element= {<Suspense fallback={<FallBack/>}> <Apropos/> </Suspense>}/>
+            <Route path='contacts' element= {<Suspense fallback={<FallBack/>}> <Contacts/> </Suspense>}/>
             
             <Route path='portfolio' element={<><Outlet/></>}>
-              <Route index element={<Portfolio/>}/>
+              <Route index element={<Suspense fallback={<FallBack/>}> <Portfolio/> </Suspense>}/>
               <Route path='galleryArt' element={<GalleryArt/>}/>
               <Route path='logofolio' element={<Logofolio/>}/>
               <Route path='graphicDesign' element={<ImageGraphiqueDesign/>}/>
@@ -57,7 +61,7 @@ function App() {
             </Route>
 
             <Route path='publication' element={<><Outlet/></>}>
-              <Route index element={<Publication/>}/>
+              <Route index element={<Suspense fallback={<FallBack/>}> <Publication/> </Suspense>}/>
               <Route path='mamour' element={<Mamour/>}/>
               <Route path='haut' element={<Haut/>}/>
               <Route path='defi' element={<Defi/>}/>
@@ -65,7 +69,7 @@ function App() {
             </Route>
 
             <Route path='services' element={<> <Outlet/></>}>
-              <Route index element={<Services/>}/>
+              <Route index element={<Suspense fallback={<FallBack/>}> <Services/> </Suspense>}/>
 
               <Route path='idVisuelle' element={<> <Outlet/> </>}>
                 <Route index element={<IdentiteVisuel/>}/>
